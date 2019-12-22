@@ -1,0 +1,68 @@
+//Variable theme CCI
+
+$arrondis-1:            2px;
+$arrondis-2:            8px;
+$arrondis-xl:           100rem;
+
+$ombre:                  0 0 10px rgba(0,0,0,0.2);
+$ombre-hover:            0 0 20px rgba(0,0,0,0.2);
+
+$bordure:                1px;
+$bordure-2:              2px;
+$bordure-color:          $gris;
+
+$transition-mode: cubic-bezier(.11,.77,.36,.97);
+
+
+
+:root {
+  //root-CCI
+
+  --arrondis-1: #{$arrondis-1};
+  --arrondis-2: #{$arrondis-2};
+  --arrondis-xl: #{$arrondis-xl};
+
+  --bordure: #{$bordure};
+  --bordure-2: #{$bordure-2};
+  --bordure-color: #{$bordure-color};
+
+  --ombre:#{$ombre};
+  --ombre-hover:#{$ombre-hover};
+
+  --transition-mode:#{$transition-mode};
+
+  --font-size--1:#{$typo-taille--1};
+  --font-size-1:#{$typo-taille-1};
+  --font-size-2:#{$typo-taille-2};
+  --font-size-3:#{$typo-taille-3};
+  --font-size-4:#{$typo-taille-1};
+  --font-size-5:#{$typo-taille-5};
+  --font-size-6:#{$typo-taille-6};
+  --font-size-7:#{$typo-taille-7};
+
+  @each $spacer, $value in $spacers {
+    --space-#{$spacer}: #{$value};
+  }
+
+  // Custom variable values only support SassScript inside `#{}`.
+  @each $color, $value in $colors {
+    --#{$color}: #{$value};
+  }
+  @each $color, $value in $colors-cci {
+    --#{$color}: #{$value};
+  }
+
+  @each $color, $value in $theme-colors {
+    --#{$color}: #{$value};
+  }
+
+  @each $bp, $value in $grid-breakpoints {
+    --breakpoint-#{$bp}: #{$value};
+  }
+
+  // Use `inspect` for lists so that quoted items keep the quotes.
+  // See https://github.com/sass/sass/issues/2383#issuecomment-336349172
+  --font-family-sans-serif: #{inspect($font-family-sans-serif)};
+  --font-family-monospace: #{inspect($font-family-monospace)};
+}
+
