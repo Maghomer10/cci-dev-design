@@ -16,7 +16,7 @@ $transition-mode: cubic-bezier(.11,.77,.36,.97);
 
 
 :root {
-  //root-CCI
+  // add CCI
 
   --arrondis-1: #{$arrondis-1};
   --arrondis-2: #{$arrondis-2};
@@ -50,8 +50,8 @@ $transition-mode: cubic-bezier(.11,.77,.36,.97);
   }
   @each $color, $value in $colors-cci {
     --#{$color}: #{$value};
-  }
-
+  }  
+  
   @each $color, $value in $theme-colors {
     --#{$color}: #{$value};
   }

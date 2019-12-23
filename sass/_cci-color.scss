@@ -1,0 +1,11 @@
+// add CCI 
+
+
+@each $color, $value in $colors-cci {
+  .bg-#{$color}{
+    background-color: var(--#{$color});
+  }
+  .text-#{$color}{
+    color: var(--#{$color});
+  }
+}
