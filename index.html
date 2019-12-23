@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./JS/jquery-3.3.1.min.js"></script>
 
   </head>
 	
@@ -17,7 +17,12 @@
 	
 <body>
 	
-	
+    <header class="cs-header">
+        <img src="LOGO CCI.png" alt="CCI logo" width="400px">
+        <h1 class="cs-header-title">Charte web CCI</h1>
+        <h3 class="cs-header-subline">Base Bootstrap 4.3.1</h3>
+    </header>
+
 	
     <div class="container">
         <div class="d-flex row flex-row p-2 text-right">
@@ -65,10 +70,10 @@
             <div class="p-2 col-md-4">
     
                 <div class="card-cci">
-                    <img class="card-img-top" src="https://www.cci.fr/image/image_gallery?img_id=10565896&t=1576765884866" alt="Card image cap">
+                    <img class="card-img-top" src="https://www.cci.fr/image/image_gallery?img_id=10565896" alt="Card image cap">
                     <div class="card-desc">
                         <span class="badge badge-primary">Primary</span>
-                        <p class="card-info">publié le 04/10/2019</p>
+                        <p class="card-info"></p>
                     </div>
                     <div class="card-body">
                         <h3 class="card-title">Card title</h3>
@@ -88,10 +93,10 @@
             <div class="p-2 col-md-4">
     
                 <div class="card-cci">
-                    <img class="card-img-top" src="https://www.cci.fr/image/image_gallery?img_id=10637787&t=1576764664169" alt="Card image cap">
+                    <img class="card-img-top" src="https://www.cci.fr/image/image_gallery?img_id=10637787" alt="Card image cap">
                     <div class="card-desc">
                         <span class="badge badge-primary">Primary</span>
-                        <p class="card-info">publié le 04/10/2019</p>
+                        <p class="card-info"></p>
                     </div>
                     <div class="card-body">
                         <h3 class="card-title">Card title</h3>
@@ -111,7 +116,7 @@
             <div class="p-2 col-md-4">
     
                 <div class="card-cci">
-                    <img class="card-img-top" src="https://www.cci.fr/image/image_gallery?img_id=10641471&t=1576764664219" alt="Card image cap">
+                    <img class="card-img-top" src="https://www.cci.fr/image/image_gallery?img_id=10641471" alt="Card image cap">
                     <div class="card-desc">
                         <span class="badge badge-primary">Primary</span>
                         <p class="card-info">publié le 04/10/2019</p>
@@ -122,10 +127,10 @@
                     </div>
                     <div class="card-bas">
                         <div class="card-benefice">
-                        <img src="http://fit.univ-angers.fr/wp-content/uploads/sites/2/2019/04/simon-cadoret-picto-photo-noir.png">
-                        <p>sur-mesure</p>
+                        <img src="">
+                        <p></p>
                         </div>
-                        <a href="#!" class="btn btn-primary">Découvrir</a>
+                        <a href="#!" class="btn btn-outline-secondary">Découvrir</a>
                     </div>
                 </div>
     
@@ -215,39 +220,24 @@
             </div>
             </div>
         
+           
             
-			
-			
+	
+    <script src="./JS/charteCCI.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/ie11-custom-properties@2.6.0/ie11CustomProperties.min.js" type="text/javascript"></script>
-    <script src="popper.min.js"></script>
-    <script src="bootstrap.min.js"></script>
+    <script src="./JS/popper.min.js"></script>
+    <script src="./JS/bootstrap.min.js"></script>
 
+    <script src="./JS/min-ie11CustomProperties.js"></script>	
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/ie11-custom-properties/ie11CustomProperties.min.js" type="text/javascript"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     
-    <script>
-
-        function cardCciSize(){
-        $('.card-cci').each(function(){
-            if($(this).width() < 400){
-                $(this).addClass('card-fine');
-            }
-            else{
-                $(this).removeClass('card-fine');
-            }
-        });
-        return false;
-        }
-
-        $(document).ready(function(){
-            $(document).ready(cardCciSize);
-            $(window).resize(cardCciSize);
-        });
-
-
-    </script>
-
+    
 
 
 </body>

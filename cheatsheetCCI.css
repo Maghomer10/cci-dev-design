@@ -12,10 +12,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px;
-  min-height: 330px;
+  padding: var(--space-5);
   color: #fff;
-  background: #3274D3; }
+  background: var(--bleu-f2);
+  }
 
   .cs-header .ht-logo {
     width: 200px; }
@@ -28,13 +28,13 @@ body {
 .cs-header-title {
   margin-top: auto;
   font-weight: 600;
-  font-size: 40px; }
+  margin: var(--space-4) 0 var(--space-0) 0;
+  }
 
 .cs-header-subline {
-  opacity: .39;
-  font-weight: 600;
+  color: var(--bleu-l1);
   margin-bottom: auto;
-  font-size: 20px; }
+  }
 
 .cs-subheader {
   min-height: 60px;
@@ -349,13 +349,6 @@ body {
 	background-color:#ffffff;
 	padding:1em;
 }
-
-
-
-
-
-
-
 
 
 
