@@ -1,5 +1,7 @@
 //Variable theme CCI
 
+
+
 $arrondis-1:            2px;
 $arrondis-2:            8px;
 $arrondis-xl:           100rem;
@@ -12,6 +14,7 @@ $bordure-2:              2px;
 $bordure-color:          $gris;
 
 $transition-mode: cubic-bezier(.11,.77,.36,.97);
+
 
 
 
@@ -35,7 +38,7 @@ $transition-mode: cubic-bezier(.11,.77,.36,.97);
   --font-size-1:#{$typo-taille-1};
   --font-size-2:#{$typo-taille-2};
   --font-size-3:#{$typo-taille-3};
-  --font-size-4:#{$typo-taille-1};
+  --font-size-4:#{$typo-taille-4};
   --font-size-5:#{$typo-taille-5};
   --font-size-6:#{$typo-taille-6};
   --font-size-7:#{$typo-taille-7};

@@ -4,6 +4,7 @@
  * Copyright 2011-2019 The Bootstrap Authors
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * version modifiée pour CCI France
  */
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans:300,400,700,800&display=swap");
 :root {
@@ -20,9 +21,9 @@
   --font-size-1:1rem;
   --font-size-2:1.11rem;
   --font-size-3:1.26rem;
-  --font-size-4:1rem;
+  --font-size-4:1.4rem;
   --font-size-5:1.6rem;
-  --font-size-6:1.87em;
+  --font-size-6:1.87rem;
   --font-size-7:2.4rem;
   --space-0: 0;
   --space-1: 0.25rem;
@@ -102,7 +103,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-sans-serif: Fira Sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -494,7 +495,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Fira Sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 15px;
   font-weight: 400;
   line-height: 1.5;
@@ -807,20 +808,26 @@ h1, h2, h3, h4, h5, h6,
   line-height: 1.2;
 }
 
+/* Add CCI */
 h1, .h1 {
   font-size: 2.4rem;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 h2, .h2 {
-  font-size: 1.87em;
+  font-size: 1.87rem;
+  font-weight: 700;
 }
 
 h3, .h3 {
   font-size: 1.6rem;
+  font-weight: 700;
 }
 
 h4, .h4 {
   font-size: 1.4rem;
+  font-weight: 700;
 }
 
 h5, .h5 {
@@ -829,6 +836,38 @@ h5, .h5 {
 
 h6, .h6 {
   font-size: 1.11rem;
+}
+
+.font-size--1 {
+  font-size: var(--font-size--1);
+}
+
+.font-size-1 {
+  font-size: var(--font-size-1);
+}
+
+.font-size-2 {
+  font-size: var(--font-size-2);
+}
+
+.font-size-3 {
+  font-size: var(--font-size-3);
+}
+
+.font-size-4 {
+  font-size: var(--font-size-4);
+}
+
+.font-size-5 {
+  font-size: var(--font-size-5);
+}
+
+.font-size-6 {
+  font-size: var(--font-size-6);
+}
+
+.font-size-7 {
+  font-size: var(--font-size-7);
 }
 
 .lead {
@@ -903,7 +942,8 @@ mark,
 
 .blockquote {
   margin-bottom: 1rem;
-  font-size: 1.25rem;
+  font-size: var(--font-size-6);
+  font-weight: 300;
 }
 
 .blockquote-footer {
@@ -6191,7 +6231,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Fira Sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6293,7 +6333,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Fira Sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -10334,7 +10374,7 @@ button.bg-dark:focus {
 }
 
 .font-weight-lighter {
-  font-weight: 100 !important;
+  font-weight: 300 !important;
 }
 
 .font-weight-normal {
@@ -10354,7 +10394,7 @@ button.bg-dark:focus {
 }
 
 .text-100, .text-200, .text-lighter {
-  font-weight: 100 !important;
+  font-weight: 300 !important;
 }
 
 .text-300, .text-light {
