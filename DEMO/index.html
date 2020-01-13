@@ -12,42 +12,51 @@
     <script src="../JS/jquery-3.3.1.min.js"></script>
 
         <style>
-            body{background-color: white;}
+        body{background-color: white;}
 
         .ruban-lien{
             left:0;
-            width:200px;
+            width:220px;
             position: fixed;
             top:0;
             bottom:0;
             background-color: var(--gris-l1);
             padding: var(--space-3);
         }
-        .ruban-lien .h4{
+        .ruban-lien .h5{
             margin: 0;
+            margin-top: var(--space-2);
+            font-size: var(--font-size-1);
+            font-weight: 700;
         }
         .ruban-lien a{
             display: inline-block;
             color: var(--gris-f1);
             width: 100%;
-            font-weight: 700;
         }
-        .ruban-lien a.sub-1{
-            font-weight: 400;
+        .ruban-lien a:not(.h5){
             padding-left: var(--space-3);
+            font-size: var(--font-size--1);
         }
         .contient-charte{
-            margin-left: 200px;
-            width: calc(100% - 250px);
+            margin-left: 220px;
+            width: calc(100% - 220px);
         }
         .apercu, .code{
             padding-top: var(--space-2);
             padding-bottom: var(--space-2);
         }
+        .container{
+            max-width: 1100px;
+        }
         .contient-demo{
             border-top: 1px solid var(--gris);
             padding-top: var(--space-3);
             padding-bottom: var(--space-3);
+            margin-bottom: var(--space-5);
+        }
+        .contient-demo h2{
+            margin-bottom: 0;
         }
         .code textarea {
             width: 100%;
@@ -83,8 +92,14 @@
     <div class="d-flex p-0">
 
     <div  class="ruban-lien">
-        <p class="h4">Thématiques</p>
-        <a href="#couleur">Couleurs</a>
+        <a href="#couleurs" class="h5">Couleurs</a>
+        <a href="#nuancier">Nuancier</a>
+        <a href="#video" class="h5">Vidéos</a>
+        <a href="#pastilles-thematique">Pastilles par thématiques</a>
+        <a href="#rs" class="h5">Réseaux sociaux</a>
+        <a href="#youtube">Youtube</a>
+        <a href="#web" class="h5">Site web</a>
+        <a href="#bloc">Blocs de contenu</a>
 
     </div>
 
@@ -105,13 +120,13 @@
 
 
 
-        <div class="contient-demo" id="typographie">
+        <div class="contient-demo m-0" id="couleurs">
             <h2>Couleurs</h2>
 
         </div>
         
 
-        <div class="contient-demo d-flex flex-wrap" id="typotaille">
+        <div class="contient-demo d-flex flex-wrap" id="nuancier">
             <h3 class="col-12">Nuanciers</h3>
 
             <div class="apercu col-sm-12">
@@ -124,17 +139,16 @@
 
 
 
-        <br><br>
 
 
 
-        <div class="contient-demo" id="typographie">
+        <div class="contient-demo m-0" id="video">
             <h2>Vidéos</h2>
 
         </div>
         
 
-        <div class="contient-demo d-flex flex-wrap" id="typotaille">
+        <div class="contient-demo d-flex flex-wrap" id="pastilles-thematique">
             <h3 class="col-12">Pastilles par thématiques</h3>
 
             <div class="apercu col-sm-12">
@@ -163,16 +177,15 @@
         </div>
 
 
-<br><br>
         
 
-        <div class="contient-demo" id="typographie">
+        <div class="contient-demo m-0" id="rs">
             <h2>Réseaux sociaux</h2>
 
         </div>
         
 
-        <div class="contient-demo d-flex flex-wrap" id="typotaille">
+        <div class="contient-demo d-flex flex-wrap" id="youtube">
             <h3 class="col-12">Vignettes Youtube</h3>
 
             <div class="apercu col-sm-4">
@@ -192,16 +205,15 @@
         </div>
         
 
-<br><br>
         
 
-<div class="contient-demo" id="typographie">
+<div class="contient-demo m-0" id="web">
     <h2>Site Web</h2>
 
 </div>
 
 
-<div class="contient-demo d-flex flex-wrap" id="typotaille">
+<div class="contient-demo d-flex flex-wrap" id="bloc">
     <h3 class="col-12">Bloc de contenu</h3>
 
     <div class="apercu col-sm-4">
