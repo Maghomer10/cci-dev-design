@@ -1,0 +1,413 @@
+﻿<!doctype html>
+<html lang="fr-fr">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap 4 extrait CCI</title>	
+	
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+
+    <script src="./JS/jquery-3.3.1.min.js"></script>
+
+        <style>
+            body{background-color: white;}
+
+        .ruban-lien{
+            left:0;
+            width:250px;
+            position: fixed;
+            top:0;
+            bottom:0;
+            background-color: var(--gris-l1);
+            padding: var(--space-3);
+        }
+        .ruban-lien .h4{
+            margin: 0;
+        }
+        .ruban-lien a{
+            display: inline-block;
+            color: var(--gris-f1);
+            width: 100%;
+            font-weight: 700;
+        }
+        .ruban-lien a.sub-1{
+            font-weight: 400;
+            padding-left: var(--space-3);
+        }
+        .contient-charte{
+            margin-left: 250px;
+            width: calc(100% - 250px);
+        }
+        .apercu, .code{
+            padding-top: var(--space-2);
+            padding-bottom: var(--space-2);
+        }
+        .contient-demo{
+            border-top: 1px solid var(--gris);
+            padding-top: var(--space-3);
+            padding-bottom: var(--space-3);
+        }
+        .code textarea {
+            width: 100%;
+            height: 100%;
+            min-height: 200px;
+            padding: var(--space-3);
+            background-color: var(--gris-f2);
+            color: white;
+            font-size: var(--font-size--1);
+            font-family: monospace;
+            -webkit-user-modify: read-only;
+            border: none;
+        }
+        </style>
+
+    </head>
+
+  </head>
+	
+	
+	
+<body> 
+    
+
+
+    <header class="bg-bleu-f2 p-5 text-center">
+        <img src="LOGO CCI.png" alt="CCI logo" width="400px" class="mb-4">
+        <h1 class="mb-0 pb-0 text-blanc text-600">Charte web CCI</h1>
+        <h3 class="mb-0 pb-0 text-bleu-l1 text-400">Base Bootstrap 4.3.1</h3>
+    </header>
+
+
+    <div class="d-flex p-0">
+
+    <div  class="ruban-lien">
+        <p class="h4">Charte Web</p>
+        <a href="#couleur">Couleurs</a>
+        <a href="#typographie">Typographie</a>
+        <a href="#typographie-tailles" class="sub-1">Tailles</a>
+        <a href="#typographie-style" class="sub-1">Style</a>
+
+        <br>
+        <hr>
+        <p class="h4">Eléments d'interface CCI</p>
+
+    </div>
+
+    
+
+    <div class="p-0 contient-charte">
+
+
+
+    
+    
+
+    <div class="container py-2">
+    
+
+
+
+
+
+
+        <div class="contient-demo" id="typographie">
+            <h2>Typographie</h2>
+
+        </div>
+        
+
+        <div class="contient-demo d-flex flex-wrap" id="typotaille">
+            <h3 class="col-12">Tailles</h3>
+
+            <div class="apercu col-sm-6">
+                <p><span style="font-size:var(--font-size--1)">font-size--1</span> - 0.9rem</p>
+                <p><span style="font-size:var(--font-size-1)">font-size-1</span> - 1rem</p>
+                <p><span style="font-size:var(--font-size-2)">font-size-2</span> - 1.13rem</p>
+                <p><span style="font-size:var(--font-size-3)">font-size-3</span> - 1.26rem</p>
+                <p><span style="font-size:var(--font-size-4)">font-size-4</span> - 1.4rem</p>
+                <p><span style="font-size:var(--font-size-5)">font-size-5</span> - 1.6rem</p>
+                <p><span style="font-size:var(--font-size-6)">font-size-6</span> - 1.87rem</p>
+                <p><span style="font-size:var(--font-size-7)">font-size-7</span> - 2.4rem</p>
+            </div>
+
+            <div class="code col-sm-6"><textarea readonly="readonly">
+// CSS Variable
+font-size: 
+    var(--font-size--1);
+    var(--font-size-1);
+    var(--font-size-2);
+    ...
+    var(--font-size-7);
+
+// CSS Class
+    .font-size--1
+    .font-size-1
+    .font-size-2
+    ...
+    .font-size-7
+            </textarea></div>
+
+        </div>
+        
+
+        <div class="contient-demo" id="typotaille">
+            <h3>Styles</h3>
+
+            <div class="contient-exemple">
+                <p><span class="h1">Titre h1</span> - 2.4rem / 800 / uppercase</p>
+                <p><span class="h2">Titre h2</span> - 1.87rem / 700</p>
+                <p><span class="h3">Titre h3</span> - 1.6rem / 700</p>
+                <p><span class="h4">Titre h4</span> - 1.4rem / 700</p>
+                <hr>
+                <p class="blockquote">Titre h4</p>
+                <p>1.4rem / 700</p>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+        <div class="contient-demo" id="boutons">
+            <h2>Boutons</h2>
+            
+            <div class="text-description">
+                <p>desc</p>
+            </div>
+
+            <div class="contient-exemple">
+
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-secondary active">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Active
+                </label>
+                <label class="btn btn-secondary">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> Radio
+                </label>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        
+        <div><h2>Carte</h2></div>
+        <hr>
+
+        <div class="p-2">
+				
+				<div class="card">
+  <h3 class="card-header py-2 text-white" style="background-color: var(--bleu-f1)">Featured</h3>
+  <div class="card-text py-1 px-3" style="background-color: var(--gris-l1)">
+    <p class="card-text">création : 2019/12/10</p>
+  </div>
+  <div class="card-body py-2">
+    <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo...</p><div class="text-right">
+	  <button type="button" class="btn btn-outline-secondary">Secondary</button></div>
+  </div>
+</div>
+    
+
+        </div>
+
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <div class="container">
+        <div class="d-flex row flex-row p-2">
+            <div class="p-2 col-md-4">
+    
+                <div class="card-cci">
+                    <img class="card-img-top" src="https://www.cci.fr/image/image_gallery?img_id=10565896" alt="Card image cap">
+                    <div class="card-desc">
+                        <span class="badge badge-primary">Primary</span>
+                        <p class="card-info"></p>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Card title</h3>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <div class="card-bas">
+                        <div class="card-benefice">
+                        <img src="http://fit.univ-angers.fr/wp-content/uploads/sites/2/2019/04/simon-cadoret-picto-photo-noir.png">
+                        <p>sur-mesure</p>
+                        </div>
+                        <a href="#!" class="btn btn-primary">Découvrir</a>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div class="p-2 col-md-4">
+    
+                <div class="card-cci">
+                    <img class="card-img-top" src="https://www.cci.fr/image/image_gallery?img_id=10637787" alt="Card image cap">
+                    <div class="card-desc">
+                        <span class="badge badge-primary">Primary</span>
+                        <p class="card-info"></p>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Card title</h3>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <div class="card-bas">
+                        <div class="card-benefice">
+                        <img src="http://fit.univ-angers.fr/wp-content/uploads/sites/2/2019/04/simon-cadoret-picto-photo-noir.png">
+                        <p>sur-mesure</p>
+                        </div>
+                        <a href="#!" class="btn btn-primary">Découvrir</a>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div class="p-2 col-md-4">
+    
+                <div class="card-cci">
+                    <img class="card-img-top" src="https://www.cci.fr/image/image_gallery?img_id=10641471" alt="Card image cap">
+                    <div class="card-desc">
+                        <span class="badge badge-primary">Primary</span>
+                        <p class="card-info">publié le 04/10/2019</p>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Card title</h3>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <div class="card-bas">
+                        <div class="card-benefice">
+                        <img src="">
+                        <p></p>
+                        </div>
+                        <a href="#!" class="btn btn-outline-secondary">Découvrir</a>
+                    </div>
+                </div>
+    
+            </div>
+    
+    
+        </div>
+        </div>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+        <div class="container">
+            <div class="d-flex row flex-row p-2">
+                <div class="p-2 col-md-12">
+        
+                    <div class="card-cci">
+                        <img class="card-img-top" src="https://www.cci.fr/image/image_gallery?img_id=10565896&t=1576765884866" alt="Card image cap">
+                        <div class="card-desc">
+                            <span class="badge badge-primary">Primary</span>
+                            <p class="card-info">publié le 04/10/2019</p>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Card title</h3>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <div class="card-bas">
+                            <div class="card-benefice">
+                            <img src="http://fit.univ-angers.fr/wp-content/uploads/sites/2/2019/04/simon-cadoret-picto-photo-noir.png">
+                            <p>sur-mesure</p>
+                            </div>
+                            <a href="#!" class="btn btn-primary">Découvrir</a>
+                        </div>
+                    </div>
+        
+                </div>
+        
+                <div class="p-2 col-md-12">
+        
+                    <div class="card-cci">
+                        <img class="card-img-top" src="https://www.cci.fr/image/image_gallery?img_id=10637787&t=1576764664169" alt="Card image cap">
+                        <div class="card-desc">
+                            <span class="badge badge-primary">Primary</span>
+                            <p class="card-info">publié le 04/10/2019</p>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Card title</h3>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <div class="card-bas">
+                            <div class="card-benefice">
+                            <img src="http://fit.univ-angers.fr/wp-content/uploads/sites/2/2019/04/simon-cadoret-picto-photo-noir.png">
+                            <p>sur-mesure</p>
+                            </div>
+                            <a href="#!" class="btn btn-primary">Découvrir</a>
+                        </div>
+                    </div>
+        
+                </div>
+        
+                <div class="p-2 col-md-12">
+        
+                    <div class="card-cci">
+                        <img class="card-img-top" src="https://www.cci.fr/image/image_gallery?img_id=10641471&t=1576764664219" alt="Card image cap">
+                        <div class="card-desc">
+                            <span class="badge badge-primary">Primary</span>
+                            <p class="card-info">publié le 04/10/2019</p>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Card title</h3>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <div class="card-bas">
+                            <div class="card-benefice">
+                            <img src="http://fit.univ-angers.fr/wp-content/uploads/sites/2/2019/04/simon-cadoret-picto-photo-noir.png">
+                            <p>sur-mesure</p>
+                            </div>
+                            <a href="#!" class="btn btn-primary">Découvrir</a>
+                        </div>
+                    </div>
+        
+                </div>
+        
+        
+            </div>
+            </div>
+        
+           
+
+
+
+
+
+
+
+
+
+
+            </div>
+            
+	
+    <script src="./JS/charteCCI.js"></script>
+
+    <script src="./JS/popper.min.js"></script>
+    <script src="./JS/bootstrap.min.js"></script>
+
+    <script src="./JS/min-ie11CustomProperties.js"></script>	
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/ie11-custom-properties/ie11CustomProperties.min.js" type="text/javascript"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    
+
+        </div>
+
+</body>
+</html>
