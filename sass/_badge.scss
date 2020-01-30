@@ -50,3 +50,8 @@
     @include badge-variant($value);
   }
 }
+@each $color, $value in $colors-cci {
+  .badge-#{$color} {
+    @include badge-variant($value);
+  }
+}

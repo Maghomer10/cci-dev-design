@@ -44,9 +44,10 @@ $blue:    #373cf5;
 $brun:    #8E4C20;
 $purple:  #9520C6;
 $pink:    #E52E97;
-$red:     #C60C1E;
+$red:     #E33232;
 $orange:  #FF791F;
 $yellow:  #FFBA31;
+$chartreuse: #A0BF09;
 $green:   #4AA528;
 $teal:    #07C9C3;
 $cyan:    #00ABE0;
@@ -58,9 +59,10 @@ $blue-l1:    #7777FF;
 $brun-l1:    #C18E6C;
 $purple-l1:  #AB79D3;
 $pink-l1:    #EA94C1;
-$red-l1:     #E8627F;
+$red-l1:     #FF8484;
 $orange-l1:  #FFAF73;
 $yellow-l1:  #FFD788;
+$chartreuse-l1: #BED06B;
 $green-l1:   #9BCE7A;
 $teal-l1:    #54DED9;
 $cyan-l1:    #67C4E8;
@@ -72,9 +74,10 @@ $blue-f1:    #0000CC;
 $brun-f1:    #5B2E15;
 $purple-f1:  #6C129B;
 $pink-f1:    #C11F84;
-$red-f1:     #9E0719;
+$red-f1:     #AF1B1B;
 $orange-f1:  #BF4D00;
 $yellow-f1:  #EAA10F;
+$chartreuse-f1: #869F0C;
 $green-f1:   #3C7F20;
 $teal-f1:    #13ABA6;
 $cyan-f1:    #007EA5;
@@ -86,9 +89,10 @@ $blue-f2:    #000099;
 $brun-f2:    #411C08;
 $purple-f2:  #511472;
 $pink-f2:    #931161;
-$red-f2:     #760613;
+$red-f2:     #8F0909;
 $orange-f2:  #993A00;
 $yellow-f2:  #B77D08;
+$chartreuse-f2: #5D7400;
 $green-f2:   #2D591B;
 $teal-f2:    #07726F;
 $cyan-f2:    #00597C;
@@ -109,8 +113,8 @@ $colors: map-merge(
     "teal":       $teal,
     "cyan":       $cyan,
     "white":      $white,
-    "gray":       $gray-600,
-    "gray-dark":  $gray-800,
+    "gray":       $gris,
+    "gray-dark":  $gris-f2,
   ),
   $colors
 );
@@ -139,6 +143,11 @@ $colors-cci: map-merge(
     "vert":       $green,
     "vert-f1":       $green-f1,
     "vert-f2":       $green-f2,
+    
+    "chartreuse-l1":       $chartreuse-l1,
+    "chartreuse":       $chartreuse,
+    "chartreuse-f1":       $chartreuse-f1,
+    "chartreuse-f2":       $chartreuse-f2,
     
     "jaune-l1":       $yellow-l1,
     "jaune":       $yellow,
@@ -265,10 +274,10 @@ $spacers: map-merge(
   (
     0: 0,
     1: ($spacer * .25),
-    2: ($spacer * .5),
-    3: $spacer,
-    4: ($spacer * 1.5),
-    5: ($spacer * 3)
+    2: ($spacer * 0.5),
+    3: ($spacer * 1),
+    4: ($spacer * 2),
+    5: ($spacer * 4)
   ),
   $spacers
 );
