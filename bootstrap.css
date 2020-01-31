@@ -17,6 +17,7 @@
   --ombre:0 0 10px rgba(0, 0, 0, 0.2);
   --ombre-hover:0 0 20px rgba(0, 0, 0, 0.2);
   --transition-mode:cubic-bezier(0.11, 0.77, 0.36, 0.97);
+  --transition:0.25s all cubic-bezier(0.11, 0.77, 0.36, 0.97);
   --font-size--1:0.9rem;
   --font-size-1:1rem;
   --font-size-2:1.11rem;
