@@ -2,6 +2,11 @@ body > nav{
   background-color: var(--bleu-f2);
   color: white;
   padding: 0.5rem 1rem;
+  position: fixed;
+  top: 0;
+  Left: 0;
+  width: 100%;
+  z-index: 999;
 }
 
 body > nav a{
@@ -57,6 +62,7 @@ header.titre-principal{
   font-size: var(--font-size--1);
 }
 .contient-charte{
+  margin-top: 3rem;
   margin-left: 220px;
   width: calc(100% - 220px);
 }
@@ -71,16 +77,38 @@ header.titre-principal{
 }
 
 
-
-section{
+section.titre{
+  padding: var(--space-4) 0 var(--space-4) 0;
+  border-top: 1px solid var(--bordure-color);
+  margin-top: var(--space-5);
+}
+section.titre:first-child{
+  padding: var(--space-4) 0 var(--space-4) 0;
+  border-top: 0px solid var(--bordure-color);
+  margin-top: var(--space-0);
+}
+section:not(.titre){
   background-color: white;
-  box-shaow: var(--ombre);
   transition: var(--transition);
   padding: var(--space-4) var(--space-4);
   margin-bottom: var(--space-4);
 }
-section:hover{
+section:not(.titre):hover{
   box-shadow: var(--ombre-hover);
+}
+
+section > h3{
+  padding-bottom: var(--space-2);
+  margin-bottom: var(--space-3);
+}
+section > h3:after{
+  content: '';
+  display: block;
+  height: 1px;
+  width: 90px;
+  background-color: var(--gris-f1);
+  position: relative;
+  top: var(--space-2);
 }
 
 

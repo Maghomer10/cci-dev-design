@@ -1,0 +1,15 @@
+// ScrollBar chrome
+
+
+*::-webkit-scrollbar {									/* Scrollbars */
+	width: 13px;
+	height: 14px;
+	background: var(--gris-l1);
+	border: solid 0px var(--gris-l1);
+  border-radius: 0px;
+}
+*::-webkit-scrollbar-thumb {								/* Barre */
+  border: solid 2px var(--gris-l1);
+	background-color: var(--gris);
+  border-radius: 35px;
+}
