@@ -12,6 +12,63 @@
     <script src="../JS/jquery-3.3.1.min.js"></script>
 
         <style>
+            div[id*='thematique']{
+                display: none;
+            }
+
+            .contient-tout{
+                max-width: 1000px;
+                width: 100%;
+                display: flex;
+                margin: 0rem auto;
+                padding: 0;
+                overflow: hidden;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: start;
+                align-content: start;
+                align-items: start;
+                position: relative;
+                top: 0;
+                left: 0;
+                transition: var(--transition);
+            }
+            #profil{
+                min-width:100%;
+                flex: 1 1 100%;
+                padding: 1rem 1rem;
+                display: block;
+                align-self: stretch;
+                position: relative;
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+            .contient-themes{
+                min-width: 100%;
+                flex: 1 1 100%;
+                align-self: stretch;
+                min-height: 100%;
+                background-color: var(--bleu-f2);
+                position: relative;
+                padding: 2rem 1rem;
+                top: 0;
+                left: 0;
+                z-index: 2;
+                transition: var(--transition);
+            }
+            
+            .contient-themes .retour{
+                position: absolute;
+                top:0;
+                Left:0;
+                padding:0rem 0.5rem;
+                border-bottom: 1px solid white;
+                font-weight: 400;
+                color: white;
+                cursor: pointer;
+            }
+
         </style>
 
     </head>
@@ -27,19 +84,140 @@
 
     <div class="contient-tout">
 
-        <div class="container contient1">
-            <a href="?pro=etape1">test</a>
-            <a href="?pro=etape2">test2</a>
-        </div>
-        <div class="container">
-            <a href="?them=formation">Formation</a>
-            <a href="?them=entreprendre">Entrenprendre</a>
-        </div>
+        <form class="text-blanc" id="profil">
+            <input type="radio" name="profil" value="entreprise">Entreprise</input>
+            <input type="radio" name="profil" value="particulier">Particulier</input>
+        </form>
 
-
+        <div class="contient-themes text-blanc">
+            <div class="retour"><p>< retour</p></div>
+            <div class="container" id="thematique-entreprise">
+                <a href="?them=durable">Durable</a>
+                <a href="?them=entreprendre">Entrenprendre</a>
+            </div>
+            <div class="container" id="thematique-particulier">
+                <a href="?them=formation">formation</a>
+            </div>
+        </div>
     </div>
 
+    </div>
+ 
 </div>
+
+
+<div id="test">
+    
+</div>
+
+
+
+<script>
+
+
+var CheminComplet = document.location.href;
+var CheminRepertoire  = CheminComplet.substring( 0 ,CheminComplet.lastIndexOf( "/" ) );
+var NomDuFichier     = CheminComplet.substring(CheminComplet.lastIndexOf( "/" )+1 );
+
+
+var url = document.location.href;
+$('#test').html(url);
+
+
+
+$('.retour').click(function(){
+    $('input[name="profil"]').prop('checked', false);
+    $('.contient-themes').css("left", "0%");
+    $("div[id*='thematique']").css("display", "none");
+});
+
+$('input[name="profil"]').click(function(){
+    var n = $("input:checked").val();
+    var selectid = 'div[id*='+n+']';
+
+    $("div[id*='thematique']").css("display", "none");
+    $(selectid).css("display", "block");
+
+    $('.contient-themes').css("left", "-100%");
+    
+    window.history.pushState( {} , '', '?fare=standar' );
+
+});
+
+
+
+
+
+function jsInputBox(linky)
+            {
+               var tlink=prompt("Enter a title for this search","");
+               if(tlink!="")
+               {
+                     Alert(linky.href);
+                  location.href=""+actualLink+"?title="+tlink;
+                 return false;
+               }
+               else
+               {
+                  alert("No Input Received");
+                  return false;
+               }
+            }
+
+
+
+
+
+
+function insertParam(key, value)
+{
+    key = encodeURI(key); value = encodeURI(value);
+
+    var kvp = document.location.search.substr(1).split('&');
+
+    var i=kvp.length; var x; while(i--) 
+    {
+        x = kvp[i].split('=');
+
+        if (x[0]==key)
+        {
+            x[1] = value;
+            kvp[i] = x.join('=');
+            break;
+        }
+    }
+
+    if(i<0) {kvp[kvp.length] = [key,value].join('=');}
+
+    //this will reload the page, it's likely better to store this until finished
+    document.location.search = kvp.join('&'); 
+}
+
+
+
+
+function insertParam2(key,value)
+{
+    key = encodeURIComponent(key); value = encodeURIComponent(value);
+
+    var s = document.location.search;
+    var kvp = key+"="+value;
+
+    var r = new RegExp("(&|\\?)"+key+"=[^\&]*");
+
+    s = s.replace(r,"$1"+kvp);
+
+    if(!RegExp.$1) {s += (s.length>0 ? '&' : '?') + kvp;};
+
+    //again, do what you will here
+    document.location.search = s;
+}
+
+
+
+
+</script>
+
 
             
 	

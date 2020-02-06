@@ -1,7 +1,7 @@
 body > nav{
   background-color: var(--bleu-f2);
   color: white;
-  padding: 0.5rem 1rem;
+  padding: 0rem;
   position: fixed;
   top: 0;
   Left: 0;
@@ -9,19 +9,78 @@ body > nav{
   z-index: 999;
 }
 
-body > nav a{
-  color: white;
+body > nav header img {
+  width:auto;
+  height: 1.75rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+body > nav header {
+  display: inline-block;
+  vertical-align: middle;
+  border-right: 1px solid white;
+  padding: 0rem 0.5rem 0rem 1rem;
+  margin: 0.5rem;
+}
+
+@media screen and (max-width: 768px){
+  body > nav header {
+    display: block;
+    width: 100%;
+    margin: 0rem;
+    border-right: none;
+    padding: 0.5rem;
+    background-color: var(--bleu);
+  }
+  .contient-charte{
+    margin-top: 6rem !important;
+  }
+}
+
+body > nav header p{
+  display: inline-block;
+  margin-bottom: 0;
   padding: 0rem 0.5rem;
   line-height: 2rem;
   font-size: 1.2rem;
+  font-weight: 700;
+  vertical-align: middle;
+}
+
+body > nav a{
+  color: var(--gris);
+  padding: 0.5rem 0.5rem;
+  line-height: 2rem;
+  font-size: 1.2rem;
+  transition: var(--transition);
+  font-weight: 300;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none!important;
+}
+body > nav a:hover, body > nav a.active{
+  color: var(--blanc);
+}
+body > nav a:after{
+  content: '';
+  background-color: var(--gris);
+  display: block;
+  position:absolute;
+  bottom:0;
+  height: 2px;
+  left:50%;
+  right: 50%;
   transition: var(--transition);
 }
-body > nav a:hover{
-  color: var(--gris);
+body > nav a:hover:after, body > nav a.active:after{
+  background-color: white;
+  left:20%;
+  right: 20%;
 }
 
 header.titre-principal{
-  background-color: var(--gris) !important;
+  background-color: var(--bleu) !important;
   color: white;
   text-align: center;
   padding: 2rem 1rem;
