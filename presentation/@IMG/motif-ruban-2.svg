@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1300" height="800" viewBox="0 0 1300 800">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-motif-ruban-2);
+      }
+
+      .cls-2 {
+        fill: #4aa528;
+      }
+    </style>
+    <clipPath id="clip-motif-ruban-2">
+      <rect width="1300" height="800"/>
+    </clipPath>
+  </defs>
+  <g id="motif-ruban-2" class="cls-1">
+    <rect id="Rectangle_371" data-name="Rectangle 371" class="cls-2" width="1300" height="134" transform="translate(0 666)"/>
+  </g>
+</svg>

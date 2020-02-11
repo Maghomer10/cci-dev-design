@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1300" height="800" viewBox="0 0 1300 800">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-motif-ombre-2);
+      }
+
+      .cls-2 {
+        fill: #4aa528;
+      }
+
+      .cls-3 {
+        fill: #f2f2f2;
+      }
+
+      .cls-4 {
+        filter: url(#Rectangle_370);
+      }
+
+      .cls-5 {
+        filter: url(#Rectangle_369);
+      }
+    </style>
+    <filter id="Rectangle_369" x="965.372" y="-62.352" width="554.592" height="938.592" filterUnits="userSpaceOnUse">
+      <feOffset dx="-7" dy="7" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="23" result="blur"/>
+      <feFlood flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_370" x="1096.372" y="-62.352" width="766.592" height="938.592" filterUnits="userSpaceOnUse">
+      <feOffset dx="-7" dy="7" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="23" result="blur-2"/>
+      <feFlood flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-motif-ombre-2">
+      <rect width="1300" height="800"/>
+    </clipPath>
+  </defs>
+  <g id="motif-ombre-2" class="cls-1">
+    <g class="cls-5" transform="matrix(1, 0, 0, 1, 0, 0)">
+      <rect id="Rectangle_369-2" data-name="Rectangle 369" class="cls-2" width="416.592" height="800.592" transform="translate(1041.37 -0.35)"/>
+    </g>
+    <g class="cls-4" transform="matrix(1, 0, 0, 1, 0, 0)">
+      <rect id="Rectangle_370-2" data-name="Rectangle 370" class="cls-3" width="628.592" height="800.592" transform="translate(1172.37 -0.35)"/>
+    </g>
+  </g>
+</svg>

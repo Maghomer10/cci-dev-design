@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1300" height="800" viewBox="0 0 1300 800">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-motif-ombre);
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        filter: url(#Rectangle_369);
+      }
+    </style>
+    <filter id="Rectangle_369" x="26" y="14" width="1234.592" height="785.592" filterUnits="userSpaceOnUse">
+      <feOffset dx="-7" dy="7" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="23" result="blur"/>
+      <feFlood flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-motif-ombre">
+      <rect width="1300" height="800"/>
+    </clipPath>
+  </defs>
+  <g id="motif-ombre" class="cls-1">
+    <g class="cls-3" transform="matrix(1, 0, 0, 1, 0, 0)">
+      <rect id="Rectangle_369-2" data-name="Rectangle 369" class="cls-2" width="1096.592" height="647.592" transform="translate(102 76)"/>
+    </g>
+  </g>
+</svg>

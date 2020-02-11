@@ -183,6 +183,7 @@ section:not(.titre){
   background-color: white;
   transition: var(--transition);
   padding: var(--space-4);
+  padding-top: var(--space-3);
   margin-bottom: var(--space-4);
 }
 section:not(.titre):hover{
@@ -190,6 +191,7 @@ section:not(.titre):hover{
 }
 
 section > h3{
+  padding-top: var(--space-1);
   padding-bottom: var(--space-2);
   margin-bottom: var(--space-3);
 }
@@ -330,4 +332,17 @@ section > h3:after{
     width: 50%;
     max-width: 50%;
   }
+}
+
+
+/* ---------------Pres MOtif */
+
+.pres-motif{
+  min-height: 150px;
+  padding: var(--space-3) var(--space-3);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.pres-motif h4, .pres-motif p{
+  color: white;
 }

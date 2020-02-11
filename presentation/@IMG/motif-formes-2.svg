@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1300" height="800" viewBox="0 0 1300 800">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-motif-formes-2);
+      }
+
+      .cls-2 {
+        fill: #00c;
+      }
+    </style>
+    <clipPath id="clip-motif-formes-2">
+      <rect width="1300" height="800"/>
+    </clipPath>
+  </defs>
+  <g id="motif-formes-2" class="cls-1">
+    <path id="Tracé_2249" data-name="Tracé 2249" class="cls-2" d="M369.2.167C206.741-5.308,73.323,124.759,73.323,285.986c0,182.975,175.593,315.765,274.013,506.735a13.512,13.512,0,0,0,23.969.014c89.035-171.834,241.207-287.059,269.408-452.6C669.912,168.828,542.879,6.022,369.2.167Zm-9.9,435.619a149.8,149.8,0,1,1,149.8-149.8A149.8,149.8,0,0,1,359.306,435.786Z" transform="translate(6.503 0)"/>
+  </g>
+</svg>

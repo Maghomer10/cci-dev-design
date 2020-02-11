@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1300" height="800" viewBox="0 0 1300 800">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-fond-degrade);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+    <linearGradient id="linear-gradient" y1="0.934" x2="0.976" y2="0.203" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#373cf5"/>
+      <stop offset="1" stop-color="#9520c6"/>
+    </linearGradient>
+    <clipPath id="clip-fond-degrade">
+      <rect width="1300" height="800"/>
+    </clipPath>
+  </defs>
+  <g id="fond-degrade" class="cls-1">
+    <rect class="cls-3" width="1300" height="800"/>
+    <rect id="Rectangle_368" data-name="Rectangle 368" class="cls-2" width="1312" height="830" transform="translate(-12 -15)"/>
+  </g>
+</svg>
