@@ -1,0 +1,12 @@
+img{object-fit: cover;}
+
+.font-size-0{font-size: 0;}
+
+
+//_background
+
+@each $color, $value in $colors-cci {
+    .border-#{$color} {
+      border-color: var(--#{$color}) !important;
+    }
+  }

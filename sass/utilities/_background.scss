@@ -10,9 +10,7 @@
   }
 }
 
-@each $color, $value in $colors-cci {
-  @include bg-variant(".bg-#{$color}", $value);
-}
+
 .bg-white {
   background-color: $white !important;
 }

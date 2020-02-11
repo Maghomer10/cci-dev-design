@@ -1,0 +1,1183 @@
+﻿<!doctype html>
+<html lang="fr-fr">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap 4 extrait CCI</title>	
+	
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+
+    <script src="./JS/jquery-3.3.1.min.js"></script>
+
+    <style>
+        body{}
+
+        .ruban-lien{
+            left:0;
+            width:220px;
+            position: fixed;
+            top:0;
+            bottom:0;
+            background-color: white;
+            padding: var(--space-0);
+        }
+        .ruban-lien .h5, .ruban-lien .h4{
+            margin: 0;
+            margin-top: var(--space-2);
+            font-size: var(--font-size-1);
+            font-weight: 700;
+        }
+        .ruban-lien .h4{
+            font-size: var(--font-size-3);
+        }
+        .ruban-lien a{
+            display: inline-block;
+            color: var(--gris-f1);
+            padding: var(--space-0) var(--space-2);
+            width: 100%;
+            text-decoration: none !important;
+        }
+        .ruban-lien a:hover{
+            background-color: var(--gris);
+        }
+        .ruban-lien a:not(.h5):not(.h4){
+            padding-left: var(--space-3);
+            font-size: var(--font-size--1);
+        }
+        .contient-charte{
+            margin-left: 220px;
+            width: calc(100% - 220px);
+        }
+        .apercu, .code{
+            padding-top: var(--space-2);
+            padding-bottom: var(--space-2);
+        }
+        .container{
+            max-width: 1100px;
+        }
+        .contient-demo{
+            border-top: 1px solid var(--gris);
+            padding-top: var(--space-3);
+            padding-bottom: var(--space-3);
+            margin-bottom: var(--space-5);
+        }
+        .code textarea {
+            width: 100%;
+            height: 100%;
+            min-height: 200px;
+            padding: var(--space-3);
+            background-color: var(--gris-f2);
+            color: white;
+            font-size: var(--font-size--1);
+            font-family: monospace;
+            -webkit-user-modify: read-only;
+            border: none;
+        }
+
+
+
+
+        .nom-couleur {
+            color: var(--gris-f2);
+            border-bottom: var(--gris-f2) 1px solid;
+            padding-bottom: var(--space-2);
+            margin-bottom: var(--space-2);
+            text-align: center;
+        }
+        .tableau-couleur .col {
+            padding-left: var(--space-1);
+            padding-right: var(--space-1);
+        }
+        .tableau-couleur .col div[class*='bg'] {
+            padding: var(--space-2) var(--space-2) var(--space-4) var(--space-2);
+            margin-bottom: var(--space-2);
+        }
+        .tableau-couleur .col div[class*='bg']:nth-child(3) {
+            min-height: 6rem;
+        }
+
+        .teinte-couleur{
+            color: var(--gris-f2);
+            flex-grow:0;
+        }
+        .teinte-couleur div:nth-child(1){
+            width: 3px;
+            height: calc(1.9rem + 1px);
+            padding-bottom: var(--space-2);
+            margin-bottom: var(--space-2);
+        }
+        .teinte-couleur div:nth-child(2),
+        .teinte-couleur div:nth-child(4),
+        .teinte-couleur div:nth-child(5){
+            padding: var(--space-2) var(--space-2) var(--space-4) var(--space-2);
+            margin-bottom: var(--space-2);
+            border-right: var(--gris-f2) 1px solid;
+            text-align: right;
+        }
+        .teinte-couleur div:nth-child(3){
+            width: 3px;
+            height: calc(6rem); 
+            padding: var(--space-2) var(--space-2) var(--space-4) var(--space-2);
+            margin-bottom: var(--space-2);
+        }
+
+
+        .apercu img{
+            background-image: url('');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+
+
+        </style>
+
+    </head>
+
+  </head>
+	
+	
+	
+<body> 
+    
+
+
+
+
+
+
+        <div  class="ruban-lien">
+            <a href="#charte-cci" class="h4">Charte CCI</a>
+
+            <a href="#couleurs" class="h5">Couleurs</a>
+            <a href="#couleur-interface">Couleurs d'intreface</a>
+            <a href="#couleur-complement">Couleurs complémentaires</a>
+            
+
+            <a href="#typographie" class="h5">Typographie</a>
+            <a href="#typo-tailles">Tailles</a>
+            <a href="#typo-styles">Styles</a>
+
+
+
+            <a href="#bootstrap" class="h4">Ensemble des éléments</a>
+
+            <a href="#cartes" class="h5">Cartes</a>
+            <a href="#carte-cci">Cartes CCI</a>
+            <a href="#cartes-bootstrap">Cartes bootstrap</a>
+            <a href="#cartes-compositions">Cartes compositions</a>
+            
+        </div>
+
+    
+
+
+    <div class="p-0 contient-charte">
+
+
+
+    <header class="bg-bleu-f2 p-5 text-center" id="charte-cci">
+        <img src="LOGO CCI.png" alt="CCI logo" width="400px" class="mb-4">
+        <h1 class="mb-0 pb-0 text-blanc text-600">Charte web CCI</h1>
+        <h3 class="mb-0 pb-0 text-bleu-l1 text-400">Base Bootstrap 4.3.1</h3>
+    </header>
+
+    
+    
+
+    <div class="container py-2" id="charte-cci">
+    
+
+
+        <div class="contient-demo" id="couleurs">
+            <h2>Couleurs</h2>
+
+
+            <h4 id="couleur-interface">Couleurs d'interfaces</h4>
+
+            <div class="d-flex flex-wrap text-blanc font-size--1 tableau-couleur pb-4">
+                <div class="col teinte-couleur">
+                    <div class=""></div>
+                    <div class="">l1</div>
+                    <div class=""></div>
+                    <div class="">f1</div>
+                    <div class="">f2</div>
+                </div>
+                <div class="col">
+                    <div class="nom-couleur">Gris</div>
+                    <div class="bg-gris-l1">#F2F2F2</div>
+                    <div class="bg-gris">#CCCCCC</div>
+                    <div class="bg-gris-f1">#4D4D4D</div>
+                    <div class="bg-gris-f2">#222222</div>
+                </div>
+                <div class="col">
+                    <div class="nom-couleur">Bleu</div>
+                    <div class="bg-bleu-l1">#7181F5</div>
+                    <div class="bg-bleu">#373CF5</div>
+                    <div class="bg-bleu-f1">#0000CC</div>
+                    <div class="bg-bleu-f2">#000099</div>
+                </div>
+            </div>
+
+        
+            <h4 id="couleur-complement">Couleurs complémentaires</h4>
+
+            <div class="d-flex flex-wrap text-blanc font-size--1 tableau-couleur">
+                <div class="col teinte-couleur">
+                    <div class=""></div>
+                    <div class="">l1</div>
+                    <div class=""></div>
+                    <div class="">f1</div>
+                    <div class="">f2</div>
+                </div>
+                <div class="col">
+                    <div class="nom-couleur">Cyan</div>
+                    <div class="bg-cyan-l1">#67C4E8</div>
+                    <div class="bg-cyan">#00ABE0</div>
+                    <div class="bg-cyan-f1">#007EA5</div>
+                    <div class="bg-cyan-f2">#00597C</div>
+                </div>
+                <div class="col">
+                    <div class="nom-couleur">Turquoise</div>
+                    <div class="bg-turquoise-l1">#54DED9</div>
+                    <div class="bg-turquoise">#07C9C3</div>
+                    <div class="bg-turquoise-f1">#13ABA6</div>
+                    <div class="bg-turquoise-f2">#07726F</div>
+                </div>
+                <div class="col">
+                    <div class="nom-couleur">Vert</div>
+                    <div class="bg-vert-l1">#9BCE7A</div>
+                    <div class="bg-vert">#4AA528</div>
+                    <div class="bg-vert-f1">#3C7F20</div>
+                    <div class="bg-vert-f2">#2D591B</div>
+                </div>
+                <div class="col">
+                    <div class="nom-couleur">Chartreuse</div>
+                    <div class="bg-chartreuse-l1">#BED06B</div>
+                    <div class="bg-chartreuse">#A0BF09</div>
+                    <div class="bg-chartreuse-f1">#869F0C</div>
+                    <div class="bg-chartreuse-f2">#5D7400</div>
+                </div>
+                <div class="col">
+                    <div class="nom-couleur">Jaune</div>
+                    <div class="bg-jaune-l1">#FFD788</div>
+                    <div class="bg-jaune">#FFBA31</div>
+                    <div class="bg-jaune-f1">#EAA10F</div>
+                    <div class="bg-jaune-f2">#B77D08</div>
+                </div>
+                <div class="col">
+                    <div class="nom-couleur">Orange</div>
+                    <div class="bg-orange-l1">#FFAF73</div>
+                    <div class="bg-orange">#FF791F</div>
+                    <div class="bg-orange-f1">#BF4D00</div>
+                    <div class="bg-orange-f2">#993A00</div>
+                </div>
+                <div class="col">
+                    <div class="nom-couleur">Rouge</div>
+                    <div class="bg-rouge-l1">#FF8484</div>
+                    <div class="bg-rouge">#E33232</div>
+                    <div class="bg-rouge-f1">#AF1B1B</div>
+                    <div class="bg-rouge-f2">#8F0909</div>
+                </div>
+                <div class="col">
+                    <div class="nom-couleur">Rose</div>
+                    <div class="bg-rose-l1">#EA94C1</div>
+                    <div class="bg-rose">#E52E97</div>
+                    <div class="bg-rose-f1">#C11F84</div>
+                    <div class="bg-rose-f2">#931161</div>
+                </div>
+                <div class="col">
+                    <div class="nom-couleur">Violet</div>
+                    <div class="bg-violet-l1">#AB79D3</div>
+                    <div class="bg-violet">#9520C6</div>
+                    <div class="bg-violet-f1">#6C129B</div>
+                    <div class="bg-violet-f2">#511472</div>
+                </div>
+                <div class="col">
+                    <div class="nom-couleur">Brun</div>
+                    <div class="bg-brun-l1">#C18E6C</div>
+                    <div class="bg-brun">#8E4C20</div>
+                    <div class="bg-brun-f1">#5B2E15</div>
+                    <div class="bg-brun-f2">#411C08</div>
+                </div>
+            </div>
+        </div>
+        
+        <!--
+            --------------------------
+            --------------------------
+            --------------------------
+        -->
+        
+
+        <div class="contient-demo d-flex flex-wrap" id="usages-couleurs">
+            <div class="col-sm-12">
+                <h3>Usage couleurs des éléments</h3>
+            </div>
+
+            <div class="apercu col-sm-12">
+                <h4>Définition de la couleur</h4>
+                <div class="bg-gris-l1 p-3">
+                <p>.<strong>couleur</strong>-<strong>teinte</strong></p>
+                <p>exemple : <em>.orange-f1</em></p>
+                </div>
+            </div>
+            <div class="apercu col-sm-12">
+                <h4>Pour des fonctions et modules</h4>
+                <div class="bg-gris-l1 p-3">
+                <p>.<strong>module</strong>-<strong>couleur</strong>-<strong>teinte</strong></p>
+                <p>exemple : <em>.bg-cyan-l1</em></p>
+                <p>Fonctions utiles : <em>text, bg, btn, btn-outline, </em></p>
+                </div>
+            </div>
+
+        </div>
+        
+
+        <!--
+            --------------------------
+            --------------------------
+            --------------------------
+        -->
+
+
+        <div class="contient-demo" id="typographie">
+            <h2>Typographie</h2>
+            fira détails
+        </div>
+        
+
+        <!--
+            --------------------------
+            --------------------------
+            --------------------------
+        -->
+        
+
+        <div class="contient-demo d-flex flex-wrap" id="typo-tailles">
+            <div class="col-sm-12">
+                <h3>Tailles</h3>
+            </div>
+
+            <div class="apercu col-sm-6">
+                <p><span style="font-size:var(--font-size--1)">font-size--1</span> - 0.9rem</p>
+                <p><span style="font-size:var(--font-size-1)">font-size-1</span> - 1rem</p>
+                <p><span style="font-size:var(--font-size-2)">font-size-2</span> - 1.13rem</p>
+                <p><span style="font-size:var(--font-size-3)">font-size-3</span> - 1.26rem</p>
+                <p><span style="font-size:var(--font-size-4)">font-size-4</span> - 1.4rem</p>
+                <p><span style="font-size:var(--font-size-5)">font-size-5</span> - 1.6rem</p>
+                <p><span style="font-size:var(--font-size-6)">font-size-6</span> - 1.87rem</p>
+                <p><span style="font-size:var(--font-size-7)">font-size-7</span> - 2.4rem</p>
+            </div>
+
+            <div class="code col-sm-6"><textarea readonly="readonly">
+// CSS Variable
+font-size: 
+    var(--font-size--1);
+    var(--font-size-1);
+    var(--font-size-2);
+    ...
+    var(--font-size-7);
+
+// CSS Class
+    .font-size--1
+    .font-size-1
+    .font-size-2
+    ...
+    .font-size-7
+            </textarea></div>
+
+        </div>
+        
+
+        <!--
+            --------------------------
+            --------------------------
+            --------------------------
+        -->
+
+
+        <div class="contient-demo d-flex flex-wrap" id="typo-styles">
+            <div class="col-sm-12">
+            <h3>Styles</h3>
+            </div>
+
+            <div class="apercu col-sm-6">
+                <p><span class="h1">Titre h1</span> - 2.4rem / 800 / uppercase</p>
+                <p><span class="h2">Titre h2</span> - 1.87rem / 700</p>
+                <p><span class="h3">Titre h3</span> - 1.6rem / 700</p>
+                <p><span class="h4">Titre h4</span> - 1.4rem / 700</p>
+                <p><span class="blockquote">Citation</span> - 1.87rem / 300</p>
+            </div>
+
+            <div class="code col-sm-6"><textarea readonly="readonly">
+// CSS Class
+    .h1 .h2 ... .h6
+    .blockquote
+
+            </textarea></div>
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+        
+        <!--
+            --------------------------
+            ------------------------------------------------------------------------------------------------------------------------
+            --------------------------
+        -->
+
+
+
+
+
+
+    
+    <div class="container py-2" id="bootstrap">
+
+
+
+
+        <div class="contient-demo" id="typographie">
+            <h2>Cartes CCI</h2>
+            Adaptation CCI des cards bootstrap.
+        </div>
+        
+
+        <!--
+            --------------------------
+            --------------------------
+            --------------------------
+        -->
+        
+
+        <div class="contient-demo d-flex flex-wrap" id="carte-cci">
+            <div class="col-sm-12">
+            <h3>Carte mise en avant de contenus</h3>
+            <p>Ce type carte se modifie en fonction de sa propre taille. Il se met en version vertical à partir de 400px.</p>
+            </div>
+
+            <div class="apercu col-sm-6">
+                
+                <div class="card-cci">
+                    <img class="card-img-top" src="https://www.cci.fr/image/image_gallery?img_id=10565896" alt="alt-img">
+                    <div class="card-desc">
+                        <span class="badge badge-primary">Primary</span>
+                        <p class="card-info">Publié le 19/03/2020</p>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Card title</h3>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <div class="card-bas">
+                        <div class="card-benefice">
+                        <img src="http://fit.univ-angers.fr/wp-content/uploads/sites/2/2019/04/simon-cadoret-picto-photo-noir.png">
+                        <p>sur-mesure</p>
+                        </div>
+                        <a href="#!" class="btn btn-primary">Découvrir</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="code col-sm-6"><textarea readonly="readonly">
+<div class="card-cci">
+    <img class="card-img-top" src="https://www.cci.fr/image/image_gallery?img_id=10565896" alt="alt-img">
+    <div class="card-desc">
+        <span class="badge badge-primary">Primary</span>
+        <p class="card-info">Publié le 19/03/2020</p>
+    </div>
+    <div class="card-body">
+        <h3 class="card-title">Card title</h3>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+    <div class="card-bas">
+        <div class="card-benefice">
+        <img src="http://fit.univ-angers.fr/wp-content/uploads/sites/2/2019/04/simon-cadoret-picto-photo-noir.png">
+        <p>sur-mesure</p>
+        </div>
+        <a href="#!" class="btn btn-primary">Découvrir</a>
+    </div>
+</div>
+                
+            </textarea></div>
+
+            
+
+
+            <p class="mt-4 mb-2 col-sm-12">Démonstration des variables d'affichage en fonction des contenu</p>
+            
+
+
+            <div class="apercu col-sm-4">
+                
+                <div class="card-cci">
+                    <img class="card-img-top" src="https://www.cci.fr/image/image_gallery?img_id=10565896" alt="alt-img">
+                    <div class="card-desc">
+                        <span class="badge badge-jaune">International</span>
+                        <p class="card-info"></p>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Card title</h3>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <div class="card-bas">
+                        <div class="card-benefice">
+                        <img src="http://fit.univ-angers.fr/wp-content/uploads/sites/2/2019/04/simon-cadoret-picto-photo-noir.png">
+                        <p>sur-mesure</p>
+                        </div>
+                        <a href="#!" class="btn btn-primary">Découvrir</a>
+                    </div>
+                </div>
+
+            </div>
+
+            
+            <div class="apercu col-sm-4">
+    
+                <div class="card-cci">
+                    <img class="card-img-top" src="https://www.cci.fr/image/image_gallery?img_id=10637787" alt="Card image cap">
+                    <div class="card-desc">
+                        <span class="badge badge-vert">Développement durable</span>
+                        <p class="card-info"></p>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Card title</h3>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <div class="card-bas">
+                        <div class="card-benefice">
+                        <img src="http://fit.univ-angers.fr/wp-content/uploads/sites/2/2019/04/simon-cadoret-picto-photo-noir.png">
+                        <p>sur-mesure</p>
+                        </div>
+                        <a href="#!" class="btn btn-primary">Découvrir</a>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div class="apercu col-sm-4">
+    
+                <div class="card-cci">
+                    <img class="card-img-top" src="https://www.cci.fr/image/image_gallery?img_id=10641471" alt="Card image cap">
+                    <div class="card-desc">
+                        <span class="badge badge-primary">Primary</span>
+                        <p class="card-info">publié le 04/10/2019</p>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Card title</h3>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <div class="card-bas">
+                        <div class="card-benefice">
+                        <img src="">
+                        <p></p>
+                        </div>
+                        <a href="#!" class="btn btn-outline-secondary">Découvrir</a>
+                    </div>
+                </div>
+    
+            </div>
+
+
+
+        </div>
+        
+
+        <!--
+            --------------------------
+            --------------------------
+            --------------------------
+        -->
+        
+
+        <div class="contient-demo d-flex flex-wrap" id="carte-cci">
+            <h3 class="col-12">Carte standard</h3>
+
+            <div class="apercu col-sm-6">
+                
+                <div class="card">
+                    <h3 class="card-header py-2 text-white bg-bleu-f1">Header</h3>
+                    <div class="card-body py-1 px-3 bg-gris-l1">
+                      <p>création : 2019/12/10</p>
+                    </div>
+                    <div class="card-body py-2">
+                      <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo...</p><div class="text-right">
+                        <button type="button" class="btn btn-outline-secondary">Secondary</button></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="code col-sm-6"><textarea readonly="readonly">
+<div class="card">
+    <h3 class="card-header py-2 text-white bg-bleu-f1">Header</h3>
+    <div class="card-body py-1 px-3 bg-gris-l1">
+      <p>création : 2019/12/10</p>
+    </div>
+    <div class="card-body py-2">
+      <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo...</p><div class="text-right">
+        <button type="button" class="btn btn-outline-secondary">Secondary</button></div>
+    </div>
+</div>
+                
+            </textarea></div>
+
+        </div>
+
+        
+
+
+
+    
+
+
+
+        <div class="container">
+            <div class="d-flex row flex-row p-2">
+                <div class="p-2 col-md-12">
+        
+                    <div class="card-cci">
+                        <img class="card-img-top" src="https://www.cci.fr/image/image_gallery?img_id=10565896&t=1576765884866" alt="Card image cap">
+                        <div class="card-desc">
+                            <span class="badge badge-primary">Primary</span>
+                            <p class="card-info">publié le 04/10/2019</p>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Card title</h3>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <div class="card-bas">
+                            <div class="card-benefice">
+                            <img src="http://fit.univ-angers.fr/wp-content/uploads/sites/2/2019/04/simon-cadoret-picto-photo-noir.png">
+                            <p>sur-mesure</p>
+                            </div>
+                            <a href="#!" class="btn btn-primary">Découvrir</a>
+                        </div>
+                    </div>
+        
+                </div>
+        
+                <div class="p-2 col-md-12">
+        
+                    <div class="card-cci">
+                        <img class="card-img-top" src="https://www.cci.fr/image/image_gallery?img_id=10637787&t=1576764664169" alt="Card image cap">
+                        <div class="card-desc">
+                            <span class="badge badge-primary">Primary</span>
+                            <p class="card-info">publié le 04/10/2019</p>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Card title</h3>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <div class="card-bas">
+                            <div class="card-benefice">
+                            <img src="http://fit.univ-angers.fr/wp-content/uploads/sites/2/2019/04/simon-cadoret-picto-photo-noir.png">
+                            <p>sur-mesure</p>
+                            </div>
+                            <a href="#!" class="btn btn-primary">Découvrir</a>
+                        </div>
+                    </div>
+        
+                </div>
+        
+                <div class="p-2 col-md-12">
+        
+                    <div class="card-cci">
+                        <img class="card-img-top" src="https://www.cci.fr/image/image_gallery?img_id=10641471&t=1576764664219" alt="Card image cap">
+                        <div class="card-desc">
+                            <span class="badge badge-primary">Primary</span>
+                            <p class="card-info">publié le 04/10/2019</p>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Card title</h3>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <div class="card-bas">
+                            <div class="card-benefice">
+                            <img src="http://fit.univ-angers.fr/wp-content/uploads/sites/2/2019/04/simon-cadoret-picto-photo-noir.png">
+                            <p>sur-mesure</p>
+                            </div>
+                            <a href="#!" class="btn btn-primary">Découvrir</a>
+                        </div>
+                    </div>
+        
+                </div>
+
+
+
+                <li class="item-element">
+                    <a href="#card" id="item-card" class="item-link">
+                    <span>
+                        
+                            card
+                        
+                    </span>
+                    </a>
+                    <span class="copy-links float-right">
+                        
+                        <a href="#" data-original-title="CSS class to clipboard" data-clipboard-text="card" class="class-copy-link">
+                            <i class="fas fa-file"></i>
+                       </a>
+                        
+                        
+                        <a href="#" id="copy-card" class="item-copy-link" data-original-title="Code snippet to clipboard">
+                            <i class="fas fa-code"></i>
+                        </a>
+
+                    </span>
+                </li>
+                
+                <li class="item-element">
+                    <a href="#card-body" id="item-card-body" class="item-link">
+                    <span>
+                        
+                            card-body
+                        
+                    </span>
+                    </a>
+                    <span class="copy-links float-right">
+                        
+                        <a href="#" data-original-title="CSS class to clipboard" data-clipboard-text="card-body" class="class-copy-link">
+                            <i class="fas fa-file"></i>
+                       </a>
+                        
+                        
+                        <a href="#" id="copy-card-body" class="item-copy-link" data-original-title="Code snippet to clipboard">
+                            <i class="fas fa-code"></i>
+                        </a>
+
+                    </span>
+                </li>
+                
+                <li class="item-element">
+                    <a href="#card-title" id="item-card-title" class="item-link">
+                    <span>
+                        
+                            card-title
+                        
+                    </span>
+                    </a>
+                    <span class="copy-links float-right">
+                        
+                        <a href="#" data-original-title="CSS class to clipboard" data-clipboard-text="card-title" class="class-copy-link">
+                            <i class="fas fa-file"></i>
+                       </a>
+                        
+                        
+                        <a href="#" id="copy-card-title" class="item-copy-link" data-original-title="Code snippet to clipboard">
+                            <i class="fas fa-code"></i>
+                        </a>
+
+                    </span>
+                </li>
+                
+                <li class="item-element">
+                    <a href="#card-subtitle" id="item-card-subtitle" class="item-link">
+                    <span>
+                        
+                            card-subtitle
+                        
+                    </span>
+                    </a>
+                    <span class="copy-links float-right">
+                        
+                        <a href="#" data-original-title="CSS class to clipboard" data-clipboard-text="card-subtitle" class="class-copy-link">
+                            <i class="fas fa-file"></i>
+                       </a>
+                        
+                        
+                        <a href="#" id="copy-card-subtitle" class="item-copy-link" data-original-title="Code snippet to clipboard">
+                            <i class="fas fa-code"></i>
+                        </a>
+
+                    </span>
+                </li>
+                
+                <li class="item-element">
+                    <a href="#card-text" id="item-card-text" class="item-link">
+                    <span>
+                        
+                            card-text
+                        
+                    </span>
+                    </a>
+                    <span class="copy-links float-right">
+                        
+                        <a href="#" data-original-title="CSS class to clipboard" data-clipboard-text="card-text" class="class-copy-link">
+                            <i class="fas fa-file"></i>
+                       </a>
+                        
+                        
+                        <a href="#" id="copy-card-text" class="item-copy-link" data-original-title="Code snippet to clipboard">
+                            <i class="fas fa-code"></i>
+                        </a>
+
+                    </span>
+                </li>
+                
+                <li class="item-element">
+                    <a href="#card-link" id="item-card-link" class="item-link">
+                    <span>
+                        
+                            card-link
+                        
+                    </span>
+                    </a>
+                    <span class="copy-links float-right">
+                        
+                        <a href="#" data-original-title="CSS class to clipboard" data-clipboard-text="card-link" class="class-copy-link">
+                            <i class="fas fa-file"></i>
+                       </a>
+                        
+                        
+                        <a href="#" id="copy-card-link" class="item-copy-link" data-original-title="Code snippet to clipboard">
+                            <i class="fas fa-code"></i>
+                        </a>
+
+                    </span>
+                </li>
+                
+                <li class="item-element">
+                    <a href="#card-img-top" id="item-card-img-top" class="item-link">
+                    <span>
+                        
+                            card-img-top
+                        
+                    </span>
+                    </a>
+                    <span class="copy-links float-right">
+                        
+                        <a href="#" data-original-title="CSS class to clipboard" data-clipboard-text="card-img-top" class="class-copy-link">
+                            <i class="fas fa-file"></i>
+                       </a>
+                        
+                        
+                        <a href="#" id="copy-card-img-top" class="item-copy-link" data-original-title="Code snippet to clipboard">
+                            <i class="fas fa-code"></i>
+                        </a>
+
+                    </span>
+                </li>
+                
+                <li class="item-element hide-print">
+                    <a href="#middle__image" id="item-middle__image" class="item-link">
+                    <span>
+                        
+                            middle image
+                        
+                    </span>
+                    </a>
+                    <span class="copy-links float-right">
+                        
+                        
+                        <a href="#" id="copy-middle__image" class="item-copy-link" data-original-title="Code snippet to clipboard">
+                            <i class="fas fa-code"></i>
+                        </a>
+
+                    </span>
+                </li>
+                
+                <li class="item-element">
+                    <a href="#card-img-bottom" id="item-card-img-bottom" class="item-link">
+                    <span>
+                        
+                            card-img-bottom
+                        
+                    </span>
+                    </a>
+                    <span class="copy-links float-right">
+                        
+                        <a href="#" data-original-title="CSS class to clipboard" data-clipboard-text="card-img-bottom" class="class-copy-link">
+                            <i class="fas fa-file"></i>
+                       </a>
+                        
+                        
+                        <a href="#" id="copy-card-img-bottom" class="item-copy-link" data-original-title="Code snippet to clipboard">
+                            <i class="fas fa-code"></i>
+                        </a>
+
+                    </span>
+                </li>
+                
+                <li class="item-element">
+                    <a href="#card-img-overlay" id="item-card-img-overlay" class="item-link">
+                    <span>
+                        
+                            card-img-overlay
+                        
+                    </span>
+                    </a>
+                    <span class="copy-links float-right">
+                        
+                        <a href="#" data-original-title="CSS class to clipboard" data-clipboard-text="card-img-overlay" class="class-copy-link">
+                            <i class="fas fa-file"></i>
+                       </a>
+                        
+                        
+                        <a href="#" id="copy-card-img-overlay" class="item-copy-link" data-original-title="Code snippet to clipboard">
+                            <i class="fas fa-code"></i>
+                        </a>
+
+                    </span>
+                </li>
+                
+                <li class="item-element hide-print">
+                    <a href="#card__list-group" id="item-card__list-group" class="item-link">
+                    <span>
+                        
+                            list-group
+                        
+                    </span>
+                    </a>
+                    <span class="copy-links float-right">
+                        
+                        
+                        <a href="#" id="copy-card__list-group" class="item-copy-link" data-original-title="Code snippet to clipboard">
+                            <i class="fas fa-code"></i>
+                        </a>
+
+                    </span>
+                </li>
+                
+                <li class="item-element">
+                    <a href="#card-header" id="item-card-header" class="item-link">
+                    <span>
+                        
+                            card-header
+                        
+                    </span>
+                    </a>
+                    <span class="copy-links float-right">
+                        
+                        <a href="#" data-original-title="CSS class to clipboard" data-clipboard-text="card-header" class="class-copy-link">
+                            <i class="fas fa-file"></i>
+                       </a>
+                        
+                        
+                        <a href="#" id="copy-card-header" class="item-copy-link" data-original-title="Code snippet to clipboard">
+                            <i class="fas fa-code"></i>
+                        </a>
+
+                    </span>
+                </li>
+                
+                <li class="item-element hide-print">
+                    <a href="#h1__card-header" id="item-h1__card-header" class="item-link">
+                    <span>
+                        
+                            h*.card-header
+                        
+                    </span>
+                    </a>
+                    <span class="copy-links float-right">
+                        
+                        
+                        <a href="#" data-original-title="CSS class to clipboard" data-clipboard-text="card-header" class="class-copy-link">
+                            <i class="fas fa-file"></i>
+                       </a>
+
+                        
+                        <a href="#" id="copy-h1__card-header" class="item-copy-link" data-original-title="Code snippet to clipboard">
+                            <i class="fas fa-code"></i>
+                        </a>
+
+                    </span>
+                </li>
+                
+                <li class="item-element">
+                    <a href="#card-footer" id="item-card-footer" class="item-link">
+                    <span>
+                        
+                            card-footer
+                        
+                    </span>
+                    </a>
+                    <span class="copy-links float-right">
+                        
+                        <a href="#" data-original-title="CSS class to clipboard" data-clipboard-text="card-footer" class="class-copy-link">
+                            <i class="fas fa-file"></i>
+                       </a>
+                        
+                        
+                        <a href="#" id="copy-card-footer" class="item-copy-link" data-original-title="Code snippet to clipboard">
+                            <i class="fas fa-code"></i>
+                        </a>
+
+                    </span>
+                </li>
+                
+                <li class="item-element">
+                    <a href="#card-group" id="item-card-group" class="item-link">
+                    <span>
+                        
+                            card-group
+                        
+                    </span>
+                    </a>
+                    <span class="copy-links float-right">
+                        
+                        <a href="#" data-original-title="CSS class to clipboard" data-clipboard-text="card-group" class="class-copy-link">
+                            <i class="fas fa-file"></i>
+                       </a>
+                        
+                        
+                        <a href="#" id="copy-card-group" class="item-copy-link" data-original-title="Code snippet to clipboard">
+                            <i class="fas fa-code"></i>
+                        </a>
+
+                    </span>
+                </li>
+                
+                <li class="item-element">
+                    <a href="#card-deck" id="item-card-deck" class="item-link">
+                    <span>
+                        
+                            card-deck
+                        
+                    </span>
+                    </a>
+                    <span class="copy-links float-right">
+                        
+                        <a href="#" data-original-title="CSS class to clipboard" data-clipboard-text="card-deck" class="class-copy-link">
+                            <i class="fas fa-file"></i>
+                       </a>
+                        
+                        
+                        <a href="#" id="copy-card-deck" class="item-copy-link" data-original-title="Code snippet to clipboard">
+                            <i class="fas fa-code"></i>
+                        </a>
+
+                    </span>
+                </li>
+                
+                <li class="item-element">
+                    <a href="#card-columns" id="item-card-columns" class="item-link">
+                    <span>
+                        
+                            card-columns
+                        
+                    </span>
+                    </a>
+                    <span class="copy-links float-right">
+                        
+                        <a href="#" data-original-title="CSS class to clipboard" data-clipboard-text="card-columns" class="class-copy-link">
+                            <i class="fas fa-file"></i>
+                       </a>
+                        
+                        
+                        <a href="#" id="copy-card-columns" class="item-copy-link" data-original-title="Code snippet to clipboard">
+                            <i class="fas fa-code"></i>
+                        </a>
+
+                    </span>
+                </li>
+                
+                <li class="item-element hide-print">
+                    <a href="#card__bg-primary" id="item-card__bg-primary" class="item-link">
+                    <span>
+                        
+                            card bg-... text-...
+                        
+                    </span>
+                    </a>
+                    <span class="copy-links float-right">
+                        
+                        
+                        <a href="#" data-original-title="CSS class to clipboard" data-clipboard-text="card text-white bg-primary" class="class-copy-link">
+                            <i class="fas fa-file"></i>
+                       </a>
+
+                        
+                        <a href="#" id="copy-card__bg-primary" class="item-copy-link" data-original-title="Code snippet to clipboard">
+                            <i class="fas fa-code"></i>
+                        </a>
+
+                    </span>
+                </li>
+                
+            </ul>
+        </div>
+
+
+        ////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+            </div>
+            </div>
+        
+           
+
+
+
+
+
+
+
+
+
+
+            </div>
+            
+	
+    <script src="./JS/charteCCI.js"></script>
+
+    <script src="./JS/popper.min.js"></script>
+    <script src="./JS/bootstrap.min.js"></script>
+
+    <script src="./JS/min-ie11CustomProperties.js"></script>	
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/ie11-custom-properties/ie11CustomProperties.min.js" type="text/javascript"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    
+
+
+</body>
+</html>

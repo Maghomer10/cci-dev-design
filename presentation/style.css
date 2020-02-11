@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:100,200,300,400,500,600,700,800,900&display=swap');
+
 body > nav{
   background-color: var(--bleu-f2);
   color: white;
@@ -23,20 +25,6 @@ body > nav header {
   margin: 0.5rem;
 }
 
-@media screen and (max-width: 768px){
-  body > nav header {
-    display: block;
-    width: 100%;
-    margin: 0rem;
-    border-right: none;
-    padding: 0.5rem;
-    background-color: var(--bleu);
-  }
-  .contient-charte{
-    margin-top: 6rem !important;
-  }
-}
-
 body > nav header p{
   display: inline-block;
   margin-bottom: 0;
@@ -45,9 +33,10 @@ body > nav header p{
   font-size: 1.2rem;
   font-weight: 700;
   vertical-align: middle;
+  color: white;
 }
 
-body > nav a{
+body > nav > a{
   color: var(--gris);
   padding: 0.5rem 0.5rem;
   line-height: 2rem;
@@ -59,10 +48,10 @@ body > nav a{
   vertical-align: middle;
   text-decoration: none!important;
 }
-body > nav a:hover, body > nav a.active{
+body > nav > a:hover, body > nav > a.active{
   color: var(--blanc);
 }
-body > nav a:after{
+body > nav > a:after{
   content: '';
   background-color: var(--gris);
   display: block;
@@ -73,7 +62,7 @@ body > nav a:after{
   right: 50%;
   transition: var(--transition);
 }
-body > nav a:hover:after, body > nav a.active:after{
+body > nav > a:hover:after, body > nav a.active:after{
   background-color: white;
   left:20%;
   right: 20%;
@@ -87,6 +76,31 @@ header.titre-principal{
   margin-bottom: var(--space-4);
 }
 
+
+@media screen and (max-width: 768px){
+  body > nav header {
+    display: block;
+    width: 100%;
+    margin: 0rem;
+    border-right: none;
+    padding: 0.5rem;
+    background-color: var(--bleu);
+  }
+  .contient-charte{
+    margin-top: 6rem !important;
+  }
+  body > nav > a{
+    font-size: 1rem;
+  }
+}
+
+
+
+
+/* -------------RUBAN */
+
+
+
 .ruban-lien{
   left:0;
   width:220px;
@@ -96,29 +110,45 @@ header.titre-principal{
   background-color: white;
   padding: var(--space-0);
   box-shadow: var(--ombre);
+  overflow-y: auto;
 }
 .ruban-lien .h5, .ruban-lien .h4{
-  margin: 0;
-  margin-top: var(--space-2);
   font-size: var(--font-size-1);
   font-weight: 700;
+  margin: 0;
 }
 .ruban-lien .h4{
   font-size: var(--font-size-3);
+  margin-top: var(--space-3);
+  color: var(--bleu-f1);
 }
 .ruban-lien a{
-  display: inline-block;
+  display: block;
+  position: relative;
   color: var(--gris-f1);
+  line-height: 1.5rem;
   padding: var(--space-0) var(--space-2);
   width: 100%;
   text-decoration: none !important;
+}
+.ruban-lien a.h5{
+  padding-left: var(--space-3);
 }
 .ruban-lien a:hover{
   background-color: var(--gris);
 }
 .ruban-lien a:not(.h5):not(.h4){
-  padding-left: var(--space-3);
+  padding-left: var(--space-4);
   font-size: var(--font-size--1);
+}
+.ruban-lien a:not(.h5):not(.h4):before{
+  content: "";
+  position: absolute;
+  background-color: var(--gris-f1);
+  width: 1px;
+  height:100%;
+  top:0;
+  left:var(--space-3);
 }
 .contient-charte{
   margin-top: 3rem;
@@ -127,7 +157,7 @@ header.titre-principal{
 }
 
 
-@media screen and (max-width:700px){
+@media screen and (max-width:768px){
   .ruban-lien{ display: none;}
   .contient-charte{
     margin-left: 0px;
@@ -136,20 +166,23 @@ header.titre-principal{
 }
 
 
+
+/* ------------ SESSION */
+
 section.titre{
-  padding: var(--space-4) 0 var(--space-4) 0;
+  padding: var(--space-4) 0;
   border-top: 1px solid var(--bordure-color);
   margin-top: var(--space-5);
 }
 section.titre:first-child{
-  padding: var(--space-4) 0 var(--space-4) 0;
+  padding: var(--space-4) 0;
   border-top: 0px solid var(--bordure-color);
   margin-top: var(--space-0);
 }
 section:not(.titre){
   background-color: white;
   transition: var(--transition);
-  padding: var(--space-4) var(--space-4);
+  padding: var(--space-4);
   margin-bottom: var(--space-4);
 }
 section:not(.titre):hover{
@@ -168,6 +201,21 @@ section > h3:after{
   background-color: var(--gris-f1);
   position: relative;
   top: var(--space-2);
+}
+
+
+@media screen and (max-width: 768px){
+  section.titre{
+    padding: var(--space-3) 0;
+    margin-top: var(--space-5);
+  }
+  section.titre:first-child{
+    padding: var(--space-3) 0;
+  }
+  section:not(.titre){
+    padding: var(--space-3);
+    margin-bottom: var(--space-3);
+  }
 }
 
 
@@ -205,6 +253,12 @@ section > h3:after{
 
 
 
+/* ---------- Tableau Couleur */
+
+.tableau-couleur{
+  font-size: 0;
+  position: relative;
+}
 
 .nom-couleur {
   color: var(--gris-f2);
@@ -212,8 +266,12 @@ section > h3:after{
   padding-bottom: var(--space-2);
   margin-bottom: var(--space-2);
   text-align: center;
+  font-weight: 300;
 }
 .tableau-couleur .col {
+  display: inline-block;
+  width: 9%;
+  font-size: var(--font-size--1);
   padding-left: var(--space-1);
   padding-right: var(--space-1);
 }
@@ -227,7 +285,11 @@ section > h3:after{
 
 .teinte-couleur{
   color: var(--gris-f2);
-  flex-grow:0;
+  max-width: 1.5rem;
+  padding-left: 0 !important;
+  position: absolute;
+  left: -1.5rem;
+  top: -0.1rem;
 }
 .teinte-couleur div:nth-child(1){
   width: 3px;
@@ -238,7 +300,7 @@ section > h3:after{
 .teinte-couleur div:nth-child(2),
 .teinte-couleur div:nth-child(4),
 .teinte-couleur div:nth-child(5){
-  padding: var(--space-2) var(--space-2) var(--space-4) var(--space-2);
+  padding: var(--space-2) var(--space-2) var(--space-4) 0;
   margin-bottom: var(--space-2);
   border-right: var(--gris-f2) 1px solid;
   text-align: right;
@@ -246,6 +308,26 @@ section > h3:after{
 .teinte-couleur div:nth-child(3){
   width: 3px;
   height: calc(6rem); 
-  padding: var(--space-2) var(--space-2) var(--space-4) var(--space-2);
+  padding: var(--space-2) var(--space-2) var(--space-4) 0;
   margin-bottom: var(--space-2);
+}
+
+
+@media screen and (max-width: 1010px){
+  .tableau-couleur .col {
+    width: 18%;
+    flex-basis:auto;
+  }
+}
+@media screen and (max-width: 680px){
+  .tableau-couleur .col {
+    width: 25%;
+    max-width: 25%;
+  }
+}
+@media screen and (max-width: 500px){
+  .tableau-couleur .col {
+    width: 50%;
+    max-width: 50%;
+  }
 }

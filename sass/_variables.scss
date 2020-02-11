@@ -77,7 +77,7 @@ $pink-f1:    #C11F84;
 $red-f1:     #AF1B1B;
 $orange-f1:  #BF4D00;
 $yellow-f1:  #EAA10F;
-$chartreuse-f1: #869F0C;
+$chartreuse-f1: #799200;
 $green-f1:   #3C7F20;
 $teal-f1:    #13ABA6;
 $cyan-f1:    #007EA5;
@@ -92,7 +92,7 @@ $pink-f2:    #931161;
 $red-f2:     #8F0909;
 $orange-f2:  #993A00;
 $yellow-f2:  #B77D08;
-$chartreuse-f2: #5D7400;
+$chartreuse-f2: #526700;
 $green-f2:   #2D591B;
 $teal-f2:    #07726F;
 $cyan-f2:    #00597C;
@@ -366,8 +366,8 @@ $grid-gutter-width:           30px !default;
 //
 // Define common padding and border radius sizes and more.
 
-$line-height-lg:              1.5 !default;
-$line-height-sm:              1.5 !default;
+$line-height-lg:              1.4;
+$line-height-sm:              1.4;
 
 $border-width:                var(--bordure);
 $border-width-bold:           var(--bordure-2);
@@ -452,7 +452,7 @@ $font-weight-bold:            700 !default;
 $font-weight-bolder:          800 !default;
 
 $font-weight-base:            $font-weight-normal !default;
-$line-height-base:            1.5 !default;
+$line-height-base:            1.4;
 
 $h1-font-size:                $typo-taille-7;
 $h2-font-size:                $typo-taille-6;
