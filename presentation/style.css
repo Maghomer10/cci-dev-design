@@ -285,7 +285,7 @@ section > h3:after{
 
 .teinte-couleur{
   color: var(--gris-f2);
-  max-width: 1.5rem;
+  max-width: 1.5rem !important;
   padding-left: 0 !important;
   position: absolute;
   left: -1.5rem;
@@ -320,13 +320,13 @@ section > h3:after{
   }
 }
 @media screen and (max-width: 680px){
-  .tableau-couleur .col {
+  .tableau-couleur:not(.souple) .col {
     width: 25%;
     max-width: 25%;
   }
 }
 @media screen and (max-width: 500px){
-  .tableau-couleur .col {
+  .tableau-couleur:not(.souple) .col {
     width: 50%;
     max-width: 50%;
   }
