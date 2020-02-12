@@ -287,7 +287,7 @@ section > h3:after{
 
 .teinte-couleur{
   color: var(--gris-f2);
-  max-width: 1.5rem !important;
+  width: 1.65rem !important;
   padding-left: 0 !important;
   position: absolute;
   left: -1.5rem;

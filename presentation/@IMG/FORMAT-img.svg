@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="675" viewBox="0 0 1200 675">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-FORMAT-img);
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-6 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #000;
+      }
+
+      .cls-3 {
+        stroke: #7e7e7e;
+        stroke-dasharray: 15 15;
+      }
+
+      .cls-4 {
+        stroke: #373cf5;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-5 {
+        stroke: none;
+      }
+    </style>
+    <clipPath id="clip-FORMAT-img">
+      <rect width="1200" height="675"/>
+    </clipPath>
+  </defs>
+  <g id="FORMAT-img" class="cls-1">
+    <g id="Groupe_784" data-name="Groupe 784">
+      <g id="Rectangle_559" data-name="Rectangle 559" class="cls-2">
+        <rect class="cls-5" width="1200" height="675"/>
+        <rect class="cls-6" x="0.5" y="0.5" width="1199" height="674"/>
+      </g>
+      <g id="Groupe_12" data-name="Groupe 12">
+        <line id="Ligne_903" data-name="Ligne 903" class="cls-2" y2="675" transform="translate(49.5)"/>
+        <line id="Ligne_904" data-name="Ligne 904" class="cls-2" y2="675" transform="translate(99.5)"/>
+        <line id="Ligne_905" data-name="Ligne 905" class="cls-2" y2="675" transform="translate(717.5)"/>
+        <line id="Ligne_1134" data-name="Ligne 1134" class="cls-2" y2="675" transform="translate(482.5)"/>
+      </g>
+      <g id="Groupe_11" data-name="Groupe 11">
+        <g id="Rectangle_387" data-name="Rectangle 387" class="cls-3" transform="translate(25 25.5)">
+          <rect class="cls-5" width="1150" height="624"/>
+          <rect class="cls-6" x="0.5" y="0.5" width="1149" height="623"/>
+        </g>
+        <line id="Ligne_1131" data-name="Ligne 1131" class="cls-3" y2="624" transform="translate(74.5 25.5)"/>
+        <line id="Ligne_1132" data-name="Ligne 1132" class="cls-3" y2="624" transform="translate(124.5 25.5)"/>
+        <line id="Ligne_1133" data-name="Ligne 1133" class="cls-3" y2="624" transform="translate(692.5 25.5)"/>
+        <line id="Ligne_1135" data-name="Ligne 1135" class="cls-3" y2="624" transform="translate(507.5 25.5)"/>
+      </g>
+      <g id="Groupe_783" data-name="Groupe 783">
+        <path id="Tracé_2084" data-name="Tracé 2084" class="cls-4" d="M406.274,0h258.27a37.5,37.5,0,0,1,37.5,37.5h0a37.5,37.5,0,0,1-37.5,37.5H406.274" transform="translate(472.126 573.833)"/>
+        <path id="Tracé_2085" data-name="Tracé 2085" class="cls-4" d="M406.274,0h258.27a37.5,37.5,0,0,1,37.5,37.5h0a37.5,37.5,0,0,1-37.5,37.5H406.274" transform="translate(727.443 648.833) rotate(180)"/>
+      </g>
+    </g>
+  </g>
+</svg>

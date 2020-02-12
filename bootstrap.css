@@ -11731,6 +11731,14 @@ img {
   font-size: 0;
 }
 
+* {
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
 .border-bleu-l1 {
   border-color: var(--bleu-l1) !important;
 }

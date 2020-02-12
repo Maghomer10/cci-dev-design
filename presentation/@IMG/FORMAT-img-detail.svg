@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1263" height="1180" viewBox="0 0 1263 1180">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-FORMAT-img-detail);
+      }
+
+      .cls-2 {
+        fill: #f2f2f2;
+      }
+
+      .cls-2, .cls-4 {
+        stroke: #000;
+      }
+
+      .cls-2, .cls-4, .cls-5 {
+        stroke-width: 2px;
+      }
+
+      .cls-3, .cls-7, .cls-8 {
+        fill: #4d4d4d;
+      }
+
+      .cls-3 {
+        font-size: 108px;
+        font-family: FiraSans-ExtraBold, Fira Sans;
+        font-weight: 800;
+        letter-spacing: -0.01em;
+      }
+
+      .cls-11, .cls-4, .cls-5, .cls-6 {
+        fill: none;
+      }
+
+      .cls-5 {
+        stroke: #7e7e7e;
+        stroke-dasharray: 15 15;
+      }
+
+      .cls-6 {
+        stroke: #373cf5;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-7, .cls-8 {
+        font-size: 38px;
+        font-family: FiraSans-Bold, Fira Sans;
+        font-weight: 700;
+        letter-spacing: 0.007em;
+      }
+
+      .cls-9 {
+        font-size: 34px;
+        font-family: FiraSans-Regular, Fira Sans;
+        font-weight: 400;
+        letter-spacing: 0.005em;
+      }
+
+      .cls-10 {
+        stroke: none;
+      }
+
+      .cls-12 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-FORMAT-img-detail">
+      <rect width="1263" height="1180"/>
+    </clipPath>
+  </defs>
+  <g id="FORMAT-img-detail" class="cls-1">
+    <rect class="cls-12" width="1263" height="1180"/>
+    <g id="Groupe_782" data-name="Groupe 782" transform="translate(32 32)">
+      <g id="Rectangle_558" data-name="Rectangle 558" class="cls-2">
+        <rect class="cls-10" width="1200" height="675"/>
+        <rect class="cls-11" x="1" y="1" width="1198" height="673"/>
+      </g>
+      <text id="_1200_x_675" data-name="1200 x 675" class="cls-3" transform="translate(600 351)"><tspan x="-249.912" y="0">1200 x 675</tspan></text>
+      <g id="Groupe_12" data-name="Groupe 12">
+        <line id="Ligne_903" data-name="Ligne 903" class="cls-4" y2="675" transform="translate(49.5)"/>
+        <line id="Ligne_904" data-name="Ligne 904" class="cls-4" y2="675" transform="translate(99.5)"/>
+        <line id="Ligne_905" data-name="Ligne 905" class="cls-4" y2="675" transform="translate(717.5)"/>
+        <line id="Ligne_1134" data-name="Ligne 1134" class="cls-4" y2="675" transform="translate(482.5)"/>
+      </g>
+      <g id="Groupe_11" data-name="Groupe 11">
+        <g id="Rectangle_387" data-name="Rectangle 387" class="cls-5" transform="translate(25 25.5)">
+          <rect class="cls-10" width="1150" height="624"/>
+          <rect class="cls-11" x="1" y="1" width="1148" height="622"/>
+        </g>
+        <line id="Ligne_1131" data-name="Ligne 1131" class="cls-5" y2="624" transform="translate(74.5 25.5)"/>
+        <line id="Ligne_1132" data-name="Ligne 1132" class="cls-5" y2="624" transform="translate(124.5 25.5)"/>
+        <line id="Ligne_1133" data-name="Ligne 1133" class="cls-5" y2="624" transform="translate(692.5 25.5)"/>
+        <line id="Ligne_1135" data-name="Ligne 1135" class="cls-5" y2="624" transform="translate(507.5 25.5)"/>
+      </g>
+      <path id="Tracé_2084" data-name="Tracé 2084" class="cls-6" d="M406.274,0h258.27a37.5,37.5,0,0,1,37.5,37.5h0a37.5,37.5,0,0,1-37.5,37.5H406.274" transform="translate(472.126 573.833)"/>
+      <path id="Tracé_2085" data-name="Tracé 2085" class="cls-6" d="M406.274,0h258.27a37.5,37.5,0,0,1,37.5,37.5h0a37.5,37.5,0,0,1-37.5,37.5H406.274" transform="translate(727.443 648.833) rotate(180)"/>
+    </g>
+    <line id="Ligne_903-2" data-name="Ligne 903" class="cls-4" y2="295.721" transform="translate(348.621 829.5) rotate(90)"/>
+    <line id="Ligne_1131-2" data-name="Ligne 1131" class="cls-5" y2="295.721" transform="translate(348.121 928.5) rotate(90)"/>
+    <path id="Tracé_2085-2" data-name="Tracé 2085" class="cls-6" d="M406.274,0h258.27a37.5,37.5,0,0,1,37.5,37.5h0a37.5,37.5,0,0,1-37.5,37.5H406.274" transform="translate(754.443 1093.5) rotate(180)"/>
+    <text id="Découpe_des_différentes_zones_possibles" data-name="Découpe des différentes zones possibles" class="cls-7" transform="translate(385 843)"><tspan x="0" y="0">Découpe des différentes zones possibles</tspan></text>
+    <text id="Marges_minimum_à_appliquer" data-name="Marges minimum à appliquer" class="cls-7" transform="translate(385 942)"><tspan x="0" y="0">Marges minimum à appliquer</tspan></text>
+    <text id="Positionnement_et_taille_du_logo_ou_sigle_de_préférence_à_droite_mais_reste_autorisé_à_gauche" data-name="Positionnement et taille du logo ou sigle
+de préférence à droite, mais reste autorisé à gauche" class="cls-8" transform="translate(385 1041)"><tspan x="0" y="0">Positionnement et taille du logo ou sigle</tspan><tspan class="cls-9"><tspan x="0" y="48">de préférence à droite, mais reste autorisé à gauche</tspan></tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1300" height="700" viewBox="0 0 1300 700">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-chiffre-3);
+      }
+
+      .cls-2, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        font-size: 102px;
+        font-family: FiraSans-ExtraLight, Fira Sans;
+        font-weight: 200;
+        letter-spacing: -0.003em;
+      }
+
+      .cls-3 {
+        fill: #a518e2;
+      }
+
+      .cls-4 {
+        font-size: 340px;
+        font-family: FiraSans-ExtraBold, Fira Sans;
+        font-weight: 800;
+      }
+
+      .cls-5 {
+        letter-spacing: -0.004em;
+      }
+    </style>
+    <clipPath id="clip-chiffre-3">
+      <rect width="1300" height="700"/>
+    </clipPath>
+  </defs>
+  <g id="chiffre-3" class="cls-1">
+    <text id="de_chiffre_d_affaire" data-name="de chiffre d&apos;affaire" class="cls-2" transform="translate(650 636)"><tspan x="-409.326" y="0">de chiffre d&apos;affaire</tspan></text>
+    <path id="Tracé_2254" data-name="Tracé 2254" class="cls-3" d="M298.938,682.212c120.326,0,217.867-97.546,217.867-217.873S419.264,246.472,298.938,246.472,81.071,344.019,81.071,464.339s97.541,217.873,217.867,217.873" transform="translate(326.369 -160.658)"/>
+    <text id="_42k_" data-name="42k€" class="cls-4" transform="translate(282.477 441.939)"><tspan class="cls-5" x="0" y="0">42</tspan><tspan y="0">k€</tspan></text>
+  </g>
+</svg>

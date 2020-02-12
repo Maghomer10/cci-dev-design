@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1300" height="567" viewBox="0 0 1300 567">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-fleches-1);
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        fill: none;
+        stroke: #373cf5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 85px;
+      }
+
+      .cls-3 {
+        opacity: 0.55;
+      }
+
+      .cls-4 {
+        opacity: 0.17;
+      }
+    </style>
+    <clipPath id="clip-fleches-1">
+      <rect width="1300" height="567"/>
+    </clipPath>
+  </defs>
+  <g id="fleches-1" class="cls-1">
+    <g id="Groupe_741" data-name="Groupe 741" transform="translate(52.68 -1959.53)">
+      <path id="Tracé_2124" data-name="Tracé 2124" class="cls-2" d="M0,0H293.6V293.6" transform="translate(840.035 2035.189) rotate(45)"/>
+      <path id="Tracé_2125" data-name="Tracé 2125" class="cls-3" d="M0,0H293.6V293.6" transform="translate(515.243 2035.189) rotate(45)"/>
+      <path id="Tracé_2126" data-name="Tracé 2126" class="cls-4" d="M0,0H293.6V293.6" transform="translate(178.639 2035.189) rotate(45)"/>
+    </g>
+  </g>
+</svg>
