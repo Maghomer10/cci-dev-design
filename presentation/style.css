@@ -75,6 +75,9 @@ header.titre-principal{
   padding: 2rem 1rem;
   margin-bottom: var(--space-4);
 }
+header.titre-principal img{
+  max-width: 40vw;
+}
 
 
 @media screen and (max-width: 768px){
@@ -91,6 +94,15 @@ header.titre-principal{
   }
   body > nav > a{
     font-size: 1rem;
+  }
+  header.titre-principal img{
+    max-width: 60vw;
+  }
+  
+}
+@media screen and (max-width: 500px){
+  header.titre-principal img{
+    max-width: 80vw;
   }
 }
 
@@ -188,6 +200,14 @@ section:not(.titre){
 }
 section:not(.titre):hover{
   box-shadow: var(--ombre-hover);
+}
+
+section.bleu:not(.titre){
+  background-color: var(--bleu-f1);
+  color: white;
+}
+section.bleu:not(.titre) > h3:after{
+  background-color: var(--blanc);
 }
 
 section > h3{

@@ -3065,6 +3065,34 @@ fieldset:disabled a.btn {
   box-shadow: var(--ombre-hover);
 }
 
+.btn-blanc {
+  color: var(--gris-f2);
+  background-color: var(--blanc);
+  border-color: var(--blanc);
+}
+.btn-blanc:hover {
+  color: var(--gris-f2);
+  background-color: var(--gris-l1);
+  border-color: var(--gris-l1);
+}
+.btn-blanc:focus, .btn-blanc.focus {
+  color: var(--gris-f2);
+  box-shadow: var(--ombre-hover);
+}
+.btn-blanc.disabled, .btn-blanc:disabled {
+  color: var(--gris-f2);
+  background-color: var(--blanc);
+  border-color: var(--blanc);
+}
+.btn-blanc:not(:disabled):not(.disabled):active, .btn-blanc:not(:disabled):not(.disabled).active, .show > .btn-blanc.dropdown-toggle {
+  color: var(--gris-f2);
+  background-color: var(--gris-l1);
+  border-color: var(--gris-l1);
+}
+.btn-blanc:not(:disabled):not(.disabled):active:focus, .btn-blanc:not(:disabled):not(.disabled).active:focus, .show > .btn-blanc.dropdown-toggle:focus {
+  box-shadow: var(--ombre-hover);
+}
+
 .btn-cyan {
   color: var(--blanc);
   background-color: var(--cyan);
