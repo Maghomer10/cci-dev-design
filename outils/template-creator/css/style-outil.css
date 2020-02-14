@@ -1,24 +1,22 @@
-:root{
-	--arrondi:8px;
-}
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:100,200,300,400,500,600,700,800,900');
 
 
 
 html {
     background-color: #222222;
-	font-size:12px;
-	
 }
-div, p {
+#export div,#export p {
     margin: 0;
     padding: 0;
 }
-#test-subject {
+#export{
     position: fixed;
     display: inline-block;
     line-height: 0;
     margin: 0;
     padding: 0;
+    padding-top: 2vh;
     top: 0;
     left: 0;
     right: 0;
@@ -34,6 +32,7 @@ html body #screen {
     text-align: left;
     line-height: 0;
     display: inline-block;
+    font-size:12px;
 }
 
 
@@ -72,75 +71,23 @@ html body #screen {
 	max-width: 800px;
 }
 
-nav.menu {
-	display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: stretch;
-    align-items: stretch;
-}
 
-nav.menu a {
-	flex: 1 1 auto;
-    align-self: stretch;
-    padding-left: 0%;
-    padding-right: 0%;
-    border-bottom: #222222 1px solid;
+#outils .input-minus-plus input {
+    width: calc( 3rem + ( var(--space-2) * 2 ));
+    flex:0 1 auto;
     text-align: center;
-    display: inline-block;
-    font-weight: 700;
-    color: #4D4D4D;
-    text-decoration: none;
-    line-height: 1.2em;
-    font-size: 1.45rem;
-	position: relative;
-    padding: 0.77rem 0.25rem;
-    transition: 0.25s cubic-bezier(0,.65,.54,.99) all;
-}
-
-@media (max-width:600px){
-	nav.menu a { width:50%; }
-	#outils {font-size:16px;}
-	nav.menu a { font-size: 1.2em;}
-}
-
-nav.menu a:after {
-    content: '';
-    display: block;
-    background: #373CF5;
-    width:70%;
-    height: 0px;
-    position: absolute;
-    bottom: -1px;
-    left:15%;
-    transition: 0.25s cubic-bezier(0,.65,.54,.99) all;
 }
 
 
-nav.menu a.active { 
-    color: #373CF5;
-}
-nav.menu a.active:after {
-    height: 5px;
-}
-nav.menu:hover a.active:not(:hover):after {
-    height: 0px;
-}
 
-nav.menu a:hover { 
-    color: #0000CC;
-}
-nav.menu a:hover:after {
-    height: 5px;
-    left:0;
-    width:100%;
-    background: #0000CC;
-}
+
+
+
+
 #telechargement{
     background: #373CF5;
     color: white;
-    transition: 0.25s cubic-bezier(0,.65,.54,.99) all;
+    transition: var(--transition);
     padding-left: 0%;
     padding-right: 0%;
     border-top: #222222 1px solid;
@@ -149,7 +96,7 @@ nav.menu a:hover:after {
     font-weight: 700;
     text-decoration: none;
     line-height: 1.2em;
-    font-size: 1.45rem;
+    font-size: var(--font-size-2);
 	position: relative;
     padding: 0.75rem 0.25rem;
 	width: 100%;
@@ -166,97 +113,10 @@ nav.menu a:hover:after {
 
 
 
-#outils H1 {
-    display: block;
-    maring: 0;
-    padding: 0;
-    text-align: left;
-    font-size: 18px;
-    color: white;
-}
-#outils p {
-    box-sizing: border-box;
-    vertical-align: middle;
 
-    display: block;
-    margin: 0;
-    margin-left: 0.15rem;
-    padding: 0em;
-    text-align: left;
-    font-size: 1rem;
-    line-height: 1.2em !important;
-    color: #4D4D4D;
-    font-weight: 400;
-}
-#outils textarea {
-    box-sizing: border-box;
-    vertical-align: middle;
-    display: inline-block;
-    font-family: 'Fira Sans';
-    margin: 0;
-    margin-left: 0rem;
-    margin-right: 0rem;
-    padding: 0.5rem 0.75rem;
-    text-align: left;
-    background-color: white;
-    font-size: 1rem;
-    border-radius: var(--arrondi);
-    font-weight: 500;
-    border: none;
-    line-height: 1.3em;
-    width: 100%;
-    height: 60px; 
-}
-#outils input {
-    box-sizing: border-box;
-    vertical-align: middle;
-    display: inline-block;
-    font-family: 'Fira Sans';
-    margin: 0;
-    margin-left: 0rem;
-    margin-right: 0rem;
-    padding: 0.5rem 0.75rem;
-    text-align: left;
-    background-color: white;
-    font-size: 1rem;
-    border-radius: 0;
-    font-weight: 500;
-    border: none;
-    line-height: 1.2em;
-    height: calc( 24px+ 0.5em);
-    width: 100%;
-	border-radius: var(--arrondi);
-}
-#outils input[type="number"] {
-    font-size: 1rem;
-    line-height: 1.2em;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-}
-/* Spin Buttons modified */
-input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    background: #4D4D4D url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAKUlEQVQYlWNgwAT/sYhhKPiPT+F/LJgEsHv37v+EMGkmkuImoh2NoQAANlcun/q4OoYAAAAASUVORK5CYII=) no-repeat center center;
-    border-radius: 0 ;
-    background-size: 1.1em;
-    width: 1.5em;
-    opacity: .5; /* shows Spin Buttons per default (Chrome >= 39) */
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-	border-radius: 0 var(--arrondi) var(--arrondi) 0;
-}
-input[type="number"]::-webkit-inner-spin-button:hover, input[type="number"]::-webkit-inner-spin-button:active {
-    box-shadow: 0 0 0px #0CF;
-    opacity: .8;
-}
-/* Override browser form filling */
-input:-webkit-autofill {
-    background: black;
-    color: red;
-}
+
+
+
 #outils button {
     display: inline-block;
     margin: 0;

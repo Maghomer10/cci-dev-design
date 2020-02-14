@@ -1,26 +1,36 @@
-<!DOCTYPE html>
-
-
-
-<html lang="fr">
-<head>
+<!doctype html>
+<html lang="fr-fr">
+    <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
     <title>Template Creator</title>
 
+
+    <link rel="stylesheet" href="../../bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+
+    <script src="../../JS/jquery-3.3.1.min.js"></script>
+
     
+
+
     <script src="js/jquery-1.11.3-min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="js/EXT-filesaver.js" type="text/javascript"></script>
     <script src="js/EXT-canvas-toBlob.js" type="text/javascript"></script>
     <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js" type="text/javascript"></script>  
     
-	
-    <link href="css/style-base.css" rel="stylesheet" type="text/css">
+
     <link href="css/style-outil.css" rel="stylesheet" type="text/css">
     <link href="css/style-variables-neutre.css" rel="stylesheet" type="text/css">
-	
 
-    <!--html2canvas($('#map')[0], {
+
+
+
+  
+    
+
+    <!--html2canvas($('#screen'), {
       useCORS: true,
       allowTaint: true
     })
@@ -32,7 +42,20 @@
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
-    });-->
+    });
+  
+  
+      
+    html2canvas(document.getElementById('screen'), 
+               ).then(function(canvas) {
+      document.body.appendChild(canvas);
+                      canvas.toBlob(function(blob) {
+                        saveAs(blob, "template.png"); 
+                      });
+        });
+  
+  
+  -->
     
     
     <script type="text/javascript">
@@ -40,8 +63,11 @@
     
     $('#screen').style( 'transform', 'scale(2)' );
     
-    html2canvas(document.getElementById('screen'), 
-               ).then(function(canvas) {
+    html2canvas($('#screen'), {
+      useCORS: true,
+      allowTaint: true
+    })
+    .then(function(canvas) {
       document.body.appendChild(canvas);
                       canvas.toBlob(function(blob) {
                         saveAs(blob, "template.png"); 
@@ -54,10 +80,6 @@
     </script>
     
     
-    <style>
-        div[id*='zone-']{display: none;}
-        div#zone-1{display: block;}
-    </style>
     
 
 </head>
@@ -78,13 +100,16 @@
 
     
 
+
+
+
   <div class='affiche'></div>
  
     
     
     
-    <div id="test-subject">
-      <section id="screen" style="margin-top: 4em!important">
+    <div id="export">
+      <section id="screen">
         <img id="fond" src="template/grille.png">
           <div id="aremplacer">
             <div id="bandethematique">
@@ -102,7 +127,6 @@
                   
                 <div class="contient-texte-nom">
                   <p><span class="texte-nom">truc de machin</span> <span class="texte-societe">société de machin</span></p>
-                  <p class="texte-societe-l2">Société bidule</p>
                 </div>
               </div>
             </div>   
@@ -132,121 +156,175 @@
     
 <div id="outils" style="max-height: 60vh;">    
 
-<nav class="menu">
-    <a href="#" class="active" onClick="changezone(1)" id="lienz-1">Texte</a>
-    <a href="#" onClick="changezone(2)" id="lienz-2">Image</a>
+<nav class="nav nav-fill font-size-2 bg-blanc text-500" role="tablist"  id="pills-tab">
+    <a href="#texte" class="nav-link nav-item active" role="tab" aria-controls="texte" data-toggle="pill" id="onglet-texte" aria-selected="true">Texte</a>
+    <a href="#image" class="nav-link nav-item" role="tab" aria-controls="image" data-toggle="pill" id="onglet-image" aria-selected="false">Image</a>
+    <a href="#logo" class="nav-link nav-item" role="tab" aria-controls="logo" data-toggle="pill" id="onglet-logo" aria-selected="false">Logo</a>
 </nav>
     
 	
-	
-    <div id="zone-1">
-    <div class="contient_col padding_top_demi padding_bot_light">
+<div class="tab-content container py-4 px-3" id="pills-tabContent">
+  <div class="tab-pane show active" id="texte" role="tabpanel" aria-labelledby="onglet-texte">
       
 
-      <div class="col_6 padding_bot_light">
-        <p>Titre</p>
-        <input type="text" id="select-titre" value="Librairies" style="margin-bottom:0.4em">
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Titre</span>
+        </div>
+        <input  class="form-control" type="text" id="select-titre" value="Librairies">
       </div>
-      <div class="col_6 padding_bot_light">
-        <p>Taille</p>
-        <input type="number" id="select-titre-size" value="348">
-        </div>
 
-        <div class="col_6 padding_bot_light">
-        <p>Texte principal  - <em>forcer un saut de ligne &lt;br&gt;</em></p>
-        <textarea id="select-text" rows="4" cols="50">Nous sommes pris dans le quotidien de l’entreprise, les recrutements, les contrats… Il est difficile de trouver les bons contacts. <br>La CCI nous a beaucoup aidés.</textarea>
+      <div class="input-group input-minus-plus">
+        <div class="input-group-prepend input-minus"  onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+          <span class="input-group-text">-</span>
         </div>
-        
-        
-        <div class="col_6 padding_bot_light">
-        <p>Taille</p>
-        <input type="number" id="select-text-size" value="200">
+        <input  class="form-control"  type="number" id="select-titre-size" value="348">
+        <div class="input-group-append input-plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+          <span class="input-group-text" id="basic-addon1">+</span>
         </div>
+      </div>
+
+<hr>
+      
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <span class="input-group-text d-inline-block">Texte principal<br> <em class="font-size--1">forcer un saut de ligne &lt;br&gt;</em></span>
+        </div>
+        <textarea class="form-control" aria-label="With textarea" id="select-text" rows="3" cols="20">Nous sommes pris dans le quotidien de l’entreprise, les recrutements, les contrats… Il est difficile de trouver les bons contacts. <br>La CCI nous a beaucoup aidés.</textarea>
+      </div>
+
+
+      <div class="input-group input-minus-plus">
+        <div class="input-group-prepend input-minus"  onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+          <span class="input-group-text">-</span>
+        </div>
+        <input  class="form-control"  type="number" id="select-text-size" value="200">
+        <div class="input-group-append input-plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+          <span class="input-group-text" id="basic-addon1">+</span>
+        </div>
+      </div>
 
         
-        <div class="col_12 padding_bot_light">
         <hr>
-        </div>
         
-        
-        <div class="col_6 padding_bot_light">
-        <p>Nom</p>
-        <input type="text" id="select-text-nom" value="Aymeric Le Brun">
-        </div>
-        
-        
-        <div class="col_6 padding_bot_light">
-        <p>Fonction</p>
-        <input type="text" id="select-text-societe" value="Dirigeant de CYFAC" style="margin-bottom: 0.2em;">
-        <input type="text" id="select-text-societe-l2" value="">
-        </div>
-        
-        <div class="col_6 padding_bot_light">
-        <p>Taille</p>
-        <input type="number" id="select-text-nom-size" value="150">
-        </div>
 
-        <div class="col_6">
-          <p>Thématique</p>
-          <select id="color">
-            <option value="bleu">Classique</option>
-            <option value="cyan">Institutionnel</option>
-            <option value="turquoise">Numérique</option>
-            <option value="vert">Développement durable</option>
-            <option value="chartreuse">Formation</option>
-            <option value="jaune">International</option>
-            <option value="orange">Compétence RH</option>
-            <option value="rouge">Compétitivité</option>
-            <option value="rose">Développement commercial</option>
-            <option value="violet">Création, Reprise, Transmission</option>
-            <option value="brun">Financement</option>
-          </select>
+        
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Nom</span>
         </div>
+        <input  class="form-control" type="text" id="select-text-nom" value="Aymeric Le Brun">
+      </div>
+
+      
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Fonction</span>
+        </div>
+        <input  class="form-control" type="text" id="select-text-societe" value="Dirigeant de CYFAC">
+        
+        <div class="input-group-append">
+          <div class="input-group-text">
+            <input type="checkbox" id="sautfonction" aria-label="sautdeligne">
+            <span class=""> Saut de ligne</span>
+          </div>
+        </div>
+      </div>
+        
+        
+        
+      <div class="input-group input-minus-plus">
+        <div class="input-group-prepend input-minus"  onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+          <span class="input-group-text">-</span>
+        </div>
+        <input  class="form-control"  type="number" id="select-text-nom-size" value="150">
+        <div class="input-group-append input-plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+          <span class="input-group-text" id="basic-addon1">+</span>
+        </div>
+      </div>
 
 
+        
 
-        <div class="col_12 padding_bot_light">
-          <hr>
+    </div>
+    
+    
+    
+    
+  <div class="tab-pane" id="image" role="tabpanel" aria-labelledby="onglet-image">
+    
+
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <label class="input-group-text" for="color">Thématique</label>
+      </div>
+      <select class="custom-select" id="color">
+        <option value="bleu">Classique</option>
+        <option value="cyan">Institutionnel</option>
+        <option value="turquoise">Numérique</option>
+        <option value="vert">Développement durable</option>
+        <option value="chartreuse">Formation</option>
+        <option value="jaune">International</option>
+        <option value="orange">Compétence RH</option>
+        <option value="rouge">Compétitivité</option>
+        <option value="rose">Développement commercial</option>
+        <option value="violet">Création, Reprise, Transmission</option>
+        <option value="brun">Financement</option>
+      </select>
+    </div>
+
+    <hr>
+
+<div class="input-group mb-2">
+  <div class="custom-file">
+    <input type="file" class="custom-file-input" id="inputFileToLoad" aria-describedby="image-photo">
+    <label class="custom-file-label" for="inputGroupFile04">Charger une image</label>
+  </div>
+</div>
+
+        
+        <div class="input-group input-minus-plus">
+          <div class="input-group-prepend input-minus"  onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+            <span class="input-group-text">-</span>
+          </div>
+          <input  class="form-control"  type="number" id="select-image-size" value="1">
+          <div class="input-group-append input-plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+            <span class="input-group-text" id="basic-addon1">+</span>
+          </div>
+        </div>
+    
+    </div>
+
+
+    
+  <div class="tab-pane" id="logo" role="tabpanel" aria-labelledby="onglet-logo">
+    
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <label class="input-group-text" for="color">Type de logo</label>
+      </div>
+      <select class="custom-select" id="logoRend">
+        <option value="logo">Logo</option>
+       <option value="pastille">pastille CCI</option>
+      </select>
+    </div>
+
+    <hr>
+    
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Nom de la CCI</span>
+            </div>
+            <input  class="form-control col-8" type="text" id="name-cci" value="Chambre de commerce" >
+            <input  class="form-control" type="text" id="name-cci-l2" value="et d'industrie">
           </div>
 
-          <div class="col_6">
-            <p>Type de logo</p>
-            <select id="logo" style="margin-bottom: 0.5em;">
-              <option value="logo">Logo</option>
-             <option value="pastille">pastille CCI</option>
-            </select>
-          </div>
+
+    </div>
 
 
-        <div class="col_6">
-            <p>Nom de la CCI</p>
-            <input type="text" id="name-cci" value="Chambre de commerce" style="margin-bottom:0.4em">
-            <input type="text" id="name-cci-l2" value="et d'industrie">
-        </div>
-    
     </div>
-    </div>
-    
-    
-    
-    <div id="zone-2">
-    <div class="contient_col padding_top_demi padding_bot_light">
-    
-        <div class="col_6 padding_bot_light">
-          <p>Image</p>
-         <input type="file" id="inputFileToLoad">
-        </div>
-           
-        
-            
-        <div class="col_6 padding_bot_light">
-        <p>Taille de l'image</p>
-        <input type="number" id="select-image-size" value="1">
-        </div>
-		
-    
-    </div>
-	</div>
+
     
     
     
@@ -267,7 +345,7 @@
     
         
 
-    
+    <!--
     
     <script type="text/javascript">
     function changezone(id) {
@@ -290,7 +368,7 @@
     
     
     
-    
+    -->
     
     
     
@@ -388,8 +466,13 @@
             var htmlString = $('#select-text').val();
             $('#aremplacer p.texte-principal').html( '<span>' + htmlString + '</span>' );
             
-            var htmlString = $('#select-text-nom').val();
-            $('#aremplacer span.texte-nom').html( htmlString + ',');
+            var nommentrepreneur = $('#select-text-nom').val();
+            var isChecked = $('#sautfonction').prop('checked');
+            if(isChecked === true){
+              $('#aremplacer span.texte-nom').html( nommentrepreneur + '<br>');
+            }else{
+              $('#aremplacer span.texte-nom').html( nommentrepreneur + ',');
+            }
             
             var htmlString = $('#select-text-societe').val();
             $('#aremplacer span.texte-societe').html( htmlString );
@@ -406,7 +489,7 @@
             var tfontlh = $('#select-titre-size').val();
             $('#aremplacer p.titre').css( 'font-size', tfontlh + '%'  );
             
-            var logo = $('#logo').val();
+            var logo = $('#logoRend').val();
             if (logo  === 'logo'){
               $('#aremplacer .logo').css( 'display', 'block' );
               $('#aremplacer .logopastille').css( 'display', 'none' );
@@ -576,6 +659,26 @@ addListeners();
     
     
     
+
+
+            
+	
+    <script src="../../JS/charteCCI.js"></script>
+
+    <script src="../../JS/popper.min.js"></script>
+    <script src="../../JS/bootstrap.min.js"></script>
+
+    <script src="../../JS/min-ie11CustomProperties.js"></script>	
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/ie11-custom-properties/ie11CustomProperties.min.js" type="text/javascript"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    
+
     
     
     

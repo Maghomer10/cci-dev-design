@@ -18,3 +18,59 @@ img{object-fit: cover;}
       border-color: var(--#{$color}) !important;
     }
   }
+
+
+
+
+
+// NAVIGATION
+
+
+
+a.nav-link {
+  color: var(--gris-f2);
+  transition: var(--transition);
+}
+a.nav-link.active {
+  color: var(--bleu-f2);
+}
+a.nav-link:hover {
+  color: var(--bleu);
+}
+
+
+.nav:not(.nav-tabs) .nav-link {
+  position: relative;
+  transition: var(--transition);
+}
+
+
+.nav:not(.nav-tabs) .nav-link:after {
+    content: '';
+    display: block;
+    background: var(--bleu);
+    width: 0%;
+    height: 5px;
+    position: absolute;
+    bottom: -1px;
+    left:50%;
+    transition: var(--transition);
+}
+
+.nav:not(.nav-tabs) a.nav-link.active:after {
+    width: 70%;
+    left:15%;
+    background: var(--bleu-f1);
+}
+.nav:not(.nav-tabs):hover .nav-link.active:not(:hover):after {
+    width:0%; 
+    left: 50%;
+}
+
+.nav:not(.nav-tabs) .nav-link:hover:after, 
+.nav:not(.nav-tabs) .nav-link.active:hover:after {
+    height: 5px;
+    left:0;
+    width:100%;
+    background: var(--bleu);
+}
