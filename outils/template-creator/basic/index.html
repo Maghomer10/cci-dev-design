@@ -30,7 +30,8 @@
   
     
 
-    <!--html2canvas($('#screen'), {
+    <!--
+      html2canvas($('#screen'), {
       useCORS: true,
       allowTaint: true
     })
@@ -63,11 +64,8 @@
     
     $('#screen').style( 'transform', 'scale(2)' );
     
-    html2canvas($('#screen'), {
-      useCORS: true,
-      allowTaint: true
-    })
-    .then(function(canvas) {
+    html2canvas(document.getElementById('screen'), 
+               ).then(function(canvas) {
       document.body.appendChild(canvas);
                       canvas.toBlob(function(blob) {
                         saveAs(blob, "template.png"); 
