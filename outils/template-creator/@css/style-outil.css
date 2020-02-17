@@ -90,7 +90,6 @@ html body #screen {
     transition: var(--transition);
     padding-left: 0%;
     padding-right: 0%;
-    border-top: #222222 1px solid;
     text-align: center;
     display: inline-block;
     font-weight: 700;
