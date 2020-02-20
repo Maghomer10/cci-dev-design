@@ -37,14 +37,16 @@
         var TemplateX = 700;
         var TemplateY = 394;
 
-        var x = window.innerWidth;
+        var x = document.body.offsetWidth;
         var X = x / TemplateX;
         var scaleX = 'scale(' + X + ')';
 
         var Y = (x*TemplateY)/TemplateX;
-        var margeY = '7rem';
-        var calcY = 'calc(96vh - ' + margeY + ' - ' + Y + 'px)';
-        var calcYfixe = 'calc(96vh - ' + margeY + ' - ' + TemplateY + 'px)';
+        var navY = document.getElementById('pills-tab').offsetHeight;
+        var ctaY = document.getElementById('telechargement').offsetHeight;
+        var margeY = ctaY + navY;
+        var calcY = 'calc(96vh - ' + margeY + 'px - ' + Y + 'px)';
+        var calcYfixe = 'calc(96vh - ' + margeY + 'px - ' + TemplateY + 'px)';
 
         $('#screen').each(function(){
                 if(x < TemplateX){
