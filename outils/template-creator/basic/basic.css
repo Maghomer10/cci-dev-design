@@ -75,11 +75,9 @@
   
 }
 #aremplacer .logo #pastille {
-    /*left: 8%;*/
     left:19px;
     top: 18%;
     position: absolute;
-    /*width: 12%;*/
     width:28px;
 }
 #aremplacer #logotext{
@@ -90,7 +88,6 @@
     align-items: flex-start;
     height: 100%;
     position: absolute;
-    /*left: 22%;*/
     left:54px;
 }
 #aremplacer .CCI-nom, .CCI-nom2{
@@ -98,6 +95,7 @@
     color: #373CF5;
     font-size: 123%;
     font-weight: 700;
+    font-family: 'Fira Sans', sans-serif;
     line-height: 104% !important;
 }
 
@@ -126,7 +124,7 @@
     min-height: 19%;
     display: flex;
 }
-html #aremplacer p.texte-principal {
+html #aremplacer .texte-principal {
     font-size: 200%;
     line-height: 126%;
     margin-top:5%;
@@ -134,6 +132,21 @@ html #aremplacer p.texte-principal {
     font-weight: 500;
     color: white;
     overflow: hidden;
+}
+html #aremplacer .texte-principal p {
+    font-size: 100%;
+    line-height: 126%;
+    margin-top:0;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    color: white;
+    overflow: hidden;
+}
+html #aremplacer .texte-principal p strong {
+    font-weight: 500;
+    color: #373CF5;
+    background-color: #ffffff;
+    padding: 0 0.2em;
 }
 html #aremplacer .contient-texte-nom {
     height: 10.5%;

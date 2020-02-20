@@ -6,9 +6,13 @@
 html {
     background-color: #222222;
 }
-#export div,#export p {
+#export div, #export p, #export span {
     margin: 0;
     padding: 0;
+    font-kerning: normal;
+    font-feature-settings: normal;
+    hyphens: none;
+    -webkit-hyphens: none;
 }
 #export{
     position: fixed;
@@ -16,7 +20,7 @@ html {
     line-height: 0;
     margin: 0;
     padding: 0;
-    padding-top: 2vh;
+    margin-top: 2vh;
     top: 0;
     left: 0;
     right: 0;
@@ -27,12 +31,17 @@ html body #screen {
     position: relative;
     margin: 0 !important;
     padding: 0 !important;
+    background-color: var(--bleu);
+    height: 394px;
+    min-width: 700px;
+    width: 700px;
     max-width: 700px;
     overflow: hidden;
     text-align: left;
     line-height: 0;
     display: inline-block;
     font-size:12px;
+    transform-origin: top left;
 }
 
 
@@ -61,16 +70,18 @@ html body #screen {
     right: 0;
     text-align: left;
     background-color: #F2F2F2;
-    min-height: 100px;
-    max-height: 50vh;
     overflow: auto;
 }
 
-#outils .container{
+#outils .tab-content{
 	margin: auto;
-	max-width: 800px;
+    max-height: calc(100vh - 500px);
+    overflow-y: auto;
 }
 
+#outils .tab-content .container{
+    max-width:800px;
+}
 
 #outils .input-minus-plus input {
     width: calc( 3rem + ( var(--space-2) * 2 ));
@@ -94,7 +105,7 @@ html body #screen {
     display: inline-block;
     font-weight: 700;
     text-decoration: none;
-    line-height: 1.2em;
+    line-height: 1em;
     font-size: var(--font-size-2);
 	position: relative;
     padding: 0.75rem 0.25rem;
