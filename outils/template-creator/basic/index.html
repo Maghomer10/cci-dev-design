@@ -23,6 +23,8 @@
 
 		<script src="../@js/jquery.sceditor.xhtml.min.js"></script>
 		<script src="../@js/jquery.sceditor.fr.js"></script>
+		<script src="../@js/jquery.sceditor.plaintext.js"></script>
+		<script src="../@js/jquery.sceditor.undo.js"></script>
     
 
     <link href="../@css/style-outil.css" rel="stylesheet" type="text/css">
@@ -434,8 +436,13 @@
 				toolbar: 'bold|italic',
 				style: '../@css/sceditor.css', 
 				local: 'fr', 
-    		plugins: 'undo',
+    		plugins: 'plaintext',
+        pastetext: {
+            addButton: false,
+            enabled: true
+        },
 				id: 'leTexte', 
+        enablePasteFiltering: true
 			});
 			
 			
