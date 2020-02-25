@@ -1,13 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="140" viewBox="0 0 140 140">
   <defs>
     <style>
-      .picto-x-2 {
-        fill: #00c;
+      .cls-1 {
+        clip-path: url(#clip-accord);
       }
-      .picto-x-1 {
+      .picto-x-1, .picto-x-1 path, .picto-x-1 ellipse, .picto-x-1 rect, .picto-x-1 line, .picto-x-1 rect, .picto-x-1 g {
         fill: #6877ff;
       }
-      .picto-ligne {
+      .picto-x-2, .picto-x-2 path, .picto-x-2 ellipse, .picto-x-2 rect, .picto-x-2 line, .picto-x-2 rect, .picto-x-2 g {
+        fill: #00c;
+      }
+      .picto-ligne, .picto-ligne path, .picto-ligne ellipse, .picto-ligne rect, .picto-ligne line, .picto-ligne rect, .picto-ligne g {
         fill: none;
         stroke: #fff;
         stroke-linecap: round;
