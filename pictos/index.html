@@ -22,7 +22,7 @@
 	  stroke-width: 4px;
 	}
 	.sombre .picto-x-1, .sombre .picto-x-1 path, .sombre .picto-x-1 ellipse, .sombre .picto-x-1 rect, .sombre .picto-x-1 line, .sombre .picto-x-1 rect, .sombre .picto-x-1 g{
-	  fill: #373CF5;
+	  fill: #373CF5 !important;
 	}
 	.sombre .picto-x-2, .sombre .picto-x-2 path, .sombre .picto-x-2 ellipse, .sombre .picto-x-2 rect, .sombre .picto-x-2 line, .sombre .picto-x-2 rect, .sombre .picto-x-2 g {
 	  fill: #6877ff !important;
@@ -34,7 +34,43 @@
 	  stroke-linejoin: round;
 	  stroke-width: 4px;
 	}
+
   </style>
+
+  
+<script>
+	var couleurs = {
+	"bleu": [],
+	"cyan": [],
+	"turquoise": [],
+	"vert": [],
+	"chartreuse": [],
+	"jaune": [],
+	"orange": [],
+	"rouge": [],
+	"rose": [],
+	"violet":[],
+	"brun":[],
+	}
+	
+		
+	$('head').append( '<style></style>' );
+	
+		jQuery.each(couleurs, function(nom) {
+			var c = nom;
+			var cn = "." + nom;
+			var cc = ".clair." + nom;
+			var cs = ".sombre." + nom;
+
+			var style = cn + ' .picto-x-1, ' + cn + ' .picto-x-1 path, ' + cn + ' .picto-x-1 ellipse, ' + cn + ' .picto-x-1 rect, ' + cn + ' .picto-x-1 line, ' + cn + ' .picto-x-1 rect, ' + cn + ' .picto-x-1 g{ fill: var(--' + c + ') !important;}' + cn + ' .picto-x-2, ' + c + ' .picto-x-2 path, ' + cn + ' .picto-x-2 ellipse, ' + cn + ' .picto-x-2 rect, ' + cn + ' .picto-x-2 line, ' + cn + ' .picto-x-2 rect, ' + cn + ' .picto-x-2 g { fill: var(--' + c + '-l1) !important;}' + cs + ' .picto-x-1, ' + cs + ' .picto-x-1 path, ' + cs + ' .picto-x-1 ellipse, ' + cs + ' .picto-x-1 rect, ' + cs + ' .picto-x-1 line, ' + cs + ' .picto-x-1 rect, ' + cs + ' .picto-x-1 g{ fill: var(--' + c + ') !important;}' + cs + ' .picto-x-2, ' + cs + ' .picto-x-2 path, ' + cs + ' .picto-x-2 ellipse, ' + cs + ' .picto-x-2 rect, ' + cs + ' .picto-x-2 line, ' + cs + ' .picto-x-2 rect, ' + cs + ' .picto-x-2 g { fill: var(--' + c + '-l1) !important;}' + cc + ' .picto-x-1, ' + cc + ' .picto-x-1 path, ' + cc + ' .picto-x-1 ellipse, ' + cc + ' .picto-x-1 rect, ' + cc + ' .picto-x-1 line, ' + cc + ' .picto-x-1 rect, ' + cc + ' .picto-x-1 g{ fill: var(--' + c + '-l1) !important;}' + cc + ' .picto-x-2, ' + cc + ' .picto-x-2 path, ' + cc + ' .picto-x-2 ellipse, ' + cc + ' .picto-x-2 rect, ' + cc + ' .picto-x-2 line, ' + cc + ' .picto-x-2 rect, ' + cc + ' .picto-x-2 g { fill: var(--' + c + '-f2) !important;} ';
+			
+			var styleTXT = "";
+
+			$('head style').last().append( style );
+
+			});
+
+</script>
 
   
   <body class="p-4">
@@ -46,7 +82,10 @@
 </div>
 
 <div class="p-3 bg-blanc d-inline-block">
-	<i picto="contrat" class="sombre vert"></i>
+	<i picto="contrat" class="sombre chartreuse"></i>
+</div>
+<div class="p-3 bg-blanc d-inline-block">
+	<i picto="contrat" class=""></i>
 </div>
 
 <br><br>
@@ -54,27 +93,27 @@
 
 
 <script>
-var boutique = {
-"accord": [],
-"arbre": [],
-"bateau": [],
-"cloud-telechargement": [],
-"contrat": [],
-"engagement": [],
-"engrenage": [],
-"engrenage-2": [],
-"expertise": [],
-"filtre": [],
-"humains": [],
-"presentation": [],
-"securite": [],
-"securite-profil": [],
-"sonnette": [],
-}
-
-	jQuery.each(boutique, function(nom) {
-			$("body").append('<div><div class="p-3 bg-gris-f2 d-inline-block"><i picto="' + nom + '" class="clair vert"></i></div><div class="p-3 bg-blanc d-inline-block"><i picto="' + nom + '" class="sombre vert"></i></div></div>');
-		});
+	var pictos = {
+	"accord": [],
+	"arbre": [],
+	"bateau": [],
+	"cloud-telechargement": [],
+	"contrat": [],
+	"engagement": [],
+	"engrenage": [],
+	"engrenage-2": [],
+	"expertise": [],
+	"filtre": [],
+	"humains": [],
+	"presentation": [],
+	"securite": [],
+	"securite-profil": [],
+	"sonnette": [],
+	}
+	
+		jQuery.each(pictos, function(nom) {
+				$("body").append('<div class="pres-larg"><div class="p-3 bg-gris-f2 d-inline-block"><i picto="' + nom + '" class="clair"></i></div><div class="p-3 bg-blanc d-inline-block"><i picto="' + nom + '" class="sombre"></i></div></div><div class="pres-small"><i picto="' + nom + '" class="cyan"></i><i picto="' + nom + '" class="turquoise"></i><i picto="' + nom + '" class="vert"></i><i picto="' + nom + '" class="chartreuse"></i><i picto="' + nom + '" class="jaune"></i><i picto="' + nom + '" class="orange"></i><i picto="' + nom + '" class="rouge"></i><i picto="' + nom + '" class="rose"></i><i picto="' + nom + '" class="violet"></i><i picto="' + nom + '" class="brun"></i></div>');
+			});
 </script>
 
 <script>
