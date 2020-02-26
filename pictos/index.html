@@ -8,6 +8,7 @@
   </head>
 
   <style>
+
 	.clair .picto-x-1, .clair .picto-x-1 path, .clair .picto-x-1 ellipse, .clair .picto-x-1 rect, .clair .picto-x-1 line, .clair .picto-x-1 rect, .clair .picto-x-1 g{
 	  fill: #6877ff;
 	}
@@ -33,6 +34,85 @@
 	  stroke-linecap: round;
 	  stroke-linejoin: round;
 	  stroke-width: 4px;
+	}
+	.pres{
+		margin-bottom: var(--space-4);
+		font-size: 0;
+		width:100%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: stretch;
+		align-content: stretch;
+		align-items: stretch;
+	}
+	.pres div, .pres svg, .pres i {
+		display: inline-block;
+		box-sizing: border-box;
+	}
+
+	.pres .pres-larg{
+    	flex: 1 1 30%;
+    	align-self: stretch;	
+	}
+	.pres .pres-small-contain{
+		flex: 1 1 70%;
+		align-self: stretch;
+	}
+	.pres .pres-larg i{
+		width:50%;
+		height:100%;
+		vertical-align: middle;			
+	}
+	.pres .pres-larg i::before{
+		content: '';
+		display: inline-block;
+		height: 100%;
+		width: 1px;
+		vertical-align: middle;
+	}
+	.pres .pres-small i{
+		width:10%;
+	}
+
+	.pres .pres-larg i svg,
+	.pres .pres-small i svg{
+		width: calc(100% - 2px) ;	
+		padding: var(--space-2);
+		height: auto;		
+	}
+	.pres .pres-larg i svg{
+		padding: var(--space-3);		
+	}
+
+	.pres .pres-larg i:nth-child(2),
+	div.pres-small:nth-child(1){
+		background-color: var(--blanc);
+	}
+	.pres .pres-larg i:nth-child(1),
+	div.pres-small:nth-child(2){
+		background-color: var(--gris-f2);
+	}
+	
+	div.pres-small:nth-child(2),
+	div.pres-small:nth-child(1){
+		min-height:50%;
+	}
+
+	@media screen and (max-width:900px) {
+		
+	.pres .pres-small i{
+		width:20%;
+	}
+
+	.pres .pres-larg{
+    	flex: 1 1 100%;	
+	}
+	.pres .pres-small-contain{
+		flex: 1 1 100%;
+	}
+
+		
 	}
 
   </style>
@@ -112,7 +192,7 @@
 	}
 	
 		jQuery.each(pictos, function(nom) {
-				$("body").append('<div class="pres-larg"><div class="p-3 bg-gris-f2 d-inline-block"><i picto="' + nom + '" class="clair"></i></div><div class="p-3 bg-blanc d-inline-block"><i picto="' + nom + '" class="sombre"></i></div></div><div class="pres-small"><i picto="' + nom + '" class="cyan"></i><i picto="' + nom + '" class="turquoise"></i><i picto="' + nom + '" class="vert"></i><i picto="' + nom + '" class="chartreuse"></i><i picto="' + nom + '" class="jaune"></i><i picto="' + nom + '" class="orange"></i><i picto="' + nom + '" class="rouge"></i><i picto="' + nom + '" class="rose"></i><i picto="' + nom + '" class="violet"></i><i picto="' + nom + '" class="brun"></i></div>');
+				$("body").append('<div class="pres"><div class="pres-larg"><i picto="' + nom + '" class="clair"></i><i picto="' + nom + '" class="sombre"></i></div><div class="pres-small-contain"><div class="pres-small"><i picto="' + nom + '" class="cyan"></i><i picto="' + nom + '" class="turquoise"></i><i picto="' + nom + '" class="vert"></i><i picto="' + nom + '" class="chartreuse"></i><i picto="' + nom + '" class="jaune"></i><i picto="' + nom + '" class="orange"></i><i picto="' + nom + '" class="rouge"></i><i picto="' + nom + '" class="rose"></i><i picto="' + nom + '" class="violet"></i><i picto="' + nom + '" class="brun"></i></div><div class="clair pres-small"><i picto="' + nom + '" class="clair cyan"></i><i picto="' + nom + '" class="clair turquoise"></i><i picto="' + nom + '" class="clair vert"></i><i picto="' + nom + '" class="clair chartreuse"></i><i picto="' + nom + '" class="clair jaune"></i><i picto="' + nom + '" class="clair orange"></i><i picto="' + nom + '" class="clair rouge"></i><i picto="' + nom + '" class="clair rose"></i><i picto="' + nom + '" class="clair violet"></i><i picto="' + nom + '" class="clair brun"></i></div></div></div>');
 			});
 </script>
 
