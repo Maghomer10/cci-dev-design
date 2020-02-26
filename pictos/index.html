@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<title>Basic HTML Imports</title>
+	<link rel="stylesheet" href="https://thierryperrotin.github.io/cci-dev-design/bootstrap.css">
+	<script src="https://thierryperrotin.github.io/cci-dev-design/JS/jquery-3.3.1.min.js"></script>
+  </head>
+
+  <style>
+	.clair .picto-x-1, .clair .picto-x-1 path, .clair .picto-x-1 ellipse, .clair .picto-x-1 rect, .clair .picto-x-1 line, .clair .picto-x-1 rect, .clair .picto-x-1 g{
+	  fill: #6877ff;
+	}
+	.clair .picto-x-2, .clair .picto-x-2 path, .clair .picto-x-2 ellipse, .clair .picto-x-2 rect, .clair .picto-x-2 line, .clair .picto-x-2 rect, .clair .picto-x-2 g {
+	  fill: #0000CC !important;
+	}
+	.clair .picto-ligne, .clair .picto-ligne path, .clair .picto-ligne ellipse, .clair .picto-ligne rect, .clair .picto-ligne line, .clair .picto-ligne rect, .clair .picto-ligne g {
+	  fill: none;
+	  stroke: #ffffff;
+	  stroke-linecap: round;
+	  stroke-linejoin: round;
+	  stroke-width: 4px;
+	}
+	.sombre .picto-x-1, .sombre .picto-x-1 path, .sombre .picto-x-1 ellipse, .sombre .picto-x-1 rect, .sombre .picto-x-1 line, .sombre .picto-x-1 rect, .sombre .picto-x-1 g{
+	  fill: #373CF5;
+	}
+	.sombre .picto-x-2, .sombre .picto-x-2 path, .sombre .picto-x-2 ellipse, .sombre .picto-x-2 rect, .sombre .picto-x-2 line, .sombre .picto-x-2 rect, .sombre .picto-x-2 g {
+	  fill: #6877ff !important;
+	}
+	.sombre .picto-ligne, .sombre .picto-ligne path, .sombre .picto-ligne ellipse, .sombre .picto-ligne rect, .sombre .picto-ligne line, .sombre .picto-ligne rect, .sombre .picto-ligne g {
+	  fill: none;
+	  stroke: #222222;
+	  stroke-linecap: round;
+	  stroke-linejoin: round;
+	  stroke-width: 4px;
+	}
+  </style>
+
+  
+  <body class="p-4">
+    <h1>Dev Pictos charte CCI</h1>
+
+	
+<div class="p-3 bg-gris-f2 d-inline-block">
+	<i picto="contrat" class="clair vert"></i>
+</div>
+
+<div class="p-3 bg-blanc d-inline-block">
+	<i picto="contrat" class="sombre vert"></i>
+</div>
+
+<br><br>
+<hr><br>
+
+
+<script>
+var boutique = {
+"accord": [],
+"arbre": [],
+"bateau": [],
+"cloud-telechargement": [],
+"contrat": [],
+"engagement": [],
+"engrenage": [],
+"engrenage-2": [],
+"expertise": [],
+"filtre": [],
+"humains": [],
+"presentation": [],
+"securite": [],
+"securite-profil": [],
+"sonnette": [],
+}
+
+	jQuery.each(boutique, function(nom) {
+			$("body").append('<div><div class="p-3 bg-gris-f2 d-inline-block"><i picto="' + nom + '" class="clair vert"></i></div><div class="p-3 bg-blanc d-inline-block"><i picto="' + nom + '" class="sombre vert"></i></div></div>');
+		});
+</script>
+
+<script>
+	$(document).ready(function () {
+			$("i[picto]").each(function () {  
+				var picto = $(this).attr("picto");      
+				var pictoURL = "https://thierryperrotin.github.io/cci-dev-design/pictos/pictos/" + picto + ".svg";       
+				$(this).load(pictoURL);
+			});
+		});
+</script>
+
+
+
+</body>
+		</html>

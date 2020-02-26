@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="140" viewBox="0 0 140 140">
+  <defs>
+    <style>.picto-x-1, .picto-x-1 path, .picto-x-1 ellipse, .picto-x-1 rect, .picto-x-1 line, .picto-x-1 rect, .picto-x-1 g{ fill: #373CF5; } .picto-x-2, .picto-x-2 path, .picto-x-2 ellipse, .picto-x-2 rect, .picto-x-2 line, .picto-x-2 rect, .picto-x-2 g { fill: #6877ff !important; } .picto-ligne, .picto-ligne path, .picto-ligne ellipse, .picto-ligne rect, .picto-ligne line, .picto-ligne rect, .picto-ligne g { fill: none; stroke: #222222; stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; } .picto-x-1, .picto-x-1 path, .picto-x-1 ellipse, .picto-x-1 rect, .picto-x-1 line, .picto-x-1 rect, .picto-x-1 g{ fill: #373CF5; } .picto-x-2, .picto-x-2 path, .picto-x-2 ellipse, .picto-x-2 rect, .picto-x-2 line, .picto-x-2 rect, .picto-x-2 g { fill: #6877ff !important; } .picto-ligne, .picto-ligne path, .picto-ligne ellipse, .picto-ligne rect, .picto-ligne line, .picto-ligne rect, .picto-ligne g { fill: none; stroke: #222222; stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; }.picto-x-1, .picto-x-1 path, .picto-x-1 ellipse, .picto-x-1 rect, .picto-x-1 line, .picto-x-1 rect, .picto-x-1 g{ fill: #373CF5; } .picto-x-2, .picto-x-2 path, .picto-x-2 ellipse, .picto-x-2 rect, .picto-x-2 line, .picto-x-2 rect, .picto-x-2 g { fill: #6877ff !important; } .picto-ligne, .picto-ligne path, .picto-ligne ellipse, .picto-ligne rect, .picto-ligne line, .picto-ligne rect, .picto-ligne g { fill: none; stroke: #222222; stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; } .picto-x-1, .picto-x-1 path, .picto-x-1 ellipse, .picto-x-1 rect, .picto-x-1 line, .picto-x-1 rect, .picto-x-1 g{ fill: #373CF5; } .picto-x-2, .picto-x-2 path, .picto-x-2 ellipse, .picto-x-2 rect, .picto-x-2 line, .picto-x-2 rect, .picto-x-2 g { fill: #6877ff !important; } .picto-ligne, .picto-ligne path, .picto-ligne ellipse, .picto-ligne rect, .picto-ligne line, .picto-ligne rect, .picto-ligne g { fill: none; stroke: #222222; stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; }</style>
+    <clipPath class="clip-securite">
+      <rect width="140" height="140"/>
+    </clipPath>
+  </defs>
+  <g class="securite">
+    <g class="Groupe_28" data-name="Groupe 28">
+      <path class="picto-x-1" d="M0,0H73.6a0,0,0,0,1,0,0V53.488A11.183,11.183,0,0,1,62.421,64.671H11.183A11.183,11.183,0,0,1,0,53.488V0A0,0,0,0,1,0,0Z" transform="translate(33.525 61.397)"/>
+      <path class="picto-x-2" d="M157.972,321.9l-2.03,16.461a2.9,2.9,0,0,0,2.884,3.222h11.607a2.9,2.9,0,0,0,2.884-3.222l-2.03-16.461a11.306,11.306,0,0,0,4.948-9.135,11.607,11.607,0,1,0-23.213,0A11.307,11.307,0,0,0,157.972,321.9Z" transform="translate(-94.33 -232.949)"/>
+      <g class="picto-ligne" transform="translate(25.424 6.911)">
+        <path class="Tracé_50" data-name="Tracé 50" d="M157.972,321.9l-2.03,16.461a2.9,2.9,0,0,0,2.884,3.222h11.607a2.9,2.9,0,0,0,2.884-3.222l-2.03-16.461a11.306,11.306,0,0,0,4.948-9.135,11.607,11.607,0,1,0-23.213,0A11.307,11.307,0,0,0,157.972,321.9Z" transform="translate(-119.755 -239.86)"/>
+        <path class="Tracé_51" data-name="Tracé 51" d="M183.452,272.937a34.778,34.778,0,0,1,2.944,14.054v12.464" transform="translate(-106.568 -252.087)"/>
+        <path class="Tracé_52" data-name="Tracé 52" d="M174.169,262.156a35.092,35.092,0,0,1,9.784,9.264" transform="translate(-110.591 -256.759)"/>
+        <path class="Tracé_53" data-name="Tracé 53" d="M136.8,305.759V293.295a34.937,34.937,0,0,1,42.761-34.016" transform="translate(-126.783 -258.391)"/>
+        <path class="Tracé_54" data-name="Tracé 54" d="M144.815,302.329v-12.6a23.422,23.422,0,1,1,46.843,0v12.6" transform="translate(-123.312 -254.961)"/>
+        <path class="Rectangle_47" data-name="Rectangle 47" d="M0,0H89.805a0,0,0,0,1,0,0V65.408a13.5,13.5,0,0,1-13.5,13.5H13.5A13.5,13.5,0,0,1,0,65.408V0A0,0,0,0,1,0,0Z" transform="translate(0 47.368)"/>
+      </g>
+    </g>
+  </g>
+</svg>
