@@ -36,9 +36,10 @@
 	  stroke-width: 4px;
 	}
 	.pres{
-		margin-bottom: var(--space-4);
+		margin: 0 auto var(--space-4) auto;
 		font-size: 0;
 		width:100%;
+		max-width: 1200px;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -91,7 +92,7 @@
 	}
 	.pres .pres-larg i:nth-child(1),
 	div.pres-small:nth-child(2){
-		background-color: var(--gris-f2);
+		background-color: var(--bleu-f2);
 	}
 	
 	div.pres-small:nth-child(2),
@@ -142,7 +143,7 @@
 			var cc = ".clair." + nom;
 			var cs = ".sombre." + nom;
 
-			var style = cn + ' .picto-x-1, ' + cn + ' .picto-x-1 path, ' + cn + ' .picto-x-1 ellipse, ' + cn + ' .picto-x-1 rect, ' + cn + ' .picto-x-1 line, ' + cn + ' .picto-x-1 rect, ' + cn + ' .picto-x-1 g{ fill: var(--' + c + ') !important;}' + cn + ' .picto-x-2, ' + c + ' .picto-x-2 path, ' + cn + ' .picto-x-2 ellipse, ' + cn + ' .picto-x-2 rect, ' + cn + ' .picto-x-2 line, ' + cn + ' .picto-x-2 rect, ' + cn + ' .picto-x-2 g { fill: var(--' + c + '-l1) !important;}' + cs + ' .picto-x-1, ' + cs + ' .picto-x-1 path, ' + cs + ' .picto-x-1 ellipse, ' + cs + ' .picto-x-1 rect, ' + cs + ' .picto-x-1 line, ' + cs + ' .picto-x-1 rect, ' + cs + ' .picto-x-1 g{ fill: var(--' + c + ') !important;}' + cs + ' .picto-x-2, ' + cs + ' .picto-x-2 path, ' + cs + ' .picto-x-2 ellipse, ' + cs + ' .picto-x-2 rect, ' + cs + ' .picto-x-2 line, ' + cs + ' .picto-x-2 rect, ' + cs + ' .picto-x-2 g { fill: var(--' + c + '-l1) !important;}' + cc + ' .picto-x-1, ' + cc + ' .picto-x-1 path, ' + cc + ' .picto-x-1 ellipse, ' + cc + ' .picto-x-1 rect, ' + cc + ' .picto-x-1 line, ' + cc + ' .picto-x-1 rect, ' + cc + ' .picto-x-1 g{ fill: var(--' + c + '-l1) !important;}' + cc + ' .picto-x-2, ' + cc + ' .picto-x-2 path, ' + cc + ' .picto-x-2 ellipse, ' + cc + ' .picto-x-2 rect, ' + cc + ' .picto-x-2 line, ' + cc + ' .picto-x-2 rect, ' + cc + ' .picto-x-2 g { fill: var(--' + c + '-f2) !important;} ';
+			var style = cn + ' .picto-x-1, ' + cn + ' .picto-x-1 path, ' + cn + ' .picto-x-1 ellipse, ' + cn + ' .picto-x-1 rect, ' + cn + ' .picto-x-1 line, ' + cn + ' .picto-x-1 rect, ' + cn + ' .picto-x-1 g{ fill: var(--' + c + ') !important;}' + cn + ' .picto-x-2, ' + cn + ' .picto-x-2 path, ' + cn + ' .picto-x-2 ellipse, ' + cn + ' .picto-x-2 rect, ' + cn + ' .picto-x-2 line, ' + cn + ' .picto-x-2 rect, ' + cn + ' .picto-x-2 g { fill: var(--' + c + '-l1) !important;}' + cs + ' .picto-x-1, ' + cs + ' .picto-x-1 path, ' + cs + ' .picto-x-1 ellipse, ' + cs + ' .picto-x-1 rect, ' + cs + ' .picto-x-1 line, ' + cs + ' .picto-x-1 rect, ' + cs + ' .picto-x-1 g{ fill: var(--' + c + ') !important;}' + cs + ' .picto-x-2, ' + cs + ' .picto-x-2 path, ' + cs + ' .picto-x-2 ellipse, ' + cs + ' .picto-x-2 rect, ' + cs + ' .picto-x-2 line, ' + cs + ' .picto-x-2 rect, ' + cs + ' .picto-x-2 g { fill: var(--' + c + '-f1) !important;}' + cc + ' .picto-x-1, ' + cc + ' .picto-x-1 path, ' + cc + ' .picto-x-1 ellipse, ' + cc + ' .picto-x-1 rect, ' + cc + ' .picto-x-1 line, ' + cc + ' .picto-x-1 rect, ' + cc + ' .picto-x-1 g{ fill: var(--' + c + '-l1) !important;}' + cc + ' .picto-x-2, ' + cc + ' .picto-x-2 path, ' + cc + ' .picto-x-2 ellipse, ' + cc + ' .picto-x-2 rect, ' + cc + ' .picto-x-2 line, ' + cc + ' .picto-x-2 rect, ' + cc + ' .picto-x-2 g { fill: var(--' + c + '-f2) !important;} ';
 			
 			var styleTXT = "";
 
@@ -165,7 +166,7 @@
 	<i picto="contrat" class="sombre chartreuse"></i>
 </div>
 <div class="p-3 bg-blanc d-inline-block">
-	<i picto="contrat" class=""></i>
+	<i picto="contrat"></i>
 </div>
 
 <br><br>
