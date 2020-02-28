@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="140" viewBox="0 0 140 140">
+  <defs>
+    <style>.picto-x-1, .picto-x-1 path, .picto-x-1 ellipse, .picto-x-1 rect, .picto-x-1 line, .picto-x-1 rect, .picto-x-1 g{ fill: #373CF5; } .picto-x-2, .picto-x-2 path, .picto-x-2 ellipse, .picto-x-2 rect, .picto-x-2 line, .picto-x-2 rect, .picto-x-2 g { fill: #6877ff ; } .picto-ligne, .picto-ligne path, .picto-ligne ellipse, .picto-ligne rect, .picto-ligne line, .picto-ligne rect, .picto-ligne g { fill: none; stroke: #222222; stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; } .picto-x-1, .picto-x-1 path, .picto-x-1 ellipse, .picto-x-1 rect, .picto-x-1 line, .picto-x-1 rect, .picto-x-1 g{ fill: #373CF5; } .picto-x-2, .picto-x-2 path, .picto-x-2 ellipse, .picto-x-2 rect, .picto-x-2 line, .picto-x-2 rect, .picto-x-2 g { fill: #6877ff ; } .picto-ligne, .picto-ligne path, .picto-ligne ellipse, .picto-ligne rect, .picto-ligne line, .picto-ligne rect, .picto-ligne g { fill: none; stroke: #222222; stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; }.picto-x-1, .picto-x-1 path, .picto-x-1 ellipse, .picto-x-1 rect, .picto-x-1 line, .picto-x-1 rect, .picto-x-1 g{ fill: #373CF5; } .picto-x-2, .picto-x-2 path, .picto-x-2 ellipse, .picto-x-2 rect, .picto-x-2 line, .picto-x-2 rect, .picto-x-2 g { fill: #6877ff ; } .picto-ligne, .picto-ligne path, .picto-ligne ellipse, .picto-ligne rect, .picto-ligne line, .picto-ligne rect, .picto-ligne g { fill: none; stroke: #222222; stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; } .picto-x-1, .picto-x-1 path, .picto-x-1 ellipse, .picto-x-1 rect, .picto-x-1 line, .picto-x-1 rect, .picto-x-1 g{ fill: #373CF5; } .picto-x-2, .picto-x-2 path, .picto-x-2 ellipse, .picto-x-2 rect, .picto-x-2 line, .picto-x-2 rect, .picto-x-2 g { fill: #6877ff ; } .picto-ligne, .picto-ligne path, .picto-ligne ellipse, .picto-ligne rect, .picto-ligne line, .picto-ligne rect, .picto-ligne g { fill: none; stroke: #222222; stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; }</style>
+    <clipPath class="clip-virus">
+      <rect width="140" height="140"/>
+    </clipPath>
+  </defs>
+  <g class="virus">
+    <g class="Groupe_97" data-name="Groupe 97">
+      <path class="picto-x-2" d="M-434.5,73a67.077,67.077,0,0,1-26.274-5.3A67.276,67.276,0,0,1-482.23,53.229,67.275,67.275,0,0,1-496.7,31.774,67.077,67.077,0,0,1-502,5.5a67.077,67.077,0,0,1,5.3-26.274A67.276,67.276,0,0,1-482.23-42.23,67.276,67.276,0,0,1-460.774-56.7,67.077,67.077,0,0,1-434.5-62a67.078,67.078,0,0,1,26.274,5.3A67.275,67.275,0,0,1-386.77-42.23,67.274,67.274,0,0,1-372.3-20.774,67.078,67.078,0,0,1-367,5.5a67.078,67.078,0,0,1-5.3,26.274A67.274,67.274,0,0,1-386.77,53.229,67.274,67.274,0,0,1-408.226,67.7,67.078,67.078,0,0,1-434.5,73Zm.5-113A44.049,44.049,0,0,0-478,4a44.05,44.05,0,0,0,44,44A44.05,44.05,0,0,0-390,4,44.049,44.049,0,0,0-434-40Z" transform="translate(505 65)"/>
+      <path class="picto-x-1" d="M-458,36a43.724,43.724,0,0,1-17.127-3.458,43.854,43.854,0,0,1-13.986-9.43,43.854,43.854,0,0,1-9.43-13.986A43.725,43.725,0,0,1-502-8a43.832,43.832,0,0,1,2.81-15.5,43.844,43.844,0,0,1,7.745-13.086,44.065,44.065,0,0,1,11.653-9.642A43.607,43.607,0,0,1-465.257-51.4,89.9,89.9,0,0,0-466.5-36.5a89.066,89.066,0,0,0,30.182,66.8A43.773,43.773,0,0,1-446.6,34.509,44.129,44.129,0,0,1-458,36Z" transform="translate(529 77)"/>
+      <g class="picto-ligne">
+        <circle class="Ellipse_84" data-name="Ellipse 84" cx="44" cy="44" r="44" transform="translate(27 25)"/>
+        <circle class="Ellipse_85" data-name="Ellipse 85" cx="10" cy="10" r="10" transform="translate(114 113)"/>
+        <circle class="Ellipse_90" data-name="Ellipse 90" cx="10" cy="10" r="10" transform="translate(4 15)"/>
+        <circle class="Ellipse_91" data-name="Ellipse 91" cx="10" cy="10" r="10" transform="translate(114 5)"/>
+        <circle class="Ellipse_92" data-name="Ellipse 92" cx="10" cy="10" r="10" transform="translate(14 109)"/>
+        <circle class="Ellipse_88" data-name="Ellipse 88" cx="6" cy="6" r="6" transform="translate(124 63)"/>
+        <circle class="Ellipse_89" data-name="Ellipse 89" cx="6" cy="6" r="6" transform="translate(3 65)"/>
+        <circle class="Ellipse_86" data-name="Ellipse 86" cx="6" cy="6" r="6" transform="translate(71 123)"/>
+        <circle class="Ellipse_87" data-name="Ellipse 87" cx="6" cy="6" r="6" transform="translate(53 2)"/>
+        <line class="Ligne_62" data-name="Ligne 62" x2="7" y2="7" transform="translate(21.5 32.5)"/>
+        <line class="Ligne_64" data-name="Ligne 64" x2="11" transform="translate(15.5 70.5)"/>
+        <line class="Ligne_65" data-name="Ligne 65" x1="2" y1="11" transform="translate(60.5 14.5)"/>
+        <line class="Ligne_66" data-name="Ligne 66" x2="1" y2="8" transform="translate(75.5 114.5)"/>
+        <line class="Ligne_67" data-name="Ligne 67" x2="8" transform="translate(115.5 68.5)"/>
+        <line class="Ligne_63" data-name="Ligne 63" y1="10" x2="10" transform="translate(106.5 22.5)"/>
+        <path class="Tracé_124" data-name="Tracé 124" d="M-5.177-2.913-1.6-6.935" transform="translate(36.667 114.5)"/>
+        <path class="Tracé_125" data-name="Tracé 125" d="M0,0,8.295,8.014" transform="translate(108.5 107.5)"/>
+        <circle class="Ellipse_97" data-name="Ellipse 97" cx="4" cy="4" r="4" transform="translate(53 45)"/>
+        <circle class="Ellipse_98" data-name="Ellipse 98" cx="4" cy="4" r="4" transform="translate(44 79)"/>
+        <circle class="Ellipse_99" data-name="Ellipse 99" cx="4" cy="4" r="4" transform="translate(91 79)"/>
+      </g>
+    </g>
+  </g>
+</svg>

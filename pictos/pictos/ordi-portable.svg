@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="140" viewBox="0 0 140 140">
+  <defs>
+    <style>.picto-x-1, .picto-x-1 path, .picto-x-1 ellipse, .picto-x-1 rect, .picto-x-1 line, .picto-x-1 rect, .picto-x-1 g{ fill: #373CF5; } .picto-x-2, .picto-x-2 path, .picto-x-2 ellipse, .picto-x-2 rect, .picto-x-2 line, .picto-x-2 rect, .picto-x-2 g { fill: #6877ff ; } .picto-ligne, .picto-ligne path, .picto-ligne ellipse, .picto-ligne rect, .picto-ligne line, .picto-ligne rect, .picto-ligne g { fill: none; stroke: #222222; stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; } .picto-x-1, .picto-x-1 path, .picto-x-1 ellipse, .picto-x-1 rect, .picto-x-1 line, .picto-x-1 rect, .picto-x-1 g{ fill: #373CF5; } .picto-x-2, .picto-x-2 path, .picto-x-2 ellipse, .picto-x-2 rect, .picto-x-2 line, .picto-x-2 rect, .picto-x-2 g { fill: #6877ff ; } .picto-ligne, .picto-ligne path, .picto-ligne ellipse, .picto-ligne rect, .picto-ligne line, .picto-ligne rect, .picto-ligne g { fill: none; stroke: #222222; stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; }.picto-x-1, .picto-x-1 path, .picto-x-1 ellipse, .picto-x-1 rect, .picto-x-1 line, .picto-x-1 rect, .picto-x-1 g{ fill: #373CF5; } .picto-x-2, .picto-x-2 path, .picto-x-2 ellipse, .picto-x-2 rect, .picto-x-2 line, .picto-x-2 rect, .picto-x-2 g { fill: #6877ff ; } .picto-ligne, .picto-ligne path, .picto-ligne ellipse, .picto-ligne rect, .picto-ligne line, .picto-ligne rect, .picto-ligne g { fill: none; stroke: #222222; stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; } .picto-x-1, .picto-x-1 path, .picto-x-1 ellipse, .picto-x-1 rect, .picto-x-1 line, .picto-x-1 rect, .picto-x-1 g{ fill: #373CF5; } .picto-x-2, .picto-x-2 path, .picto-x-2 ellipse, .picto-x-2 rect, .picto-x-2 line, .picto-x-2 rect, .picto-x-2 g { fill: #6877ff ; } .picto-ligne, .picto-ligne path, .picto-ligne ellipse, .picto-ligne rect, .picto-ligne line, .picto-ligne rect, .picto-ligne g { fill: none; stroke: #222222; stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; }</style>
+    <clipPath class="clip-ordi-portable">
+      <rect width="140" height="140"/>
+    </clipPath>
+  </defs>
+  <g class="ordi-portable">
+    <g class="Groupe_84" data-name="Groupe 84">
+      <path class="picto-x-2" d="M333.18,522.379H444.141l10.114,19.931-2.082,9.519H323.958l-2.082-9.519Z" transform="translate(-318 -432)"/>
+      <path class="picto-x-1" d="M4.447,0H88.76L33.835,53.261H4.447A4.447,4.447,0,0,1,0,48.814V4.447A4.447,4.447,0,0,1,4.447,0Z" transform="translate(22.601 27.323)"/>
+      <g class="picto-ligne" transform="translate(0.07 -1.008)">
+        <path class="Tracé_120" data-name="Tracé 120" d="M220.2,388.236l-2.387-8.656H184.387L182,388.236" transform="translate(-131.098 -276.887)"/>
+        <path class="Tracé_121" data-name="Tracé 121" d="M0,151.423v4.91a4.455,4.455,0,0,0,4.45,4.45H127.69a4.455,4.455,0,0,0,4.45-4.45v-4.91c0-.041,0-.081-.006-.12,0-.019,0-.038,0-.058a1.9,1.9,0,0,0-.034-.225c0-.007,0-.014-.006-.022a1.878,1.878,0,0,0-.056-.2c-.006-.017-.012-.034-.019-.051q-.033-.088-.073-.171c0-.01-.008-.02-.013-.03l-10.352-20.419V62.948a3.751,3.751,0,0,0-3.747-3.747H14.309a3.751,3.751,0,0,0-3.747,3.747v67.18L.209,150.547c0,.01-.008.02-.013.03-.027.055-.051.113-.073.171-.006.017-.013.034-.019.051a1.969,1.969,0,0,0-.056.2c0,.007,0,.014-.005.021a1.908,1.908,0,0,0-.034.226c0,.019,0,.038,0,.058C0,151.342,0,151.382,0,151.423Z" transform="translate(3.93 -39.193)"/>
+        <g class="Groupe_81" data-name="Groupe 81" transform="translate(22.492 53.651)">
+          <g class="Groupe_80" data-name="Groupe 80">
+            <path class="Tracé_122" data-name="Tracé 122" d="M71.923,200.41v7.416a2.84,2.84,0,0,0,3.035,2.583H163.9a2.84,2.84,0,0,0,3.035-2.583v-26.1" transform="translate(-71.923 -181.729)"/>
+          </g>
+        </g>
+        <g class="Groupe_83" data-name="Groupe 83" transform="translate(22.492 28.009)">
+          <g class="Groupe_82" data-name="Groupe 82" transform="translate(0 0)">
+            <path class="Tracé_123" data-name="Tracé 123" d="M166.939,101.953V93.238A3.038,3.038,0,0,0,163.9,90.2H74.958a3.039,3.039,0,0,0-3.035,3.035v30.788" transform="translate(-71.923 -90.203)"/>
+          </g>
+        </g>
+        <line class="Ligne_60" data-name="Ligne 60" x2="80.543" transform="translate(14.491 90.934)"/>
+        <line class="Ligne_61" data-name="Ligne 61" x2="103.751" transform="translate(18.125 111.555)"/>
+      </g>
+    </g>
+  </g>
+</svg>
