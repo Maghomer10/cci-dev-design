@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
-    <title>Template Creator - Basic</title>
+    <title>Template Creator - Chiffre clé</title>
+
 
 
     <link rel="stylesheet" href="../../../bootstrap.css">
@@ -90,18 +91,6 @@
 
 </head>
 
-	
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 <body>
 
     
@@ -116,29 +105,23 @@
     
     <div id="export">
       <section id="screen">
-        <img id="fond" src="../@img/grille.png">
+        <img id="fond" src="../@img/grille.png" style="width: 100%;">
           <div id="aremplacer">
-            <div id="bandethematique">
-              <div id="degrade1"><img src="../@img/degrade.png"></div>
-            </div>
-            <div id="degrade2"><img src="../@img/degrade.png"></div> 
-            <div id="fondbleu">
-              <div class="text">
-                <div class="taille-min">
-                  <p class="titre">Librairies</p>
+            <div id="fondbleu_chiffre">
+              <div class="rayure"><img src="../@img/rayure.svg"></div>
+              <div class="circle-deco"></div>
+              <div class="circle-color"></div>
+             <div class="text">
+               <div class="texte-chiffre">
+                 <p id="chiffre">43%</p>
+                 <p id="donnee">millions</p>
                 </div>
-                <div class="texte-principal"><p>1er circuit de vente 
-                  de livres en France 
-                  avec <strong>40% du marché</strong>, avant les grandes surfaces et internet. </p></div>
-                  
-                <div class="contient-texte-nom">
-                  <p><span class="texte-nom">truc de machin</span> <span class="texte-societe">société de machin</span></p>
-                </div>
+                <div class="texte-principal"><p>des auto-entrepreneurs ont moins de 30 ans.</p></div>
               </div>
-            </div>   
-          <div class="image-photo">
-              <img src="../@img/image_gallery.jpg" id="cursorImage" ondragstart="return false;" style="transform: scale(1)"/>
-          </div> 
+              <div class="contient-texte-source">
+                <p>Source : <span>wwww.website.fr</span></p>
+              </div>
+            </div> 
           <div class="logo">
             <img src="../@img/pastille.png" id="pastille"/>
             <div id="logotext">
@@ -171,38 +154,51 @@
 	
 <div class="tab-content" id="pills-tabContent">
   <div class="tab-pane show active py-4 px-3 container" id="texte" role="tabpanel" aria-labelledby="onglet-texte">
-      
-
     
 
+    <div class="input-group mb-1">
+      <div class="input-group-prepend">
+        <span class="input-group-text">Chiffre</span>
+      </div>
+        <input  class="form-control" type="text" id="texte-chiffre" value="43%">
+      </div>
 
-
-      <div class="input-group mb-2">
+      <div class="input-group mb-1">
         <div class="input-group-prepend">
-          <span class="input-group-text">Titre</span>
+          <span class="input-group-text">Données</span>
         </div>
-        <input  class="form-control" type="text" id="select-titre" value="Librairies">
+          <input  class="form-control" type="text" id="donnee-input" value="millions">
+        </div>
+
+        <div class="input-group input-minus-plus mt-1 mb-1">
+          <div class="input-group-prepend input-minus"  onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+            <span class="input-group-text">-</span>
+          </div>
+          <input  class="form-control"  type="number" id="select-chiffre-size" value="950" step="5">
+          <div class="input-group-append input-plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+            <span class="input-group-text" id="basic-addon1">+</span>
+          </div>
+        </div>
+
+
+        <hr>
+
+      <textarea id="Texteprincipal" class="w-100" rows="6" cols="20">des auto-entrepreneurs ont moins de 30 ans.</textarea>
+
+      <!--
+      <div class="input-group-append mt-2">
+        <div class="input-group-text">
+          <input type="checkbox" id="cesure" aria-label="cesure">
+          <span class="ml-2">Césure</span>
+        </div>
       </div>
-
-      <div class="input-group input-minus-plus">
-        <div class="input-group-prepend input-minus"  onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-          <span class="input-group-text">-</span>
-        </div>
-        <input  class="form-control"  type="number" id="select-titre-size" value="355" step="5">
-        <div class="input-group-append input-plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-          <span class="input-group-text" id="basic-addon1">+</span>
-        </div>
-      </div>
-
-<hr>
-
-      <textarea id="Texteprincipal" class="w-100" rows="6" cols="20">Nous sommes pris dans le quotidien de l’entreprise, les recrutements, les contrats… Il est difficile de trouver les bons contacts. <br>La CCI nous a beaucoup aidés.</textarea>
+-->
 
       <div class="input-group input-minus-plus mt-2">
         <div class="input-group-prepend input-minus"  onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
           <span class="input-group-text">-</span>
         </div>
-        <input  class="form-control"  type="number" id="select-text-size" value="190" step="2">
+        <input  class="form-control"  type="number" id="select-text-size" value="266" step="2">
         <div class="input-group-append input-plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
           <span class="input-group-text" id="basic-addon1">+</span>
         </div>
@@ -215,28 +211,11 @@
         
       <div class="input-group mb-2">
         <div class="input-group-prepend">
-          <span class="input-group-text">Nom</span>
+          <span class="input-group-text">Source</span>
         </div>
-        <input  class="form-control" type="text" id="select-text-nom" value="Aymeric Le Brun">
+        <input  class="form-control" type="text" id="select-text-source" value="www.source.fr">
       </div>
-
-      
-      <div class="input-group mb-2">
-        <div class="input-group-prepend">
-          <span class="input-group-text">Fonction</span>
-        </div>
-        <input  class="form-control" type="text" id="select-text-societe" value="Dirigeant de CYFAC">
-        
-        <div class="input-group-append">
-          <div class="input-group-text">
-            <input type="checkbox" id="sautfonction" aria-label="sautdeligne">
-            <span class=""> Saut de ligne</span>
-          </div>
-        </div>
-      </div>
-        
-        
-        
+  
       <div class="input-group input-minus-plus">
         <div class="input-group-prepend input-minus"  onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
           <span class="input-group-text">-</span>
@@ -459,33 +438,38 @@
 
           var size = $('#logotext').width();
           $('.logo').css('width', size + 28 + 50 + 'px');
-
-          var htmlString = $('#select-titre').val();
-            $('#aremplacer p.titre').html( '<span>' + htmlString + '</span>' );
-
             
-            var nommentrepreneur = $('#select-text-nom').val();
-            var isChecked = $('#sautfonction').prop('checked');
-            if(isChecked === true){
-              $('#aremplacer span.texte-nom').html( nommentrepreneur + '<br>');
-            }else{
-              $('#aremplacer span.texte-nom').html( nommentrepreneur + ',');
+            var nommentrepreneur = $('#select-text-source').val();
+            if (nommentrepreneur.length){
+              $('#aremplacer .contient-texte-source span').html( nommentrepreneur + '<br>');
+              $('#aremplacer .contient-texte-source').css( 'display', 'flex');
+            }
+            else{
+              $('#aremplacer .contient-texte-source').css( 'display', 'none');
             }
             
-            var htmlString = $('#select-text-societe').val();
-            $('#aremplacer span.texte-societe').html( htmlString );
-
-            var htmlString = $('#select-text-societe-l2').val();
-            $('#aremplacer .texte-societe-l2').html( htmlString );
             
+            var chiffre = $('#texte-chiffre').val();
+            $('#aremplacer .texte-chiffre #chiffre').html(chiffre);
+
+            var donnee = $('#donnee-input').val();
+            $('#aremplacer .texte-chiffre #donnee').html(donnee)
+
+            var chiffresize = $('#select-chiffre-size').val();
+            $('#aremplacer .texte-chiffre').css( 'font-size', chiffresize + '%' );
+
             var tfontsize = $('#select-text-size').val();
             $('#aremplacer .texte-principal').css( 'font-size', tfontsize + '%' );
             
             var tfontsize = $('#select-text-nom-size').val();
             $('#aremplacer .contient-texte-nom').css( 'font-size', tfontsize + '%' );
             
-            var tfontlh = $('#select-titre-size').val();
-            $('#aremplacer p.titre').css( 'font-size', tfontlh + '%'  );
+            var cesure = $('#cesure').prop('checked');
+            if (cesure === true){
+              $('#aremplacer .texte-principal p').css( 'hyphens', 'auto' );
+            } else {
+              $('#aremplacer .texte-principal p').css( 'hyphens', 'none' );
+            };
             
             var logo = $('#logoRend').val();
             if (logo  === 'logo'){
@@ -496,23 +480,21 @@
               $('#aremplacer .logopastille').css( 'display', 'block' );
             }
 
-            var backgrnd;
+
             var color = $('#color').val();
             if (color === 'bleu'){
-              backgrnd = '#0000CC';
-            } else if (color ==='cyan') { backgrnd = '#00ABE0'}
-            else if (color==='turquoise'){ backgrnd = '#07C9C3'}
-            else if (color==='vert'){ backgrnd = '#4AA528'}
-            else if (color==='chartreuse'){ backgrnd = '#A0BF09'}
-            else if (color==='jaune'){ backgrnd = '#FFBA31'}
-            else if (color==='orange'){ backgrnd = '#FF791F'}
-            else if (color==='rouge'){ backgrnd = '#D23321'}
-            else if (color==='rose'){ backgrnd = '#E52E97'}
-            else if (color==='violet'){ backgrnd = '#A518E2'}
+              var BGcolor1 = "var(--" + color + "-f1)";
+              var BGcolor2 = "var(--" + color + "-f2)";
+            } 
             else{
-              backgrnd = '#8E4C20';
+              var BGcolor1 = "var(--" + color + ")";
+              var BGcolor2 = "var(--" + color + "-f1)";
             }
-            $('#bandethematique').css('background-color', backgrnd); 
+
+            $('.circle-color').css('background-color', BGcolor1); 
+            $('.circle-deco').css('background-color', BGcolor2); 
+
+
 
             var imgsize = $('#select-image-size').val();
             var imsizecorrect = ( imgsize / 10 ) + 1;

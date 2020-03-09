@@ -4,37 +4,12 @@
     <meta charset="utf-8">
 	<title>Basic HTML Imports</title>
 	<link rel="stylesheet" href="https://thierryperrotin.github.io/cci-dev-design/bootstrap.css">
-	<script src="https://thierryperrotin.github.io/cci-dev-design/JS/jquery-3.3.1.min.js"></script>
+	
+
+	<script src="script-picto.js"></script>
   </head>
 
   <style>
-
-	.clair .picto-x-1, .clair .picto-x-1 path, .clair .picto-x-1 ellipse, .clair .picto-x-1 rect, .clair .picto-x-1 line, .clair .picto-x-1 rect, .clair .picto-x-1 g{
-	  fill: #6877ff;
-	}
-	.clair .picto-x-2, .clair .picto-x-2 path, .clair .picto-x-2 ellipse, .clair .picto-x-2 rect, .clair .picto-x-2 line, .clair .picto-x-2 rect, .clair .picto-x-2 g {
-	  fill: #0000CC !important;
-	}
-	.clair .picto-ligne, .clair .picto-ligne path, .clair .picto-ligne ellipse, .clair .picto-ligne rect, .clair .picto-ligne line, .clair .picto-ligne rect, .clair .picto-ligne g {
-	  fill: none;
-	  stroke: #ffffff;
-	  stroke-linecap: round;
-	  stroke-linejoin: round;
-	  stroke-width: 4px;
-	}
-	.sombre .picto-x-1, .sombre .picto-x-1 path, .sombre .picto-x-1 ellipse, .sombre .picto-x-1 rect, .sombre .picto-x-1 line, .sombre .picto-x-1 rect, .sombre .picto-x-1 g{
-	  fill: #373CF5 !important;
-	}
-	.sombre .picto-x-2, .sombre .picto-x-2 path, .sombre .picto-x-2 ellipse, .sombre .picto-x-2 rect, .sombre .picto-x-2 line, .sombre .picto-x-2 rect, .sombre .picto-x-2 g {
-	  fill: #6877ff !important;
-	}
-	.sombre .picto-ligne, .sombre .picto-ligne path, .sombre .picto-ligne ellipse, .sombre .picto-ligne rect, .sombre .picto-ligne line, .sombre .picto-ligne rect, .sombre .picto-ligne g {
-	  fill: none;
-	  stroke: #222222;
-	  stroke-linecap: round;
-	  stroke-linejoin: round;
-	  stroke-width: 4px;
-	}
 	.pres{
 		margin: 0 auto var(--space-4) auto;
 		font-size: 0;
@@ -118,48 +93,26 @@
 
   </style>
 
-  
-<script>
-	var couleurs = {
-	"bleu": [],
-	"cyan": [],
-	"turquoise": [],
-	"vert": [],
-	"chartreuse": [],
-	"jaune": [],
-	"orange": [],
-	"rouge": [],
-	"rose": [],
-	"violet":[],
-	"brun":[],
-	}
-	
-		
-	$('head').append( '<style></style>' );
-	
-		jQuery.each(couleurs, function(nom) {
-			var c = nom;
-			var cn = "." + nom;
-			var cc = ".clair." + nom;
-			var cs = ".sombre." + nom;
 
-			var style = cn + ' .picto-x-1, ' + cn + ' .picto-x-1 path, ' + cn + ' .picto-x-1 ellipse, ' + cn + ' .picto-x-1 rect, ' + cn + ' .picto-x-1 line, ' + cn + ' .picto-x-1 rect, ' + cn + ' .picto-x-1 g{ fill: var(--' + c + ') !important;}' + cn + ' .picto-x-2, ' + cn + ' .picto-x-2 path, ' + cn + ' .picto-x-2 ellipse, ' + cn + ' .picto-x-2 rect, ' + cn + ' .picto-x-2 line, ' + cn + ' .picto-x-2 rect, ' + cn + ' .picto-x-2 g { fill: var(--' + c + '-l1) !important;}' + cs + ' .picto-x-1, ' + cs + ' .picto-x-1 path, ' + cs + ' .picto-x-1 ellipse, ' + cs + ' .picto-x-1 rect, ' + cs + ' .picto-x-1 line, ' + cs + ' .picto-x-1 rect, ' + cs + ' .picto-x-1 g{ fill: var(--' + c + ') !important;}' + cs + ' .picto-x-2, ' + cs + ' .picto-x-2 path, ' + cs + ' .picto-x-2 ellipse, ' + cs + ' .picto-x-2 rect, ' + cs + ' .picto-x-2 line, ' + cs + ' .picto-x-2 rect, ' + cs + ' .picto-x-2 g { fill: var(--' + c + '-f1) !important;}' + cc + ' .picto-x-1, ' + cc + ' .picto-x-1 path, ' + cc + ' .picto-x-1 ellipse, ' + cc + ' .picto-x-1 rect, ' + cc + ' .picto-x-1 line, ' + cc + ' .picto-x-1 rect, ' + cc + ' .picto-x-1 g{ fill: var(--' + c + '-l1) !important;}' + cc + ' .picto-x-2, ' + cc + ' .picto-x-2 path, ' + cc + ' .picto-x-2 ellipse, ' + cc + ' .picto-x-2 rect, ' + cc + ' .picto-x-2 line, ' + cc + ' .picto-x-2 rect, ' + cc + ' .picto-x-2 g { fill: var(--' + c + '-f2) !important;} ';
-			
-			var styleTXT = "";
-
-			$('head style').last().append( style );
-
-			});
-
-</script>
 
   
   <body class="p-4">
     <h1>Dev Pictos charte CCI</h1>
 
+	<pre><code></code></pre>
+	
+	<p id='stock'></p>
+	<a href="#" id="SVGsave">download cat.png</a>
+
+
+<script>
+</script>
+
+
+
 	
 <div class="p-3 bg-gris-f2 d-inline-block">
-	<i picto="contrat" class="clair vert"></i>
+	<i id="test" picto="contrat" class="clair vert"></i>
 </div>
 
 <div class="p-3 bg-blanc d-inline-block">
@@ -174,43 +127,13 @@
 
 
 <script>
-	var pictos = {
-		"accord": [],
-		"arbre": [],
-		"bateau": [],
-		"cloud-telechargement": [],
-		"commerce": [],
-		"contrat": [],
-		"engagement": [],
-		"engrenage": [],
-		"engrenage-2": [],
-		"expertise": [],
-		"filtre": [],
-		"humains": [],
-		"ordi-portable": [],
-		"piece": [],
-		"presentation": [],
-		"securite": [],
-		"securite-1": [],
-		"securite-profil": [],
-		"sonnette": [],
-		"usine": [],
-		"virus": [],
-	}
-	
-		jQuery.each(pictos, function(nom) {
+		jQuery.each(ListePictos, function(nom) {
 				$("body").append('<div class="pres"><div class="pres-larg"><i picto="' + nom + '" class="clair"></i><i picto="' + nom + '" class="sombre"></i></div><div class="pres-small-contain"><div class="pres-small"><i picto="' + nom + '" class="cyan"></i><i picto="' + nom + '" class="turquoise"></i><i picto="' + nom + '" class="vert"></i><i picto="' + nom + '" class="chartreuse"></i><i picto="' + nom + '" class="jaune"></i><i picto="' + nom + '" class="orange"></i><i picto="' + nom + '" class="rouge"></i><i picto="' + nom + '" class="rose"></i><i picto="' + nom + '" class="violet"></i><i picto="' + nom + '" class="brun"></i></div><div class="clair pres-small"><i picto="' + nom + '" class="clair cyan"></i><i picto="' + nom + '" class="clair turquoise"></i><i picto="' + nom + '" class="clair vert"></i><i picto="' + nom + '" class="clair chartreuse"></i><i picto="' + nom + '" class="clair jaune"></i><i picto="' + nom + '" class="clair orange"></i><i picto="' + nom + '" class="clair rouge"></i><i picto="' + nom + '" class="clair rose"></i><i picto="' + nom + '" class="clair violet"></i><i picto="' + nom + '" class="clair brun"></i></div></div></div>');
 			});
 </script>
 
+
 <script>
-	$(document).ready(function () {
-			$("i[picto]").each(function () {  
-				var picto = $(this).attr("picto");      
-				var pictoURL = "https://thierryperrotin.github.io/cci-dev-design/pictos/pictos/" + picto + ".svg";       
-				$(this).load(pictoURL);
-			});
-		});
 </script>
 
 

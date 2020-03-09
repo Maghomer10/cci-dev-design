@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
-    <title>Template Creator - Basic</title>
+    <title>Template Creator - Citation</title>
+
 
 
     <link rel="stylesheet" href="../../../bootstrap.css">
     <script src="../../../JS/jquery-3.3.1.min.js"></script>
-
     
 
 
@@ -28,6 +28,8 @@
     <link href="../@css/style-outil.css" rel="stylesheet" type="text/css">
     <link href="../@css/sceditor.css" rel="stylesheet" type="text/css">
     <link href="./style.css" rel="stylesheet" type="text/css">
+
+
 
     
     <script type="text/javascript">
@@ -90,18 +92,6 @@
 
 </head>
 
-	
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 <body>
 
     
@@ -116,17 +106,15 @@
     
     <div id="export">
       <section id="screen">
-        <img id="fond" src="../@img/grille.png">
+        <img id="fond" src="../@img/grille.png" style="width: 100%;">
           <div id="aremplacer">
             <div id="bandethematique">
+              <img id="quote" src="../@img/quote.svg">
               <div id="degrade1"><img src="../@img/degrade.png"></div>
             </div>
             <div id="degrade2"><img src="../@img/degrade.png"></div> 
             <div id="fondbleu">
-              <div class="text">
-                <div class="taille-min">
-                  <p class="titre">Librairies</p>
-                </div>
+             <div class="text">
                 <div class="texte-principal"><p>1er circuit de vente 
                   de livres en France 
                   avec <strong>40% du marché</strong>, avant les grandes surfaces et internet. </p></div>
@@ -171,46 +159,32 @@
 	
 <div class="tab-content" id="pills-tabContent">
   <div class="tab-pane show active py-4 px-3 container" id="texte" role="tabpanel" aria-labelledby="onglet-texte">
-      
-
     
 
 
-
-      <div class="input-group mb-2">
-        <div class="input-group-prepend">
-          <span class="input-group-text">Titre</span>
-        </div>
-        <input  class="form-control" type="text" id="select-titre" value="Librairies">
-      </div>
-
-      <div class="input-group input-minus-plus">
-        <div class="input-group-prepend input-minus"  onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-          <span class="input-group-text">-</span>
-        </div>
-        <input  class="form-control"  type="number" id="select-titre-size" value="355" step="5">
-        <div class="input-group-append input-plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-          <span class="input-group-text" id="basic-addon1">+</span>
-        </div>
-      </div>
-
-<hr>
-
       <textarea id="Texteprincipal" class="w-100" rows="6" cols="20">Nous sommes pris dans le quotidien de l’entreprise, les recrutements, les contrats… Il est difficile de trouver les bons contacts. <br>La CCI nous a beaucoup aidés.</textarea>
-
-      <div class="input-group input-minus-plus mt-2">
-        <div class="input-group-prepend input-minus"  onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-          <span class="input-group-text">-</span>
-        </div>
-        <input  class="form-control"  type="number" id="select-text-size" value="190" step="2">
-        <div class="input-group-append input-plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-          <span class="input-group-text" id="basic-addon1">+</span>
+    
+<!--
+      <div class="input-group-append mt-2">
+        <div class="input-group-text">
+          <input type="checkbox" id="cesure" aria-label="cesure">
+          <span class="ml-2">Césure</span>
         </div>
       </div>
+-->
 
-        
+    <div class="input-group input-minus-plus mt-2 mb-2">
+      <div class="input-group-prepend input-minus"  onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+        <span class="input-group-text">-</span>
+      </div>
+      <input  class="form-control"  type="number" id="select-text-size" value="210" step="2">
+      <div class="input-group-append input-plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+        <span class="input-group-text" id="basic-addon1">+</span>
+      </div>
+    </div>
+    
+      
         <hr>
-        
 
         
       <div class="input-group mb-2">
@@ -230,7 +204,7 @@
         <div class="input-group-append">
           <div class="input-group-text">
             <input type="checkbox" id="sautfonction" aria-label="sautdeligne">
-            <span class=""> Saut de ligne</span>
+            <span class="ml-2"> Saut de ligne</span>
           </div>
         </div>
       </div>
@@ -246,7 +220,7 @@
           <span class="input-group-text" id="basic-addon1">+</span>
         </div>
       </div>
-
+      
 
         
 
@@ -263,7 +237,7 @@
         <label class="input-group-text" for="color">Thématique</label>
       </div>
       <select class="custom-select" id="color">
-        <option value="bleu">Classique</option>
+        <option value="bleu-f1">Classique</option>
         <option value="cyan">Institutionnel</option>
         <option value="turquoise">Numérique</option>
         <option value="vert">Développement durable</option>
@@ -296,6 +270,7 @@
             <span class="input-group-text" id="basic-addon1">+</span>
           </div>
         </div>
+
     
     </div>
 
@@ -477,15 +452,13 @@
 
             var htmlString = $('#select-text-societe-l2').val();
             $('#aremplacer .texte-societe-l2').html( htmlString );
-            
-            var tfontsize = $('#select-text-size').val();
-            $('#aremplacer .texte-principal').css( 'font-size', tfontsize + '%' );
-            
+          
+            var tfont = $('#select-text-size').val();
+            $('#aremplacer .texte-principal').css( 'font-size', tfont + '%' );
+
             var tfontsize = $('#select-text-nom-size').val();
             $('#aremplacer .contient-texte-nom').css( 'font-size', tfontsize + '%' );
-            
-            var tfontlh = $('#select-titre-size').val();
-            $('#aremplacer p.titre').css( 'font-size', tfontlh + '%'  );
+          
             
             var logo = $('#logoRend').val();
             if (logo  === 'logo'){
@@ -496,23 +469,18 @@
               $('#aremplacer .logopastille').css( 'display', 'block' );
             }
 
-            var backgrnd;
+            
             var color = $('#color').val();
-            if (color === 'bleu'){
-              backgrnd = '#0000CC';
-            } else if (color ==='cyan') { backgrnd = '#00ABE0'}
-            else if (color==='turquoise'){ backgrnd = '#07C9C3'}
-            else if (color==='vert'){ backgrnd = '#4AA528'}
-            else if (color==='chartreuse'){ backgrnd = '#A0BF09'}
-            else if (color==='jaune'){ backgrnd = '#FFBA31'}
-            else if (color==='orange'){ backgrnd = '#FF791F'}
-            else if (color==='rouge'){ backgrnd = '#D23321'}
-            else if (color==='rose'){ backgrnd = '#E52E97'}
-            else if (color==='violet'){ backgrnd = '#A518E2'}
-            else{
-              backgrnd = '#8E4C20';
-            }
-            $('#bandethematique').css('background-color', backgrnd); 
+            var backgrnd = "var(--"+color+")"
+            $('#bandethematique').css('background-color',backgrnd); 
+
+            var cesure = $('#cesure').prop('checked');
+            if (cesure === true){
+              $('#aremplacer .texte-principal p').css( 'hyphens', 'auto' );
+            } else {
+              $('#aremplacer .texte-principal p').css( 'hyphens', 'none' );
+            };
+
 
             var imgsize = $('#select-image-size').val();
             var imsizecorrect = ( imgsize / 10 ) + 1;
