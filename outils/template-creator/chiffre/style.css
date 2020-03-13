@@ -174,7 +174,7 @@ html #aremplacer .texte-chiffre {
     text-align: center;
     width: 43%;
     color: white;
-    overflow: hidden;
+    overflow: visible;
 }
 html #aremplacer .texte-chiffre #donnee {
     font-size: 40%;

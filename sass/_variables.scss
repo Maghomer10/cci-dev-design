@@ -369,8 +369,8 @@ $grid-gutter-width:           30px !default;
 $line-height-lg:              1.4;
 $line-height-sm:              1.4;
 
-$border-width:                var(--bordure);
-$border-width-bold:           var(--bordure-2);
+$border-width:                var(--bordure-size-1);
+$border-width-bold:           var(--bordure-size-2);
 $border-color:                var(--bordure-color);
 
 $border-radius:               var(--arrondis-2);
@@ -394,8 +394,8 @@ $caret-vertical-align:        $caret-width * .85 !default;
 $caret-spacing:               $caret-width * .85 !default;
 
 $transition-base:             all .5s var(--transition-mode);
-$transition-fade:             opacity .15s linear !default;
-$transition-collapse:         height .35s ease !default;
+$transition-fade:             opacity .15s var(--transition-mode);
+$transition-collapse:         height .35s var(--transition-mode);
 
 $embed-responsive-aspect-ratios: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -546,7 +546,7 @@ $table-border-level:          -6 !default;
 //
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 
-$input-btn-padding-y:         var(--space-2);
+$input-btn-padding-y:         var(--space-1);
 $input-btn-padding-x:         var(--space-3);
 $input-btn-font-family:       null !default;
 $input-btn-font-size:         $font-size-base !default;
@@ -556,13 +556,13 @@ $input-btn-focus-width:       0;
 $input-btn-focus-color:       rgba($component-active-bg, .25) !default;
 $input-btn-focus-box-shadow:  0 0 0 $input-btn-focus-width $input-btn-focus-color !default;
 
-$input-btn-padding-y-sm:      .15rem !default;
-$input-btn-padding-x-sm:      .75rem !default;
+$input-btn-padding-y-sm:      var(--space-1);
+$input-btn-padding-x-sm:      var(--space-1);
 $input-btn-font-size-sm:      $font-size-sm !default;
 $input-btn-line-height-sm:    $line-height-sm !default;
 
-$input-btn-padding-y-lg:      .25rem !default;
-$input-btn-padding-x-lg:      1.2rem !default;
+$input-btn-padding-y-lg:      var(--space-2);
+$input-btn-padding-x-lg:      var(--space-4);
 $input-btn-font-size-lg:      $font-size-lg !default;
 $input-btn-line-height-lg:    $line-height-lg !default;
 
@@ -659,8 +659,8 @@ $input-height-inner-half:               calc(#{$input-line-height * .5em} + #{$i
 $input-height-inner-quarter:            calc(#{$input-line-height * .25em} + (#{$input-padding-y} / 2)) !default;
 
 $input-height:                          calc(#{$input-line-height * 1em} + (#{$input-padding-y} * 2) + #{$input-height-border}) !default;
-$input-height-sm:                       calc(#{$input-line-height-sm * 1em} + #{$input-btn-padding-y-sm * 2} + #{$input-height-border}) !default;
-$input-height-lg:                       calc(#{$input-line-height-lg * 1em} + #{$input-btn-padding-y-lg * 2} + #{$input-height-border}) !default;
+$input-height-sm:                       calc(#{$input-line-height-sm * 1em} + (#{$input-btn-padding-y-sm} * 2) + #{$input-height-border}) !default;
+$input-height-lg:                       calc(#{$input-line-height-lg * 1em} + (#{$input-btn-padding-y-lg} * 2) + #{$input-height-border}) !default;
 
 $input-transition:                      $transition-base;
 

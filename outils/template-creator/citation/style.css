@@ -147,13 +147,13 @@ html #aremplacer .texte-principal p {
     font-weight: 500;
     color: white;
     overflow: hidden;
-    hyphens: auto;
-    -webkit-hyphens: auto;
+    display: inline !important;
 }
 html #aremplacer .texte-principal p strong {
+    display: inline !important;
     font-weight: 500;
     color: #373CF5;
-    background-color: #ffffff;
+    background-color: white;
     padding: 0 0.2em;
 }
 html #aremplacer .contient-texte-nom {

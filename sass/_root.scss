@@ -9,8 +9,9 @@ $arrondis-xl:           100rem;
 $ombre:                  0 0 10px rgba(0,0,0,0.2);
 $ombre-hover:            0 0 20px rgba(0,0,0,0.2);
 
-$bordure:                1px;
-$bordure-2:              2px;
+$bordure-size-1:         1px;
+$bordure-size-2:         2px;
+$bordure-type:          solid;
 $bordure-color:          $gris;
 
 $transition-mode: cubic-bezier(.11,.77,.36,.97);
@@ -25,8 +26,10 @@ $transition-mode: cubic-bezier(.11,.77,.36,.97);
   --arrondis-2: #{$arrondis-2};
   --arrondis-xl: #{$arrondis-xl};
 
-  --bordure: #{$bordure};
-  --bordure-2: #{$bordure-2};
+  --bordure: #{$bordure-size-1} #{$bordure-type} #{$bordure-color};
+  --bordure-size-1 : #{$bordure-size-1};
+  --bordure-size-2 : #{$bordure-size-2};
+  --bordure-type: #{$bordure-type};
   --bordure-color: #{$bordure-color};
 
   --ombre:#{$ombre};

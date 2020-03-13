@@ -21,16 +21,13 @@
     
 
 
-    <script src="../@js/jquery-1.11.3-min.js"></script>
     <script src="../@js/EXT-filesaver.js" type="text/javascript"></script>
     <script src="../@js/EXT-canvas-toBlob.js" type="text/javascript"></script>
-    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js" type="text/javascript"></script>  
-
-
-		<script src="../@js/jquery.sceditor.xhtml.min.js"></script>
-		<script src="../@js/jquery.sceditor.fr.js"></script>
-		<script src="../@js/jquery.sceditor.plaintext.js"></script>
-		<script src="../@js/jquery.sceditor.undo.js"></script>
+    <script src="../@js/EXT-html2canvas.min.1.0.0.js" type="text/javascript"></script>  
+		<script src="../@js/jquery.sceditor.xhtml.min.js" type="text/javascript"></script>
+		<script src="../@js/jquery.sceditor.fr.js" type="text/javascript"></script>
+		<script src="../@js/jquery.sceditor.plaintext.js" type="text/javascript"></script>
+		<script src="../@js/jquery.sceditor.undo.js" type="text/javascript"></script>
     
 
     <link href="../@css/style-outil.css" rel="stylesheet" type="text/css">
@@ -38,63 +35,6 @@
     <link href="./style.css" rel="stylesheet" type="text/css">
 
 
-
-    
-    <script type="text/javascript">
-
-  
-      function mobileCompatible(){
-        var TemplateX = 700;
-        var TemplateY = 394;
-
-        var x = document.body.offsetWidth;
-        var X = x / TemplateX;
-        var scaleX = 'scale(' + X + ')';
-
-        var y = window.innerHeight;
-        var Y = (x*TemplateY)/TemplateX;
-        var navY = document.getElementById('pills-tab').offsetHeight;
-        var ctaY = document.getElementById('telechargement').offsetHeight;
-        var margeY = ctaY + navY;
-        var calcY = 'calc(' + y + 'px - ' + margeY + 'px - ' + Y + 'px - 3vh)';
-        var calcYfixe = 'calc(' + y + 'px - ' + margeY + 'px - ' + TemplateY + 'px - 3vh)';
-
-        $('#screen').each(function(){
-                if(x < TemplateX){
-                  $(this).style( 'transform', scaleX );
-                  $('#outils .tab-content').style( 'max-height', calcY );
-                }
-                else{
-                  $(this).style( 'transform', 'scale(1)' );
-                  $('#outils .tab-content').style( 'max-height', calcYfixe );
-                }
-        });
-
-
-        return false;
-      }
-  
-      $(document).ready(function(){
-          $(document).ready(mobileCompatible);
-          $(window).resize(mobileCompatible);
-      });
-  
-      
-      var shotit = function() {
-          $('#screen').style( 'transform', 'scale(2)' );
-          html2canvas(document.getElementById('screen'), 
-                    ).then(function(canvas) {
-            document.body.appendChild(canvas);
-                            canvas.toBlob(function(blob) {
-                              saveAs(blob, "template.png"); 
-                            });
-              });
-          $('#screen').style( 'transform', 'scale(1)' );
-          $(document).ready(mobileCompatible);
-       }
-       
-  
-      </script>
 
       
 
@@ -171,15 +111,7 @@
 
 
       <textarea id="Texteprincipal" class="w-100" rows="6" cols="20">Nous sommes pris dans le quotidien de l’entreprise, les recrutements, les contrats… Il est difficile de trouver les bons contacts. <br>La CCI nous a beaucoup aidés.</textarea>
-    
-<!--
-      <div class="input-group-append mt-2">
-        <div class="input-group-text">
-          <input type="checkbox" id="cesure" aria-label="cesure">
-          <span class="ml-2">Césure</span>
-        </div>
-      </div>
--->
+
 
     <div class="input-group input-minus-plus mt-2 mb-2">
       <div class="input-group-prepend input-minus"  onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
@@ -344,73 +276,7 @@
     
     <script type="text/javascript">
         
-        (function($) {    
-  if ($.fn.style) {
-    return;
-  }
-
-  // Escape regex chars with \
-  var escape = function(text) {
-    return text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, "\\$&");
-  };
-
-  // For those who need them (< IE 9), add support for CSS functions
-  var isStyleFuncSupported = !!CSSStyleDeclaration.prototype.getPropertyValue;
-  if (!isStyleFuncSupported) {
-    CSSStyleDeclaration.prototype.getPropertyValue = function(a) {
-      return this.getAttribute(a);
-    };
-    CSSStyleDeclaration.prototype.setProperty = function(styleName, value, priority) {
-      this.setAttribute(styleName, value);
-      var priority = typeof priority != 'undefined' ? priority : '';
-      if (priority != '') {
-        // Add priority manually
-        var rule = new RegExp(escape(styleName) + '\\s*:\\s*' + escape(value) +
-            '(\\s*;)?', 'gmi');
-        this.cssText =
-            this.cssText.replace(rule, styleName + ': ' + value + ' !' + priority + ';');
-      }
-    };
-    CSSStyleDeclaration.prototype.removeProperty = function(a) {
-      return this.removeAttribute(a);
-    };
-    CSSStyleDeclaration.prototype.getPropertyPriority = function(styleName) {
-      var rule = new RegExp(escape(styleName) + '\\s*:\\s*[^\\s]*\\s*!important(\\s*;)?',
-          'gmi');
-      return rule.test(this.cssText) ? 'important' : '';
-    }
-  }
-
-  // The style function
-  $.fn.style = function(styleName, value, priority) {
-    // DOM node
-    var node = this.get(0);
-    // Ensure we have a DOM node
-    if (typeof node == 'undefined') {
-      return this;
-    }
-    // CSSStyleDeclaration
-    var style = this.get(0).style;
-    // Getter/Setter
-    if (typeof styleName != 'undefined') {
-      if (typeof value != 'undefined') {
-        // Set style property
-        priority = typeof priority != 'undefined' ? priority : '';
-        style.setProperty(styleName, value, priority);
-        return this;
-      } else {
-        // Get style property
-        return style.getPropertyValue(styleName);
-      }
-    } else {
-      // Get CSSStyleDeclaration
-      return style;
-    }
-  };
-})(jQuery);
-        
-        
-        
+                
 			var textarea = document.getElementById('Texteprincipal');
 			sceditor.create(textarea, {
 				format: 'xhtml',
@@ -496,21 +362,12 @@
 
             $('#aremplacer .image-photo #cursorImage').css( 'transform', imsizecorrectcss );
             
-            encodeImageFileAsURL();
-            
+            encodeImageFileAsURL();    
 
 			
         }, 200);
 
         
-       /*  setInterval(function(){
-
-        html2canvas(document.getElementById('screen'), 
-               ).then(function(canvas) {
-      $('.affiche').html(canvas);
-        });
-        
-      }, 1000); */
 		
 		
     </script>
@@ -518,117 +375,27 @@
     
     
     
-    
-    
-        
   
     
     
-   
-    <div id="imgTest"></div>
     
     
     
-    <script type="text/javascript">
     
-function encodeImageFileAsURL(){
+    
+    
+    
+    
+    
 
-    var filesSelected = document.getElementById("inputFileToLoad").files;
-    if (filesSelected.length > 0)
-    {
-        var fileToLoad = filesSelected[0];
-        var fileReader = new FileReader();
-        fileReader.onload = function(fileLoadedEvent) {
-            var srcData = fileLoadedEvent.target.result;
-            var newImage = document.createElement('img');
-            var newBG = 'url(' + srcData + ')';
-            $('#aremplacer .image-photo #cursorImage').attr( 'src', srcData );
-        }
-        fileReader.readAsDataURL(fileToLoad);
-    }
-}
-
-    </script>
-    
-    
-    
-    
-    
-    <script type="text/javascript">
-        
-    let gMouseDownX = 0;
-let gMouseDownY = 0;
-let gMouseDownOffsetX = 0;
-let gMouseDownOffsetY = 0;
-
-function addListeners() {
-    document.getElementById('cursorImage').addEventListener('mousedown', mouseDown, false);
-    window.addEventListener('mouseup', mouseUp, false);
-}
-
-function mouseUp() {
-    window.removeEventListener('mousemove', divMove, true);
-}
-
-function mouseDown(e) {
-    gMouseDownX = e.clientX;
-    gMouseDownY = e.clientY;
-
-    var div = document.getElementById('cursorImage');
-
-    //The following block gets the X offset (the difference between where it starts and where it was clicked)
-    let leftPart = "";
-    if(!div.style.left)
-        leftPart+="0px";    //In case this was not defined as 0px explicitly.
-    else
-        leftPart = div.style.left;
-    let leftPos = leftPart.indexOf("px");
-    let leftNumString = leftPart.slice(0, leftPos); // Get the X value of the object.
-    gMouseDownOffsetX = gMouseDownX - parseInt(leftNumString,10);
-
-    //The following block gets the Y offset (the difference between where it starts and where it was clicked)
-    let topPart = "";
-    if(!div.style.top)
-        topPart+="0px";     //In case this was not defined as 0px explicitly.
-    else
-        topPart = div.style.top;
-    let topPos = topPart.indexOf("px");
-    let topNumString = topPart.slice(0, topPos);    // Get the Y value of the object.
-    gMouseDownOffsetY = gMouseDownY - parseInt(topNumString,10);
-
-    window.addEventListener('mousemove', divMove, true);
-}
-
-function divMove(e){
-    var div = document.getElementById('cursorImage');
-    div.style.position = 'absolute';
-    let topAmount = e.clientY - gMouseDownOffsetY;
-    div.style.top = topAmount + 'px';
-    let leftAmount = e.clientX - gMouseDownOffsetX;
-    div.style.left = leftAmount + 'px';
-}
-
-addListeners();
-    
-    </script>
-    
-    
-    
-    
-    
-    
-    
-    
-    
+		<script src="../@js/js.js" type="text/javascript"></script>
 
 
             
 	
     <script src="../../../JS/charteCCI.js"></script>
-
     <script src="../../../JS/popper.min.js"></script>
     <script src="../../../JS/bootstrap.min.js"></script>
-
     <script src="../../../JS/min-ie11CustomProperties.js"></script>	
     
     

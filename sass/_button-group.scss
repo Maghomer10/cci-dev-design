@@ -82,13 +82,13 @@
 }
 
 .btn-sm + .dropdown-toggle-split {
-  padding-right: $btn-padding-x-sm * .75;
-  padding-left: $btn-padding-x-sm * .75;
+  padding-right: calc(#{$btn-padding-x-sm} * .75);
+  padding-left: calc(#{$btn-padding-x-sm} * .75);
 }
 
 .btn-lg + .dropdown-toggle-split {
-  padding-right: $btn-padding-x-lg * .75;
-  padding-left: $btn-padding-x-lg * .75;
+  padding-right: calc(#{$btn-padding-x-lg} * .75);
+  padding-left: calc(#{$btn-padding-x-lg} * .75);
 }
 
 
