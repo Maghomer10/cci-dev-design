@@ -6,6 +6,7 @@
 
                 if (target.length) {    
                     $('html, body').animate({scrollTop: $(target).offset().top - leSticky}, 500, 'swing');
+					window.location.replace(target);
                 }       
             });
         });

@@ -165,7 +165,7 @@
    flex-direction: column;
    position: relative;
    background: #fff;
-   border: var(--bordure) solid var(--bordure-color);
+   border: var(--bordure);
    font-size: var(--font-size-1);
    color: #333;
    line-height: 1;

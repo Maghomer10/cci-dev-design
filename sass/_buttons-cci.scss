@@ -16,9 +16,9 @@
   border: $btn-border-width solid transparent;
   transition: $btn-transition;
   padding: $btn-padding-y $btn-padding-x;
-  line-height: 1.45em;
+  line-height: 1.2em;
   border-radius: $border-radius-xl;
-  font-size: $typo-taille-2;
+  font-size: $input-btn-font-size;
   font-weight: $font-weight-normal;
 
   @include hover {

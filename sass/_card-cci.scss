@@ -479,13 +479,3 @@
 
   }
 }
-
-
-$toogle-css = 'collapse';
-
-div.card-header[data-toogle*='#{$toogle-css}']{
-  margin-bottom: -$card-border-width;
-  background-color: red;
-  padding-right: 2rem;
-
-}

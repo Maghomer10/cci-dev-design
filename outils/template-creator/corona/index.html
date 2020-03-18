@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="fr-fr">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160153383-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-160153383-1');
+    </script>
+
+    <title>Template Creator - Corona</title>
+
+
+
+    <link rel="stylesheet" href="../../../bootstrap.css">
+    <script src="../../../JS/jquery-3.3.1.min.js"></script>
+    
+
+
+    <script src="../@js/EXT-filesaver.js" type="text/javascript"></script>
+    <script src="../@js/EXT-canvas-toBlob.js" type="text/javascript"></script>
+    <script src="../@js/EXT-html2canvas.min.1.0.0.js" type="text/javascript"></script>  
+		<script src="../@js/jquery.sceditor.xhtml.min.js" type="text/javascript"></script>
+		<script src="../@js/jquery.sceditor.fr.js" type="text/javascript"></script>
+		<script src="../@js/jquery.sceditor.plaintext.js" type="text/javascript"></script>
+		<script src="../@js/jquery.sceditor.undo.js" type="text/javascript"></script>
+    
+
+    <link href="../@css/style-outil.css" rel="stylesheet" type="text/css">
+    <link href="../@css/sceditor.css" rel="stylesheet" type="text/css">
+    <link href="./style.css" rel="stylesheet" type="text/css">
+
+      
+
+</head>
+
+	
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<body>
+
+    
+
+
+
+
+  <div id='affiche'>
+ 
+    
+    
+    
+    <div id="export">
+      <section id="screen">
+        <img id="fond" src="./COVID-19-RS-v3.jpg">
+          <div id="aremplacer">
+
+              <div class="text">
+                <div class="taille-min">
+                  <p class="titre">Librairies</p>
+                </div>
+                <div class="texte-principal"><p>1er circuit de vente 
+                  de livres en France 
+                  avec <strong>40% du marché</strong>, avant les grandes surfaces et internet. </p></div>
+                  
+                <div class="contient-texte-nom">
+                  <p><span class="texte-nom">truc de machin</span></p>
+                </div>
+              </div>
+
+          <div class="logo">
+            <img src="../@img/pastille_blanc.png" id="pastille"/>
+            <div id="logotext">
+            <p class="CCI-nom">chambre de commerce</p>
+            <p class="CCI-nom2">et d'industrie</p>
+            </div>
+          </div>
+          <div class="logopastille">
+            <img src="../@img/pastille.png" id="logopastille">
+          </div>
+
+   
+		  </div>
+          
+      </section>
+    </div>
+    
+    
+    
+    
+    
+<div id="outils">
+
+<nav class="nav nav-fill font-size-2 bg-blanc text-500" role="tablist"  id="pills-tab">
+    <a href="#texte" class="nav-link nav-item active" role="tab" aria-controls="texte" data-toggle="pill" id="onglet-texte" aria-selected="true">Texte</a>
+    <a href="#image" class="nav-link nav-item" role="tab" aria-controls="image" data-toggle="pill" id="onglet-image" aria-selected="false">Image de fond</a>
+    <a href="#logo" class="nav-link nav-item" role="tab" aria-controls="logo" data-toggle="pill" id="onglet-logo" aria-selected="false">Logo</a>
+</nav>
+    
+	
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane show active py-4 px-3 container" id="texte" role="tabpanel" aria-labelledby="onglet-texte">
+      
+
+    
+
+
+
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Titre</span>
+        </div>
+        <input  class="form-control" type="text" id="select-titre" value="Coronavirus COVID-19">
+      </div>
+
+      <div class="input-group input-minus-plus">
+        <div class="input-group-prepend input-minus"  onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+          <span class="input-group-text">-</span>
+        </div>
+        <input  class="form-control"  type="number" id="select-titre-size" value="370" step="10">
+        <div class="input-group-append input-plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+          <span class="input-group-text" id="basic-addon1">+</span>
+        </div>
+      </div>
+
+<hr>
+
+      <textarea id="Texteprincipal" class="w-100" rows="6" cols="20">Entreprises,<br>le réseaux des CCI<br> est mobilisé pour vous.</textarea>
+
+      <div class="input-group input-minus-plus mt-2">
+        <div class="input-group-prepend input-minus"  onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+          <span class="input-group-text">-</span>
+        </div>
+        <input  class="form-control"  type="number" id="select-text-size" value="300" step="5">
+        <div class="input-group-append input-plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+          <span class="input-group-text" id="basic-addon1">+</span>
+        </div>
+      </div>
+
+        
+        <hr>
+        
+
+        
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Nom</span>
+        </div>
+        <input  class="form-control" type="text" id="select-text-nom" value="Consultez notre dossier sur cci.fr">
+      </div>
+
+      
+        
+        
+        
+      <div class="input-group input-minus-plus">
+        <div class="input-group-prepend input-minus"  onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+          <span class="input-group-text">-</span>
+        </div>
+        <input  class="form-control"  type="number" id="select-text-nom-size" value="175">
+        <div class="input-group-append input-plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+          <span class="input-group-text" id="basic-addon1">+</span>
+        </div>
+      </div>
+
+
+        
+
+    </div>
+    
+    
+    
+    
+  <div class="tab-pane py-4 px-3 container" id="image" role="tabpanel" aria-labelledby="onglet-image">
+
+    <div id="select-bg">
+      <div class="row justify-content-center mb-2">
+      <img class="col-6 col-sm-4" src="./COVID-19-RS-v1.jpg">
+      <img class="col-6 col-sm-4" src="./COVID-19-RS-v2.jpg">
+      </div>
+      <div class="row justify-content-center">
+      <img class="col-6 col-sm-4" src="./COVID-19-RS-v3.jpg">
+      <img class="col-6 col-sm-4" src="./COVID-19-RS-v4.jpg">
+    </div>
+  </div>
+
+
+  </div>
+
+
+    
+  <div class="tab-pane py-4 px-3 container " id="logo" role="tabpanel" aria-labelledby="onglet-logo">
+    
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <label class="input-group-text" for="color">Type de logo</label>
+      </div>
+      <select class="custom-select" id="logoRend">
+        <option value="logo">Logo</option>
+       <option value="pastille">pastille CCI</option>
+      </select>
+    </div>
+
+    <hr>
+    
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Nom de la CCI</span>
+            </div>
+            <input  class="form-control col-8" type="text" id="name-cci" value="Chambre de commerce" >
+            <input  class="form-control" type="text" id="name-cci-l2" value="et d'industrie">
+          </div>
+
+
+    </div>
+
+
+    </div>
+
+    
+    
+    
+    
+<a href="#" id="telechargement" onClick="shotit()">Télécharger</a>
+	
+	
+    
+</div>
+
+    
+    
+    
+    
+    
+    
+    
+    
+        
+
+    
+
+    
+    
+    
+    
+ 
+        
+    
+    
+    <script type="text/javascript">
+        
+        
+			var textarea = document.getElementById('Texteprincipal');
+			sceditor.create(textarea, {
+				format: 'xhtml',
+				toolbar: 'bold|italic',
+				style: '../@css/sceditor.css', 
+				local: 'fr', 
+    		plugins: 'plaintext',
+        pastetext: {
+            addButton: false,
+            enabled: true
+        },
+				id: 'leTexte', 
+        enablePasteFiltering: true
+			});
+			
+			
+        
+        
+        setInterval(function(){
+
+          
+				var val = sceditor.instance(textarea).val();
+				$('#aremplacer .texte-principal').html( val );
+          
+          var htmlString = $('#name-cci').val();
+          var cciligne2 = $('#name-cci-l2').val();
+            $('#aremplacer p.CCI-nom').html( htmlString );
+            $('#aremplacer p.CCI-nom2').html(cciligne2);
+
+          var size = $('#logotext').width();
+          $('.logo').css('width', size + 28 + 50 + 'px');
+
+          var htmlString = $('#select-titre').val();
+            $('#aremplacer p.titre').html( '<span>' + htmlString + '</span>' );
+
+            
+            var nommentrepreneur = $('#select-text-nom').val();
+              $('#aremplacer span.texte-nom').html( nommentrepreneur );
+            
+            var htmlString = $('#select-text-societe').val();
+            $('#aremplacer span.texte-societe').html( htmlString );
+
+            var htmlString = $('#select-text-societe-l2').val();
+            $('#aremplacer .texte-societe-l2').html( htmlString );
+            
+            var tfontsize = $('#select-text-size').val();
+            $('#aremplacer .texte-principal').css( 'font-size', tfontsize + '%' );
+            
+            var tfontsize = $('#select-text-nom-size').val();
+            $('#aremplacer .contient-texte-nom').css( 'font-size', tfontsize + '%' );
+            
+            var tfontlh = $('#select-titre-size').val();
+            $('#aremplacer p.titre').css( 'font-size', tfontlh + '%'  );
+            
+            var logo = $('#logoRend').val();
+            if (logo  === 'logo'){
+              $('#aremplacer .logo').css( 'display', 'block' );
+              $('#aremplacer .logopastille').css( 'display', 'none' );
+            }else{
+              $('#aremplacer .logo').css( 'display', 'none' );
+              $('#aremplacer .logopastille').css( 'display', 'block' );
+            }
+
+
+            var imgsize = $('#select-image-size').val();
+            var imsizecorrect = ( imgsize / 10 ) + 1;
+            var imsizecorrectcss = 'scale(' + imsizecorrect + ')';
+
+            $('#aremplacer .image-photo #cursorImage').css( 'transform', imsizecorrectcss );
+            
+            
+
+			
+        }, 200);
+
+        $("#select-bg img").click(function(){
+          var imgBg = $(this).attr('src');
+          $('#fond').attr( 'src',imgBg);
+        });
+
+    </script>
+    
+    
+    
+    
+    
+    
+        
+  
+    
+    
+   
+
+		<script src="../@js/js.js" type="text/javascript"></script>
+    
+    
+    
+    
+    
+            
+	
+    <script src="../../../JS/charteCCI.js"></script>
+
+    <script src="../../../JS/popper.min.js"></script>
+    <script src="../../../JS/bootstrap.min.js"></script>
+
+    <script src="../../../JS/min-ie11CustomProperties.js"></script>	
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/ie11-custom-properties/ie11CustomProperties.min.js" type="text/javascript"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    
+
+    
+    
+    
+  </div>
+
+
+  </body>
+
+</html>
