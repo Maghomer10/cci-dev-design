@@ -3,26 +3,26 @@
 <script src="https://thierryperrotin.github.io/cci-dev-design/JS/jquery-3.3.1.min.js"></script> 
 	
 	<style>
-		.journal-content-article .article-them-content.article-simple-content p {
+		html body #contact-cci p {
 			font-size: 1.05em !important;
 			line-height: 1.5em !important;
 		}
-		p a {
+		html body #contact-cci p a {
 			display: inline;
 			color: #222222;
 			background: linear-gradient(0deg, transparent 2%, rgba(104, 119, 255, 0.5) 2%, rgba(104, 119, 255, 0.5) 20%, transparent 20%);
 		}
-		p a:hover{
+		html body #contact-cci p a:hover{
 			display: inline;
 			color: #ffffff;
 			background: linear-gradient(0deg, transparent 2%, #373cf5 2%, #373cf5 97%, transparent 97%)
 		}
-		p a:before, p a:after {display: none;}
-		html body div h2, .article-simple-content h2{
+		html body #contact-cci p a:before, html body #contact-cci p a:after {display: none;}
+		html body #contact-cci h2, html body #contact-cci .{
 			color: #4D4D4D!important; 
 			text-transform: none;
 		}
-		html body div h3, html .journal-content-article .article-them-content.article-simple-content h3{
+		html body #contact-cci h3, html body #contact-cci .h3{
 			color: #4D4D4D!important; 
 			text-transform: none; 
 			margin-bottom: 0; 
@@ -30,7 +30,7 @@
 			font-weight: 700!important;
 			line-height: 1.21em !important;
 		}
-		html body div h4, .article-simple-content h4, html body .journal-content-article .article-them-content.article-simple-content .h4{
+		html body #contact-cci h4, html body #contact-cci .h4{
 			color: #4D4D4D!important; 
 			text-transform: none; 
 			margin-bottom: 0 !important; 
@@ -38,79 +38,13 @@
 			font-weight: 700 !important;
 			line-height: 1.21em !important;
 		}
-		html body div h5, .article-simple-content h5{
+		html body #contact-cci h5{
 			color: #4D4D4D!important; 
 			text-transform: none; 
 			margin-bottom: 0 !important; 
 			font-size: var(--font-size-2)!important; 
 			font-weight: 700 !important;
 			line-height: 1.21em !important;
-		}
-		ul{
-			margin-left: var(--space-2);
-			margin-right: var(--space-2);
-			margin-top: 0;
-			margin-bottom: var(--space-3);
-			padding-bottom: 0;
-		}
-		li{
-			margin-top: 0;
-			margin-bottom: var(--space-2);
-			padding-top: 0;
-			padding-bottom:0;
-		}
-		li ul{
-			margin-top:  var(--space-3);
-		}
-		li ul:last-child{
-			margin-bottom:0;
-		}
-		p ~ ul {
-			margin-top: 0.5rem;
-		}
-		.ul-mise-en-avant{
-			list-style: none;
-		}
-		.ul-mise-en-avant > li > h2{
-			padding-left: 1rem!important;
-			position: relative;
-		}
-		.ul-mise-en-avant > li > h3, 
-		.ul-mise-en-avant > li > h4{
-			padding-left: 1rem!important;
-			position: relative;
-			color: #4D4D4D!important;
-			font-size: var(--font-size-4)!important; 
-			text-transform: none;
-			margin-bottom: 1rem!important;
-		}
-		.ul-mise-en-avant > li > h2:after,
-		.ul-mise-en-avant > li > h3:after,
-		.ul-mise-en-avant > li > h4:after{
-			content: "";
-			display: block;
-			background-color: var(--bleu);
-			width:2rem;
-			height:.8rem;
-			position: absolute;
-			top: calc(50% - .4rem);
-			left:-1.6rem;
-			border-radius: 5em;
-		}
-		.rayure{
-			padding-left: 0rem !important;
-			position: relative;
-		}
-		.rayure:after{
-			content: "";
-			display: block;
-			background-color: var(--gris);
-			width:0.5rem;
-			position: absolute;
-			top: 0;
-			bottom: 2.5em;
-			left:2%;
-			z-index: -1
 		}
 		
 	</style>
@@ -121,17 +55,10 @@
 		var element = document.createElement("link");
 element.setAttribute("rel", "stylesheet");
 element.setAttribute("type", "text/css");
-element.setAttribute("href", "https://thierryperrotin.github.io/cci-dev-design/bootstrap.css");
-		
-		// Obtenir une référence à l'élément dans lequel nous voulons insérer un nouveau noeud
+element.setAttribute("href", "https://thierryperrotin.github.io/cci-dev-design/bootstrap-externe.css");
 var parentElement = document.head;
-// Obtenir une référence au premier enfant
 var theFirstChild = parentElement.firstChild;
-
-// Créer un nouvel élément
 var newElement = element;
-
-// Insérer le nouvel élément avant le premier enfant
 parentElement.insertBefore(newElement, theFirstChild);
 	
   </script>
@@ -140,37 +67,16 @@ parentElement.insertBefore(newElement, theFirstChild);
 
 
 
-	<!------------------------------------
-------------------------------------------
-------------------------------------------
-------------------------------------------
-------------------------------------------
-------------------------------------------
-------------------------------------------
-------------------------------------------
-
-CARTE
-
-------------------------------------------
-------------------------------------------
------------------------------------------->
-	
-	
-	
-	
-	
-	
-
   
 	
 	
-<div style="font-size: 13px">
+<div style="font-size: 13px" class="bootstrap-externe">
 	  
     
 	  <!--------------------------------------->
 
 	
-<div class="card" style="" id="contact">
+<div class="card" style="" id="contact-cci">
 	
   <div class="card-body p-0">
   <div class="row m-0 d-flex align-items-stretch">
