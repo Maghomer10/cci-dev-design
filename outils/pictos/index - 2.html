@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<title>Basic HTML Imports</title>
+	<link rel="stylesheet" href="https://thierryperrotin.github.io/cci-dev-design/bootstrap.css">
+	<script src="https://thierryperrotin.github.io/cci-dev-design/JS/jquery-3.3.1.min.js"></script>
+  </head>
+
+  <style>
+
+	.sombre .picto-x-1, .sombre .picto-x-1 path, .sombre .picto-x-1 ellipse, .sombre .picto-x-1 rect, .sombre .picto-x-1 line, .sombre .picto-x-1 rect, .sombre .picto-x-1 g,
+	.picto-x-1, .picto-x-1 path, .picto-x-1 ellipse, .picto-x-1 rect, .picto-x-1 line, .picto-x-1 rect, .picto-x-1 g{
+	  fill: #373CF5 !important;
+	}
+	.sombre .picto-x-2, .sombre .picto-x-2 path, .sombre .picto-x-2 ellipse, .sombre .picto-x-2 rect, .sombre .picto-x-2 line, .sombre .picto-x-2 rect, .sombre .picto-x-2 g,
+	.picto-x-2, .picto-x-2 path, .picto-x-2 ellipse, .picto-x-2 rect, .picto-x-2 line, .picto-x-2 rect, .picto-x-2 g {
+	  fill: #6877ff !important;
+	}
+	.sombre .picto-ligne, .sombre .picto-ligne path, .sombre .picto-ligne ellipse, .sombre .picto-ligne rect, .sombre .picto-ligne line, .sombre .picto-ligne rect, .sombre .picto-ligne g,
+	.picto-ligne, .picto-ligne path, .picto-ligne ellipse, .picto-ligne rect, .picto-ligne line, .picto-ligne rect, .picto-ligne g {
+	  fill: none;
+	  stroke: #222222;
+	  stroke-linecap: round;
+	  stroke-linejoin: round;
+	  stroke-width: 4px;
+	}
+
+	.clair .picto-x-1, .clair .picto-x-1 path, .clair .picto-x-1 ellipse, .clair .picto-x-1 rect, .clair .picto-x-1 line, .clair .picto-x-1 rect, .clair .picto-x-1 g{
+	  fill: #6877ff;
+	}
+	.clair .picto-x-2, .clair .picto-x-2 path, .clair .picto-x-2 ellipse, .clair .picto-x-2 rect, .clair .picto-x-2 line, .clair .picto-x-2 rect, .clair .picto-x-2 g {
+	  fill: #0000CC !important;
+	}
+	.clair .picto-ligne, .clair .picto-ligne path, .clair .picto-ligne ellipse, .clair .picto-ligne rect, .clair .picto-ligne line, .clair .picto-ligne rect, .clair .picto-ligne g {
+	  fill: none;
+	  stroke: #ffffff;
+	  stroke-linecap: round;
+	  stroke-linejoin: round;
+	  stroke-width: 4px;
+	}
+
+
+.bleu .picto-x-1, .bleu .picto-x-1 path, .bleu .picto-x-1 ellipse, .bleu .picto-x-1 rect, .bleu .picto-x-1 line, .bleu .picto-x-1 rect, .bleu .picto-x-1 g {
+  fill: var(--bleu) !important;
+}
+.bleu .picto-x-2, .bleu .picto-x-2 path, .bleu .picto-x-2 ellipse, .bleu .picto-x-2 rect, .bleu .picto-x-2 line, .bleu .picto-x-2 rect, .bleu .picto-x-2 g {
+  fill: var(--bleu-l1) !important;
+}
+.sombre.bleu .picto-x-1, .sombre.bleu .picto-x-1 path, .sombre.bleu .picto-x-1 ellipse, .sombre.bleu .picto-x-1 rect, .sombre.bleu .picto-x-1 line, .sombre.bleu .picto-x-1 rect, .sombre.bleu .picto-x-1 g {
+  fill: var(--bleu) !important;
+}
+.sombre.bleu .picto-x-2, .sombre.bleu .picto-x-2 path, .sombre.bleu .picto-x-2 ellipse, .sombre.bleu .picto-x-2 rect, .sombre.bleu .picto-x-2 line, .sombre.bleu .picto-x-2 rect, .sombre.bleu .picto-x-2 g {
+  fill: var(--bleu-f1) !important;
+}
+.clair.bleu .picto-x-1, .clair.bleu .picto-x-1 path, .clair.bleu .picto-x-1 ellipse, .clair.bleu .picto-x-1 rect, .clair.bleu .picto-x-1 line, .clair.bleu .picto-x-1 rect, .clair.bleu .picto-x-1 g {
+  fill: var(--bleu-l1) !important;
+}
+.clair.bleu .picto-x-2, .clair.bleu .picto-x-2 path, .clair.bleu .picto-x-2 ellipse, .clair.bleu .picto-x-2 rect, .clair.bleu .picto-x-2 line, .clair.bleu .picto-x-2 rect, .clair.bleu .picto-x-2 g {
+  fill: var(--bleu-f2) !important;
+}
+.cyan .picto-x-1, .cyan .picto-x-1 path, .cyan .picto-x-1 ellipse, .cyan .picto-x-1 rect, .cyan .picto-x-1 line, .cyan .picto-x-1 rect, .cyan .picto-x-1 g {
+  fill: var(--cyan) !important;
+}
+.cyan .picto-x-2, .cyan .picto-x-2 path, .cyan .picto-x-2 ellipse, .cyan .picto-x-2 rect, .cyan .picto-x-2 line, .cyan .picto-x-2 rect, .cyan .picto-x-2 g {
+  fill: var(--cyan-l1) !important;
+}
+.sombre.cyan .picto-x-1, .sombre.cyan .picto-x-1 path, .sombre.cyan .picto-x-1 ellipse, .sombre.cyan .picto-x-1 rect, .sombre.cyan .picto-x-1 line, .sombre.cyan .picto-x-1 rect, .sombre.cyan .picto-x-1 g {
+  fill: var(--cyan) !important;
+}
+.sombre.cyan .picto-x-2, .sombre.cyan .picto-x-2 path, .sombre.cyan .picto-x-2 ellipse, .sombre.cyan .picto-x-2 rect, .sombre.cyan .picto-x-2 line, .sombre.cyan .picto-x-2 rect, .sombre.cyan .picto-x-2 g {
+  fill: var(--cyan-f1) !important;
+}
+.clair.cyan .picto-x-1, .clair.cyan .picto-x-1 path, .clair.cyan .picto-x-1 ellipse, .clair.cyan .picto-x-1 rect, .clair.cyan .picto-x-1 line, .clair.cyan .picto-x-1 rect, .clair.cyan .picto-x-1 g {
+  fill: var(--cyan-l1) !important;
+}
+.clair.cyan .picto-x-2, .clair.cyan .picto-x-2 path, .clair.cyan .picto-x-2 ellipse, .clair.cyan .picto-x-2 rect, .clair.cyan .picto-x-2 line, .clair.cyan .picto-x-2 rect, .clair.cyan .picto-x-2 g {
+  fill: var(--cyan-f2) !important;
+}
+.turquoise .picto-x-1, .turquoise .picto-x-1 path, .turquoise .picto-x-1 ellipse, .turquoise .picto-x-1 rect, .turquoise .picto-x-1 line, .turquoise .picto-x-1 rect, .turquoise .picto-x-1 g {
+  fill: var(--turquoise) !important;
+}
+.turquoise .picto-x-2, .turquoise .picto-x-2 path, .turquoise .picto-x-2 ellipse, .turquoise .picto-x-2 rect, .turquoise .picto-x-2 line, .turquoise .picto-x-2 rect, .turquoise .picto-x-2 g {
+  fill: var(--turquoise-l1) !important;
+}
+.sombre.turquoise .picto-x-1, .sombre.turquoise .picto-x-1 path, .sombre.turquoise .picto-x-1 ellipse, .sombre.turquoise .picto-x-1 rect, .sombre.turquoise .picto-x-1 line, .sombre.turquoise .picto-x-1 rect, .sombre.turquoise .picto-x-1 g {
+  fill: var(--turquoise) !important;
+}
+.sombre.turquoise .picto-x-2, .sombre.turquoise .picto-x-2 path, .sombre.turquoise .picto-x-2 ellipse, .sombre.turquoise .picto-x-2 rect, .sombre.turquoise .picto-x-2 line, .sombre.turquoise .picto-x-2 rect, .sombre.turquoise .picto-x-2 g {
+  fill: var(--turquoise-f1) !important;
+}
+.clair.turquoise .picto-x-1, .clair.turquoise .picto-x-1 path, .clair.turquoise .picto-x-1 ellipse, .clair.turquoise .picto-x-1 rect, .clair.turquoise .picto-x-1 line, .clair.turquoise .picto-x-1 rect, .clair.turquoise .picto-x-1 g {
+  fill: var(--turquoise-l1) !important;
+}
+.clair.turquoise .picto-x-2, .clair.turquoise .picto-x-2 path, .clair.turquoise .picto-x-2 ellipse, .clair.turquoise .picto-x-2 rect, .clair.turquoise .picto-x-2 line, .clair.turquoise .picto-x-2 rect, .clair.turquoise .picto-x-2 g {
+  fill: var(--turquoise-f2) !important;
+}
+.vert .picto-x-1, .vert .picto-x-1 path, .vert .picto-x-1 ellipse, .vert .picto-x-1 rect, .vert .picto-x-1 line, .vert .picto-x-1 rect, .vert .picto-x-1 g {
+  fill: var(--vert) !important;
+}
+.vert .picto-x-2, .vert .picto-x-2 path, .vert .picto-x-2 ellipse, .vert .picto-x-2 rect, .vert .picto-x-2 line, .vert .picto-x-2 rect, .vert .picto-x-2 g {
+  fill: var(--vert-l1) !important;
+}
+.sombre.vert .picto-x-1, .sombre.vert .picto-x-1 path, .sombre.vert .picto-x-1 ellipse, .sombre.vert .picto-x-1 rect, .sombre.vert .picto-x-1 line, .sombre.vert .picto-x-1 rect, .sombre.vert .picto-x-1 g {
+  fill: var(--vert) !important;
+}
+.sombre.vert .picto-x-2, .sombre.vert .picto-x-2 path, .sombre.vert .picto-x-2 ellipse, .sombre.vert .picto-x-2 rect, .sombre.vert .picto-x-2 line, .sombre.vert .picto-x-2 rect, .sombre.vert .picto-x-2 g {
+  fill: var(--vert-f1) !important;
+}
+.clair.vert .picto-x-1, .clair.vert .picto-x-1 path, .clair.vert .picto-x-1 ellipse, .clair.vert .picto-x-1 rect, .clair.vert .picto-x-1 line, .clair.vert .picto-x-1 rect, .clair.vert .picto-x-1 g {
+  fill: var(--vert-l1) !important;
+}
+.clair.vert .picto-x-2, .clair.vert .picto-x-2 path, .clair.vert .picto-x-2 ellipse, .clair.vert .picto-x-2 rect, .clair.vert .picto-x-2 line, .clair.vert .picto-x-2 rect, .clair.vert .picto-x-2 g {
+  fill: var(--vert-f2) !important;
+}
+.chartreuse .picto-x-1, .chartreuse .picto-x-1 path, .chartreuse .picto-x-1 ellipse, .chartreuse .picto-x-1 rect, .chartreuse .picto-x-1 line, .chartreuse .picto-x-1 rect, .chartreuse .picto-x-1 g {
+  fill: var(--chartreuse) !important;
+}
+.chartreuse .picto-x-2, .chartreuse .picto-x-2 path, .chartreuse .picto-x-2 ellipse, .chartreuse .picto-x-2 rect, .chartreuse .picto-x-2 line, .chartreuse .picto-x-2 rect, .chartreuse .picto-x-2 g {
+  fill: var(--chartreuse-l1) !important;
+}
+.sombre.chartreuse .picto-x-1, .sombre.chartreuse .picto-x-1 path, .sombre.chartreuse .picto-x-1 ellipse, .sombre.chartreuse .picto-x-1 rect, .sombre.chartreuse .picto-x-1 line, .sombre.chartreuse .picto-x-1 rect, .sombre.chartreuse .picto-x-1 g {
+  fill: var(--chartreuse) !important;
+}
+.sombre.chartreuse .picto-x-2, .sombre.chartreuse .picto-x-2 path, .sombre.chartreuse .picto-x-2 ellipse, .sombre.chartreuse .picto-x-2 rect, .sombre.chartreuse .picto-x-2 line, .sombre.chartreuse .picto-x-2 rect, .sombre.chartreuse .picto-x-2 g {
+  fill: var(--chartreuse-f1) !important;
+}
+.clair.chartreuse .picto-x-1, .clair.chartreuse .picto-x-1 path, .clair.chartreuse .picto-x-1 ellipse, .clair.chartreuse .picto-x-1 rect, .clair.chartreuse .picto-x-1 line, .clair.chartreuse .picto-x-1 rect, .clair.chartreuse .picto-x-1 g {
+  fill: var(--chartreuse-l1) !important;
+}
+.clair.chartreuse .picto-x-2, .clair.chartreuse .picto-x-2 path, .clair.chartreuse .picto-x-2 ellipse, .clair.chartreuse .picto-x-2 rect, .clair.chartreuse .picto-x-2 line, .clair.chartreuse .picto-x-2 rect, .clair.chartreuse .picto-x-2 g {
+  fill: var(--chartreuse-f2) !important;
+}
+.jaune .picto-x-1, .jaune .picto-x-1 path, .jaune .picto-x-1 ellipse, .jaune .picto-x-1 rect, .jaune .picto-x-1 line, .jaune .picto-x-1 rect, .jaune .picto-x-1 g {
+  fill: var(--jaune) !important;
+}
+.jaune .picto-x-2, .jaune .picto-x-2 path, .jaune .picto-x-2 ellipse, .jaune .picto-x-2 rect, .jaune .picto-x-2 line, .jaune .picto-x-2 rect, .jaune .picto-x-2 g {
+  fill: var(--jaune-l1) !important;
+}
+.sombre.jaune .picto-x-1, .sombre.jaune .picto-x-1 path, .sombre.jaune .picto-x-1 ellipse, .sombre.jaune .picto-x-1 rect, .sombre.jaune .picto-x-1 line, .sombre.jaune .picto-x-1 rect, .sombre.jaune .picto-x-1 g {
+  fill: var(--jaune) !important;
+}
+.sombre.jaune .picto-x-2, .sombre.jaune .picto-x-2 path, .sombre.jaune .picto-x-2 ellipse, .sombre.jaune .picto-x-2 rect, .sombre.jaune .picto-x-2 line, .sombre.jaune .picto-x-2 rect, .sombre.jaune .picto-x-2 g {
+  fill: var(--jaune-f1) !important;
+}
+.clair.jaune .picto-x-1, .clair.jaune .picto-x-1 path, .clair.jaune .picto-x-1 ellipse, .clair.jaune .picto-x-1 rect, .clair.jaune .picto-x-1 line, .clair.jaune .picto-x-1 rect, .clair.jaune .picto-x-1 g {
+  fill: var(--jaune-l1) !important;
+}
+.clair.jaune .picto-x-2, .clair.jaune .picto-x-2 path, .clair.jaune .picto-x-2 ellipse, .clair.jaune .picto-x-2 rect, .clair.jaune .picto-x-2 line, .clair.jaune .picto-x-2 rect, .clair.jaune .picto-x-2 g {
+  fill: var(--jaune-f2) !important;
+}
+.orange .picto-x-1, .orange .picto-x-1 path, .orange .picto-x-1 ellipse, .orange .picto-x-1 rect, .orange .picto-x-1 line, .orange .picto-x-1 rect, .orange .picto-x-1 g {
+  fill: var(--orange) !important;
+}
+.orange .picto-x-2, .orange .picto-x-2 path, .orange .picto-x-2 ellipse, .orange .picto-x-2 rect, .orange .picto-x-2 line, .orange .picto-x-2 rect, .orange .picto-x-2 g {
+  fill: var(--orange-l1) !important;
+}
+.sombre.orange .picto-x-1, .sombre.orange .picto-x-1 path, .sombre.orange .picto-x-1 ellipse, .sombre.orange .picto-x-1 rect, .sombre.orange .picto-x-1 line, .sombre.orange .picto-x-1 rect, .sombre.orange .picto-x-1 g {
+  fill: var(--orange) !important;
+}
+.sombre.orange .picto-x-2, .sombre.orange .picto-x-2 path, .sombre.orange .picto-x-2 ellipse, .sombre.orange .picto-x-2 rect, .sombre.orange .picto-x-2 line, .sombre.orange .picto-x-2 rect, .sombre.orange .picto-x-2 g {
+  fill: var(--orange-f1) !important;
+}
+.clair.orange .picto-x-1, .clair.orange .picto-x-1 path, .clair.orange .picto-x-1 ellipse, .clair.orange .picto-x-1 rect, .clair.orange .picto-x-1 line, .clair.orange .picto-x-1 rect, .clair.orange .picto-x-1 g {
+  fill: var(--orange-l1) !important;
+}
+.clair.orange .picto-x-2, .clair.orange .picto-x-2 path, .clair.orange .picto-x-2 ellipse, .clair.orange .picto-x-2 rect, .clair.orange .picto-x-2 line, .clair.orange .picto-x-2 rect, .clair.orange .picto-x-2 g {
+  fill: var(--orange-f2) !important;
+}
+.rouge .picto-x-1, .rouge .picto-x-1 path, .rouge .picto-x-1 ellipse, .rouge .picto-x-1 rect, .rouge .picto-x-1 line, .rouge .picto-x-1 rect, .rouge .picto-x-1 g {
+  fill: var(--rouge) !important;
+}
+.rouge .picto-x-2, .rouge .picto-x-2 path, .rouge .picto-x-2 ellipse, .rouge .picto-x-2 rect, .rouge .picto-x-2 line, .rouge .picto-x-2 rect, .rouge .picto-x-2 g {
+  fill: var(--rouge-l1) !important;
+}
+.sombre.rouge .picto-x-1, .sombre.rouge .picto-x-1 path, .sombre.rouge .picto-x-1 ellipse, .sombre.rouge .picto-x-1 rect, .sombre.rouge .picto-x-1 line, .sombre.rouge .picto-x-1 rect, .sombre.rouge .picto-x-1 g {
+  fill: var(--rouge) !important;
+}
+.sombre.rouge .picto-x-2, .sombre.rouge .picto-x-2 path, .sombre.rouge .picto-x-2 ellipse, .sombre.rouge .picto-x-2 rect, .sombre.rouge .picto-x-2 line, .sombre.rouge .picto-x-2 rect, .sombre.rouge .picto-x-2 g {
+  fill: var(--rouge-f1) !important;
+}
+.clair.rouge .picto-x-1, .clair.rouge .picto-x-1 path, .clair.rouge .picto-x-1 ellipse, .clair.rouge .picto-x-1 rect, .clair.rouge .picto-x-1 line, .clair.rouge .picto-x-1 rect, .clair.rouge .picto-x-1 g {
+  fill: var(--rouge-l1) !important;
+}
+.clair.rouge .picto-x-2, .clair.rouge .picto-x-2 path, .clair.rouge .picto-x-2 ellipse, .clair.rouge .picto-x-2 rect, .clair.rouge .picto-x-2 line, .clair.rouge .picto-x-2 rect, .clair.rouge .picto-x-2 g {
+  fill: var(--rouge-f2) !important;
+}
+.rose .picto-x-1, .rose .picto-x-1 path, .rose .picto-x-1 ellipse, .rose .picto-x-1 rect, .rose .picto-x-1 line, .rose .picto-x-1 rect, .rose .picto-x-1 g {
+  fill: var(--rose) !important;
+}
+.rose .picto-x-2, .rose .picto-x-2 path, .rose .picto-x-2 ellipse, .rose .picto-x-2 rect, .rose .picto-x-2 line, .rose .picto-x-2 rect, .rose .picto-x-2 g {
+  fill: var(--rose-l1) !important;
+}
+.sombre.rose .picto-x-1, .sombre.rose .picto-x-1 path, .sombre.rose .picto-x-1 ellipse, .sombre.rose .picto-x-1 rect, .sombre.rose .picto-x-1 line, .sombre.rose .picto-x-1 rect, .sombre.rose .picto-x-1 g {
+  fill: var(--rose) !important;
+}
+.sombre.rose .picto-x-2, .sombre.rose .picto-x-2 path, .sombre.rose .picto-x-2 ellipse, .sombre.rose .picto-x-2 rect, .sombre.rose .picto-x-2 line, .sombre.rose .picto-x-2 rect, .sombre.rose .picto-x-2 g {
+  fill: var(--rose-f1) !important;
+}
+.clair.rose .picto-x-1, .clair.rose .picto-x-1 path, .clair.rose .picto-x-1 ellipse, .clair.rose .picto-x-1 rect, .clair.rose .picto-x-1 line, .clair.rose .picto-x-1 rect, .clair.rose .picto-x-1 g {
+  fill: var(--rose-l1) !important;
+}
+.clair.rose .picto-x-2, .clair.rose .picto-x-2 path, .clair.rose .picto-x-2 ellipse, .clair.rose .picto-x-2 rect, .clair.rose .picto-x-2 line, .clair.rose .picto-x-2 rect, .clair.rose .picto-x-2 g {
+  fill: var(--rose-f2) !important;
+}
+.violet .picto-x-1, .violet .picto-x-1 path, .violet .picto-x-1 ellipse, .violet .picto-x-1 rect, .violet .picto-x-1 line, .violet .picto-x-1 rect, .violet .picto-x-1 g {
+  fill: var(--violet) !important;
+}
+.violet .picto-x-2, .violet .picto-x-2 path, .violet .picto-x-2 ellipse, .violet .picto-x-2 rect, .violet .picto-x-2 line, .violet .picto-x-2 rect, .violet .picto-x-2 g {
+  fill: var(--violet-l1) !important;
+}
+.sombre.violet .picto-x-1, .sombre.violet .picto-x-1 path, .sombre.violet .picto-x-1 ellipse, .sombre.violet .picto-x-1 rect, .sombre.violet .picto-x-1 line, .sombre.violet .picto-x-1 rect, .sombre.violet .picto-x-1 g {
+  fill: var(--violet) !important;
+}
+.sombre.violet .picto-x-2, .sombre.violet .picto-x-2 path, .sombre.violet .picto-x-2 ellipse, .sombre.violet .picto-x-2 rect, .sombre.violet .picto-x-2 line, .sombre.violet .picto-x-2 rect, .sombre.violet .picto-x-2 g {
+  fill: var(--violet-f1) !important;
+}
+.clair.violet .picto-x-1, .clair.violet .picto-x-1 path, .clair.violet .picto-x-1 ellipse, .clair.violet .picto-x-1 rect, .clair.violet .picto-x-1 line, .clair.violet .picto-x-1 rect, .clair.violet .picto-x-1 g {
+  fill: var(--violet-l1) !important;
+}
+.clair.violet .picto-x-2, .clair.violet .picto-x-2 path, .clair.violet .picto-x-2 ellipse, .clair.violet .picto-x-2 rect, .clair.violet .picto-x-2 line, .clair.violet .picto-x-2 rect, .clair.violet .picto-x-2 g {
+  fill: var(--violet-f2) !important;
+}
+.brun .picto-x-1, .brun .picto-x-1 path, .brun .picto-x-1 ellipse, .brun .picto-x-1 rect, .brun .picto-x-1 line, .brun .picto-x-1 rect, .brun .picto-x-1 g {
+  fill: var(--brun) !important;
+}
+.brun .picto-x-2, .brun .picto-x-2 path, .brun .picto-x-2 ellipse, .brun .picto-x-2 rect, .brun .picto-x-2 line, .brun .picto-x-2 rect, .brun .picto-x-2 g {
+  fill: var(--brun-l1) !important;
+}
+.sombre.brun .picto-x-1, .sombre.brun .picto-x-1 path, .sombre.brun .picto-x-1 ellipse, .sombre.brun .picto-x-1 rect, .sombre.brun .picto-x-1 line, .sombre.brun .picto-x-1 rect, .sombre.brun .picto-x-1 g {
+  fill: var(--brun) !important;
+}
+.sombre.brun .picto-x-2, .sombre.brun .picto-x-2 path, .sombre.brun .picto-x-2 ellipse, .sombre.brun .picto-x-2 rect, .sombre.brun .picto-x-2 line, .sombre.brun .picto-x-2 rect, .sombre.brun .picto-x-2 g {
+  fill: var(--brun-f1) !important;
+}
+.clair.brun .picto-x-1, .clair.brun .picto-x-1 path, .clair.brun .picto-x-1 ellipse, .clair.brun .picto-x-1 rect, .clair.brun .picto-x-1 line, .clair.brun .picto-x-1 rect, .clair.brun .picto-x-1 g {
+  fill: var(--brun-l1) !important;
+}
+.clair.brun .picto-x-2, .clair.brun .picto-x-2 path, .clair.brun .picto-x-2 ellipse, .clair.brun .picto-x-2 rect, .clair.brun .picto-x-2 line, .clair.brun .picto-x-2 rect, .clair.brun .picto-x-2 g {
+  fill: var(--brun-f2) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	.pres{
+		margin: 0 auto var(--space-4) auto;
+		font-size: 0;
+		width:100%;
+		max-width: 1200px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: stretch;
+		align-content: stretch;
+		align-items: stretch;
+	}
+	.pres div, .pres svg, .pres i {
+		display: inline-block;
+		box-sizing: border-box;
+	}
+
+	.pres .pres-larg{
+    	flex: 1 1 30%;
+    	align-self: stretch;	
+	}
+	.pres .pres-small-contain{
+		flex: 1 1 70%;
+		align-self: stretch;
+	}
+	.pres .pres-larg i{
+		width:50%;
+		height:100%;
+		vertical-align: middle;			
+	}
+	.pres .pres-larg i::before{
+		content: '';
+		display: inline-block;
+		height: 100%;
+		width: 1px;
+		vertical-align: middle;
+	}
+	.pres .pres-small i{
+		width:10%;
+	}
+
+	.pres .pres-larg i svg,
+	.pres .pres-small i svg{
+		width: calc(100% - 2px) ;	
+		padding: var(--space-2);
+		height: auto;		
+	}
+	.pres .pres-larg i svg{
+		padding: var(--space-3);		
+	}
+
+	.pres .pres-larg i:nth-child(2),
+	div.pres-small:nth-child(1){
+		background-color: var(--blanc);
+	}
+	.pres .pres-larg i:nth-child(1),
+	div.pres-small:nth-child(2){
+		background-color: var(--bleu-f2);
+	}
+	
+	div.pres-small:nth-child(2),
+	div.pres-small:nth-child(1){
+		min-height:50%;
+	}
+
+	@media screen and (max-width:900px) {
+		
+	.pres .pres-small i{
+		width:20%;
+	}
+
+	.pres .pres-larg{
+    	flex: 1 1 100%;	
+	}
+	.pres .pres-small-contain{
+		flex: 1 1 100%;
+	}
+
+		
+	}
+
+  </style>
+
+  
+
+
+<!--générateur de couleur
+<script>
+	var couleurs = {
+	"bleu": [],
+	"cyan": [],
+	"turquoise": [],
+	"vert": [],
+	"chartreuse": [],
+	"jaune": [],
+	"orange": [],
+	"rouge": [],
+	"rose": [],
+	"violet":[],
+	"brun":[],
+	}
+	
+		
+	$('head').append( '<style></style>' );
+	
+		jQuery.each(couleurs, function(nom) {
+			var c = nom;
+			var cn = "." + nom;
+			var cc = ".clair." + nom;
+			var cs = ".sombre." + nom;
+
+			var style = cn + ' .picto-x-1, ' + cn + ' .picto-x-1 path, ' + cn + ' .picto-x-1 ellipse, ' + cn + ' .picto-x-1 rect, ' + cn + ' .picto-x-1 line, ' + cn + ' .picto-x-1 rect, ' + cn + ' .picto-x-1 g{ fill: var(--' + c + ') !important;}' + cn + ' .picto-x-2, ' + cn + ' .picto-x-2 path, ' + cn + ' .picto-x-2 ellipse, ' + cn + ' .picto-x-2 rect, ' + cn + ' .picto-x-2 line, ' + cn + ' .picto-x-2 rect, ' + cn + ' .picto-x-2 g { fill: var(--' + c + '-l1) !important;}' + cs + ' .picto-x-1, ' + cs + ' .picto-x-1 path, ' + cs + ' .picto-x-1 ellipse, ' + cs + ' .picto-x-1 rect, ' + cs + ' .picto-x-1 line, ' + cs + ' .picto-x-1 rect, ' + cs + ' .picto-x-1 g{ fill: var(--' + c + ') !important;}' + cs + ' .picto-x-2, ' + cs + ' .picto-x-2 path, ' + cs + ' .picto-x-2 ellipse, ' + cs + ' .picto-x-2 rect, ' + cs + ' .picto-x-2 line, ' + cs + ' .picto-x-2 rect, ' + cs + ' .picto-x-2 g { fill: var(--' + c + '-f1) !important;}' + cc + ' .picto-x-1, ' + cc + ' .picto-x-1 path, ' + cc + ' .picto-x-1 ellipse, ' + cc + ' .picto-x-1 rect, ' + cc + ' .picto-x-1 line, ' + cc + ' .picto-x-1 rect, ' + cc + ' .picto-x-1 g{ fill: var(--' + c + '-l1) !important;}' + cc + ' .picto-x-2, ' + cc + ' .picto-x-2 path, ' + cc + ' .picto-x-2 ellipse, ' + cc + ' .picto-x-2 rect, ' + cc + ' .picto-x-2 line, ' + cc + ' .picto-x-2 rect, ' + cc + ' .picto-x-2 g { fill: var(--' + c + '-f2) !important;} ';
+			
+			var styleTXT = "";
+
+			$('head style').last().append( style );
+
+			});
+
+</script>
+-->
+
+
+
+
+
+  
+  <body class="p-4">
+	<h1>Dev Pictos charte CCI</h1>
+	
+
+	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="140" viewBox="0 0 140 140">
+		<defs>
+		  <style>.picto-x-1, .picto-x-1 path, .picto-x-1 ellipse, .picto-x-1 rect, .picto-x-1 line, .picto-x-1 rect, .picto-x-1 g{ fill: #373CF5; } .picto-x-2, .picto-x-2 path, .picto-x-2 ellipse, .picto-x-2 rect, .picto-x-2 line, .picto-x-2 rect, .picto-x-2 g { fill: #6877ff ; } .picto-ligne, .picto-ligne path, .picto-ligne ellipse, .picto-ligne rect, .picto-ligne line, .picto-ligne rect, .picto-ligne g { fill: none; stroke: #222222; stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; } .picto-x-1, .picto-x-1 path, .picto-x-1 ellipse, .picto-x-1 rect, .picto-x-1 line, .picto-x-1 rect, .picto-x-1 g{ fill: #373CF5; } .picto-x-2, .picto-x-2 path, .picto-x-2 ellipse, .picto-x-2 rect, .picto-x-2 line, .picto-x-2 rect, .picto-x-2 g { fill: #6877ff ; } .picto-ligne, .picto-ligne path, .picto-ligne ellipse, .picto-ligne rect, .picto-ligne line, .picto-ligne rect, .picto-ligne g { fill: none; stroke: #222222; stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; }.picto-x-1, .picto-x-1 path, .picto-x-1 ellipse, .picto-x-1 rect, .picto-x-1 line, .picto-x-1 rect, .picto-x-1 g{ fill: #373CF5; } .picto-x-2, .picto-x-2 path, .picto-x-2 ellipse, .picto-x-2 rect, .picto-x-2 line, .picto-x-2 rect, .picto-x-2 g { fill: #6877ff ; } .picto-ligne, .picto-ligne path, .picto-ligne ellipse, .picto-ligne rect, .picto-ligne line, .picto-ligne rect, .picto-ligne g { fill: none; stroke: #222222; stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; } .picto-x-1, .picto-x-1 path, .picto-x-1 ellipse, .picto-x-1 rect, .picto-x-1 line, .picto-x-1 rect, .picto-x-1 g{ fill: #373CF5; } .picto-x-2, .picto-x-2 path, .picto-x-2 ellipse, .picto-x-2 rect, .picto-x-2 line, .picto-x-2 rect, .picto-x-2 g { fill: #6877ff ; } .picto-ligne, .picto-ligne path, .picto-ligne ellipse, .picto-ligne rect, .picto-ligne line, .picto-ligne rect, .picto-ligne g { fill: none; stroke: #222222; stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; }</style>
+		  <clipPath class="clip-piece">
+			<rect width="140" height="140"/>
+		  </clipPath>
+		</defs>
+		<g class="piece">
+		  <g class="euro_piece" data-name="euro piece" transform="translate(-443 -112.001)">
+			<path class="picto-x-2" d="M11,67.477a56.478,56.478,0,1,1,56.478,56.478A56.477,56.477,0,0,1,11,67.477Z" transform="translate(437 114.001)"/>
+			<path class="picto-x-1" d="M-55.776,74.7h22.82L-30.391,64.7h-26V56.032h27.826L-25.875,45.9H-55.532q2.2-7.322,6.652-10.987A15.944,15.944,0,0,1-38.445,31.26a27.779,27.779,0,0,1,8.176,1.16A28.364,28.364,0,0,1-22.7,36.141l6.836-11.716a40.778,40.778,0,0,0-23.31-7.081,35.557,35.557,0,0,0-22.638,7.629Q-71.519,32.6-75.058,45.9h-8.054L-85.8,56.032h10.005V64.7h-7.321L-85.8,74.7h10.5Q-72.373,88.5-63.16,96.06t23.37,7.568a42.809,42.809,0,0,0,9.95-1.1,54.844,54.844,0,0,0,9.7-3.419V84.345a35.283,35.283,0,0,1-17.816,5.247q-7.2,0-11.594-3.6T-55.776,74.7Z" transform="translate(555.143 121.097)"/>
+			<g class="picto-ligne" transform="translate(448.091 117.091)">
+			  <circle class="Ellipse_5" data-name="Ellipse 5" cx="64.89" cy="64.89" r="64.89" transform="translate(-0.015 -0.004)"/>
+			  <path class="Tracé_115" data-name="Tracé 115" d="M-55.119,75.959H-31.8l2.621-10.224H-55.743V56.879h28.435l2.745-10.35H-54.869q2.247-7.483,6.8-11.227a16.293,16.293,0,0,1,10.663-3.738,28.387,28.387,0,0,1,8.355,1.185,28.985,28.985,0,0,1,7.732,3.8l6.985-11.972a41.671,41.671,0,0,0-23.82-7.237,36.336,36.336,0,0,0-23.134,7.8q-9.916,7.795-13.532,21.39h-8.231L-85.8,56.879h10.224v8.855h-7.481L-85.8,75.959h10.725q2.993,14.1,12.407,21.825t23.882,7.734A43.747,43.747,0,0,0-28.615,104.4a56.045,56.045,0,0,0,9.91-3.494V85.812a36.056,36.056,0,0,1-18.206,5.362q-7.356,0-11.848-3.676T-55.119,75.959Z" transform="translate(106.096 3.052)"/>
+			</g>
+		  </g>
+		</g>
+	  </svg>
+	
+<div class="p-3 bg-gris-f2 d-inline-block">
+	<i picto="contrat" couleur="clair vert"></i>
+</div>
+
+<div class="p-3 bg-blanc d-inline-block">
+	<i picto="contrat" couleur="sombre chartreuse"></i>
+</div>
+<div class="p-3 bg-blanc d-inline-block">
+	<i picto="contrat"></i>
+</div>
+
+<br><br>
+<hr><br>
+
+
+
+<script>
+	var pictos = {
+		"accord": [],
+		"arbre": [],
+		"bateau": [],
+		"cloud-telechargement": [],
+		"commerce": [],
+		"contrat": [],
+		"engagement": [],
+		"engrenage": [],
+		"engrenage-2": [],
+		"expertise": [],
+		"filtre": [],
+		"humains": [],
+		"ordi-portable": [],
+		"piece": [],
+		"presentation": [],
+		"securite": [],
+		"securite-1": [],
+		"securite-profil": [],
+		"sonnette": [],
+		"usine": [],
+		"virus": [],
+	}
+	
+		jQuery.each(pictos, function(nom) {
+				$("body").append('<div class="pres"><div class="pres-larg"><i picto="' + nom + '" class="clair"></i><i picto="' + nom + '" class="sombre"></i></div><div class="pres-small-contain"><div class="pres-small"><i picto="' + nom + '" class="cyan"></i><i picto="' + nom + '" class="turquoise"></i><i picto="' + nom + '" class="vert"></i><i picto="' + nom + '" class="chartreuse"></i><i picto="' + nom + '" class="jaune"></i><i picto="' + nom + '" class="orange"></i><i picto="' + nom + '" class="rouge"></i><i picto="' + nom + '" class="rose"></i><i picto="' + nom + '" class="violet"></i><i picto="' + nom + '" class="brun"></i></div><div class="clair pres-small"><i picto="' + nom + '" class="clair cyan"></i><i picto="' + nom + '" class="clair turquoise"></i><i picto="' + nom + '" class="clair vert"></i><i picto="' + nom + '" class="clair chartreuse"></i><i picto="' + nom + '" class="clair jaune"></i><i picto="' + nom + '" class="clair orange"></i><i picto="' + nom + '" class="clair rouge"></i><i picto="' + nom + '" class="clair rose"></i><i picto="' + nom + '" class="clair violet"></i><i picto="' + nom + '" class="clair brun"></i></div></div></div>');
+			});
+</script>
+
+
+
+
+<script>
+	$(document).ready(function () {
+			$("i[picto]").each(function () {  
+				var pictoCouleur = $(this).attr("couleur");
+				var picto = $(this).attr("picto");      
+				var pictoURL = "https://thierryperrotin.github.io/cci-dev-design/pictos/pictos/" + picto + ".svg";       
+				$(this).load(
+					pictoURL,
+					function(){
+						$(this).children().addClass(pictoCouleur);
+						$('svg defs style').html('tructruc');
+					});
+			});
+		});
+		
+</script>
+
+
+
+
+
+
+</body>
+		</html>

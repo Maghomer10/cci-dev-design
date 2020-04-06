@@ -27,7 +27,7 @@
 
 
 
-	<svg id="testtest" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="140" viewBox="0 0 140 140">
+	<svg id="picto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="140" viewBox="0 0 140 140">
 		<defs>
 		  <style>.picto-x-1, .picto-x-1 path, .picto-x-1 ellipse, .picto-x-1 rect, .picto-x-1 line, .picto-x-1 rect, .picto-x-1 g{ fill: #373CF5; } .picto-x-2, .picto-x-2 path, .picto-x-2 ellipse, .picto-x-2 rect, .picto-x-2 line, .picto-x-2 rect, .picto-x-2 g { fill: #6877ff ; } .picto-ligne, .picto-ligne path, .picto-ligne ellipse, .picto-ligne rect, .picto-ligne line, .picto-ligne rect, .picto-ligne g { fill: none; stroke: #222222; stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; } .picto-x-1, .picto-x-1 path, .picto-x-1 ellipse, .picto-x-1 rect, .picto-x-1 line, .picto-x-1 rect, .picto-x-1 g{ fill: #373CF5; } .picto-x-2, .picto-x-2 path, .picto-x-2 ellipse, .picto-x-2 rect, .picto-x-2 line, .picto-x-2 rect, .picto-x-2 g { fill: #6877ff ; } .picto-ligne, .picto-ligne path, .picto-ligne ellipse, .picto-ligne rect, .picto-ligne line, .picto-ligne rect, .picto-ligne g { fill: none; stroke: #222222; stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; }.picto-x-1, .picto-x-1 path, .picto-x-1 ellipse, .picto-x-1 rect, .picto-x-1 line, .picto-x-1 rect, .picto-x-1 g{ fill: #373CF5; } .picto-x-2, .picto-x-2 path, .picto-x-2 ellipse, .picto-x-2 rect, .picto-x-2 line, .picto-x-2 rect, .picto-x-2 g { fill: #6877ff ; } .picto-ligne, .picto-ligne path, .picto-ligne ellipse, .picto-ligne rect, .picto-ligne line, .picto-ligne rect, .picto-ligne g { fill: none; stroke: #222222; stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; } .picto-x-1, .picto-x-1 path, .picto-x-1 ellipse, .picto-x-1 rect, .picto-x-1 line, .picto-x-1 rect, .picto-x-1 g{ fill: #373CF5; } .picto-x-2, .picto-x-2 path, .picto-x-2 ellipse, .picto-x-2 rect, .picto-x-2 line, .picto-x-2 rect, .picto-x-2 g { fill: #6877ff ; } .picto-ligne, .picto-ligne path, .picto-ligne ellipse, .picto-ligne rect, .picto-ligne line, .picto-ligne rect, .picto-ligne g { fill: none; stroke: #222222; stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; }</style>
 		  <clipPath class="clip-piece">
@@ -47,25 +47,29 @@
 	  </svg>
 	  
 
-  <button class="save" id="save">
+  <button id="savePNG">
     Download as PNG!
   </button>
 
-<a href='data:image/svg+xml;utf8,<svg viewBox="0 0 20 20" width="20" height="20" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="10"></circle></svg>' download="circlesandcircles.svg">download SVg</a>
+<a id="saveSVG" href='#' download="circlesandcircles.svg">download SVg</a>
 	  
 
 
 <script type="application/javascript">
 	
-$("#save").click(function(){
-  saveSvgAsPng(document.getElementById("avatar"), "avatar.png", {scale:5});
+$("#savePNG").click(function(){
+  saveSvgAsPng(document.getElementById("picto"), "picto.png", {scale:5});
 });
 
-$('#testtest').click(function(){
-  var trus = $(this).html();
-	var liensvg = 'data:image/svg+xml;utf8,' + trus;
-  alert(liensvg);
-});
+setInterval(function(){ 
+	var trus = $("#picto").wrap('<p/>').parent().html();
+	var truc = trus.trim();
+	var truc = truc.replace(/\n|\r|\t/g,'');
+	var liensvg = 'data:image/svg+xml;utf8,' + truc;
+	console.log(liensvg);
+	$('#saveSVG').attr('download', 'picto.svg');
+	$('#saveSVG').attr('href', liensvg);
+}, 1000);
 	
 </script>
 

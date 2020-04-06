@@ -1,0 +1,168 @@
+
+		
+		<style>
+			@import url('https://fonts.googleapis.com/css?family=Fira+Sans:200,400,700');
+			html body #MasqueCOVID{
+				background-color: #f2f2f2;
+				width: 100%;
+				transition: 0.25s all cubic-bezier(0.11, 0.77, 0.36, 0.97);
+				cursor: pointer;
+			}
+			html body #MasqueCOVID:hover{
+				background-color: #00ABE0; 
+			}
+			html body #banniereMasque{
+				display: flex; 
+				text-align: left;
+				background-color: transparent;
+				padding: 0; 
+				margin: 0 auto;
+				width: 100%;
+				max-width: 680px; 
+				font-size: 18px;
+				flex-direction: row;
+				flex-wrap: nowrap;
+				justify-content: center;
+				align-content: stretch;
+				align-items: center;
+			}
+			html body #banniereMasque p{
+				display: inline-block; 
+				margin: 0; 
+				color: #222222; 
+				font-weight: 600;
+				font-size: 1em; 
+				margin: 0.5em 1em;
+				line-height: 1.4em!important;
+				order: 0;
+				flex: 1 1 auto;
+				align-self: center;
+			}
+			html body #banniereMasque p span{
+				border: 2px #222222 solid;
+				font-size: 0.85em; 
+				display: inline-block;
+				border-radius: 50em; 
+				padding: 0.3em 0.9em 0.25em 1em;
+				margin: 0.5em 0;
+			}
+			html body #banniereMasque img{
+				width: 100%;
+				max-width: 130px;
+				height: auto;
+				order: 0;
+				flex: 1 1 auto;
+				align-self: center;
+			}
+			@media screen and (max-width: 450px){
+				html body #banniereMasque{
+					flex-wrap: wrap;
+					text-align: center
+				}
+			}
+			
+			html body #MasqueCOVIDdetail{
+				position: fixed; 
+				top: 0;
+				left: 0;
+				right:0; 
+				bottom: 100vh;
+				z-index: 900;
+				display: flex;
+				flex-direction: row;
+				flex-wrap: nowrap;
+				justify-content: center;
+				align-content: stretch;
+				align-items: center;
+				overflow: hidden;
+				transition: 0.25s all cubic-bezier(0.11, 0.77, 0.36, 0.97);
+			}
+			html body #MasqueCOVIDdetail.afficheToi{
+				bottom: 0;
+			}
+			html body #MasqueCOVIDdetail #detailFerme{
+				position: absolute; 
+				top: 0;
+				left: 0;
+				right:0; 
+				bottom: 0;
+				background-color: rgba(0,0,0,0.73);
+			}
+			html body #MasqueCOVIDdetail #detailMasque{
+				position: relative;
+				width: 100%; 
+				max-width: 400px;
+				background: white;
+				border-radius: 7px;
+				height: 500px;
+				max-height: 100vh; 
+				text-align: left;
+				box-shadow:  0 0 20px rgba(0,0,0,0.5);
+			}
+			html body #MasqueCOVIDdetail #detailFerme2{
+				position: absolute; 
+				top: 0;
+				right: 0;
+				width: 45px;
+				height: 45px;
+				background-color: rgba(0,0,0,0.73);
+				cursor: pointer; 
+			}
+			html body #MasqueCOVIDdetail #detailFerme2:before,
+			html body #MasqueCOVIDdetail #detailFerme2:after{
+				display: block;
+				content: '';
+				background: white;
+				height: 80%;
+				width:4px;
+				border-radius: 100px; 
+				transform-origin: center center;
+				position: absolute;
+				top:10%;
+				left: calc(50% - 2px);
+				transform: rotate(45deg);
+			}
+			html body #MasqueCOVIDdetail #detailFerme2:after{
+				transform: rotate(-45deg);
+			}
+		</style>
+		
+	
+	<div id="MasqueCOVID">
+		<div id="banniereMasque">
+			<img src="https://www.cci.fr/image/image_gallery?img_id=10797235">
+			<p>Les CCI vous alertent sur la disponibilité en masques chirurgicaux pour votre&nbsp;entreprise<br>
+			<span>Cliquez ici pour vous inscrire&nbsp;&nbsp;></span> </p>
+		</div>
+	</div>
+	
+	
+	<div id="MasqueCOVIDdetail" class="">
+		<div id="detailFerme"></div>
+		<div id="detailMasque">
+			<iframe width="100%" height="100%" src= "https://forms.office.com/Pages/ResponsePage.aspx?id=-hqW2ZECOkqXP5lVGLzcT71iq9Uw4OpIgxCra9z2BX5UOUpQU1JIVVNLWkMyRllFNEhGNUg4M1JJUi4u&embed=true" frameborder= "0" marginwidth= "0" marginheight= "0" style= "border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+		<div id="detailFerme2"></div>
+		</div>
+	</div>
+	
+	
+		
+		<script type="text/javascript">
+			$('#MasqueCOVID').click(function() {
+				$('#MasqueCOVIDdetail').addClass("afficheToi");
+			});
+			$('#detailFerme').click(function() {
+				$('#MasqueCOVIDdetail').removeClass("afficheToi");
+			});
+			$('#detailFerme2').click(function() {
+				$('#MasqueCOVIDdetail').removeClass("afficheToi");
+			});
+		</script>
+	
+	
+	
+	
+	
+		
+		
+	

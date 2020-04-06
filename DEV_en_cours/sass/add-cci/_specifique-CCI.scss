@@ -2,6 +2,8 @@ img{object-fit: cover;}
 
 .font-size-0{font-size: 0;}
 
+.flou-arriere{backdrop-filter: blur(15px) saturate(1.5);}
+
 //_Reboot
 *{
   word-wrap: break-word;
