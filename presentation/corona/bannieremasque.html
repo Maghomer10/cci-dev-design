@@ -125,6 +125,21 @@
 			html body #MasqueCOVIDdetail #detailFerme2:after{
 				transform: rotate(-45deg);
 			}
+			html body #MasqueCOVIDdetail a{
+				background-color: #f2f2f2;
+				text-decoration: none;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				padding: 0.2em 0.5em;
+				font-size: 13px;
+				text-align: center;
+				right: 0;
+				font-family: 'Fira Sans';
+			}
+			html body #MasqueCOVIDdetail iframe{
+				height: calc(100% - 20px)
+			}
 		</style>
 		
 	
@@ -140,7 +155,8 @@
 	<div id="MasqueCOVIDdetail" class="">
 		<div id="detailFerme"></div>
 		<div id="detailMasque">
-			<iframe width="100%" height="100%" src= "https://forms.office.com/Pages/ResponsePage.aspx?id=-hqW2ZECOkqXP5lVGLzcT71iq9Uw4OpIgxCra9z2BX5UOUpQU1JIVVNLWkMyRllFNEhGNUg4M1JJUi4u&embed=true" frameborder= "0" marginwidth= "0" marginheight= "0" style= "border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+			<iframe width="100%"  src= "https://forms.office.com/Pages/ResponsePage.aspx?id=-hqW2ZECOkqXP5lVGLzcT71iq9Uw4OpIgxCra9z2BX5UOUpQU1JIVVNLWkMyRllFNEhGNUg4M1JJUi4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height: 90vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+			<a href="https://www.cci.fr/coronavirus-entreprise/alerte-masques-disponible#conditions">Conditions d’utilisation</a>
 		<div id="detailFerme2"></div>
 		</div>
 	</div>
