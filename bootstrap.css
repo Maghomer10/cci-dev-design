@@ -624,7 +624,7 @@ mark,
 
 code {
   font-size: 87.5%;
-  color: #E52E97;
+  color: #4D4D4D;
   word-break: break-word;
 }
 a > code {
@@ -635,7 +635,7 @@ kbd {
   padding: 0.2rem 0.4rem;
   font-size: 87.5%;
   color: #fff;
-  background-color: #212529;
+  background-color: #4D4D4D;
   border-radius: var(--arrondis-1);
 }
 kbd kbd {
@@ -647,7 +647,7 @@ kbd kbd {
 pre {
   display: block;
   font-size: 87.5%;
-  color: #212529;
+  color: #4D4D4D;
 }
 pre code {
   font-size: inherit;
@@ -11797,6 +11797,10 @@ img {
 
 .font-size-0 {
   font-size: 0;
+}
+
+.flou-arriere {
+  backdrop-filter: blur(15px) saturate(1.5);
 }
 
 * {

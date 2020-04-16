@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="140" viewBox="0 0 140 140">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-localisation);
+      }
+
+      .cls-2 {
+        fill: #00c;
+      }
+
+      .cls-3 {
+        fill: #6877ff;
+      }
+
+      .cls-4, .cls-6 {
+        fill: none;
+      }
+
+      .cls-4, .cls-5, .cls-6 {
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
+      }
+
+      .cls-4 {
+        stroke-linejoin: round;
+      }
+    </style>
+    <clipPath id="clip-localisation">
+      <rect width="140" height="140"/>
+    </clipPath>
+  </defs>
+  <g id="localisation" class="cls-1">
+    <g id="Groupe_173" data-name="Groupe 173">
+      <g id="picto-x-2">
+        <path id="Tracé_321" data-name="Tracé 321" class="cls-2" d="M1713.1,536.346l22.145,27.632H1640.3l9.043-12.85h54.78l-10.043-14.782Z" transform="translate(-1606 -432)"/>
+      </g>
+      <g id="picto-x-1">
+        <path id="Soustraction_32" data-name="Soustraction 32" class="cls-3" d="M-1569.012-326.217h0l-30.746-48.223-.008-.012-.023-.034a36.826,36.826,0,0,1-6.21-20.524A37.029,37.029,0,0,1-1569.012-432a37.029,37.029,0,0,1,36.987,36.987,36.833,36.833,0,0,1-6.21,20.525c-.007.01-.014.02-.02.03l-.01.017-4.141,6.5-.779,1.222-25.825,40.506Zm0-90.37a21.6,21.6,0,0,0-21.574,21.574,21.6,21.6,0,0,0,21.574,21.574,21.6,21.6,0,0,0,21.574-21.574A21.6,21.6,0,0,0-1569.012-416.587Z" transform="translate(1639.31 439.65)"/>
+      </g>
+      <g id="picto-ligne">
+        <path id="Tracé_317" data-name="Tracé 317" class="cls-4" d="M122.211,77.512a36.987,36.987,0,1,1,61.554,0c-.011.015-.021.031-.031.046-1.735,2.721-29.41,46.13-30.747,48.225L122.241,77.559C122.231,77.543,122.221,77.527,122.211,77.512Z" transform="translate(-82.69 -12.35)"/>
+        <path id="Tracé_318" data-name="Tracé 318" class="cls-5" d="M263.062,304.873l13.032-21.651" transform="translate(-189.899 -210.03)"/>
+        <circle id="Ellipse_139" data-name="Ellipse 139" class="cls-4" cx="21.574" cy="21.574" r="21.574" transform="translate(48.723 23.064)"/>
+        <path id="Tracé_319" data-name="Tracé 319" class="cls-4" d="M75.65,386H52.93l-22.226,28H149.748l-22.225-28H104.8" transform="translate(-19.929 -281.655)"/>
+        <line id="Ligne_125" data-name="Ligne 125" class="cls-6" x1="15.48" y1="22.027" transform="translate(91.618 110.323)"/>
+        <line id="Ligne_126" data-name="Ligne 126" class="cls-6" x1="15.48" y2="22.027" transform="translate(33.495 110.323)"/>
+        <line id="Ligne_127" data-name="Ligne 127" class="cls-6" x2="81.381" transform="translate(29.572 119.273)"/>
+      </g>
+    </g>
+  </g>
+</svg>

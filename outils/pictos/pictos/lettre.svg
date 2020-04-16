@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="140" viewBox="0 0 140 140">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-lettre);
+      }
+
+      .cls-2 {
+        fill: #00c;
+      }
+
+      .cls-3 {
+        fill: #6877ff;
+      }
+
+      .cls-4, .cls-5 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-width: 4px;
+      }
+
+      .cls-4 {
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+      }
+    </style>
+    <clipPath id="clip-lettre">
+      <rect width="140" height="140"/>
+    </clipPath>
+  </defs>
+  <g id="lettre" class="cls-1">
+    <g id="Groupe_154" data-name="Groupe 154" transform="translate(-3.495 -0.369)">
+      <g id="picto-x-2" transform="translate(14.709 7.5)">
+        <path id="Soustraction_27" data-name="Soustraction 27" class="cls-2" d="M63.393,126.787A63.41,63.41,0,0,1,38.718,4.982,63,63,0,0,1,63.393,0,63.769,63.769,0,0,1,77.321,1.535a63.117,63.117,0,0,1,24.294,11.28,63.876,63.876,0,0,1,9.7,9.079L23.488,38.966l7.721,39.721,3.065,15.771,19.69-3.827,23.041-4.479,45.319-8.809-10.711-55.1a63.372,63.372,0,0,1-48.22,104.546Z" transform="translate(0 0)"/>
+      </g>
+      <g id="picto-x-1" transform="translate(38.903 45.602) rotate(-11)">
+        <path id="Tracé_250" data-name="Tracé 250" class="cls-3" d="M50.812,40.416h90.181l-46.071,34.5Z" transform="translate(-50.812 -40.416)"/>
+      </g>
+      <g id="picto-ligne" transform="translate(33.641 39.675)">
+        <path id="Tracé_245" data-name="Tracé 245" class="cls-4" d="M0,45.454V0H89.009V56.39H0" transform="translate(4.896 6.877) rotate(-11)"/>
+        <path id="Tracé_246" data-name="Tracé 246" class="cls-4" d="M70.343.364,35.434,24.514,0,0" transform="translate(15.29 12.941) rotate(-11)"/>
+        <line id="Ligne_109" data-name="Ligne 109" class="cls-5" x2="22.395" transform="translate(-26.7 19.358) rotate(-11)"/>
+        <line id="Ligne_110" data-name="Ligne 110" class="cls-5" x2="15.323" transform="translate(-15.923 37.735) rotate(-11)"/>
+        <line id="Ligne_111" data-name="Ligne 111" class="cls-5" x1="9.43" transform="translate(-6.303 56.337) rotate(-11)"/>
+      </g>
+    </g>
+  </g>
+</svg>

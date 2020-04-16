@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="140" viewBox="0 0 140 140">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-lettre-ouverte);
+      }
+
+      .cls-2 {
+        fill: #00c;
+      }
+
+      .cls-3 {
+        fill: #6877ff;
+      }
+
+      .cls-4, .cls-5, .cls-6 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-width: 4px;
+      }
+
+      .cls-4, .cls-5 {
+        stroke-linejoin: round;
+      }
+
+      .cls-4 {
+        stroke-miterlimit: 10;
+      }
+    </style>
+    <clipPath id="clip-lettre-ouverte">
+      <rect width="140" height="140"/>
+    </clipPath>
+  </defs>
+  <g id="lettre-ouverte" class="cls-1">
+    <g id="Groupe_154" data-name="Groupe 154" transform="translate(-7.641 2.822)">
+      <g id="picto-x-2" transform="translate(78.648 63.779)">
+        <path id="Tracé_297" data-name="Tracé 297" class="cls-2" d="M75.192,97.2l53.325-36.917v62.454Z" transform="translate(-75.192 -60.287)"/>
+      </g>
+      <g id="picto-x-1" transform="translate(31.613 8.267)">
+        <path id="Tracé_296" data-name="Tracé 296" class="cls-3" d="M8.5-56.143H66.747L36.622,27,8.423,5.327Z" transform="translate(-8.423 52.192)"/>
+      </g>
+      <g id="picto-ligne" transform="translate(23.441 7.993)">
+        <path id="Tracé_245" data-name="Tracé 245" class="cls-4" d="M0,63.142V0H108.119V63.142h0" transform="translate(108.119 119.047) rotate(180)"/>
+        <path id="Tracé_246" data-name="Tracé 246" class="cls-4" d="M390.5,134.746l-54,37.359-41.844-31.737" transform="translate(-282.381 -79.112)"/>
+        <path id="Tracé_295" data-name="Tracé 295" class="cls-5" d="M7.917,20.006V-31.4H99.8v48.95" transform="translate(0.529 27.405)"/>
+        <line id="Ligne_112" data-name="Ligne 112" class="cls-6" x2="27.737" transform="translate(22.384 10.669)"/>
+        <line id="Ligne_113" data-name="Ligne 113" class="cls-6" x2="20.269" transform="translate(66.731 18.137)"/>
+        <line id="Ligne_114" data-name="Ligne 114" class="cls-6" x2="64.616" transform="translate(22.384 35.205)"/>
+        <line id="Ligne_115" data-name="Ligne 115" class="cls-6" x2="45.872" transform="translate(22.384 45.873)"/>
+        <line id="Ligne_116" data-name="Ligne 116" class="cls-6" x2="55.015" transform="translate(22.384 56.541)"/>
+      </g>
+    </g>
+  </g>
+</svg>

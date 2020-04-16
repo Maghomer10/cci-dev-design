@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="140" viewBox="0 0 140 140">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-chronometre);
+      }
+
+      .cls-2 {
+        fill: #00c;
+      }
+
+      .cls-3 {
+        fill: #6877ff;
+      }
+
+      .cls-4, .cls-5 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 4px;
+      }
+
+      .cls-4 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+    <clipPath id="clip-chronometre">
+      <rect width="140" height="140"/>
+    </clipPath>
+  </defs>
+  <g id="chronometre" class="cls-1">
+    <g id="Groupe_145" data-name="Groupe 145" transform="translate(24.267 30.407)">
+      <g id="picto-x-2" transform="translate(-8.647 -4.665)">
+        <path id="Soustraction_23" data-name="Soustraction 23" class="cls-2" d="M54.516,109.1A54.544,54.544,0,0,1,15.967,15.978a54.534,54.534,0,1,1,59.768,88.839A54.142,54.142,0,0,1,54.516,109.1Zm.48-97.5A43.616,43.616,0,1,0,98.612,55.221,43.665,43.665,0,0,0,55,11.605Z" transform="translate(0 0)"/>
+      </g>
+      <g id="picto-x-1" transform="translate(44.802 4.453)">
+        <path id="Intersection_6" data-name="Intersection 6" class="cls-3" d="M0,48.1.84,0C24.467,0,43.617,19.451,43.617,43.442A43.576,43.576,0,0,1,24.163,79.865Z" transform="matrix(1, -0.017, 0.017, 1, 0, 0.761)"/>
+        <g id="Groupe_159" data-name="Groupe 159" transform="translate(-67.299 -24.483)">
+          <path id="Union_9" data-name="Union 9" class="cls-3" d="M-1414.293-610.081v-8h-9v-9h34v9h-9v8Z" transform="translate(1474.524 621.705)"/>
+        </g>
+      </g>
+      <g id="picto-ligne" transform="translate(-8.179 -3.28)">
+        <path id="Tracé_31" data-name="Tracé 31" class="cls-4" d="M2180.234,34.315a43.4,43.4,0,1,1-40.985,29.006" transform="translate(-2126.562 -23.904)"/>
+        <path id="Tracé_32" data-name="Tracé 32" class="cls-4" d="M2143.423,50.342a43.657,43.657,0,0,1,13.514-11.82" transform="translate(-2124.483 -22.585)"/>
+        <line id="Ligne_21" data-name="Ligne 21" class="cls-4" x2="23.371" y2="32.579" transform="translate(30.55 25.668)"/>
+        <line id="Ligne_22" data-name="Ligne 22" class="cls-4" x1="12.972" y2="16.504" transform="translate(53.921 41.743)"/>
+        <g id="Groupe_7" data-name="Groupe 7" transform="translate(17.683 16.969)">
+          <line id="Ligne_23" data-name="Ligne 23" class="cls-4" y2="4.227" transform="translate(36.003)"/>
+          <line id="Ligne_24" data-name="Ligne 24" class="cls-4" x1="1.832" y2="3.809" transform="translate(50.158 3.645)"/>
+          <line id="Ligne_25" data-name="Ligne 25" class="cls-4" x1="3.302" y2="2.639" transform="translate(61.515 13.859)"/>
+          <line id="Ligne_26" data-name="Ligne 26" class="cls-4" x1="4.119" y2="0.947" transform="translate(67.83 28.623)"/>
+          <line id="Ligne_27" data-name="Ligne 27" class="cls-4" x1="4.123" y1="0.932" transform="translate(67.855 44.088)"/>
+          <line id="Ligne_28" data-name="Ligne 28" class="cls-4" x1="3.311" y1="2.627" transform="translate(61.585 57.182)"/>
+          <line id="Ligne_29" data-name="Ligne 29" class="cls-4" x1="1.845" y1="3.803" transform="translate(50.258 66.265)"/>
+          <line id="Ligne_30" data-name="Ligne 30" class="cls-4" x1="0.015" y1="4.227" transform="translate(36.115 69.54)"/>
+          <line id="Ligne_31" data-name="Ligne 31" class="cls-4" y1="3.815" x2="1.819" transform="translate(20.13 66.362)"/>
+          <line id="Ligne_32" data-name="Ligne 32" class="cls-4" y1="2.65" x2="3.293" transform="translate(7.268 57.357)"/>
+          <line id="Ligne_33" data-name="Ligne 33" class="cls-4" y1="0.961" x2="4.116" transform="translate(0.084 44.307)"/>
+          <line id="Ligne_34" data-name="Ligne 34" class="cls-4" x2="4.126" y2="0.918" transform="translate(0 28.87)"/>
+        </g>
+        <ellipse id="Ellipse_134" data-name="Ellipse 134" class="cls-5" cx="62" cy="54.5" rx="62" ry="54.5" transform="translate(-8.088 -0.127)"/>
+        <g id="Groupe_158" data-name="Groupe 158" transform="translate(-14.318 -16.75)">
+          <path id="Tracé_298" data-name="Tracé 298" class="cls-4" d="M1481.973,628.662V620.7h-9.218v-9.369h17.275" transform="translate(-1422 -617)"/>
+          <path id="Tracé_299" data-name="Tracé 299" class="cls-4" d="M1480.812,628.662V620.7h9.218v-9.369h-17.275" transform="translate(-1404.774 -617)"/>
+        </g>
+        <path id="Tracé_300" data-name="Tracé 300" class="cls-4" d="M1482.749,634.416c0-9.527,6.9-9.762,9.995-9.762s9.043,1.19,9.043,9.762" transform="matrix(0.819, -0.574, 0.574, 0.819, -1570.3, 341.653)"/>
+        <path id="Tracé_301" data-name="Tracé 301" class="cls-4" d="M1482.749,634.416c0-9.527,6.9-9.762,9.995-9.762s9.043,1.19,9.043,9.762" transform="matrix(0.819, 0.574, -0.574, 0.819, -766.128, -1370.206)"/>
+      </g>
+    </g>
+  </g>
+</svg>

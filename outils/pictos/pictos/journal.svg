@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="140" viewBox="0 0 140 140">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-journal);
+      }
+
+      .cls-2 {
+        fill: #00c;
+      }
+
+      .cls-3 {
+        fill: #6877ff;
+      }
+
+      .cls-4, .cls-5 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
+      }
+
+      .cls-4 {
+        stroke-linejoin: round;
+      }
+    </style>
+    <clipPath id="clip-journal">
+      <rect width="140" height="140"/>
+    </clipPath>
+  </defs>
+  <g id="journal" class="cls-1">
+    <g id="Groupe_155" data-name="Groupe 155">
+      <g id="picto-x-2">
+        <path id="Tracé_252" data-name="Tracé 252" class="cls-2" d="M0,0,21-40.378S21.014,55.784,21.014,70s-21,14.051-21,0S0,0,0,0Z" transform="translate(15 50)"/>
+      </g>
+      <g id="picto-x-1">
+        <rect id="Rectangle_141" data-name="Rectangle 141" class="cls-3" width="67" height="13" transform="translate(47 19)"/>
+        <rect id="Rectangle_142" data-name="Rectangle 142" class="cls-3" width="30" height="42" transform="translate(84 74)"/>
+      </g>
+      <g id="picto-ligne" transform="translate(521.721 2.915)">
+        <path id="Tracé_251" data-name="Tracé 251" class="cls-4" d="M-506.444,47.256V117.4A10.441,10.441,0,0,0-496,127.837h0a10.171,10.171,0,0,0,10.171-10.171V6.333h89.389V118.8a9.041,9.041,0,0,1-9.04,9.04h-70.509" transform="translate(0 0)"/>
+        <line id="Ligne_94" data-name="Ligne 94" class="cls-5" y2="67.953" transform="translate(-496.08 25.881)"/>
+        <line id="Ligne_95" data-name="Ligne 95" class="cls-5" y2="8.986" transform="translate(-496.08 103.748)"/>
+        <rect id="Rectangle_139" data-name="Rectangle 139" class="cls-4" width="67.052" height="11.925" transform="translate(-474.971 16.683)"/>
+        <line id="Ligne_96" data-name="Ligne 96" class="cls-5" x2="29.926" transform="translate(-474.971 40.127)"/>
+        <line id="Ligne_97" data-name="Ligne 97" class="cls-5" x2="29.926" transform="translate(-474.971 50.535)"/>
+        <line id="Ligne_98" data-name="Ligne 98" class="cls-5" x2="29.926" transform="translate(-474.971 60.944)"/>
+        <line id="Ligne_99" data-name="Ligne 99" class="cls-5" x2="29.926" transform="translate(-437.845 40.127)"/>
+        <line id="Ligne_100" data-name="Ligne 100" class="cls-5" x2="29.926" transform="translate(-437.845 50.535)"/>
+        <line id="Ligne_101" data-name="Ligne 101" class="cls-5" x2="29.926" transform="translate(-437.845 60.944)"/>
+        <line id="Ligne_102" data-name="Ligne 102" class="cls-5" x2="29.926" transform="translate(-474.971 71.352)"/>
+        <line id="Ligne_103" data-name="Ligne 103" class="cls-5" x2="29.926" transform="translate(-474.971 81.761)"/>
+        <line id="Ligne_104" data-name="Ligne 104" class="cls-5" x2="29.926" transform="translate(-474.971 92.17)"/>
+        <line id="Ligne_105" data-name="Ligne 105" class="cls-5" x2="29.926" transform="translate(-474.971 102.578)"/>
+        <line id="Ligne_106" data-name="Ligne 106" class="cls-5" x2="29.926" transform="translate(-474.971 112.987)"/>
+        <rect id="Rectangle_140" data-name="Rectangle 140" class="cls-4" width="29.926" height="41.635" transform="translate(-437.845 71.352)"/>
+        <line id="Ligne_107" data-name="Ligne 107" class="cls-5" x2="29.926" y2="41.635" transform="translate(-437.845 71.352)"/>
+        <line id="Ligne_108" data-name="Ligne 108" class="cls-5" y1="41.635" x2="29.926" transform="translate(-437.845 71.352)"/>
+      </g>
+    </g>
+  </g>
+</svg>

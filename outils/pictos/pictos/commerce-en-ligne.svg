@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="140" viewBox="0 0 140 140">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-commerce-en-ligne);
+      }
+
+      .cls-2 {
+        fill: #00c;
+      }
+
+      .cls-3 {
+        fill: #6877ff;
+      }
+
+      .cls-4, .cls-5, .cls-6 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-width: 4px;
+      }
+
+      .cls-4 {
+        stroke-linejoin: round;
+      }
+
+      .cls-4, .cls-6 {
+        stroke-miterlimit: 10;
+      }
+    </style>
+    <clipPath id="clip-commerce-en-ligne">
+      <rect width="140" height="140"/>
+    </clipPath>
+  </defs>
+  <g id="commerce-en-ligne" class="cls-1">
+    <g id="Groupe_172" data-name="Groupe 172">
+      <g id="picto-x-2">
+        <path id="Tracé_337" data-name="Tracé 337" class="cls-2" d="M1659.827,904.315l-3.131,23.066h40.427l-3.256-23.066H1684.1s.271,10.314-7.054,10.856-8.14-10.856-8.14-10.856Z" transform="translate(-1606 -800)"/>
+      </g>
+      <g id="picto-x-1">
+        <path id="Tracé_336" data-name="Tracé 336" class="cls-3" d="M1719.87,824.875c.044-.055-83.795,69.489-83.795,69.489h94.149V824.875Z" transform="translate(-1606 -800)"/>
+      </g>
+      <g id="picto-ligne">
+        <g id="Groupe_166" data-name="Groupe 166" transform="translate(63.196 105.988)">
+          <g id="Groupe_165" data-name="Groupe 165" transform="translate(0 0)">
+            <path id="Tracé_324" data-name="Tracé 324" class="cls-4" d="M226.1,412.29l.692,3.131c.8,3.614,3.658,6.138,6.952,6.138s6.153-2.524,6.952-6.138l.692-3.131" transform="translate(-226.096 -412.29)"/>
+          </g>
+        </g>
+        <g id="Groupe_168" data-name="Groupe 168" transform="translate(17.432 24.875)">
+          <g id="Groupe_167" data-name="Groupe 167" transform="translate(0)">
+            <path id="Tracé_325" data-name="Tracé 325" class="cls-4" d="M49.246,157.078H47.065V87.146H143.5" transform="translate(-47.065 -87.146)"/>
+          </g>
+        </g>
+        <g id="Groupe_170" data-name="Groupe 170" transform="translate(27.81 24.875)">
+          <g id="Groupe_169" data-name="Groupe 169">
+            <path id="Tracé_326" data-name="Tracé 326" class="cls-4" d="M181.919,87.146H184.1v69.932H87.662" transform="translate(-87.662 -87.146)"/>
+          </g>
+        </g>
+        <path id="Tracé_338" data-name="Tracé 338" class="cls-5" d="M4,0H122.7a4,4,0,0,1,4,4V84.664a4,4,0,0,1-4,4H4a4,4,0,0,1-4-4V4A4,4,0,0,1,4,0Z" transform="translate(7.488 15.65)"/>
+        <line id="Ligne_128" data-name="Ligne 128" class="cls-6" x2="56.263" transform="translate(42.708 127.55)"/>
+        <line id="Ligne_129" data-name="Ligne 129" class="cls-6" y1="18.235" x2="2.385" transform="translate(51.442 104.315)"/>
+        <line id="Ligne_130" data-name="Ligne 130" class="cls-6" x1="2.399" y1="18.235" transform="translate(87.934 104.315)"/>
+        <g id="Groupe_171" data-name="Groupe 171" transform="translate(-1)">
+          <path id="Tracé_328" data-name="Tracé 328" class="cls-4" d="M139.389,126.889l6.916,3.948,7.69,26.619a2.987,2.987,0,0,0,3.248,2.108l29.167-3.8a4.275,4.275,0,0,0,3.626-3.334l3.349-15.456a1.064,1.064,0,0,0-.988-1.288l-38.4-2.919" transform="translate(-98.357 -90.855)"/>
+          <path id="Tracé_329" data-name="Tracé 329" class="cls-4" d="M190.854,260.111l-2.205,4.328a1.337,1.337,0,0,0,1.168,1.944l36.871.658" transform="translate(-134.915 -190.023)"/>
+          <path id="Tracé_330" data-name="Tracé 330" class="cls-4" d="M190.459,293.019a4.885,4.885,0,1,0,8.75.511" transform="translate(-135.899 -216.519)"/>
+          <path id="Tracé_331" data-name="Tracé 331" class="cls-4" d="M301.405,295.1a4.885,4.885,0,1,0,8.763.207" transform="translate(-219.546 -218.071)"/>
+          <line id="Ligne_131" data-name="Ligne 131" class="cls-6" x2="3.454" y2="20.419" transform="translate(61.5 47.5)"/>
+          <line id="Ligne_132" data-name="Ligne 132" class="cls-6" y2="22.957" transform="translate(72.679 43.785)"/>
+          <line id="Ligne_133" data-name="Ligne 133" class="cls-6" y1="20.153" x2="2.146" transform="translate(82.354 45.5)"/>
+          <line id="Ligne_134" data-name="Ligne 134" class="cls-6" x2="40.749" transform="translate(52.362 55.263)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

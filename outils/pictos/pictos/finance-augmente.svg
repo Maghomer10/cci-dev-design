@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="140" viewBox="0 0 140 140">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-finance-augmente);
+      }
+
+      .cls-2 {
+        fill: #00c;
+      }
+
+      .cls-3 {
+        fill: #6877ff;
+      }
+
+      .cls-4, .cls-5 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 4px;
+      }
+
+      .cls-4 {
+        stroke-miterlimit: 10;
+      }
+    </style>
+    <clipPath id="clip-finance-augmente">
+      <rect width="140" height="140"/>
+    </clipPath>
+  </defs>
+  <g id="finance-augmente" class="cls-1">
+    <g id="Groupe_141" data-name="Groupe 141">
+      <g id="picto-x-2">
+        <rect id="Rectangle_43" data-name="Rectangle 43" class="cls-2" width="31.981" height="66.92" transform="translate(17 59.289)"/>
+        <rect id="Rectangle_45" data-name="Rectangle 45" class="cls-2" width="31.981" height="108.316" transform="translate(96 19.036)"/>
+      </g>
+      <g id="picto-x-1">
+        <rect id="Rectangle_44" data-name="Rectangle 44" class="cls-3" width="31.981" height="87.621" transform="translate(57 39.731)"/>
+      </g>
+      <g id="picto-ligne" transform="translate(7.426 57.489)">
+        <path id="Tracé_42" data-name="Tracé 42" class="cls-4" d="M917.932,130.863l30.891-41.354,15.086,12.213,26.58-38.793L1005.575,77.3l23.707-32.327" transform="translate(-917.932 -62.226)"/>
+        <path id="Polygone_1" data-name="Polygone 1" class="cls-5" d="M15,0,30,30H0Z" transform="matrix(0.809, 0.588, -0.588, 0.809, 112.725, -44.963)"/>
+      </g>
+    </g>
+  </g>
+</svg>

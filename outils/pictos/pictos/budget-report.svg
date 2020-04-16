@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="140" viewBox="0 0 140 140">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-budget-report);
+      }
+
+      .cls-2 {
+        fill: #00c;
+      }
+
+      .cls-3 {
+        fill: #6877ff;
+      }
+
+      .cls-4, .cls-5 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
+      }
+
+      .cls-4 {
+        stroke-linejoin: round;
+      }
+    </style>
+    <clipPath id="clip-budget-report">
+      <rect width="140" height="140"/>
+    </clipPath>
+  </defs>
+  <g id="budget-report" class="cls-1">
+    <g id="Groupe_119" data-name="Groupe 119">
+      <g id="picto-x-2" transform="translate(25.311 36.493)">
+        <path id="Rectangle_129" data-name="Rectangle 129" class="cls-2" d="M8,0H22a0,0,0,0,1,0,0V48a0,0,0,0,1,0,0H8a8,8,0,0,1-8-8V8A8,8,0,0,1,8,0Z" transform="translate(10.689 23.507)"/>
+        <path id="Rectangle_128" data-name="Rectangle 128" class="cls-2" d="M5,0h9a0,0,0,0,1,0,0V11a0,0,0,0,1,0,0H6A6,6,0,0,1,0,5V5A5,5,0,0,1,5,0Z" transform="translate(18.689 12.507)"/>
+        <path id="Rectangle_127" data-name="Rectangle 127" class="cls-2" d="M5,0H33a0,0,0,0,1,0,0V13a0,0,0,0,1,0,0H6A6,6,0,0,1,0,7V5A5,5,0,0,1,5,0Z" transform="translate(-0.311 -0.493)"/>
+      </g>
+      <g id="picto-x-1" transform="translate(61.899 64.315)">
+        <ellipse id="Ellipse_107" data-name="Ellipse 107" class="cls-3" cx="26.093" cy="26.093" rx="26.093" ry="26.093" transform="translate(0 0)"/>
+      </g>
+      <g id="picto-ligne" transform="translate(25.524 36.715)">
+        <path id="Soustraction_10" data-name="Soustraction 10" class="cls-4" d="M43.2,71.286H15.67a5.006,5.006,0,0,1-5-5V64.4a5.006,5.006,0,0,1,5-5,5.007,5.007,0,0,1-5-5V52.524a5.006,5.006,0,0,1,5-5,5.007,5.007,0,0,1-5-5V40.643a5.006,5.006,0,0,1,5-5,5.007,5.007,0,0,1-5-5V28.762a5.006,5.006,0,0,1,5-5H22.1a5.006,5.006,0,0,1-5-5V16.881a5.006,5.006,0,0,1,5-5H5a5.006,5.006,0,0,1-5-5V5A5.006,5.006,0,0,1,5,0H52.294a5.006,5.006,0,0,1,5,5V6.881a5.006,5.006,0,0,1-5,5h17.1a5.006,5.006,0,0,1,5,5v1.881a5.006,5.006,0,0,1-5,5h-6.43a5,5,0,0,1,4.965,4.412A26.1,26.1,0,0,0,43.2,71.285Z" transform="translate(0 0)"/>
+        <path id="Tracé_167" data-name="Tracé 167" class="cls-4" d="M108.272,83.938" transform="translate(-60.444 -44.027)"/>
+        <path id="Tracé_169" data-name="Tracé 169" class="cls-4" d="M147.864,110.846" transform="translate(-70.573 -43.569)"/>
+        <g id="Groupe_116" data-name="Groupe 116" transform="translate(45.586 39.653)">
+          <path id="Tracé_171" data-name="Tracé 171" class="cls-4" d="M138.208,113.067a13.812,13.812,0,1,1,0-22.508" transform="translate(-111.423 -88)"/>
+          <line id="Ligne_77" data-name="Ligne 77" class="cls-5" x2="17.75" transform="translate(0 10.228)"/>
+          <line id="Ligne_78" data-name="Ligne 78" class="cls-5" x2="17.75" transform="translate(0 17.396)"/>
+        </g>
+        <line id="Ligne_79" data-name="Ligne 79" class="cls-5" x2="23.031" transform="translate(30.845 11.881)"/>
+        <line id="Ligne_80" data-name="Ligne 80" class="cls-5" x2="21.386" transform="translate(20.975 23.762)"/>
+        <line id="Ligne_81" data-name="Ligne 81" class="cls-5" x2="21.94" transform="translate(13.96 35.643)"/>
+        <line id="Ligne_82" data-name="Ligne 82" class="cls-5" x2="17.48" transform="translate(13.96 47.524)"/>
+        <line id="Ligne_83" data-name="Ligne 83" class="cls-5" x2="16.931" transform="translate(13.96 59.405)"/>
+        <ellipse id="Ellipse_106" data-name="Ellipse 106" class="cls-4" cx="26.093" cy="26.093" rx="26.093" ry="26.093" transform="translate(36.375 27.601)"/>
+        <g id="Groupe_117" data-name="Groupe 117" transform="translate(130.466 59.362) rotate(150)">
+          <path id="Tracé_172" data-name="Tracé 172" class="cls-4" d="M61.066,122.128A61.064,61.064,0,1,1,122.13,61.064" transform="translate(0 0)"/>
+          <path id="Tracé_173" data-name="Tracé 173" class="cls-4" d="M2.247,0l9.778,12.025L0,21.8" transform="translate(48.982 110.177)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

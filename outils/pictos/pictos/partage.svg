@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="140" viewBox="0 0 140 140">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-partage);
+      }
+
+      .cls-2 {
+        fill: #00c;
+      }
+
+      .cls-3 {
+        fill: #6877ff;
+      }
+
+      .cls-4, .cls-5, .cls-6 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-width: 4px;
+      }
+
+      .cls-4, .cls-5 {
+        stroke-linejoin: round;
+      }
+
+      .cls-4 {
+        stroke-miterlimit: 10;
+      }
+    </style>
+    <clipPath id="clip-partage">
+      <rect width="140" height="140"/>
+    </clipPath>
+  </defs>
+  <g id="partage" class="cls-1">
+    <g id="Groupe_146" data-name="Groupe 146">
+      <g id="picto-x-2" transform="translate(100.839 15.028)">
+        <path id="Soustraction_26" data-name="Soustraction 26" class="cls-2" d="M15.842,0A15.842,15.842,0,1,1,0,15.842,15.842,15.842,0,0,1,15.842,0Z" transform="translate(0 74.621)"/>
+        <path id="Soustraction_25" data-name="Soustraction 25" class="cls-2" d="M15.842,0A15.842,15.842,0,1,1,0,15.842,15.842,15.842,0,0,1,15.842,0Z"/>
+      </g>
+      <g id="picto-x-1" transform="translate(4.344 36.43)">
+        <path id="Soustraction_24" data-name="Soustraction 24" class="cls-3" d="M32.521,0C50.481,0,65.041,15.053,65.041,33.621S50.481,67.242,32.521,67.242,0,52.189,0,33.621,14.56,0,32.521,0Z" transform="translate(0 0)"/>
+      </g>
+      <g id="picto-ligne" transform="translate(20.283 15.028)">
+        <ellipse id="Ellipse_80" data-name="Ellipse 80" class="cls-4" cx="16.583" cy="17.237" rx="16.583" ry="17.237" transform="translate(0 37.785)"/>
+        <ellipse id="Ellipse_81" data-name="Ellipse 81" class="cls-5" cx="15.842" cy="15.842" rx="15.842" ry="15.842" transform="translate(80.556 0)"/>
+        <ellipse id="Ellipse_120" data-name="Ellipse 120" class="cls-5" cx="15.842" cy="15.842" rx="15.842" ry="15.842" transform="translate(80.556 74.621)"/>
+        <line id="Ligne_58" data-name="Ligne 58" class="cls-6" x1="36" y2="18" transform="translate(39.217 25.472)"/>
+        <line id="Ligne_90" data-name="Ligne 90" class="cls-6" x1="36" y1="14" transform="translate(39.217 67.472)"/>
+      </g>
+    </g>
+  </g>
+</svg>

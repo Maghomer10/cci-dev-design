@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="140" viewBox="0 0 140 140">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-tablette);
+      }
+
+      .cls-2 {
+        fill: #00c;
+      }
+
+      .cls-3 {
+        fill: #6877ff;
+      }
+
+      .cls-4, .cls-5 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 4px;
+      }
+
+      .cls-4 {
+        stroke-miterlimit: 10;
+      }
+    </style>
+    <clipPath id="clip-tablette">
+      <rect width="140" height="140"/>
+    </clipPath>
+  </defs>
+  <g id="tablette" class="cls-1">
+    <g id="Groupe_143" data-name="Groupe 143">
+      <g id="picto-x-2" transform="translate(-711.451 -21.829)">
+        <path id="Soustraction_22" data-name="Soustraction 22" class="cls-2" d="M642.548-697.563c-17.655,0-34.254-.978-46.738-2.753s-19.359-4.136-19.359-6.646c0-2.789,8.632-5.417,23.684-7.209H684.96c15.051,1.792,23.684,4.42,23.684,7.209,0,2.511-6.875,4.871-19.359,6.646S660.2-697.563,642.548-697.563Z" transform="translate(138.874 835)"/>
+        <rect id="Rectangle_134" data-name="Rectangle 134" class="cls-2" width="7" height="10" rx="3.5" transform="translate(726.451 79.829)"/>
+      </g>
+      <path id="picto-x-1" class="cls-3" d="M4.447,0H88.76L33.835,53.261H4.447A4.447,4.447,0,0,1,0,48.814V4.447A4.447,4.447,0,0,1,4.447,0Z" transform="translate(28.601 37)"/>
+      <g id="picto-ligne" transform="translate(6.07 7.991)">
+        <g id="Groupe_81" data-name="Groupe 81" transform="translate(22.492 53.651)">
+          <g id="Groupe_80" data-name="Groupe 80">
+            <path id="Tracé_122" data-name="Tracé 122" class="cls-4" d="M71.923,200.41v7.416a2.84,2.84,0,0,0,3.035,2.583H163.9a2.84,2.84,0,0,0,3.035-2.583v-26.1" transform="translate(-71.923 -181.729)"/>
+          </g>
+        </g>
+        <g id="Groupe_83" data-name="Groupe 83" transform="translate(22.492 28.009)">
+          <g id="Groupe_82" data-name="Groupe 82" transform="translate(0 0)">
+            <path id="Tracé_123" data-name="Tracé 123" class="cls-4" d="M166.939,101.953V93.238A3.038,3.038,0,0,0,163.9,90.2H74.958a3.039,3.039,0,0,0-3.035,3.035v30.788" transform="translate(-71.923 -90.203)"/>
+          </g>
+        </g>
+        <rect id="Rectangle_133" data-name="Rectangle 133" class="cls-5" width="123" height="71" rx="7" transform="translate(2.93 20.009)"/>
+        <rect id="Rectangle_135" data-name="Rectangle 135" class="cls-5" width="7" height="10" rx="3.5" transform="translate(8.93 50.009)"/>
+      </g>
+    </g>
+  </g>
+</svg>

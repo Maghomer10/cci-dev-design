@@ -1,15 +1,35 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="140" viewBox="0 0 140 140">
   <defs>
-    <style>.picto-x-1, .picto-x-1 path, .picto-x-1 ellipse, .picto-x-1 rect, .picto-x-1 line, .picto-x-1 rect, .picto-x-1 g{ fill: #373CF5; } .picto-x-2, .picto-x-2 path, .picto-x-2 ellipse, .picto-x-2 rect, .picto-x-2 line, .picto-x-2 rect, .picto-x-2 g { fill: #6877ff ; } .picto-ligne, .picto-ligne path, .picto-ligne ellipse, .picto-ligne rect, .picto-ligne line, .picto-ligne rect, .picto-ligne g { fill: none; stroke: #222222; stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; } .picto-x-1, .picto-x-1 path, .picto-x-1 ellipse, .picto-x-1 rect, .picto-x-1 line, .picto-x-1 rect, .picto-x-1 g{ fill: #373CF5; } .picto-x-2, .picto-x-2 path, .picto-x-2 ellipse, .picto-x-2 rect, .picto-x-2 line, .picto-x-2 rect, .picto-x-2 g { fill: #6877ff ; } .picto-ligne, .picto-ligne path, .picto-ligne ellipse, .picto-ligne rect, .picto-ligne line, .picto-ligne rect, .picto-ligne g { fill: none; stroke: #222222; stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; }.picto-x-1, .picto-x-1 path, .picto-x-1 ellipse, .picto-x-1 rect, .picto-x-1 line, .picto-x-1 rect, .picto-x-1 g{ fill: #373CF5; } .picto-x-2, .picto-x-2 path, .picto-x-2 ellipse, .picto-x-2 rect, .picto-x-2 line, .picto-x-2 rect, .picto-x-2 g { fill: #6877ff ; } .picto-ligne, .picto-ligne path, .picto-ligne ellipse, .picto-ligne rect, .picto-ligne line, .picto-ligne rect, .picto-ligne g { fill: none; stroke: #222222; stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; } .picto-x-1, .picto-x-1 path, .picto-x-1 ellipse, .picto-x-1 rect, .picto-x-1 line, .picto-x-1 rect, .picto-x-1 g{ fill: #373CF5; } .picto-x-2, .picto-x-2 path, .picto-x-2 ellipse, .picto-x-2 rect, .picto-x-2 line, .picto-x-2 rect, .picto-x-2 g { fill: #6877ff ; } .picto-ligne, .picto-ligne path, .picto-ligne ellipse, .picto-ligne rect, .picto-ligne line, .picto-ligne rect, .picto-ligne g { fill: none; stroke: #222222; stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; }</style>
-    <clipPath class="clip-contrat">
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-contrat);
+      }
+
+      .cls-2 {
+        fill: #6877ff;
+      }
+
+      .cls-3 {
+        fill: #00c;
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 4px;
+      }
+    </style>
+    <clipPath id="clip-contrat">
       <rect width="140" height="140"/>
     </clipPath>
   </defs>
-  <g class="contrat">
-    <g class="Groupe_68" data-name="Groupe 68">
-      <path class="picto-x-1" d="M10.463,26.485a26.953,26.953,0,1,1,16.709,34.26h0a26.954,26.954,0,0,1-16.709-34.26" transform="translate(-6.886 -5.408)"/>
-      <path class="picto-x-2" d="M71.593,62.96h0a5.767,5.767,0,0,1,7.49,2.842L87.695,85.27c-2.873-5.237-.461-8.023,1.059-8.653l.156-.058c5.521-1.658,7.982,3.472,8.91,6.6-1.73-5.216-.234-7.578,1.559-8.319,2.7-1.114,6.223-1.326,8.574,5.466-.163-3.665-.82-3.993.839-6.244,1.214-2.451,7.593-2.289,8.7,1.842l7.322,20.96c5.951,17.042-15.3,35.011-31.214,24.71L65.988,103.708a5.306,5.306,0,0,1-1.32-7.667c1.615-2.5,8.755-1.151,11.355.533l5.231,3.384L68.3,70.252a5.641,5.641,0,0,1,3.289-7.293Z" transform="translate(10.182 11.532)"/>
-      <path class="picto-ligne" d="M101.568,47.762H79a4.1,4.1,0,0,1-4.091-4.09V21.1Zm0,39.8v-39.8M74.906,21.1H26.651a4.11,4.11,0,0,0-4.09,4.091V124.53a4.105,4.105,0,0,0,4.09,4.09H97.477M35.5,39.658H63m-3.682,58.55h27.5M37.056,97.167l4.19,5.471,8.562-11.08M59.446,80.84h21.28M37.181,79.8l4.19,5.471,8.562-11.081m9.515-10.841h27.5M37.181,62.3l4.19,5.471,8.562-11.081M84.417,75.9h0a5.767,5.767,0,0,1,7.49,2.842l8.612,19.469c-2.873-5.237-.461-8.023,1.059-8.653l.156-.058c5.521-1.658,7.982,3.472,8.91,6.6-1.73-5.216-.234-7.578,1.559-8.319,2.7-1.114,6.223-1.326,8.574,5.466-.163-3.665-.82-3.993.839-6.244,1.214-2.451,7.593-2.289,8.7,1.842l7.322,20.96c5.951,17.042-15.3,35.011-31.214,24.71L78.813,116.646a5.306,5.306,0,0,1-1.32-7.667c1.614-2.5,8.755-1.151,11.355.533l5.231,3.384L81.128,83.19A5.641,5.641,0,0,1,84.417,75.9Z" transform="translate(-2.643 -1.406)"/>
+  <g id="contrat" class="cls-1">
+    <g id="Groupe_68" data-name="Groupe 68">
+      <path id="picto-x-1" class="cls-2" d="M10.463,26.485a26.953,26.953,0,1,1,16.709,34.26h0a26.954,26.954,0,0,1-16.709-34.26" transform="translate(-6.886 -5.408)"/>
+      <path id="picto-x-2" class="cls-3" d="M71.593,62.96h0a5.767,5.767,0,0,1,7.49,2.842L87.695,85.27c-2.873-5.237-.461-8.023,1.059-8.653l.156-.058c5.521-1.658,7.982,3.472,8.91,6.6-1.73-5.216-.234-7.578,1.559-8.319,2.7-1.114,6.223-1.326,8.574,5.466-.163-3.665-.82-3.993.839-6.244,1.214-2.451,7.593-2.289,8.7,1.842l7.322,20.96c5.951,17.042-15.3,35.011-31.214,24.71L65.988,103.708a5.306,5.306,0,0,1-1.32-7.667c1.615-2.5,8.755-1.151,11.355.533l5.231,3.384L68.3,70.252a5.641,5.641,0,0,1,3.289-7.293Z" transform="translate(10.182 11.532)"/>
+      <path id="picto-ligne" class="cls-4" d="M101.568,47.762H79a4.1,4.1,0,0,1-4.091-4.09V21.1Zm0,39.8v-39.8M74.906,21.1H26.651a4.11,4.11,0,0,0-4.09,4.091V124.53a4.105,4.105,0,0,0,4.09,4.09H97.477M35.5,39.658H63m-3.682,58.55h27.5M37.056,97.167l4.19,5.471,8.562-11.08M59.446,80.84h21.28M37.181,79.8l4.19,5.471,8.562-11.081m9.515-10.841h27.5M37.181,62.3l4.19,5.471,8.562-11.081M84.417,75.9h0a5.767,5.767,0,0,1,7.49,2.842l8.612,19.469c-2.873-5.237-.461-8.023,1.059-8.653l.156-.058c5.521-1.658,7.982,3.472,8.91,6.6-1.73-5.216-.234-7.578,1.559-8.319,2.7-1.114,6.223-1.326,8.574,5.466-.163-3.665-.82-3.993.839-6.244,1.214-2.451,7.593-2.289,8.7,1.842l7.322,20.96c5.951,17.042-15.3,35.011-31.214,24.71L78.813,116.646a5.306,5.306,0,0,1-1.32-7.667c1.614-2.5,8.755-1.151,11.355.533l5.231,3.384L81.128,83.19A5.641,5.641,0,0,1,84.417,75.9Z" transform="translate(-2.643 -1.406)"/>
     </g>
   </g>
 </svg>

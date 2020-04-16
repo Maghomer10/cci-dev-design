@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="140" viewBox="0 0 140 140">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-finance-baisse);
+      }
+
+      .cls-2 {
+        fill: #00c;
+      }
+
+      .cls-3 {
+        fill: #6877ff;
+      }
+
+      .cls-4, .cls-5 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 4px;
+      }
+
+      .cls-4 {
+        stroke-miterlimit: 10;
+      }
+    </style>
+    <clipPath id="clip-finance-baisse">
+      <rect width="140" height="140"/>
+    </clipPath>
+  </defs>
+  <g id="finance-baisse" class="cls-1">
+    <g id="Groupe_142" data-name="Groupe 142">
+      <g id="picto-x-2">
+        <rect id="Rectangle_131" data-name="Rectangle 131" class="cls-2" width="31.981" height="66.92" transform="translate(96 59.289)"/>
+        <rect id="Rectangle_132" data-name="Rectangle 132" class="cls-2" width="31.981" height="108.316" transform="translate(17 19.036)"/>
+      </g>
+      <g id="picto-x-1">
+        <rect id="Rectangle_44" data-name="Rectangle 44" class="cls-3" width="31.981" height="87.621" transform="translate(57 39.731)"/>
+      </g>
+      <g id="picto-ligne" transform="translate(7.426 59.331)">
+        <path id="Tracé_42" data-name="Tracé 42" class="cls-4" d="M917.932,44.969l30.891,40.012,15.086-11.816,26.58,37.535,15.086-13.9,23.707,31.279" transform="translate(-917.932 -89.933)"/>
+        <path id="Tracé_220" data-name="Tracé 220" class="cls-5" d="M15.295-.231.926,28.9l29.664.463Z" transform="translate(138.236 44.377) rotate(139)"/>
+      </g>
+    </g>
+  </g>
+</svg>

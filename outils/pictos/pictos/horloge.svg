@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="140" viewBox="0 0 140 140">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-horloge);
+      }
+
+      .cls-2 {
+        fill: #00c;
+      }
+
+      .cls-3 {
+        fill: #6877ff;
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 4px;
+      }
+    </style>
+    <clipPath id="clip-horloge">
+      <rect width="140" height="140"/>
+    </clipPath>
+  </defs>
+  <g id="horloge" class="cls-1">
+    <g id="Groupe_145" data-name="Groupe 145" transform="translate(3.39 1.45)">
+      <g id="picto-x-2" transform="translate(5.157 7.219)">
+        <path id="Soustraction_23" data-name="Soustraction 23" class="cls-2" d="M61.574,124.27a60.713,60.713,0,0,1-23.967-4.883,61.341,61.341,0,0,1-19.572-13.316,62.451,62.451,0,0,1,0-87.873A61.342,61.342,0,0,1,37.607,4.883a61.264,61.264,0,0,1,47.935,0A61.34,61.34,0,0,1,105.114,18.2a62.451,62.451,0,0,1,0,87.873,61.339,61.339,0,0,1-19.572,13.316A60.714,60.714,0,0,1,61.574,124.27Zm.561-113.056a50.921,50.921,0,1,0,50.922,50.921A50.979,50.979,0,0,0,62.135,11.214Z" transform="translate(0)"/>
+      </g>
+      <g id="picto-x-1">
+        <path id="Intersection_6" data-name="Intersection 6" class="cls-3" d="M0,68.83,1.2,0C35.008,0,62.409,27.831,62.409,62.159a62.35,62.35,0,0,1-27.836,52.116Z" transform="matrix(1, -0.017, 0.017, 1, 65.205, 7.339)"/>
+      </g>
+      <g id="picto-ligne" transform="translate(4.036 7.219)">
+        <path id="Tracé_31" data-name="Tracé 31" class="cls-4" d="M2198.95,34.315a62.1,62.1,0,1,1-58.643,41.5" transform="translate(-2136.792 -34.315)"/>
+        <path id="Tracé_32" data-name="Tracé 32" class="cls-4" d="M2143.422,55.435a62.464,62.464,0,0,1,19.337-16.913" transform="translate(-2130.962 -30.615)"/>
+        <line id="Ligne_21" data-name="Ligne 21" class="cls-4" x2="33.439" y2="46.615" transform="translate(29.074 21.831)"/>
+        <line id="Ligne_22" data-name="Ligne 22" class="cls-4" x1="18.561" y2="23.615" transform="translate(62.514 44.831)"/>
+        <g id="Groupe_7" data-name="Groupe 7" transform="translate(10.664 9.384)">
+          <line id="Ligne_23" data-name="Ligne 23" class="cls-4" y2="6.048" transform="translate(51.514)"/>
+          <line id="Ligne_24" data-name="Ligne 24" class="cls-4" x1="2.621" y2="5.45" transform="translate(71.768 5.215)"/>
+          <line id="Ligne_25" data-name="Ligne 25" class="cls-4" x1="4.725" y2="3.775" transform="translate(88.018 19.83)"/>
+          <line id="Ligne_26" data-name="Ligne 26" class="cls-4" x1="5.894" y2="1.354" transform="translate(97.054 40.955)"/>
+          <line id="Ligne_27" data-name="Ligne 27" class="cls-4" x1="5.899" y1="1.334" transform="translate(97.09 63.083)"/>
+          <line id="Ligne_28" data-name="Ligne 28" class="cls-4" x1="4.738" y1="3.759" transform="translate(88.118 81.819)"/>
+          <line id="Ligne_29" data-name="Ligne 29" class="cls-4" x1="2.64" y1="5.441" transform="translate(71.912 94.814)"/>
+          <line id="Ligne_30" data-name="Ligne 30" class="cls-4" x1="0.021" y1="6.048" transform="translate(51.674 99.501)"/>
+          <line id="Ligne_31" data-name="Ligne 31" class="cls-4" y1="5.459" x2="2.603" transform="translate(28.803 94.953)"/>
+          <line id="Ligne_32" data-name="Ligne 32" class="cls-4" y1="3.792" x2="4.712" transform="translate(10.399 82.069)"/>
+          <line id="Ligne_33" data-name="Ligne 33" class="cls-4" y1="1.375" x2="5.89" transform="translate(0.121 63.395)"/>
+          <line id="Ligne_34" data-name="Ligne 34" class="cls-4" x2="5.903" y2="1.314" transform="translate(0 41.309)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

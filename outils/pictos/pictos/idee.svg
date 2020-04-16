@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="140" viewBox="0 0 140 140">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-idee);
+      }
+
+      .cls-2 {
+        fill: #00c;
+      }
+
+      .cls-3 {
+        fill: #6877ff;
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
+      }
+    </style>
+    <clipPath id="clip-idee">
+      <rect width="140" height="140"/>
+    </clipPath>
+  </defs>
+  <g id="idee" class="cls-1">
+    <g id="Groupe_131" data-name="Groupe 131">
+      <g id="picto-x-2">
+        <path id="Soustraction_17" data-name="Soustraction 17" class="cls-2" d="M-250.56-549.046a35.621,35.621,0,0,1-8.549-1.037l3.846-10.68a35.07,35.07,0,0,0,2.723-13.61,35.174,35.174,0,0,0-24.6-33.65,35.349,35.349,0,0,1,11.759-8.743A35.186,35.186,0,0,1-250.56-620a35.254,35.254,0,0,1,13.809,2.788,35.36,35.36,0,0,1,11.277,7.6,35.36,35.36,0,0,1,7.6,11.277,35.254,35.254,0,0,1,2.788,13.809,35.254,35.254,0,0,1-2.788,13.809,35.36,35.36,0,0,1-7.6,11.277,35.36,35.36,0,0,1-11.277,7.6A35.254,35.254,0,0,1-250.56-549.046Z" transform="translate(345.129 621.503)"/>
+      </g>
+      <g id="picto-x-1">
+        <path id="Soustraction_18" data-name="Soustraction 18" class="cls-3" d="M-282.493-530.2h-18.6l-14.1-37.9A34.094,34.094,0,0,1-318-581.7a34.086,34.086,0,0,1,2.7-13.351,34.184,34.184,0,0,1,7.35-10.9,34.182,34.182,0,0,1,10.9-7.35A34.086,34.086,0,0,1-283.7-616a34.7,34.7,0,0,1,5,.361,49.554,49.554,0,0,0-18.057,38.318,49.372,49.372,0,0,0,4.065,19.7l10.2,27.415Z" transform="translate(340.991 629.121)"/>
+        <path id="Tracé_27" data-name="Tracé 27" class="cls-3" d="M850.254,100.993h20.211l3.78-12.077H846.474Z" transform="translate(-803.07 34.627)"/>
+      </g>
+      <g id="picto-ligne">
+        <path id="Tracé_28" data-name="Tracé 28" class="cls-4" d="M902.716,56.371a34.3,34.3,0,1,0-65.792,13.6l14.1,37.9h35.262L900.069,69.6A34.18,34.18,0,0,0,902.716,56.371Z" transform="translate(-811.126 -8.951)"/>
+        <path id="Tracé_29" data-name="Tracé 29" class="cls-4" d="M840.459,52.846s-1.074-16.256,11.02-22.306" transform="matrix(0.995, -0.105, 0.105, 0.995, -805.076, 87.538)"/>
+        <line id="Ligne_15" data-name="Ligne 15" class="cls-4" x2="37.207" transform="translate(38.686 107.888)"/>
+        <line id="Ligne_16" data-name="Ligne 16" class="cls-4" x2="37.207" transform="translate(38.686 115.716)"/>
+        <path id="Tracé_30" data-name="Tracé 30" class="cls-4" d="M850.254,100.993h20.211l3.78-12.077H846.474Z" transform="translate(-803.07 34.627)"/>
+        <line id="Ligne_17" data-name="Ligne 17" class="cls-4" x2="37.207" transform="translate(38.686 123.543)"/>
+        <line id="Ligne_18" data-name="Ligne 18" class="cls-4" y1="14.056" x2="16.369" transform="matrix(0.998, -0.07, 0.07, 0.998, 91.59, 6.681)"/>
+        <line id="Ligne_19" data-name="Ligne 19" class="cls-4" y1="11.698" x2="25.253" transform="translate(99.214 20.675)"/>
+        <line id="Ligne_20" data-name="Ligne 20" class="cls-4" x2="20.837" y2="1.031" transform="matrix(0.998, -0.07, 0.07, 0.998, 103.837, 44.15)"/>
+      </g>
+    </g>
+  </g>
+</svg>

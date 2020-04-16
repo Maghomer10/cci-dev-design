@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="140" viewBox="0 0 140 140">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-vacances-valise);
+      }
+
+      .cls-2 {
+        fill: #00c;
+      }
+
+      .cls-3 {
+        fill: #6877ff;
+      }
+
+      .cls-4, .cls-5, .cls-6 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-width: 4px;
+      }
+
+      .cls-4, .cls-5 {
+        stroke-linejoin: round;
+      }
+
+      .cls-5 {
+        stroke-miterlimit: 10.003;
+      }
+
+      .cls-6 {
+        stroke-miterlimit: 10;
+      }
+    </style>
+    <clipPath id="clip-vacances-valise">
+      <rect width="140" height="140"/>
+    </clipPath>
+  </defs>
+  <g id="vacances-valise" class="cls-1">
+    <g id="Groupe_184" data-name="Groupe 184" transform="translate(-46.125 360.653)">
+      <g id="picto-x-2">
+        <path id="Tracé_369" data-name="Tracé 369" class="cls-2" d="M63.6-271.694v-44.493a3.928,3.928,0,0,1,3.875-3.979h54.293c-1.717-24.864-21.9-44.488-46.553-44.488-25.777,0-46.674,21.458-46.674,47.927,0,22.454,15.038,41.3,35.336,46.5A4.053,4.053,0,0,1,63.6-271.694Z" transform="translate(18.783 19.648)"/>
+      </g>
+      <g id="picto-x-1" transform="translate(81.02 -311.565)">
+        <circle id="Ellipse_13" data-name="Ellipse 13" class="cls-3" cx="5.913" cy="5.913" r="5.913" transform="translate(37.548 43.363)"/>
+        <rect id="Rectangle_83" data-name="Rectangle 83" class="cls-3" width="9.541" height="22.545" transform="matrix(0.409, -0.913, 0.913, 0.409, 44.301, 27.415)"/>
+      </g>
+      <g id="picto-ligne" transform="translate(81.02 -311.565)">
+        <rect id="Rectangle_81" data-name="Rectangle 81" class="cls-4" width="9.541" height="22.545" transform="matrix(0.409, -0.913, 0.913, 0.409, 44.853, 27.415)"/>
+        <path id="Rectangle_82" data-name="Rectangle 82" class="cls-4" d="M250.095-176.089V-159.7a4.384,4.384,0,0,1-4.384,4.384H155.735a4.384,4.384,0,0,1-4.384-4.384v-49.018a4.383,4.383,0,0,1,4.384-4.384h89.977a4.384,4.384,0,0,1,4.384,4.384v15.159" transform="translate(-151.351 222.391)"/>
+        <path id="Tracé_201" data-name="Tracé 201" class="cls-4" d="M256.4-232.235c0-5.09,2.758-9.217,6.161-9.217h16.593c3.4,0,6.161,4.127,6.161,9.217" transform="translate(-222.37 241.556)"/>
+        <line id="Ligne_498" data-name="Ligne 498" class="cls-4" y2="57.785" transform="translate(24.721 9.288)"/>
+        <line id="Ligne_499" data-name="Ligne 499" class="cls-4" y2="57.785" transform="translate(75.607 9.288)"/>
+        <circle id="Ellipse_14" data-name="Ellipse 14" class="cls-4" cx="5.913" cy="5.913" r="5.913" transform="translate(33.44 40.388)"/>
+        <rect id="Rectangle_84" data-name="Rectangle 84" class="cls-5" width="18.551" height="9.738" rx="4.15" transform="translate(5.367 34.951) rotate(-71.04)"/>
+        <path id="Tracé_202" data-name="Tracé 202" class="cls-6" d="M200.737-223.374s8.724-22.94,20.759-17.592" transform="translate(-184.739 241.774)"/>
+      </g>
+    </g>
+  </g>
+</svg>

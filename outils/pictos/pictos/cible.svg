@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="140" viewBox="0 0 140 140">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-cible);
+      }
+
+      .cls-2 {
+        fill: #00c;
+      }
+
+      .cls-3 {
+        fill: #6877ff;
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 4px;
+      }
+    </style>
+    <clipPath id="clip-cible">
+      <rect width="140" height="140"/>
+    </clipPath>
+  </defs>
+  <g id="cible" class="cls-1">
+    <g id="Cible-2" data-name="Cible" transform="translate(-248.868 3.573)">
+      <g id="picto-x-2" transform="translate(265.539 46.896)">
+        <path id="Tracé_1853" data-name="Tracé 1853" class="cls-2" d="M337.594,73.475a37,37,0,1,1,0-.005v.005" transform="translate(-263.598 -36.475)"/>
+      </g>
+      <g id="picto-x-1" transform="translate(346.62 4.997)">
+        <path id="Tracé_1851" data-name="Tracé 1851" class="cls-3" d="M345.348,15.2,360.4,19.7,344.061,36.161l-14.279-5.4Z" transform="translate(-322.963 -1.558)"/>
+        <path id="Tracé_1852" data-name="Tracé 1852" class="cls-3" d="M328.736,33.767l-4.088-14.091L340.055,4.927,344.4,19.818Z" transform="translate(-324.648 -4.927)"/>
+      </g>
+      <g id="picto-ligne" transform="translate(257.683 4.714)">
+        <path id="Tracé_1854" data-name="Tracé 1854" class="cls-4" d="M351.352,33.314l-4.15-13.2,15.4-15.4,4.15,13.2M353.734,35.695l13.205,4.153,15.4-15.4L369.129,20.3M310.606,76.2,375.88,10.932M318.7,79.375a9.189,9.189,0,1,1-11.483-11.482m24.075-1.108A23.545,23.545,0,1,1,319.812,55.3m22.035.932a37.9,37.9,0,1,1-11.484-11.482m21.808,1.159a52.248,52.248,0,1,1-11.482-11.482" transform="translate(-257.683 -4.714)"/>
+      </g>
+    </g>
+  </g>
+</svg>

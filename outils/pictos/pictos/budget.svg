@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="140" viewBox="0 0 140 140">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-budget);
+      }
+
+      .cls-2 {
+        fill: #00c;
+      }
+
+      .cls-3 {
+        fill: #6877ff;
+      }
+
+      .cls-4, .cls-5 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
+      }
+
+      .cls-4 {
+        stroke-linejoin: round;
+      }
+    </style>
+    <clipPath id="clip-budget">
+      <rect width="140" height="140"/>
+    </clipPath>
+  </defs>
+  <g id="budget" class="cls-1">
+    <g id="Groupe_118" data-name="Groupe 118">
+      <g id="picto-x-2" transform="translate(8.426 14.762)">
+        <path id="Rectangle_129" data-name="Rectangle 129" class="cls-2" d="M5,0H31a0,0,0,0,1,0,0V67a0,0,0,0,1,0,0H6a6,6,0,0,1-6-6V5A5,5,0,0,1,5,0Z" transform="translate(15.574 34.238)"/>
+        <path id="Rectangle_128" data-name="Rectangle 128" class="cls-2" d="M5,0H22a0,0,0,0,1,0,0V17a0,0,0,0,1,0,0H6a6,6,0,0,1-6-6V5A5,5,0,0,1,5,0Z" transform="translate(24.574 17.238)"/>
+        <path id="Rectangle_127" data-name="Rectangle 127" class="cls-2" d="M5,0H47a0,0,0,0,1,0,0V17a0,0,0,0,1,0,0H6a6,6,0,0,1-6-6V5A5,5,0,0,1,5,0Z" transform="translate(-0.426 0.238)"/>
+      </g>
+      <g id="picto-x-1" transform="translate(59.673 54.158)">
+        <ellipse id="Ellipse_107" data-name="Ellipse 107" class="cls-3" cx="36.837" cy="36.837" rx="36.837" ry="36.837" transform="translate(0 0)"/>
+      </g>
+      <g id="picto-ligne" transform="translate(8.319 15.192)">
+        <path id="Soustraction_10" data-name="Soustraction 10" class="cls-4" d="M60.986,100.641H20.064a5.006,5.006,0,0,1-5-5V88.868a5.006,5.006,0,0,1,5-5,5.006,5.006,0,0,1-5-5V72.095a5.006,5.006,0,0,1,5-5,5.007,5.007,0,0,1-5-5V55.32a5.006,5.006,0,0,1,5-5,5.007,5.007,0,0,1-5-5V38.547a5.006,5.006,0,0,1,5-5h9.078a5.006,5.006,0,0,1-5-5V21.774a5.006,5.006,0,0,1,5-5H5a5.006,5.006,0,0,1-5-5V5A5.006,5.006,0,0,1,5,0H75.886a5.006,5.006,0,0,1,5,5v6.773a5.006,5.006,0,0,1-5,5h24.142a5.006,5.006,0,0,1,5,5v6.773a5.006,5.006,0,0,1-5,5H90.95a5.006,5.006,0,0,1,5,5v1.238a36.842,36.842,0,0,0-34.965,60.854Z" transform="translate(0 0)"/>
+        <path id="Tracé_167" data-name="Tracé 167" class="cls-4" d="M110.562,122.78a28.353,28.353,0,0,1,.046-38.842" transform="translate(-43.084 -27.592)"/>
+        <path id="Tracé_168" data-name="Tracé 168" class="cls-5" d="M122.58,126.924a28.257,28.257,0,0,1-3.348-1.1" transform="translate(-41.546 -23.651)"/>
+        <path id="Tracé_169" data-name="Tracé 169" class="cls-4" d="M147.552,83.781A28.352,28.352,0,0,1,148,122.588" transform="translate(-38.881 -27.607)"/>
+        <path id="Tracé_170" data-name="Tracé 170" class="cls-5" d="M135.374,76.616a28.121,28.121,0,0,1,3.42,1.128" transform="translate(-40.027 -28.281)"/>
+        <g id="Groupe_116" data-name="Groupe 116" transform="translate(68.127 59.869)">
+          <path id="Tracé_171" data-name="Tracé 171" class="cls-4" d="M141.051,116.334a15.613,15.613,0,1,1,0-25.442" transform="translate(-110.776 -88)"/>
+          <line id="Ligne_77" data-name="Ligne 77" class="cls-5" x2="20.064" transform="translate(0 12.709)"/>
+          <line id="Ligne_78" data-name="Ligne 78" class="cls-5" x2="20.064" transform="translate(0 18.515)"/>
+        </g>
+        <line id="Ligne_79" data-name="Ligne 79" class="cls-5" x2="32.515" transform="translate(43.547 16.774)"/>
+        <line id="Ligne_80" data-name="Ligne 80" class="cls-5" x2="30.192" transform="translate(29.612 33.547)"/>
+        <line id="Ligne_81" data-name="Ligne 81" class="cls-5" x2="30.974" transform="translate(19.709 50.321)"/>
+        <line id="Ligne_82" data-name="Ligne 82" class="cls-5" x2="24.677" transform="translate(19.709 67.094)"/>
+        <line id="Ligne_83" data-name="Ligne 83" class="cls-5" x2="23.903" transform="translate(19.709 83.868)"/>
+        <ellipse id="Ellipse_106" data-name="Ellipse 106" class="cls-4" cx="36.837" cy="36.837" rx="36.837" ry="36.837" transform="translate(51.353 38.966)"/>
+      </g>
+    </g>
+  </g>
+</svg>

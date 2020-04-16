@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="fr-fr">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160153383-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-160153383-1');
+    </script>
+
+    <title>Template Creator - Covid19 CCI CMA</title>
+
+
+
+    <link rel="stylesheet" href="../../../bootstrap.css">
+    <script src="../../../JS/jquery-3.3.1.min.js"></script>
+    
+
+
+    <script src="../@js/EXT-filesaver.js" type="text/javascript"></script>
+    <script src="../@js/EXT-canvas-toBlob.js" type="text/javascript"></script>
+    <script src="../@js/EXT-html2canvas.min.1.0.0.js" type="text/javascript"></script>  
+		<script src="../@js/jquery.sceditor.xhtml.min.js" type="text/javascript"></script>
+		<script src="../@js/jquery.sceditor.fr.js" type="text/javascript"></script>
+		<script src="../@js/jquery.sceditor.plaintext.js" type="text/javascript"></script>
+		<script src="../@js/jquery.sceditor.undo.js" type="text/javascript"></script>
+    
+
+    <link href="../@css/style-outil.css" rel="stylesheet" type="text/css">
+    <link href="../@css/sceditor.css" rel="stylesheet" type="text/css">
+
+    <link href="./style.css" rel="stylesheet" type="text/css">
+      
+    <style>
+      #aremplacer .logo {
+          position: absolute;
+          display: inline-block;
+          bottom: 8.8%;
+          right: 3%;
+          width: 47%;
+          height: 11.5%;
+          overflow: visible;
+          z-index: 3;
+          text-align: center;
+      }
+      #aremplacer .logocma {
+          position: absolute;
+          display: inline-block;
+          bottom: 4%;
+          left: 3%;
+          width: 47%;
+          height: 21.5%;
+          overflow: visible;
+          transform-origin: center;
+          transform: scale(1.05);
+          z-index: 3;
+          text-align: center;
+      }
+      </style>
+
+</head>
+
+	
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<body>
+
+    
+
+
+
+
+  <div id="affiche">
+ 
+    
+    
+    
+    <div id="export">
+      <section id="screen">
+        <img id="fond" src="./COVID-19-Commun-CCI-CMA-fond.jpg">
+          <div id="aremplacer">
+
+            <div class="logocma"><div class="logocma-contient">
+              <img src="./cmaterritoire-logo.png" class="territoire"/>
+              <div id="logocmatext">
+                <p class="CMA-nom">France</p>
+              </div>
+            </div></div>
+
+
+            <div class="logo"><div class="logo-contient">
+              <img src="../@img/pastille.png" id="pastille"/>
+              <div id="logotext">
+                <p class="CCI-nom">chambre de commerce</p>
+                <p class="CCI-nom2">et d'industrie</p>
+              </div>
+            </div></div>
+    
+   
+		  </div>
+          
+      </section>
+    </div>
+    
+    
+    
+    
+    
+<div id="outils">
+
+<nav class="nav nav-fill font-size-2 bg-blanc text-500" role="tablist"  id="pills-tab">
+    <a href="#logo" class="nav-link nav-item d-none" role="tab" aria-controls="logo" data-toggle="pill" id="onglet-logo" aria-selected="false">Edition du logo</a>
+</nav>
+    
+	
+<div class="tab-content" id="pills-tabContent">
+    
+  <div class="tab-pane pb-4 pt-3 px-3 container active " id="logo" role="tabpanel" aria-labelledby="onglet-logo">
+
+    <p class="h4 pb-1">Choix du texte</p>
+    <div class="custom-control custom-radio pb-1">
+      <input type="radio" id="choix1" name="customRadio" class="custom-control-input" checked>
+      <label class="custom-control-label" for="choix1">Mobilisation en faveur 
+        de la  continuité d'activité 
+        des TPE-PME 
+        de secteurs prioritaires</label>
+    </div>
+    <div class="custom-control custom-radio pb-1">
+      <input type="radio" id="choix2" name="customRadio" class="custom-control-input">
+      <label class="custom-control-label" for="choix2">Mobilisation en faveur 
+        de la  continuité d'activité 
+        des TPE-PME</label>
+    </div>
+
+    <hr>
+    
+        <p class="pb-1"><span class="h4">Logo CMA </span>&nbsp;-&nbsp;<em> Si le champ est vide logo national</em></p>
+        <div class="input-group pb-1">
+          <div class="input-group-prepend col-3 px-0">
+            <span class="input-group-text col-12">Nom de la CMA</span>
+          </div>
+          <input  class="form-control" type="text" id="name-cma" value="France">
+        </div>
+        
+        
+
+
+        <hr>
+        
+        <p class="h4 pb-1">Logo CCI</p>
+          <div class="input-group  pb-2">
+            <div class="input-group-prepend col-3 px-0">
+              <span class="input-group-text col-12">1<sup>ère</sup> ligne</span>
+            </div>
+            <input  class="form-control" type="text" id="name-cci" value="Chambre de commerce" >
+          </div>
+          <div class="input-group">
+            <div class="input-group-prepend col-3 px-0">
+              <span class="input-group-text col-12">2<sup>ème</sup> ligne</span>
+            </div>
+            <input  class="form-control" type="text" id="name-cci-l2" value="et d'industrie">
+          </div>
+
+
+  </div>
+
+
+</div>
+
+    
+    
+    
+    
+<a href="#" id="telechargement" onClick="shotit()">Télécharger</a>
+	
+	
+    
+</div>
+
+    
+    
+    
+    
+    
+    
+    
+    
+        
+
+    
+
+    
+    
+    
+    
+ 
+        
+    
+    
+    <script type="text/javascript">
+        
+        
+			
+			
+        
+        
+        setInterval(function(){
+
+          
+          
+          var lignecma = $('#name-cma').val();
+          var htmlString = $('#name-cci').val();
+          var cciligne2 = $('#name-cci-l2').val();
+            $('#aremplacer p.CMA-nom').html( lignecma );
+            $('#aremplacer p.CCI-nom').html( htmlString );
+            $('#aremplacer p.CCI-nom2').html(cciligne2);
+
+          if (lignecma.length > 0){
+            $('#aremplacer .logocma-contient img').attr("src", "./cmaterritoire-logo.png");
+            $('#aremplacer .CMA-nom').css("padding-top", "2px");
+          };
+          if (lignecma.length == 0){
+            $('#aremplacer .logocma-contient img').attr("src", "./cma-logo.png");
+            $('#aremplacer .CMA-nom').css("padding-top", "0");
+          };
+            
+
+            
+          if (lignecma.length <= 18){
+            $('#aremplacer .CMA-nom').css("font-size", "137%");
+            $('#aremplacer .CMA-nom').css("padding-left", "8px");
+            $('#aremplacer .CMA-nom').css("padding-right", "8px");
+            $('#aremplacer #logocmatext').css("bottom", "1.5%");
+            $('#aremplacer #logocmatext').css("right", "28%");
+          };
+          if (lignecma.length >= 18){
+            $('#aremplacer .CMA-nom').css("font-size", "120%");
+            $('#aremplacer .CMA-nom').css("padding-left", "6px");
+            $('#aremplacer .CMA-nom').css("padding-right", "6px");
+            $('#aremplacer #logocmatext').css("bottom", "2%");
+            $('#aremplacer #logocmatext').css("right", "27%");
+          };
+            
+            
+          if ($("#choix2").is(':checked')){
+              $('#fond').attr("src", "./COVID-19-Commun-CCI-CMA-fond2.jpg");
+          };
+          if ($("#choix1").is(':checked')){
+              $('#fond').attr("src", "./COVID-19-Commun-CCI-CMA-fond.jpg");
+          };
+
+			
+        }, 200);
+
+    </script>
+    
+    
+    
+    
+    
+    
+        
+  
+    
+    
+   
+
+		<script src="../@js/js.js" type="text/javascript"></script>
+    
+    
+    
+    
+    
+            
+	
+    <script src="../../../JS/charteCCI.js"></script>
+
+    <script src="../../../JS/popper.min.js"></script>
+    <script src="../../../JS/bootstrap.min.js"></script>
+
+    <script src="../../../JS/min-ie11CustomProperties.js"></script>	
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/ie11-custom-properties/ie11CustomProperties.min.js" type="text/javascript"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    
+
+    
+    
+    
+  </div>
+
+
+  </body>
+
+</html>

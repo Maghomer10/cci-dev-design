@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="140" viewBox="0 0 140 140">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-reseau);
+      }
+
+      .cls-2 {
+        fill: #00c;
+      }
+
+      .cls-3 {
+        fill: #6877ff;
+      }
+
+      .cls-4, .cls-5, .cls-6 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-width: 4px;
+      }
+
+      .cls-4, .cls-5 {
+        stroke-linejoin: round;
+      }
+
+      .cls-4 {
+        stroke-miterlimit: 10;
+      }
+    </style>
+    <clipPath id="clip-reseau">
+      <rect width="140" height="140"/>
+    </clipPath>
+  </defs>
+  <g id="reseau" class="cls-1">
+    <g id="Groupe_147" data-name="Groupe 147">
+      <g id="picto-x-2">
+        <ellipse id="Ellipse_122" data-name="Ellipse 122" class="cls-2" cx="17.6" cy="17.6" rx="17.6" ry="17.6" transform="translate(4.189 100.557)"/>
+        <circle id="Ellipse_124" data-name="Ellipse 124" class="cls-2" cx="12.012" cy="12.012" r="12.012" transform="translate(112.5 82.415)"/>
+        <ellipse id="Ellipse_129" data-name="Ellipse 129" class="cls-2" cx="10.708" cy="10.708" rx="10.708" ry="10.708" transform="matrix(0.788, 0.616, -0.616, 0.788, 80.019, 100.557)"/>
+        <ellipse id="Ellipse_123" data-name="Ellipse 123" class="cls-2" cx="13.446" cy="13.446" rx="13.446" ry="13.446" transform="translate(106.642 8.911)"/>
+        <ellipse id="Ellipse_127" data-name="Ellipse 127" class="cls-2" cx="11.346" cy="11.346" rx="11.346" ry="11.346" transform="translate(36.976 17.734) rotate(135)"/>
+      </g>
+      <g id="picto-x-1">
+        <circle id="Ellipse_121" data-name="Ellipse 121" class="cls-3" cx="24" cy="24" r="24" transform="translate(45.532 34.44)"/>
+      </g>
+      <g id="picto-ligne">
+        <circle id="Ellipse_80" data-name="Ellipse 80" class="cls-4" cx="17" cy="17" r="17" transform="translate(52.947 41.175)"/>
+        <ellipse id="Ellipse_81" data-name="Ellipse 81" class="cls-5" cx="13.446" cy="13.446" rx="13.446" ry="13.446" transform="translate(106.642 8.911)"/>
+        <ellipse id="Ellipse_126" data-name="Ellipse 126" class="cls-5" cx="11.346" cy="11.346" rx="11.346" ry="11.346" transform="translate(36.976 17.734) rotate(135)"/>
+        <ellipse id="Ellipse_120" data-name="Ellipse 120" class="cls-5" cx="17.6" cy="17.6" rx="17.6" ry="17.6" transform="translate(4.189 100.557)"/>
+        <circle id="Ellipse_125" data-name="Ellipse 125" class="cls-5" cx="12.012" cy="12.012" r="12.012" transform="translate(112.5 82.415)"/>
+        <ellipse id="Ellipse_128" data-name="Ellipse 128" class="cls-5" cx="10.708" cy="10.708" rx="10.708" ry="10.708" transform="matrix(0.788, 0.616, -0.616, 0.788, 80.019, 100.557)"/>
+        <line id="Ligne_58" data-name="Ligne 58" class="cls-6" x1="16" y2="13" transform="translate(93.5 30.5)"/>
+        <line id="Ligne_92" data-name="Ligne 92" class="cls-6" x2="14" y2="14" transform="translate(31.5 25.5)"/>
+        <line id="Ligne_91" data-name="Ligne 91" class="cls-6" x1="27" y2="33" transform="translate(31.5 70.5)"/>
+        <line id="Ligne_90" data-name="Ligne 90" class="cls-6" x1="30" y1="19" transform="translate(83.5 68.5)"/>
+        <line id="Ligne_93" data-name="Ligne 93" class="cls-6" x1="4" y1="18" transform="translate(75.5 85.5)"/>
+      </g>
+    </g>
+  </g>
+</svg>

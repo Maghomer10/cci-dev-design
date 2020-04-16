@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="140" viewBox="0 0 140 140">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-casque);
+      }
+
+      .cls-2 {
+        fill: #00c;
+      }
+
+      .cls-3 {
+        fill: #6877ff;
+      }
+
+      .cls-4, .cls-5, .cls-6 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-width: 4px;
+      }
+
+      .cls-4, .cls-5 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-5, .cls-6 {
+        stroke-linejoin: round;
+      }
+    </style>
+    <clipPath id="clip-casque">
+      <rect width="140" height="140"/>
+    </clipPath>
+  </defs>
+  <g id="casque" class="cls-1">
+    <g id="Groupe_129" data-name="Groupe 129">
+      <g id="picto-x-2" transform="translate(24.718 96.364)">
+        <path id="Tracé_185" data-name="Tracé 185" class="cls-2" d="M72,372.018,121.652,352H78.81A6.81,6.81,0,0,0,72,358.81Z" transform="translate(-72 -352)"/>
+        <path id="Tracé_195" data-name="Tracé 195" class="cls-2" d="M2.048,0H12.5V15.953H2.048C.917,15.953,0,15.422,0,14.768V1.185C0,.53.917,0,2.048,0Z" transform="translate(-19.218 2.636)"/>
+        <path id="Tracé_196" data-name="Tracé 196" class="cls-2" d="M10.594,0H0V15.953H10.594c1.147,0,2.076-.53,2.076-1.185V1.185C12.67.53,11.741,0,10.594,0Z" transform="translate(98.032 2.636)"/>
+      </g>
+      <g id="picto-x-1">
+        <path id="Intersection_5" data-name="Intersection 5" class="cls-3" d="M242.1-538.282q-.115-1.678-.115-3.388a49.021,49.021,0,0,1,38.335-47.836v51.224Z" transform="translate(-225.985 601.67)"/>
+        <path id="Tracé_193" data-name="Tracé 193" class="cls-3" d="M-177.232,624.116h29.252l-14.913,26.307-17.207,30.4Z" transform="translate(233 -616)"/>
+        <path id="Tracé_194" data-name="Tracé 194" class="cls-3" d="M2.522,0H33.365L26.482,11H2.522A2.793,2.793,0,0,1,0,8V3A2.793,2.793,0,0,1,2.522,0Z" transform="translate(8.5 64)"/>
+      </g>
+      <g id="picto-ligne">
+        <path id="Tracé_180" data-name="Tracé 180" class="cls-4" d="M40.32,78.3a45.469,45.469,0,0,1,29.167-40.77" transform="translate(-23.602 -22.051)"/>
+        <path id="Tracé_181" data-name="Tracé 181" class="cls-5" d="M168,58.969a2.148,2.148,0,1,0,4.3,0V18.148A2.149,2.149,0,0,1,174.445,16H182.5" transform="translate(-117.003 -7.884)"/>
+        <path id="Tracé_182" data-name="Tracé 182" class="cls-4" d="M312,37.528A45.469,45.469,0,0,1,341.167,78.3" transform="translate(-217.219 -22.051)"/>
+        <path id="Tracé_183" data-name="Tracé 183" class="cls-5" d="M258,16h8.057a2.149,2.149,0,0,1,2.148,2.148V58.969a2.148,2.148,0,1,0,4.3,0" transform="translate(-182.833 -7.884)"/>
+        <path id="Tracé_184" data-name="Tracé 184" class="cls-5" d="M9.667,226.441v5.471a2.515,2.515,0,0,0,2.209,2.736h119.3a2.515,2.515,0,0,0,2.209-2.736v-5.471a2.515,2.515,0,0,0-2.209-2.736H11.876A2.515,2.515,0,0,0,9.667,226.441Z" transform="translate(-1.191 -159.809)"/>
+        <path id="Tracé_186" data-name="Tracé 186" class="cls-6" d="M108.32,352H78.81A6.81,6.81,0,0,0,72,358.81v9.08" transform="translate(-47.282 -255.636)"/>
+        <g id="Groupe_128" data-name="Groupe 128" transform="translate(0 1.179)">
+          <path id="Tracé_188" data-name="Tracé 188" class="cls-5" d="M446.81,370.27V368H440" transform="translate(-311.89 -270.179)"/>
+          <path id="Tracé_189" data-name="Tracé 189" class="cls-5" d="M440,398.81h6.81V392H440" transform="translate(-311.89 -285.313)"/>
+        </g>
+        <g id="Groupe_127" data-name="Groupe 127" transform="translate(0 -1.091)">
+          <path id="Tracé_187" data-name="Tracé 187" class="cls-5" d="M22.81,376H16v2.27" transform="translate(-10.254 -275.909)"/>
+          <path id="Tracé_190" data-name="Tracé 190" class="cls-5" d="M22.81,400H16v6.81h6.81" transform="translate(-10.254 -291.043)"/>
+        </g>
+        <path id="Tracé_191" data-name="Tracé 191" class="cls-5" d="M56,342.81v18.16a11.364,11.364,0,0,0,11.35,11.35H80.97a25.115,25.115,0,0,0,21.447-12.183,6.765,6.765,0,0,1,11.577,0A25.115,25.115,0,0,0,135.45,372.32h13.62a11.364,11.364,0,0,0,11.35-11.35V342.81a6.81,6.81,0,0,0-6.81-6.81H62.81A6.81,6.81,0,0,0,56,342.81Z" transform="translate(-37.877 -246.231)"/>
+        <line id="Ligne_88" data-name="Ligne 88" class="cls-6" x1="21.975" transform="translate(85.746 96.364)"/>
+        <line id="Ligne_89" data-name="Ligne 89" class="cls-4" y2="36.762" transform="translate(70.333 15.198)"/>
+      </g>
+    </g>
+  </g>
+</svg>

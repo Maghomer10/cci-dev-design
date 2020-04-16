@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="140" viewBox="0 0 140 140">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-maison);
+      }
+
+      .cls-2 {
+        fill: #00c;
+      }
+
+      .cls-3 {
+        fill: #6877ff;
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 4px;
+      }
+    </style>
+    <clipPath id="clip-maison">
+      <rect width="140" height="140"/>
+    </clipPath>
+  </defs>
+  <g id="maison" class="cls-1">
+    <g id="Maison-2" data-name="Maison" transform="translate(-1159.988 2.393)">
+      <circle id="picto-x-2" class="cls-2" cx="25.932" cy="25.932" r="25.932" transform="translate(1234.656 4.607)"/>
+      <g id="picto-x-1" transform="translate(1188.989 65.462)">
+        <path id="Tracé_15" data-name="Tracé 15" class="cls-3" d="M1187.133,52.458v63.1h48.612V72.518h20.421v43.038h9.662v-63.1Zm36.179,37.5h-24.467V64.966h24.467Z" transform="translate(-1187.133 -52.458)"/>
+      </g>
+      <g id="picto-ligne" transform="translate(1180.304 19.438)">
+        <rect id="Rectangle_20" data-name="Rectangle 20" class="cls-4" width="78.694" height="63.098" transform="translate(8.89 46.025)"/>
+        <path id="Tracé_16" data-name="Tracé 16" class="cls-4" d="M1180.3,59.806l49.508-43.538,46.556,43.538" transform="translate(-1180.304 -16.268)"/>
+        <rect id="Rectangle_21" data-name="Rectangle 21" class="cls-4" width="12.495" height="24.989" transform="translate(20.397 58.533)"/>
+        <rect id="Rectangle_22" data-name="Rectangle 22" class="cls-4" width="12.495" height="24.989" transform="translate(32.37 58.533)"/>
+        <rect id="Rectangle_23" data-name="Rectangle 23" class="cls-4" width="20.42" height="43.039" transform="translate(57.297 66.084)"/>
+        <path id="Tracé_17" data-name="Tracé 17" class="cls-4" d="M1206.257,31.925l-13.684,13.061V18.045h13.684Z" transform="translate(-1176.97 -15.786)"/>
+      </g>
+    </g>
+  </g>
+</svg>

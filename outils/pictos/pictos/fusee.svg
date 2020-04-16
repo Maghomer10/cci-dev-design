@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="140" viewBox="0 0 140 140">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-fusee);
+      }
+
+      .cls-2 {
+        fill: #6877ff;
+      }
+
+      .cls-3 {
+        fill: #00c;
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 4px;
+      }
+    </style>
+    <clipPath id="clip-fusee">
+      <rect width="140" height="140"/>
+    </clipPath>
+  </defs>
+  <g id="fusee" class="cls-1">
+    <g id="Groupe_20" data-name="Groupe 20" transform="translate(-3.149 -596.827)">
+      <g id="picto-x-1">
+        <path id="Tracé_2082" data-name="Tracé 2082" class="cls-2" d="M513.635,71.257l.025-.252a15.153,15.153,0,0,0-9.037,5.62c-5.912,7.119-1.031,27.578-1.031,27.578s21.007,1.035,26.915-6.074a17.431,17.431,0,0,0,3.859-9.919l-.656.162a16.314,16.314,0,0,1-20.075-17.115Z" transform="translate(-483.6 618.497)"/>
+      </g>
+      <g id="picto-x-2">
+        <circle id="Ellipse_12" data-name="Ellipse 12" class="cls-3" cx="30.696" cy="30.696" r="30.696" transform="translate(75.304 623.734)"/>
+      </g>
+      <g id="picto-ligne" transform="translate(8.736 611.198)">
+        <path id="Tracé_2082-2" data-name="Tracé 2082" class="cls-4" d="M513.209,67.882l.034-.175a10.681,10.681,0,0,0-6.7,3.353c-4.61,4.608-2.52,19.277-2.52,19.277s14.667,2.1,19.274-2.507a12.266,12.266,0,0,0,3.353-6.7l-.47.071a11.492,11.492,0,0,1-12.966-13.313Z" transform="translate(-491.289 12.055)"/>
+        <path id="Tracé_2083" data-name="Tracé 2083" class="cls-4" d="M573.025,101.7a10.09,10.09,0,0,0-.279-8.521c43.442-39.951,37.856-76.13,37.856-76.13s-36.179-5.732-76.13,37.856a10.64,10.64,0,0,0-8.521-.279c-5.312,2.234-31.569,20.394-30.173,24.026.838,1.956,12.153.838,22.349-.978-1.537,5.309,3.772,12.849,11.315,20.527,7.543,7.543,15.087,12.849,20.527,11.315-1.808,10.2-2.925,21.516-.968,22.357C552.631,133.274,570.79,107.013,573.025,101.7Zm-.834-46.236a8.79,8.79,0,1,1,12.432,0A8.79,8.79,0,0,1,572.191,55.468Z" transform="translate(-495.724 -16.804)"/>
+      </g>
+    </g>
+  </g>
+</svg>

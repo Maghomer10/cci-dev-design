@@ -1,0 +1,287 @@
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('./bebasNeue/BebasNeue-Regular.eot');
+    src: url('./bebasNeue/BebasNeue-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./bebasNeue/BebasNeue-Regular.woff2') format('woff2'),
+        url('./bebasNeue/BebasNeue-Regular.woff') format('woff'),
+        url('./bebasNeue/BebasNeue-Regular.ttf') format('truetype'),
+        url('./bebasNeue/BebasNeue-Regular.svg#BebasNeue-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+} 
+
+#grille{
+    position: absolute;
+    opacity: 0;
+    z-index:4;
+}
+html body #screen{
+    background-color: #dddddd !important;
+}
+#fondbleu{
+    height:100%;
+    width:56%;
+    background-color: #dddddd;
+    position: absolute;
+    left:4.1%;
+    z-index: 5;
+}
+#aremplacer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+#degrade1{
+    height: 100%;
+    width: 130%;
+    position: absolute;
+    left: 46%;
+}
+#degrade1 img{
+    transform:scale(-1,-1);
+}
+#degrade2{
+    height: 100%;
+    width: 9%;
+    position: absolute;
+    left: 55%;
+    z-index: 2;
+}
+#degrade2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: inherit ;
+}
+#aremplacer .image-photo {
+    position: absolute;
+    top: 0%;
+    left: 60%;
+    height: 100%;
+    width: 40%;
+    overflow: hidden;
+}
+#aremplacer .image-photo #cursorImage {
+    min-height: 100%;
+    min-width: 100%;
+    height: 100%;
+    width: auto;
+    object-fit: initial;
+    max-width: none;
+}
+
+#aremplacer .logo {
+    position: absolute;
+    display: inline-block;
+    bottom: 10.2%;
+    right: 4%;
+    width: 46%;
+    height: 11.5%;
+    overflow: visible;
+    z-index: 3;
+    text-align: center;
+}
+
+#aremplacer .logocma {
+    position: absolute;
+    display: inline-block;
+    bottom: 5.2%;
+    left: 4%;
+    width: 46%;
+    height: 21.5%;
+    overflow: visible;
+    z-index: 3;
+    text-align: center;
+}
+
+#aremplacer .logo .logo-contient {
+    display: inline-flex;
+    position: relative;
+    height: 100%;
+    overflow: visible;
+    z-index: 3;
+    background-color: white;
+    border-radius: 100px;
+    padding: 0 9% 0 8%;
+    transform-origin: center;
+    transform: scale(1.12);
+}
+
+#aremplacer .logocma .logocma-contient {
+    display: flex;
+    position: relative;
+    height: 100%;
+    overflow: visible;
+    z-index: 3;
+    padding: 0 4%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#aremplacer .logocma .logocma-contient img {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: center;
+    height: 80%;
+    width: auto;
+}
+
+#aremplacer .logo #pastille {
+    top: 18%;
+    object-fit: initial;
+    width: 36px;
+    height: auto;
+    padding-right: 6px;
+    order: 0;
+    flex: 0 1 auto;
+    align-self: center;
+}
+#aremplacer #logotext{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    left:54px;
+    order: 0;
+    flex: 0 1 auto;
+    align-self: center;
+}
+#aremplacer .CCI-nom, .CCI-nom2{
+    text-transform: uppercase;
+    word-break: keep-all;
+    word-wrap: unset;
+    white-space: nowrap;
+    color: #373CF5;
+    font-size: 123%;
+    font-weight: 700;
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 104% !important;
+    line-break: anywhere;
+}
+
+#aremplacer #logocmatext{
+    position: absolute;
+    bottom: 1.5%;
+    right: 28%;
+    transform: translateX(50%);
+    transform-origin: center;
+}
+
+#aremplacer .CMA-nom{
+    text-transform: uppercase;
+    word-break: keep-all;
+    word-wrap: unset;
+    white-space: nowrap;
+    color: #03a0d0;
+    font-size: 137%;
+    font-weight: 700;
+    font-family: 'Bebas Neue';
+    line-height: 125% !important;
+    line-break: anywhere;
+    background-color: white;
+    border-radius: 3px;
+    padding: 2px 8px 0px 8px;
+    letter-spacing: 0.5px;
+}
+
+
+.text{
+    position: absolute;
+    width:85%;
+    left:7.5%;
+    top: 5.5%;
+    height: 95%;
+    z-index: 2;
+}
+.titre{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    color: white;
+    overflow: hidden;
+    font-size: 348%;
+    line-height: 125%;
+    vertical-align: middle;
+    flex: 1 1 auto;
+    align-self: center;
+
+}
+.taille-min{
+    min-height: 19%;
+    display: flex;
+}
+html #aremplacer .texte-principal {
+    font-size: 200%;
+    line-height: 126%;
+    margin-top:5%;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    color: white;
+    overflow: hidden;
+}
+html #aremplacer .texte-principal p {
+    font-size: 100%;
+    line-height: 126%;
+    margin-top: 0;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    color: white;
+    overflow: hidden;
+    display: inline !important;
+}
+html #aremplacer .texte-principal p strong {
+    display: inline !important;
+    font-weight: 500;
+    color: #373CF5;
+    background-image: linear-gradient(180deg,rgba(255,255,255,1) 5%,#ffffff 95%);
+    padding: 0 0.2em;
+}
+html #aremplacer .contient-texte-nom {
+    height: 10.5%;
+    width: 90%;
+    font-size: 128%;
+    line-height: 125%;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    color: white;
+    position: absolute;
+    bottom: 27px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+html #aremplacer .contient-texte-nom strong{
+    vertical-align: middle;
+    height:100%;
+    width:1px;
+    margin-bottom: 0.1em;
+    display: inline-block;
+}
+
+html #aremplacer .texte-societe, .texte-societe-l2 {
+    font-size: 95% !important;
+    font-weight: 400 !important;
+    color: white;
+}
+
+.logopastille{
+    display: none;
+    width: 5.628%;
+    height: 10%;
+    transform: scale(1.35);
+    border-radius: 100%;
+    position: absolute;
+    bottom: 5%;
+    right: 2.5%;
+    overflow: hidden;
+    z-index: 3;
+    background-color: white;
+}
+ #logopastille{
+    width: 74%;
+    left: 13.7%;
+    top: 13%;
+    position: absolute;
+}

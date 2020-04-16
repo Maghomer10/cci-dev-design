@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="140" viewBox="0 0 140 140">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-immeuble);
+      }
+
+      .cls-2 {
+        fill: #6877ff;
+      }
+
+      .cls-3 {
+        fill: #00c;
+      }
+
+      .cls-4, .cls-5 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 4px;
+      }
+
+      .cls-5 {
+        stroke-miterlimit: 10;
+      }
+    </style>
+    <clipPath id="clip-immeuble">
+      <rect width="140" height="140"/>
+    </clipPath>
+  </defs>
+  <g id="immeuble" class="cls-1">
+    <g id="Groupe_137" data-name="Groupe 137" transform="translate(0 1)">
+      <g id="picto-x-1">
+        <path id="Exclusion_1" data-name="Exclusion 1" class="cls-2" d="M-1177.72-140.2H-1238V-247h60.28v106.8Zm-20.939-45.311v17.995h9.693v-17.995Zm-17.12,0v17.995h9.693v-17.995Zm-17.121,0v17.995h9.693v-17.995Zm34.24-27.425v17.995h9.693v-17.995Zm-17.12,0v17.995h9.693v-17.995Zm-17.121,0v17.995h9.693v-17.995Zm34.24-28.788v17.995h9.693v-17.995Zm-17.12,0v17.995h9.693v-17.995Zm-17.121,0v17.995h9.693v-17.995Z" transform="translate(1251.947 267.722)"/>
+      </g>
+      <g id="picto-x-2">
+        <path id="Exclusion_2" data-name="Exclusion 2" class="cls-3" d="M-1188.765-163.266H-1238V-247h49.235v83.732Zm-21.43-45.113v17.687h10.219v-17.687Zm-19.2,0v17.687h10.219v-17.687Zm19.2-28.348v17.687h10.219v-17.687h-10.219Zm-19.2,0v17.687h10.219v-17.687h-10.219Z" transform="translate(1321.462 290.902)"/>
+      </g>
+      <g id="picto-ligne" transform="translate(7.38 11.218)">
+        <rect id="Rectangle_25" data-name="Rectangle 25" class="cls-4" width="67.244" height="116.417" transform="translate(0 0)"/>
+        <g id="Groupe_134" data-name="Groupe 134">
+          <rect id="Rectangle_35" data-name="Rectangle 35" class="cls-4" width="10.218" height="17.687" transform="translate(84.693 42.957)"/>
+          <rect id="Rectangle_36" data-name="Rectangle 36" class="cls-4" width="10.218" height="17.687" transform="translate(103.888 42.957)"/>
+          <rect id="Rectangle_37" data-name="Rectangle 37" class="cls-5" width="10.218" height="17.687" transform="translate(84.693 71.305)"/>
+          <rect id="Rectangle_38" data-name="Rectangle 38" class="cls-4" width="10.218" height="17.687" transform="translate(103.888 71.305)"/>
+        </g>
+        <g id="Groupe_133" data-name="Groupe 133" transform="translate(0 0.103)">
+          <rect id="Rectangle_27" data-name="Rectangle 27" class="cls-4" width="9.693" height="17.995" transform="translate(11.668 14.681)"/>
+          <rect id="Rectangle_28" data-name="Rectangle 28" class="cls-4" width="9.693" height="17.995" transform="translate(28.788 14.681)"/>
+          <rect id="Rectangle_29" data-name="Rectangle 29" class="cls-4" width="9.693" height="17.995" transform="translate(45.908 14.681)"/>
+          <rect id="Rectangle_30" data-name="Rectangle 30" class="cls-4" width="9.693" height="17.995" transform="translate(11.668 43.469)"/>
+          <rect id="Rectangle_31" data-name="Rectangle 31" class="cls-4" width="9.693" height="17.995" transform="translate(28.788 43.469)"/>
+          <rect id="Rectangle_32" data-name="Rectangle 32" class="cls-4" width="9.693" height="17.995" transform="translate(45.908 43.469)"/>
+          <rect id="Rectangle_33" data-name="Rectangle 33" class="cls-4" width="9.693" height="17.995" transform="translate(11.668 70.894)"/>
+          <rect id="Rectangle_34" data-name="Rectangle 34" class="cls-4" width="9.693" height="17.995" transform="translate(28.788 70.894)"/>
+          <rect id="Rectangle_39" data-name="Rectangle 39" class="cls-4" width="9.693" height="17.995" transform="translate(45.908 70.894)"/>
+        </g>
+        <path id="Tracé_210" data-name="Tracé 210" class="cls-4" d="M1367.932,381.968V297.1H1317.8" transform="translate(-1241.528 -265.688)"/>
+      </g>
+    </g>
+  </g>
+</svg>

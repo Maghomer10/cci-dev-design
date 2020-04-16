@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="140" viewBox="0 0 140 140">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-contact);
+      }
+
+      .cls-2 {
+        fill: #00c;
+      }
+
+      .cls-3 {
+        fill: #6877ff;
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
+      }
+    </style>
+    <clipPath id="clip-contact">
+      <rect width="140" height="140"/>
+    </clipPath>
+  </defs>
+  <g id="contact" class="cls-1">
+    <g id="Groupe_154" data-name="Groupe 154" transform="translate(-3.495 -0.369)">
+      <g id="picto-x-2" transform="translate(14.709 7.5)">
+        <path id="Soustraction_27" data-name="Soustraction 27" class="cls-2" d="M63.393,126.786A63.41,63.41,0,0,1,38.717,4.982,63.409,63.409,0,0,1,88.068,121.8,63,63,0,0,1,63.393,126.786ZM36.052,33.939V87.425l16.595-6.679h57.614V33.939H36.052Z" transform="translate(0 0)"/>
+      </g>
+      <g id="picto-x-1" transform="translate(7.709 22.862)">
+        <path id="Tracé_248" data-name="Tracé 248" class="cls-3" d="M99.466,69.222l-8.841-7.688L82.765,54.7a3.839,3.839,0,0,0-5.22.174l-6.2,6.154a3.819,3.819,0,0,1-4.965.382C63.032,58.939,59.007,56.5,50.8,45.863s-9.561-15.138-11.105-19a3.819,3.819,0,0,1,1.624-4.707l7.521-4.441A3.839,3.839,0,0,0,50.328,12.7L45.845,3.66,40.5-7.125a3.839,3.839,0,0,0-4.978-1.812l-8.226,3.6A9.408,9.408,0,0,0,22.351-.4C19.285,6.952,16.706,23.7,40.171,54.075s40.316,32.114,48.2,31A9.406,9.406,0,0,0,94.4,81.545L99.961,74.5A3.838,3.838,0,0,0,99.466,69.222Z" transform="translate(-20.393 9.259)"/>
+        <path id="Tracé_250" data-name="Tracé 250" class="cls-3" d="M50.812,40.416H124.84L87.021,66.281Z" transform="translate(-7.231 -21.849)"/>
+      </g>
+      <g id="picto-ligne" transform="translate(7.709 22.862)">
+        <path id="Tracé_244" data-name="Tracé 244" class="cls-4" d="M99.466,69.222l-8.841-7.688L82.765,54.7a3.839,3.839,0,0,0-5.22.174l-6.2,6.154a3.819,3.819,0,0,1-4.965.382C63.032,58.939,59.007,56.5,50.8,45.863s-9.561-15.138-11.105-19a3.819,3.819,0,0,1,1.624-4.707l7.521-4.441A3.839,3.839,0,0,0,50.328,12.7L45.845,3.66,40.5-7.125a3.839,3.839,0,0,0-4.978-1.812l-8.226,3.6A9.408,9.408,0,0,0,22.351-.4C19.285,6.952,16.706,23.7,40.171,54.075s40.316,32.114,48.2,31A9.406,9.406,0,0,0,94.4,81.545L99.961,74.5A3.838,3.838,0,0,0,99.466,69.222Z" transform="translate(-20.393 9.259)"/>
+        <g id="Groupe_153" data-name="Groupe 153" transform="translate(43.408 18.535)">
+          <path id="Tracé_245" data-name="Tracé 245" class="cls-4" d="M249,146.279V113H322.82v46.766H285.674" transform="translate(-249.003 -113)"/>
+          <path id="Tracé_246" data-name="Tracé 246" class="cls-4" d="M340.832,134.52l-28.95,20.028L282.5,134.218" transform="translate(-274.993 -127.637)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
