@@ -183,7 +183,7 @@ html body #screen{
     line-break: anywhere;
     background-color: white;
     border-radius: 3px;
-    padding: 2px 8px 0px 8px;
+    padding: 0px 8px 0px 8px;
     letter-spacing: 0.5px;
 }
 
