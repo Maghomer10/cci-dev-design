@@ -83,7 +83,7 @@ $(document).ready(function () {
 	$("i[picto]").each(function () {  
 		var pictoCouleur = $(this).attr("couleur");
 		var picto = $(this).attr("picto");      
-		var pictoURL = "./pictos/" + picto + ".svg";    
+		var pictoURL = "https://thierryperrotin.github.io/cci-dev-design/outils/pictos/pictos/" + picto + ".svg";    
 		var pictoTaille = $(this).attr("taille");  
 		$(this).load(
 			pictoURL,
