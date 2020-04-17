@@ -15,7 +15,7 @@
 
 <style>
 
-	.PictoDansListe, #appli, #contient-liste, #contient-editeur{
+	.PictoDansListe, #appli, #contient-editeur{
 		transition: var(--transition);
 	}
 
@@ -462,6 +462,7 @@
 			$('#appli').removeClass('active');
 		});
 
+
 		$('.PictoDansListe').click(function(){
 			$('#appli').addClass('active');
 			CodeExport();
@@ -470,22 +471,7 @@
 
 			$("#picto-previsualisation").html(Lenomdupicto);
 
-			$("i[picto]").each(function () {  
-				var pictoCouleur = $(this).attr("couleur");
-				var picto = $(this).attr("picto");      
-				var pictoURL = "./pictos/" + picto + ".svg";    
-				var pictoTaille = $(this).attr("taille");  
-				$(this).load(
-					pictoURL,
-					function(){
-						$(this).children().addClass(pictoCouleur);
-						$('svg defs style').replaceWith(StyleColorExport);
-						if(pictoTaille !== null){
-							$(this).children().attr('width', pictoTaille);
-							$(this).children().attr('height', 'auto');
-					}
-				});
-			});
+			AppelPicto();
 		});
 
 
@@ -586,22 +572,8 @@
 
 
 
-			$("i[picto]").each(function () {  
-				var pictoCouleur = $(this).attr("couleur");
-				var picto = $(this).attr("picto");      
-				var pictoURL = "./pictos/" + picto + ".svg";    
-				var pictoTaille = $(this).attr("taille");  
-				$(this).load(
-					pictoURL,
-					function(){
-						$(this).children().addClass(pictoCouleur);
-						$('svg defs style').replaceWith(StyleColorExport);
-						if(pictoTaille !== null){
-							$(this).children().attr('width', pictoTaille);
-							$(this).children().attr('height', 'auto');
-						}
-					});
-			});
+			AppelPicto();
+
 		});
 
 
