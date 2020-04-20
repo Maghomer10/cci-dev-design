@@ -1,0 +1,342 @@
+
+	
+	
+
+	
+	    
+    <style>
+
+        
+ .y-container h4, .y-container p, #YTvideo, #YTplaylistcontain, #YTplaylist, .YTitem, .YTthumb, .YTdetails, .YTtitle, .YTdesc, .YTdate, #YTtextegros, .YTthumbscontain{
+  padding: 0;
+  margin: 0;
+	display: block;
+	font-familly: 'Fira Sans';
+}
+
+#YTplaylistcontain::-webkit-scrollbar {									/* Scrollbars */
+	width: 13px;
+	height: 14px;
+	background: #AAAAAA;
+	border: solid 6px white;
+}
+#YTplaylistcontain::-webkit-scrollbar-thumb {								/* Barre */
+	border: solid 0 transparent;
+	background-color: #aaaaaa;
+	border-radius: 45px;
+}
+
+
+#YTcontainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: stretch;
+	font-size:12px;
+}
+
+#YTvideo {
+  flex: 1 1 100%;
+  align-self: stretch;
+}
+
+#YTplaylistcontain {
+    flex: 1 1 500px;
+    align-self: stretch;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: relative;
+}
+
+#YTplaylist {
+	width:100%;
+	position: absolute;
+	top:3em; 
+	bottom: 0;
+	padding: 7px 7px 0 7px;
+	background-color: var(--gris-l1);
+}
+
+#YTtextegros{
+	font-size:1.5em !important;
+	line-height:2em !important;
+	width:100%;
+	text-align:center;
+	background-color: #333333;
+	color: white;
+}
+
+.YTitem{
+	cursor:pointer;
+	transition: all ease-in-out 0.25s;
+	background-color:white;
+	margin-bottom:7px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: stretch;
+	border-radius: 4px;
+}
+.YTitem:hover{
+	background-color: white;
+	transform:scale(1.02);
+	box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);;
+}
+
+html body div .article-simple-content h4.YTtitle{
+	color:#4d4d4d !important;
+	text-transform: unset!important;
+	font-weight:600!important;
+	line-height:1.2em !important;
+	font-size:1.2em!important;
+}
+.YTdesc {
+	display:none;
+}
+.YTdate{
+	color:#777777 !important;
+	padding-top:6px!important;
+	font-weight:100!important;
+	line-height:1em !important;
+	font-size:0.9em!important;
+}
+
+.YTthumbscontain{
+	position : relative;
+	width:200px;
+	object-fit:cover;
+  flex: 1 1 auto;
+  align-self: stretch;
+}
+.YTthumb{
+	position : absolute;
+	width:100%;
+	height:100%;
+	object-fit:cover;
+}
+.YTdetails{
+  flex: 1 1 100%;
+  align-self: stretch;
+	padding: 8px 10px;
+	min-height: 0px;
+}
+
+
+		#DetailVideo{
+			display: block !important;
+			padding: 1em 0.75em !important;
+			background: var(--gris-l1);
+		}
+
+
+@media screen and (max-width:800px){
+	
+#YTcontainer {
+  flex-wrap: wrap;
+}
+
+#YTplaylistcontain {
+    min-height:300px;
+}
+	
+}
+
+
+
+
+div#___ytsubscribe_0 {
+    background:  var(--gris-l1)!important;
+    padding: 5px 10px !important;
+	margin-top: 60px!important ;
+    display: block !important;
+    box-sizing: border-box !important;
+    height: auto !important;
+    width: 100% !important;
+}
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </style>
+    
+    
+    
+    
+    
+    <script>
+
+        
+        
+        
+        $(document).ready(function () {
+
+    var key = 'AIzaSyDBnzvdllF6_vkzBSisiuBip2TUy9i6xTg';
+    var playlistId = 'PLPoSn1_fjTIca4ot-a6dSdpE_-YVez5Yp';
+    var URL = 'https://www.googleapis.com/youtube/v3/playlistItems';
+
+
+    var options = {
+        part: 'snippet',
+        key: key,
+        maxResults: 20,
+        playlistId: playlistId
+    }
+
+    loadVids();
+
+    function loadVids() {
+        $.getJSON(URL, options, function (data) {
+            var id = data.items[0].snippet.resourceId.videoId;
+        	var Atitre = data.items[0].snippet.title;
+        	var Adesc = data.items[0].snippet.description;
+            mainVid(id, Atitre, Adesc);
+            resultsLoop(data);
+        });
+    }
+
+    function mainVid(id, Atitre, Adesc) {
+        $('#YTvideo').html(`
+					<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.0412%;"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/${id}?rel=0&modestbranding=0&showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;"></iframe></div>
+					<dis id="DetailVideo"><h2 class="Letitre">${Atitre}</h2>
+									<p class="Ladescription">${Adesc}</p></div>
+				`);
+    }
+
+		
+    function resultsLoop(data) {
+
+        $.each(data.items, function (i, item) {
+
+            var YTthumb = item.snippet.thumbnails.medium.url;
+            var YTtitle = item.snippet.title;
+            var YTdesc = item.snippet.description;
+            var YTvid = item.snippet.resourceId.videoId;
+            var YTpublishedAt = new Date(item.snippet.publishedAt);
+            var YTday = YTpublishedAt.getDate();
+            var YTmonth = YTpublishedAt.getMonth();
+            var YTyear = YTpublishedAt.getFullYear();
+					
+
+
+            $('#YTplaylist').append(`
+							<article class="YTitem" data-key="${YTvid}">
+								<div class="YTdetails">
+									<h4 class="YTtitle">${YTtitle}</h4>
+									<p class="YTdesc">${YTdesc}</p>
+									<p class="YTdate">${YTday}/${YTmonth}/${YTyear}</p>
+								</div>
+							</article>
+						`);
+        });
+    }
+
+		// CLICK EVENT
+    $('#YTplaylist').on('click', '.YTitem', function () {
+        var id = $(this).attr('data-key');
+        var Atitre = $(this).children(".YTdetails").children(".YTtitle").html();
+        var Adesc = $(this).children(".YTdetails").children(".YTdesc").html();
+        mainVid(id, Atitre, Adesc);
+    });
+
+
+});
+
+
+
+  
+        
+        
+    
+    </script>
+    
+
+	
+<div style="font-size: 13px">
+	
+	
+	
+	
+	
+	
+  <div class="journal-content-article" style="padding-bottom: 0!important">
+	  <div class="article-them-content article-simple-content" style="padding-bottom: 0!important">
+
+
+	  
+	  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		
+	<div class="contient_col padding_bot_demi col_centre">
+
+        <div class="col_12 padding_bot_light">
+			
+			
+				
+<div id="YTcontainer">
+	<section id="YTvideo">
+	</section>
+	<main id="YTplaylistcontain">
+		<p id="YTtextegros">Nos intervenants</p>
+		<div id="YTplaylist">
+		</div>
+	</main>
+</div>
+
+
+<script src="https://apis.google.com/js/platform.js"></script>
+
+<div class="g-ytsubscribe mt-4" data-channelid="UCiVZWB-GxARkgsubLj-2-3g" data-layout="full" data-theme="light" data-count="default"></div>
+	
+			
+			
+        </div>
+		
+		
+	</div>
+	  
+
+    
+    
+		
+	  
+	  
+		
+		
+		
+		
+		
+	  </div></div>
+	
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
