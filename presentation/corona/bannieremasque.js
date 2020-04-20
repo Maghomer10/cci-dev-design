@@ -1,9 +1,11 @@
-	$(document).ready(function () {  
-		TailleMax = $("#banniereMasqueCOVID").attr('Taille-Max');
-		Lien = $("#banniereMasqueCOVID").attr('Lien');
-				$("#banniereMasqueCOVID").load("https://thierryperrotin.github.io/cci-dev-design/presentation/corona/bannieremasque.html",
+	var js3Jquery = jQuery.noConflict(true);
+	
+	js3Jquery(document).ready(function () {  
+		TailleMax = js3Jquery("#banniereMasqueCOVID").attr('Taille-Max');
+		Lien = js3Jquery("#banniereMasqueCOVID").attr('Lien');
+		js3Jquery("#banniereMasqueCOVID").load("https://thierryperrotin.github.io/cci-dev-design/presentation/corona/bannieremasque.html",
 				function(){
-					$("#MasqueCOVID").css("max-width", TailleMax);
-					$("#MasqueCOVID").attr("href", Lien);
+					js3Jquery("#MasqueCOVID").css("max-width", TailleMax);
+					js3Jquery("#MasqueCOVID").attr("href", Lien);
 				});
 	});
