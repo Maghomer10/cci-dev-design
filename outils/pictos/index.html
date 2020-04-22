@@ -101,6 +101,7 @@
 	#contient-editeur #picto-previsualisation svg{
 		width: 100% !important; 
 		max-width: 300px;
+		height: 100% !important;
 	}
 	#contient-editeur #editeur{
 		order: 0;
@@ -408,7 +409,7 @@
 							
 
 							<div>
-								<a id="saveSVG" class="btn btn-primary my-2" href="javascript:javascript: (function () { var e = document.createElement('script'); e.setAttribute('src', 'download-svg.js'); e.setAttribute('class', 'svg-crowbar'); document.body.appendChild(e); })();">Télécharger en SVG</a>
+								<a id="saveSVG2" class="btn btn-primary my-2 text-blanc">Télécharger en SVG</a>
 							</div>
 							
 
@@ -428,6 +429,36 @@
 
 									saveSvgAsPng(document.querySelector("#picto-previsualisation svg"), filename, {scale:5});
 								});
+							</script>
+
+							<script>				
+
+
+							function download(filename, text) {
+								var element = document.createElement('a');
+								element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+								element.setAttribute('download', filename);
+
+								element.style.display = 'none';
+								document.body.appendChild(element);
+
+								element.click();
+
+								document.body.removeChild(element);
+							}
+
+							// Start file download.
+							document.getElementById("saveSVG2").addEventListener("click", function(){
+								// Generate download of hello.txt file with some content
+								var text = document.querySelectorAll("#picto-previsualisation i")[0].innerHTML;
+								var filename1 = document.querySelectorAll("#picto-previsualisation i")[0].getAttribute("picto");
+								var filename2 = document.querySelectorAll("#picto-previsualisation i")[0].getAttribute("couleur");
+								var filename = filename1 + " " + filename2 + ".svg";
+								
+								download(filename, text);
+							}, false);
+
+
 							</script>
 
 
@@ -601,7 +632,7 @@
 <script src="../../JS/charteCCI.js"></script>
 
 <script src="../../JS/popper.min.js"></script>
-<script src="../..//bootstrap.min.js"></script>
+<script src="../../bootstrap.min.js"></script>
 
 <script src="../../JS/min-ie11CustomProperties.js"></script>	
 
