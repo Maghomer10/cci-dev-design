@@ -27,7 +27,8 @@
 		<script src="../@js/jquery.sceditor.xhtml.min.js" type="text/javascript"></script>
 		<script src="../@js/jquery.sceditor.fr.js" type="text/javascript"></script>
 		<script src="../@js/jquery.sceditor.plaintext.js" type="text/javascript"></script>
-		<script src="../@js/jquery.sceditor.undo.js" type="text/javascript"></script>
+    <script src="../@js/jquery.sceditor.undo.js" type="text/javascript"></script>
+    <script src="../@js/jqueryUI.1.12.1.min.js"></script>
     
 
     <link href="../@css/style-outil.css" rel="stylesheet" type="text/css">
@@ -352,14 +353,6 @@
 
 
 
-            var imgsize = $('#select-image-size').val();
-            var imsizecorrect = ( imgsize / 10 ) + 1;
-            var imsizecorrectcss = 'scale(' + imsizecorrect + ')';
-
-            $('#aremplacer .image-photo #cursorImage').css( 'transform', imsizecorrectcss );
-            
-            encodeImageFileAsURL();
-            
 
 			
         }, 200);
