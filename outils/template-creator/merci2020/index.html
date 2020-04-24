@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="fr-fr">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160153383-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-160153383-1');
+    </script>
+
+    <title>Template Creator - Citation</title>
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="../../../bootstrap.css">
+    <script src="../../../JS/jquery-3.3.1.min.js"></script>
+    
+
+
+    <script src="../@js/EXT-filesaver.js" type="text/javascript"></script>
+    <script src="../@js/EXT-canvas-toBlob.js" type="text/javascript"></script>
+    <script src="../@js/EXT-html2canvas.min.1.0.0.js" type="text/javascript"></script>  
+    <script src="../@js/jqueryUI.1.12.1.min.js"></script>
+    
+
+    <link href="../@css/style-outil.css" rel="stylesheet" type="text/css">
+    <link href="./style.css" rel="stylesheet" type="text/css">
+
+
+
+      
+
+</head>
+
+<body>
+
+    
+
+
+
+    
+  <div id="export">
+    <section id="screen">
+      <img id="fond" src="./Merci 4.2.jpg" style="width: 100%;">
+      
+      <div id="LaPhoto"></div>  
+
+    </section>
+  </div>
+  
+  
+ 
+    
+    
+
+    
+    <div id="editeur">
+      <div id="edit-fond">
+        <img id="fond" src="./Groupe206.png" style="width: 100%;">
+
+        <div id="image-photo">
+          <img src="../@img/image_gallery.jpg" id="cursorImage" style="transform: scale(1)"/>
+        </div> 
+
+        <div id="image-texte">
+          <p id="leNom">Votre prénom</p>
+        </div> 
+
+
+        <div id="edit-texte">
+          <textarea id="edit-leNom">Votre prénom</textarea>
+        </div> 
+
+        <div id="edit-photo" class="demarre">
+
+          <div id="charger" class="custom-file">
+            <input type="file" class="custom-file-input" id="inputFileToLoad" aria-describedby="image-photo">
+            <label>Charger votre photo <i class="fas fa-arrow-down"></i></label>
+          </div>
+          <div id="zoom" class="input-group input-minus-plus">
+            <div class="input-group-prepend input-minus"  onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+              <span class="input-group-text">-</span>
+            </div>
+            <input  class="form-control"  type="number" id="select-image-size" value="1">
+            <p>Zoom</p>
+            <div class="input-group-append input-plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+              <span class="input-group-text" id="basic-addon1">+</span>
+            </div>
+          </div>
+
+        </div> 
+
+      </div>
+    </div>
+
+
+
+
+
+    
+    
+
+
+
+
+
+        
+
+
+<a href="#" id="telechargement" onClick="shotit()">Tirez votre portrait</a>
+    
+    
+    
+    
+    
+        
+
+    
+
+
+
+    
+    
+ 
+        
+    
+    
+    <script type="text/javascript">
+        
+                
+        $('#editeur #edit-texte').on( 'change keyup keydown paste cut', 'textarea', function (){
+            $(this).height(0).height(this.scrollHeight);
+        }).find( 'textarea' ).change();
+      
+        
+        $("#editeur #charger").click(function(){
+          $("#editeur #edit-photo").removeClass('demarre');
+          $("#editeur #edit-photo label").html('Charger une autre photo <i class="fas fa-arrow-down"></i>');
+        });
+
+
+        function encodeImage(){
+
+          var filesSelected = document.getElementById("inputFileToLoad").files;
+          if (filesSelected.length > 0)
+          {
+              var fileToLoad = filesSelected[0];
+              var fileReader = new FileReader();
+              fileReader.onload = function(fileLoadedEvent) {
+                  var srcData = fileLoadedEvent.target.result;
+                  $('#editeur #cursorImage').attr( 'src', srcData );
+              }
+              fileReader.readAsDataURL(fileToLoad);
+          }
+        }
+        
+        
+
+        setInterval(function(){
+
+            
+            var htmlString = $('#editeur #edit-leNom').val();
+            var htmlString = htmlString.replace( /\n/g, "<br>" );
+            $('#editeur #leNom').html( htmlString );
+
+
+            var imgsize = $('#editeur #select-image-size').val();
+            var imsizecorrect = ( imgsize / 10 ) + 1;
+            var imsizecorrectcss = 'scale(' + imsizecorrect + ')';
+
+            $('#editeur #cursorImage').css( 'transform', imsizecorrectcss );
+            
+            encodeImage();   
+            
+            
+          var codeHtml = $('#editeur').html();
+          codeHtml = codeHtml.replace( /inputFileToLoad/g, "" );
+          $('#LaPhoto').html(codeHtml);
+			
+        }, 200);
+
+        
+
+
+        
+		
+		
+    </script>
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+		<script src="../@js/js.js" type="text/javascript"></script>
+
+
+            
+	
+    <script src="../../../JS/charteCCI.js"></script>
+    <script src="../../../JS/popper.min.js"></script>
+    <script src="../../../JS/bootstrap.min.js"></script>
+    <script src="../../../JS/min-ie11CustomProperties.js"></script>	
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/ie11-custom-properties/ie11CustomProperties.min.js" type="text/javascript"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    
+
+    
+    
+    
+
+
+  </body>
+
+</html>

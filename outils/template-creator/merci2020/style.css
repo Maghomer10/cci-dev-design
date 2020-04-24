@@ -1,0 +1,191 @@
+#editeur{
+    width:100vw;
+    height:100vh;
+    position: fixed;
+    top: 0;
+    left:0;
+    background-color: #f2f2f2;
+}
+
+#edit-fond{
+    position: relative;
+    left: 50vw;
+    top: 50vh;
+    transform: translate(-50%, -50%);
+    transform-origin: center;
+    width:400px;
+    max-width: 100%;
+}
+
+#edit-fond #image-photo{
+    position: absolute;
+    top: 7.7%;
+    left: 10%;
+    right: 10%;
+    bottom: 28%;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #dddddd;
+}
+
+#edit-fond #edit-photo{
+    position: absolute;
+    left: 17%;
+    right: 17%;
+    bottom: 31%;
+    border-radius: 6px;
+    overflow: hidden;
+    opacity: 0.65;
+    background: white;
+    transition: var(--transition);
+}
+#edit-fond #edit-photo:hover, 
+#edit-fond #edit-photo.demarre{
+    opacity: 0.9;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 15px;
+}
+
+#edit-fond #edit-photo.demarre{
+    bottom: 39%;
+}
+
+#edit-fond #edit-photo #charger{
+    position: relative;
+    cursor: pointer;
+    transition: var(--transition);    
+}
+#edit-fond #edit-photo #charger:hover{
+    background-color: #4d4d4d;  
+    color: white;  
+}
+#edit-fond #edit-photo #charger input{
+    width:100%;
+    height: 37px;
+    cursor: pointer;
+    transition: var(--transition); 
+}
+#edit-fond #edit-photo #charger label{
+    position: absolute;
+    width:100%;
+    height: 30px;
+    top: 8px;
+    left: 0;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Fira Sans';
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition); 
+}
+#edit-fond #edit-photo.demarre #charger input{
+    height: 207px;
+}
+#edit-fond #edit-photo.demarre #charger label{
+    top: 77px;
+    font-size: 26px;
+}
+
+#edit-fond #edit-photo #zoom{
+    border-top: #4d4d4d 1px solid;
+    position: relative;
+}
+#edit-fond #edit-photo.demarre #zoom{
+    display: none;
+}
+#edit-fond #edit-photo #zoom input{
+    display: none;
+}
+#edit-fond #edit-photo #zoom p{
+    display: block; 
+    flex: 1 1 auto;
+    width: 1%;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 16px; 
+    font-weight: 700;
+    padding: 5px 
+}
+#edit-fond #edit-photo #zoom span{
+    border-radius: 0;
+    border: none;
+    font-size: 30px; 
+    line-height: 20px;
+    background-color: #aaaaaa;
+    transition: var(--transition); 
+}
+#edit-fond #edit-photo #zoom span:hover{
+    background-color: #494949;
+}
+
+
+#edit-fond #image-texte,
+#edit-fond #edit-texte{
+    position: absolute;
+    top: 72%;
+    left: 10%;
+    right: 10%;
+    bottom: 8%;
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#edit-fond #image-texte #leNom,
+#edit-fond #edit-texte #edit-leNom {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: center;
+    text-align: center;
+    font-size: 33px;
+    line-height: 1.1em;
+    font-family: 'Fira Sans';
+    font-weight: 800;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #4d4d4d;
+    resize: none;
+    border: none;
+    opacity: 1;
+}
+
+#edit-fond #edit-texte #edit-leNom {
+    top: 2px;
+    position: relative;
+}
+
+
+
+#LaPhoto{
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    bottom: 0; 
+    right: 0;
+}
+
+#LaPhoto #edit-fond{
+    position: relative;
+    left: -7px;
+    top: -59px;
+    transform: scale(0.78) rotate(-11deg);
+    transform-origin: center;
+    max-width:400px;
+    width: 100%;
+}
+
+#LaPhoto #edit-texte,
+#LaPhoto #edit-photo{
+    display: none;
+}
+
+
+#telechargement{
+    position: absolute;
+    bottom: 0; 
+    font-size: 20px;
+}

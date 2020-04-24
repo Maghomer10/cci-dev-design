@@ -41,7 +41,7 @@
                     ).then(function(canvas) {
             document.body.appendChild(canvas);
                             canvas.toBlob(function(blob) {
-                              saveAs(blob, "template.png"); 
+                              saveAs(blob, "template.jpg"); 
                             });
               });
           $('#screen').css( 'transform', 'scale(1)' );
