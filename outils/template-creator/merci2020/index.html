@@ -81,7 +81,7 @@
 
           <div id="charger" class="custom-file">
             <input type="file" class="custom-file-input" id="inputFileToLoad" aria-describedby="image-photo">
-            <label>Charger votre photo <i class="fas fa-arrow-down"></i></label>
+            <label>Chargez votre photo <i class="fas fa-arrow-down"></i></label>
           </div>
           <div id="zoom" class="input-group input-minus-plus">
             <div class="input-group-prepend input-minus"  onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
@@ -113,7 +113,7 @@
         
 
 
-<a href="#" id="telechargement" onClick="shotit();suite()">Tirez votre portrait</a>
+<a href="#" id="telechargement" onClick="shotit('MerciCCI');suite()">Créez votre image</a>
     
     
     
@@ -123,13 +123,13 @@
 
 <div id="INTRO">
   <div class="etape">
-    <p><strong>Merci</strong> à tous les collaborateurs des CCI</p>
+    <p>Collaborateurs des CCI,<strong>tous mobilisés</strong></p>
   </div>
   <div class="etape">
-    <p><strong>Soyons fiers</strong> d'apartenir à ce réseaux</p>
+    <p><strong>Nous</strong> sommes aux côtés des entreprises</p>
   </div>
   <div class="etape">
-    <p>Envoyer votre photo seul ou en équipe</p>
+    <p>Réalisez votre photo de soutient</p>
     <div class="lesimages">
       <img src="Merci4.1.jpg">
       <img src="Merci4.2.jpg">
@@ -144,10 +144,10 @@
 
 <div id="FIN">
   <div>
-    <p>Bravo avez téléchargé votre image<br><strong>partagez la !</strong><br><em>#SoutenonsNosEntreprises</em></p>
-    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square"></i></a>
-    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
-    <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <p>Bravo avez téléchargé votre image<br><strong>partagez la</strong><br><em>#SoutenonsNosEntreprises</em></p>
+    <a href="#" target="_blank"><i class="fab fa-twitter-square"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
   </div>
   <p id="FIN-passe" onClick="suiteNON()">X Fermer</p>
 </div>
@@ -190,7 +190,7 @@
         
         $("#editeur #charger").click(function(){
           $("#editeur #edit-photo").removeClass('demarre');
-          $("#editeur #edit-photo label").html('Charger une autre photo <i class="fas fa-arrow-down"></i>');
+          $("#editeur #edit-photo label").html('Chargez une autre photo <i class="fas fa-arrow-down"></i>');
         });
 
 

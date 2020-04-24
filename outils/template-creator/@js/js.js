@@ -35,13 +35,14 @@
   
 
       
-      var shotit = function() {
+      var shotit = function(nom) {
           $('#screen').css( 'transform', 'scale(2)' );
           html2canvas(document.getElementById('screen'), 
                     ).then(function(canvas) {
             document.body.appendChild(canvas);
                             canvas.toBlob(function(blob) {
-                              saveAs(blob, "template.jpg"); 
+                              var nomComp = nom + ".jpg"
+                              saveAs(blob, nomComp); 
                             });
               });
           $('#screen').css( 'transform', 'scale(1)' );
