@@ -5,16 +5,23 @@
     top: 0;
     left:0;
     background-color: #f2f2f2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    overflow: auto;
 }
 
 #edit-fond{
     position: relative;
-    left: 50vw;
-    top: 50vh;
-    transform: translate(-50%, -50%);
-    transform-origin: center;
     width:400px;
     max-width: 100%;
+    order: 0;
+    flex: 0 1 auto;
+    align-self: center;
+    text-align: center;
 }
 
 #edit-fond #image-photo{
@@ -196,6 +203,8 @@
     bottom: 0; 
     font-size: 20px;
 }
+
+
 
 
 
