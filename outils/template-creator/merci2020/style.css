@@ -1,6 +1,6 @@
 #editeur{
-    width:100vw;
-    height:100vh;
+    right: 0;
+    bottom: 42px;
     position: fixed;
     top: 0;
     left:0;
@@ -26,6 +26,13 @@
     border-radius: 6px;
     overflow: hidden;
     background-color: #dddddd;
+    text-align: center;
+}
+
+#edit-fond #image-photo img{
+    max-width: none !important;
+    max-height: 100%;
+    display: inline-block;
 }
 
 #edit-fond #edit-photo{
@@ -188,4 +195,245 @@
     position: absolute;
     bottom: 0; 
     font-size: 20px;
+}
+
+
+
+
+/* ------------------------------------- */
+
+#INTRO{
+    right: 0;
+    bottom: 100%;
+    position: fixed;
+    top: 0;
+    left:0;
+    background-color: rgba(240, 240, 240, 0.9);
+    transition: var(--transition);
+    animation: etape 15s var(--transition-mode);
+    overflow: hidden;
+}
+
+#INTRO .etape{
+    position: absolute;
+    top: 0;
+    left:2%;
+    right: 2%;
+    bottom: 100%;
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#INTRO .etape p{
+    order: 0;
+    flex: 0 1 auto;
+    align-self: center;
+    text-align: center;
+    font-size: 48px;
+    line-height: 1.25em;
+    font-family: 'Fira Sans';
+    font-weight: 700;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #4d4d4d;
+    display: inline-block;
+    text-shadow: rgba(0, 0, 0, 0.15) 4px 4px 2px;
+}
+
+#INTRO .etape p strong{
+    box-shadow: inset 0 -10px 0 var(--cyan-l1);
+    padding: 0 10px;
+}
+
+#INTRO .etape .lesimages{
+    order: 0;
+    flex: 0 1 auto;
+    align-self: center;
+    font-size: 0;
+    padding-top: 40px;
+    max-width: 600px;
+}
+
+#INTRO .etape .lesimages img{
+    display: inline-block;
+    width: 50% !important;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 15px;
+}
+#INTRO .etape .lesimages img:nth-child(1){
+    transform: rotate(-5deg);
+}
+#INTRO .etape .lesimages img:nth-child(2){
+    transform: rotate(7deg) translate(-6px, 7px);
+}
+
+#INTRO .etape:nth-child(1){
+    animation: etape1 15s var(--transition-mode);
+}
+
+#INTRO .etape:nth-child(2){
+    animation: etape2 15s var(--transition-mode);
+}
+
+#INTRO .etape:nth-child(3){
+    animation: etape3 15s var(--transition-mode);
+}
+
+#INTRO .etape:nth-child(4){
+    animation: etape4 15s var(--transition-mode);
+}
+
+
+@keyframes etape{
+    0% {top: 0%; bottom: 0%;}
+    90% {top: 0%; bottom: 0%;}
+    100% {top: 0%; bottom: 100%;}
+}
+
+@keyframes etape1{
+    0% {top: 100%; bottom: 0%;}
+    5% {top: 0%; bottom: 0%;}
+    20% {top: 0%; bottom: 0%;}
+    23% {top: 0%; bottom: 0%;}
+    33% {top: 0%; bottom: 100%;}
+    60% {top: 0%; bottom: 100%;}
+    80% {top: 0%; bottom: 100%;}
+    100% {top: 0%; bottom: 100%;}
+}
+
+@keyframes etape2{
+    0% {top: 100%; bottom: 0%;}
+    22% {top: 100%; bottom: 0%;}
+    32% {top: 0%; bottom: 0%;}
+    40% {top: 0%; bottom: 0%;}
+    43% {top: 0%; bottom: 0%;}
+    53% {top: 0%; bottom: 100%;}
+    80% {top: 0%; bottom: 100%;}
+    100% {top: 0%; bottom: 100%;}
+}
+
+@keyframes etape3{
+    0% {top: 100%; bottom: 0%;}
+    20% {top: 100%; bottom: 0%;}
+    42% {top: 100%; bottom: 0%;}
+    52% {top: 0%; bottom: 0%;}
+    60% {top: 0%; bottom: 0%;}
+    65% {top: 0%; bottom: 0%;}
+    75% {top: 0%; bottom: 100%;}
+    100% {top: 0%; bottom: 100%;}
+}
+
+@keyframes etape4{
+    0% {top: 100%; bottom: 0%;}
+    20% {top: 100%; bottom: 0%;}
+    40% {top: 100%; bottom: 0%;}
+    64% {top: 100%; bottom: 0%;}
+    74% {top: 0%; bottom: 0%;}
+    80% {top: 0%; bottom: 0%;}
+    87% {top: 0%; bottom: 0%;}
+    100% {top: 0%; bottom: 100%;}
+}
+
+
+#INTRO-passe{
+    position: absolute; 
+    bottom: 15px;
+    right: 35px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1em;
+}
+
+
+
+/* ------------------------------------- */
+
+#FIN{
+    right: 0;
+    bottom: 0%;
+    position: fixed;
+    top: 100%;
+    left:0;
+    background-color: rgba(240, 240, 240, 0.9);
+    transition: var(--transition);
+    overflow: hidden;
+}
+
+#FIN div{
+    position: absolute;
+    top: 0;
+    left:2%;
+    right: 2%;
+    bottom: 0%;
+    transition: var(--transition);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#FIN div p{
+    order: 0;
+    flex: 1 1 auto;
+    width: 100%;
+    align-self: center;
+    text-align: center;
+    font-size: 40px;
+    line-height: 1.25em;
+    font-family: 'Fira Sans';
+    font-weight: 700;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #4d4d4d;
+    display: inline-block;
+    text-shadow: rgba(0, 0, 0, 0.15) 4px 4px 2px;
+}
+#FIN a{
+    order: 0;
+    flex: 0 1 auto;
+    align-self: center;
+    text-align: center;
+    font-size: 58px;
+    line-height: 1.25em;
+    font-family: 'Fira Sans';
+    font-weight: 700;
+    margin: 0 !important;
+    color: #949494;
+    display: inline;
+    padding: 2px 5px;
+}
+
+#FIN p strong{
+    box-shadow: inset 0 -10px 0 var(--cyan-l1);
+    padding: 0 10px;
+    margin: 10px 0;
+    display: inline-block
+}
+
+#FIN p em{
+    padding: 0 10px;
+    line-height: 1.3em; 
+    margin: 10px 0;
+    display: inline-block;
+    font-size: 35px;
+    font-weight: 300;
+    font-style:normal;
+}
+
+#FIN-passe{
+    position: absolute;
+    display: block;
+    bottom: 15px;
+    right: 35px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1em;
 }

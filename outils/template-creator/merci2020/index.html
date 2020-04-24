@@ -47,7 +47,7 @@
     
   <div id="export">
     <section id="screen">
-      <img id="fond" src="./Merci 4.2.jpg" style="width: 100%;">
+      <img id="fond" src="./Merci4.2export.jpg" style="width: 100%;">
       
       <div id="LaPhoto"></div>  
 
@@ -65,7 +65,7 @@
         <img id="fond" src="./Groupe206.png" style="width: 100%;">
 
         <div id="image-photo">
-          <img src="../@img/image_gallery.jpg" id="cursorImage" style="transform: scale(1)"/>
+          <img src="./group-ex.jpg" id="cursorImage" style="transform: scale(1)"/>
         </div> 
 
         <div id="image-texte">
@@ -113,15 +113,48 @@
         
 
 
-<a href="#" id="telechargement" onClick="shotit()">Tirez votre portrait</a>
+<a href="#" id="telechargement" onClick="shotit();suite()">Tirez votre portrait</a>
     
     
     
     
+
+
+
+<div id="INTRO">
+  <div class="etape">
+    <p><strong>Merci</strong> à tous les collaborateurs des CCI</p>
+  </div>
+  <div class="etape">
+    <p><strong>Soyons fiers</strong> d'apartenir à ce réseaux</p>
+  </div>
+  <div class="etape">
+    <p>Envoyer votre photo seul ou en équipe</p>
+    <div class="lesimages">
+      <img src="Merci4.1.jpg">
+      <img src="Merci4.2.jpg">
+    </div>
+  </div>
+  <div class="etape">
+    <p>Et partager la sur les réseaux</p>
+  </div>
+  <p id="INTRO-passe">Passer ></p>
+</div>
+
+
+<div id="FIN">
+  <div>
+    <p>Bravo avez téléchargé votre image<br><strong>partagez la !</strong><br><em>#SoutenonsNosEntreprises</em></p>
+    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square"></i></a>
+    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+    <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <p id="FIN-passe" onClick="suiteNON()">X Fermer</p>
+</div>
     
         
 
-    
+
 
 
 
@@ -133,6 +166,22 @@
     
     <script type="text/javascript">
         
+
+
+        $('#INTRO-passe').click( function(){
+            $('#INTRO').css('right','100%');
+        });
+        
+        function suite(){
+            $('#FIN').css('top','0%');
+        };
+
+        function suiteNON(){
+            $('#FIN').css('top','100%');
+        };
+
+
+
                 
         $('#editeur #edit-texte').on( 'change keyup keydown paste cut', 'textarea', function (){
             $(this).height(0).height(this.scrollHeight);
