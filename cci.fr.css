@@ -113,6 +113,7 @@
     --font-family-sans-serif: Fira Sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --degrade-bleu-1 : linear-gradient(45deg, var(--bleu-f1), var(--bleu));
+    --degrade-bleu-2 : linear-gradient(45deg, var(--bleu), var(--bleu-f1));
   }
   
 
@@ -152,6 +153,7 @@
   }
   body{
   background-color: var(--gris-l1);
+  overflow-x: hidden;
   }
   header#main-header {
       background: white;
@@ -264,12 +266,14 @@ html .ccifr .ccifr__header .header__content {
       margin-bottom: var(--space-5);
   }
 
-  html .ccifr .ccifr__right_side, .ccifr.actualite .ccifr__right_side, .ccifr.ressource .ccifr__right_side {
+  html .ccifr .ccifr__right_side, .ccifr.actualite .ccifr__right_side, .ccifr.ressource .ccifr__right_side, html .ccifr.formation .ccifr__right_side, html .ccifr.offre .ccifr__right_side {
     width: 280px;
     margin: -3rem 0 0 0;
     padding: 0;
-    border: var(--bordure);
+    border: 0;
     flex: 0 1 auto;
+    background-color: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(4px);
     border-radius: var(--arrondis-2);
     box-shadow: var(--ombre);
   }
@@ -505,10 +509,10 @@ html .header .search-form__control:focus ~ button.btn-default {
       display: none;
     }
 
-    html .ccifr .ccifr__right_side, .ccifr.actualite .ccifr__right_side, .ccifr.ressource .ccifr__right_side {
-      width: 100%;
-      max-width: 400px;
-      margin: 0 auto var(--space-5) auto;
+    html .ccifr .ccifr__right_side, .ccifr.actualite .ccifr__right_side, .ccifr.ressource .ccifr__right_side, html .ccifr.formation .ccifr__right_side, html .ccifr.offre .ccifr__right_side {
+      width: 100% !important;
+      max-width: 400px !important;
+      margin: calc(-1 * var(--space-4)) auto var(--space-5) auto !important;
     }
     .formation.ccifr .header__right_side, .offre.ccifr .header__right_side {
       border-radius: var(--arrondis-2);
@@ -542,7 +546,7 @@ html .header .search-form__control:focus ~ button.btn-default {
   
   .formation.ccifr .header__right_side:after, .offre.ccifr .header__right_side:after {
     content: '';
-    background: var(--degrade-bleu-1);
+    background: var(--degrade-bleu-2);
     display: block;
     height: 100%;
     width: 100%;
@@ -553,18 +557,14 @@ html .header .search-form__control:focus ~ button.btn-default {
     border-radius:var(--arrondis-2);
   } 
   html .ccifr.formation .ccifr__right_side, html .ccifr.offre .ccifr__right_side {
-    width: 100%;
     margin: 0 auto var(--space-5) auto;
-    background-color: white;
-    flex: 0 1 auto;
     border-radius: var(--arrondis-2);
-    border-top: var(--bordure);
     border-top-right-radius: var(--arrondis-2) !important;
     border-top-left-radius: var(--arrondis-2) !important;
-}  
-.texte-libre {
-  max-height: none!important;
-}
+  }  
+  .texte-libre {
+    max-height: none!important;
+  }
   
     /*marge mobile*/
     .ccifr__wrapper,
@@ -749,13 +749,18 @@ hr.separateur{
   /* Type Actualite _______________________________________________________________________________________________________________*/
 
   .container > .bloc__suggestion__articles{
-      display: none;
+    display: none;
+  }
+
+  .bloc__suggestion__articles{
+    box-shadow: none !important;
+    background-color: transparent !important;
   }
 
   .actualite .bloc__suggestion__articles__title {
     border-top-left-radius: var(--arrondis-2);
     border-top-right-radius: var(--arrondis-2);
-    background: var(--degrade-bleu-1);
+    background: var(--degrade-bleu-2);
     color: white;
     padding: 0 var(--space-3);
     height: 3rem;
@@ -781,15 +786,20 @@ hr.separateur{
     padding: var(--space-3) var(--space-3) var(--space-1) var(--space-3);
 }
 .bloc__suggestion__articles .view__content .views-row {
+  transition: var(--transition);
     margin-bottom: var(--space-3);
     padding-bottom: var(--space-1);
     border: 1px solid #cccccc;
     width: 100%;
     overflow: hidden;
     border-radius: var(--arrondis-2);
+    background: white;
+}
+.bloc__suggestion__articles .view__content .views-row:hover {
+  box-shadow: var(--ombre-hover);
 }
 .bloc__suggestion__articles .view__content img {
-    height: 5.5rem;
+    height: 4.5rem;
 }
 .bloc__suggestion__articles .view__content .views-field-title {
     padding: var(--space-2) var(--space-3);
@@ -887,10 +897,9 @@ hr.separateur{
    html .ccifr.offre .ccifr__right_side {
     width: 280px;
     margin: 0 0 0 0;
-    background-color: white;
     flex: 0 1 auto;
     border-radius: var(--arrondis-2);
-    border-top: none;
+    padding: var(--space-3);
 }
 .bloc__formation,
 .offre .ccifr__right_side {
@@ -902,7 +911,6 @@ hr.separateur{
   width: 100%;
   padding: var(--space-3);
   box-shadow: var(--ombre);
-  background-color: white;
 }
 .bloc__formation .field__item,
 .offre .ccifr__right_side .field__item {
@@ -918,10 +926,8 @@ hr.separateur{
   right: 4.55%;
   padding: var(--space-3);
   align-self: flex-end;
-  background: var(--degrade-bleu-1);
+  background: var(--degrade-bleu-2);
   color: white;
-  border: var(--bordure);
-  border-bottom: none;
 }
 .formation.ccifr .header__right_side hr,
 .offre.ccifr .header__right_side hr{
